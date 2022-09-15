@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#083273</color>
+    <color name="purple_700">#083273</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="accent">#1AA7E1</color>
+    <color name="back_groundgrey">#F7F7F7</color>
+
+    <color name="colorPrimary">@color/purple_500</color>
+    <color name="colorPrimaryVariant">@color/purple_700</color>
+    <color name="colorOnPrimary">@color/purple_700</color>
+    <color name="colorAccent">@color/colorSecondary</color>
+    <!-- Secondary brand color. -->
+    <color name="colorSecondary">@color/teal_200</color>
+    <color name="colorSecondaryVariant">@color/teal_700</color>
+    <color name="colorOnSecondary">@color/black</color>
+
+    <color name="primary">#FFFFFF</color>
+    <color name="primarydark">#FFFFFF</color>
+    <color name="primaryDarker">#FFFFFF</color>
+    <color name="card_green">#41B21F</color>
+    <color name="text_color">#000000</color>
+    <color name="withdraw_money">#B51F1F</color>
+    <color name="deposit_money">#36B51F</color>
+    <color name="textinputlayout_bordercolor">#666666</color>
+    <color name="textGrey">#b5b3b3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+</resources>

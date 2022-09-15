@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.huawei.hms:ml-computer-vision-livenessdetection-inner:2.1.0.300@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/17914bf50a01fe733448477956ebd7cd/transformed/jetified-ml-computer-vision-livenessdetection-inner-2.1.0.300/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/17914bf50a01fe733448477956ebd7cd/transformed/jetified-ml-computer-vision-livenessdetection-inner-2.1.0.300/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/17914bf50a01fe733448477956ebd7cd/transformed/jetified-ml-computer-vision-livenessdetection-inner-2.1.0.300/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

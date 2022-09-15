@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_back_cards"
+        app:title="">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="18dp">
+
+            <TextView
+                android:id="@+id/activityConvesationsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Capture Selfie"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <TextView
+                android:id="@+id/tv_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Take Selfie"
+                android:textColor="@color/colorOnPrimary"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_top_instr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/nunito_sans"
+                android:text="Take a selfie to authenticate"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_top" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_view"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@id/btn_selfie_capture"
+                app:layout_constraintTop_toBottomOf="@id/tv_top_instr"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/selfie_animation_acct_op" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_image"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                app:cardCornerRadius="250dp"
+                app:layout_constraintBottom_toTopOf="@id/btn_selfie_capture"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_top_instr">
+
+                <ImageView
+                    android:id="@+id/iv_selfie"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_selfie_capture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:padding="18dp"
+                android:text="Capture selfie"
+                app:cornerRadius="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/btn_recapture_capture"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_recapture_capture"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:padding="18dp"
+                android:text="Re take selfie"
+                android:textColor="@color/colorOnPrimary"
+                android:visibility="gone"
+                app:backgroundTint="@color/white"
+                app:cornerRadius="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:strokeColor="@color/colorOnPrimary"
+                app:strokeWidth="1dp" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animation_success"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/cv_image"
+                app:layout_constraintHorizontal_bias="0.14"
+                app:layout_constraintStart_toStartOf="@+id/cv_image"
+                app:layout_constraintTop_toBottomOf="@+id/cv_image"
+                app:lottie_autoPlay="true"
+                app:lottie_cacheComposition="true"
+                app:lottie_loop="true"
+                app:lottie_url="https://assets9.lottiefiles.com/packages/lf20_o3kwwgtn.json" />
+
+            <TextView
+                android:id="@+id/textViewFaceLive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:text="Success! Face is live"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/animation_success"
+                app:layout_constraintStart_toEndOf="@+id/animation_success"
+                app:layout_constraintTop_toTopOf="@+id/animation_success" />
+
+            <androidx.constraintlayout.widget.Group
+                android:id="@+id/group_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:constraint_referenced_ids="cv_image,animation_success,textViewFaceLive"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="12dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

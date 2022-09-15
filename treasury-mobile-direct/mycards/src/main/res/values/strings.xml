@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cards</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_validation_success">Success</string>
+    <string name="text_validation_error_empty_field">Input is Empty</string>
+    <string name="text_validation_error_email">Enter correct email</string>
+    <string name="card_number_short">Card number is less than 16</string>
+    <string name="card_number_validation_long">Card number should not be more than 16</string>
+    <string name="change_pin"><u>Change pin</u></string>
+    <string-array name="mobileProviders">
+        <item>Orange Money</item>
+        <item>MyZaka</item>
+        <item>Smega BTC Money</item>
+        <item>Bank Transfer</item>
+        <item>Investment - Treasury Bills</item>
+        <item>Investment - Treasury Bonds</item>
+        <item>Investment - Fixed Deposit</item>
+        <item>Investment - Equities</item>
+    </string-array>
+</resources>

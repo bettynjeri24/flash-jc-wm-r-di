@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+<!--    <style name="Theme.MobileBanking" parent="Theme.MaterialComponents.Light.NoActionBar">-->
+<!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+<!--        <item name="colorPrimary">@color/purple_500</item>-->
+<!--        <item name="colorPrimaryVariant">@color/purple_700</item>-->
+<!--        <item name="colorOnPrimary">@color/white</item>-->
+<!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+<!--        <item name="colorSecondary">@color/teal_200</item>-->
+<!--        <item name="colorSecondaryVariant">@color/teal_700</item>-->
+<!--        <item name="colorOnSecondary">@color/black</item>-->
+<!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+<!--        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>-->
+<!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+<!--        <item name="bottomSheetDialogTheme">@style/BottomSheetTheme</item>-->
+
+<!--    </style>-->
+
+    <style name="Theme.MobileBanking" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorOnPrimary</item>
+        <item name="android:colorPrimaryDark">@color/white</item>
+        <item name="colorPrimaryVariant">@color/colorOnPrimary</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <!--         Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <!--         Status bar color. -->
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!--         Customize your theme here. -->
+    </style>
+
+    <!--    <style name="Theme.Merchant" parent="Theme.MaterialComponents.Light.NoActionBar">-->
+    <!--        &lt;!&ndash; Primary brand color. &ndash;&gt;-->
+    <!--        <item name="colorPrimary">@color/primaryDarker</item>-->
+    <!--        <item name="colorPrimaryVariant">@color/primaryDarker</item>-->
+    <!--        <item name="colorAccent">@color/accent</item>-->
+    <!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+    <!--        <item name="android:statusBarColor">#011c5c</item>-->
+    <!--        <item name="android:fontFamily">@font/nunito_sans</item>-->
+    <!--        &lt;!&ndash; Secondary brand color. &ndash;&gt;-->
+    <!--        &lt;!&ndash;        <item name="colorSecondary">@color/teal_200</item>&ndash;&gt;-->
+    <!--        &lt;!&ndash;        <item name="colorSecondaryVariant">@color/teal_700</item>&ndash;&gt;-->
+    <!--        &lt;!&ndash;        <item name="colorOnSecondary">@color/black</item>&ndash;&gt;-->
+    <!--        &lt;!&ndash; Status bar color. &ndash;&gt;-->
+    <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--    </style>-->
+
+</resources>

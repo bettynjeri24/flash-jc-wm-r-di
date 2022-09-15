@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_cards"
+    app:startDestination="@id/landingFragment">
+
+    <fragment
+        android:id="@+id/landingFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.landing.LandingFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_landingFragment_to_getStartedFragment"
+            app:destination="@id/getStartedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getStartedFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.get_started.GetStartedFragment"
+        android:label="fragment_get_started"
+        tools:layout="@layout/fragment_get_started" >
+        <action
+            android:id="@+id/action_getStartedFragment_to_welcomeFragment2"
+            app:destination="@id/welcomeFragment" />
+        <action
+            android:id="@+id/action_getStartedFragment_to_authFragment2"
+            app:destination="@id/authFragment2" />
+        <action
+            android:id="@+id/action_getStartedFragment_to_lookUpFragment"
+            app:destination="@id/lookUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.welcome.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_onboardFragment"
+            app:destination="@id/onboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboardFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.onboardingpagerfragment.OnboardFragment"
+        android:label="fragment_onboard"
+        tools:layout="@layout/fragment_onboard" >
+        <action
+            android:id="@+id/action_onboardFragment_to_newPinFragment"
+            app:destination="@id/newPinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment2"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.login.LoginFragment"
+        android:label="fragment_login_auth"
+        tools:layout="@layout/fragment_login_auth" >
+        <action
+            android:id="@+id/action_authFragment2_to_selfieFragmentAuth"
+            app:destination="@id/selfieFragmentAuth" />
+        <action
+            android:id="@+id/action_authFragment2_to_fragmentVoiceRegistration"
+            app:destination="@id/fragmentVoiceRegistration" />
+        <action
+            android:id="@+id/action_authFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selfieFragmentAuth"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.login.selfie.SelfieFragmentAuth"
+        android:label="SelfieFragmentAuth" />
+    <fragment
+        android:id="@+id/fragmentVoiceRegistration"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.login.speechrecognition.FragmentVoiceRegistration"
+        android:label="FragmentVoiceRegistration" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.home.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment2"
+            app:destination="@id/profileFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_auctionBidFragment"
+            app:destination="@id/auctionBidFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_notificationsFragment"
+            app:destination="@id/notificationsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_miniStatementFragment"
+            app:destination="@id/miniStatementFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/auctionBidFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.auction_bid.AuctionBidFragment"
+        android:label="fragment_auction_bid"
+        tools:layout="@layout/fragment_auction_bid" >
+        <action
+            android:id="@+id/action_auctionBidFragment_to_securityOffersFragment"
+            app:destination="@id/securityOffersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/securityBidFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.securities_bid.SecurityBidFragment"
+        android:label="fragment_security_bid"
+        tools:layout="@layout/fragment_security_bid" >
+        <action
+            android:id="@+id/action_securityBidFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.confirmation.ConfirmFragment"
+        android:label="fragment_confirm"
+        tools:layout="@layout/fragment_confirm" >
+        <action
+            android:id="@+id/action_confirmFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/securityOffersFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.securityoffers.SecurityOffersFragment"
+        android:label="fragment_security_offers"
+        tools:layout="@layout/fragment_security_offers" >
+        <action
+            android:id="@+id/action_securityOffersFragment_to_securityBidFragment"
+            app:destination="@id/securityBidFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.notifications.NotificationsFragment"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/miniStatementFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.ministatement.MiniStatementFragment"
+        android:label="fragment_mini_statement"
+        tools:layout="@layout/fragment_mini_statement" />
+    <fragment
+        android:id="@+id/newPinFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.new_pin.NewPinFragment"
+        android:label="NewPinFragment" >
+        <action
+            android:id="@+id/action_newPinFragment_to_confirmNewPinFragment"
+            app:destination="@id/confirmNewPinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmNewPinFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.confirm_pin.ConfirmNewPinFragment"
+        android:label="ConfirmNewPinFragment" >
+        <action
+            android:id="@+id/action_confirmNewPinFragment_to_securityFragment"
+            app:destination="@id/securityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/securityFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.security.SecurityFragment"
+        android:label="fragment_security"
+        tools:layout="@layout/fragment_security" >
+        <action
+            android:id="@+id/action_securityFragment_to_selfieFragmentAuth"
+            app:destination="@id/selfieFragmentAuth" />
+        <action
+            android:id="@+id/action_securityFragment_to_authFragment2"
+            app:destination="@id/authFragment2" />
+        <action
+            android:id="@+id/action_securityFragment_to_fragmentVoiceRegistration"
+            app:destination="@id/fragmentVoiceRegistration" />
+    </fragment>
+    <fragment
+        android:id="@+id/lookUpFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.lookup.LookUpFragment"
+        android:label="fragment_look_up"
+        tools:layout="@layout/fragment_look_up" >
+        <action
+            android:id="@+id/action_lookUpFragment_to_activateFragment"
+            app:destination="@id/activateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/activateFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.activate.ActivateFragment"
+        android:label="fragment_activate"
+        tools:layout="@layout/fragment_activate" >
+        <action
+            android:id="@+id/action_activateFragment_to_verificationCodeFragment"
+            app:destination="@id/verificationCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verificationCodeFragment"
+        android:name="com.ekenya.rnd.tmd.ui.fragments.verificationcode.VerificationCodeFragment"
+        android:label="fragment_verification_code"
+        tools:layout="@layout/fragment_verification_code" >
+        <action
+            android:id="@+id/action_verificationCodeFragment_to_newPinFragment"
+            app:destination="@id/newPinFragment" />
+    </fragment>
+
+
+</navigation>

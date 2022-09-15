@@ -1,0 +1,54 @@
+plugins {
+    id 'com.android.dynamic-feature'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+android {
+//    compileSdkVersion rootProject.compileSdkVersion
+//    buildToolsVersion "30.0.3"
+
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 23
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "BASE_URL", "\"http://144.217.66.194:8989/api/\""
+
+        }
+        debug {
+            buildConfigField "String", "BASE_URL", "\"http://144.217.66.194:8989/api/\""
+        }
+
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation project(":app")
+    implementation  project(":common")
+
+    //room
+    def room = "2.4.2"
+    kapt "androidx.room:room-compiler:$room"
+
+    //segment progressview
+    implementation 'com.github.TOrnelas:SegmentedProgressBar:0.0.3'
+
+    //Dagger
+    annotationProcessor "com.google.dagger:dagger-android-processor:" + rootProject.googleDaggerVersion
+    annotationProcessor "com.google.dagger:dagger-compiler:" + rootProject.googleDaggerVersion
+    kapt 'com.google.dagger:dagger-compiler:' + rootProject.googleDaggerVersion
+    kapt 'com.google.dagger:dagger-android-processor:' + rootProject.googleDaggerVersion
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}

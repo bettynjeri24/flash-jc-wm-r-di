@@ -1,0 +1,50 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ekenya.rnd.tmd.ui.fragments.onboardingpagerfragment.OnboardFragment">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:navigationIcon="@drawable/ic_back_cards"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <pt.tornelas.segmentedprogressbar.SegmentedProgressBar
+        android:id="@+id/segmentedProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_margin="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar3"
+        app:segmentBackgroundColor="@color/colorPrimary"
+        app:segmentCornerRadius="2dp"
+        app:segmentMargins="@dimen/default_segment_margin"
+        app:segmentSelectedBackgroundColor="@color/colorPrimary"
+        app:segmentSelectedStrokeColor="@color/colorPrimary"
+        app:segmentStrokeColor="@color/colorPrimary"
+        app:segmentStrokeWidth="1dp"
+        app:timePerSegment="2000"
+        app:totalSegments="5" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerOnboarding"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/segmentedProgressBar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

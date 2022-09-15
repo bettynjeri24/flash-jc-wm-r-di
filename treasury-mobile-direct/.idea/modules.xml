@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Treasury_Mobile_Direct_CBK.iml" filepath="$PROJECT_DIR$/.idea/modules/Treasury_Mobile_Direct_CBK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Treasury_Mobile_Direct_CBK.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Treasury_Mobile_Direct_CBK.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Treasury_Mobile_Direct_CBK.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Treasury_Mobile_Direct_CBK.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Treasury_Mobile_Direct_CBK.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Treasury_Mobile_Direct_CBK.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Treasury_Mobile_Direct_CBK.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Treasury_Mobile_Direct_CBK.app.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Treasury_Mobile_Direct_CBK.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Treasury_Mobile_Direct_CBK.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Treasury_Mobile_Direct_CBK.common.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Treasury_Mobile_Direct_CBK.common.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Treasury_Mobile_Direct_CBK.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Treasury_Mobile_Direct_CBK.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Treasury_Mobile_Direct_CBK.common.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Treasury_Mobile_Direct_CBK.common.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycards/Treasury_Mobile_Direct_CBK.mycards.iml" filepath="$PROJECT_DIR$/.idea/modules/mycards/Treasury_Mobile_Direct_CBK.mycards.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycards/Treasury_Mobile_Direct_CBK.mycards.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mycards/Treasury_Mobile_Direct_CBK.mycards.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycards/Treasury_Mobile_Direct_CBK.mycards.main.iml" filepath="$PROJECT_DIR$/.idea/modules/mycards/Treasury_Mobile_Direct_CBK.mycards.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mycards/Treasury_Mobile_Direct_CBK.mycards.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/mycards/Treasury_Mobile_Direct_CBK.mycards.unitTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scannerlib/Treasury_Mobile_Direct_CBK.scannerlib.iml" filepath="$PROJECT_DIR$/.idea/modules/scannerlib/Treasury_Mobile_Direct_CBK.scannerlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scannerlib/Treasury_Mobile_Direct_CBK.scannerlib.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/scannerlib/Treasury_Mobile_Direct_CBK.scannerlib.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scannerlib/Treasury_Mobile_Direct_CBK.scannerlib.main.iml" filepath="$PROJECT_DIR$/.idea/modules/scannerlib/Treasury_Mobile_Direct_CBK.scannerlib.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/scannerlib/Treasury_Mobile_Direct_CBK.scannerlib.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/scannerlib/Treasury_Mobile_Direct_CBK.scannerlib.unitTest.iml" />
+    </modules>
+  </component>
+</project>

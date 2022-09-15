@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ekenya.rnd.baseapp">
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name="com.ekenya.rnd.baseapp.TMDApp"
+        android:allowBackup="true"
+        android:icon="@drawable/cbk_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cbk_logo"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+
+    android:theme="@style/Theme.MobileBanking">
+        <activity android:name="com.ekenya.rnd.baseapp.ui.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.MobileBanking.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="TextViewTitle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+    </style>
+
+    <style name="InputTextViewTitle" >
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+    </style>
+
+    <style name="InputTextViewCardTitle" >
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/nunito_sans_bold</item>
+        <item name="android:textColor">@color/colorOnPrimary</item>
+    </style>
+
+
+    <style name="Theme.MobileBanking.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MobileBanking.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="exposedDropdownMenuCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:textColor">@color/back_groundgrey</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="expandedHintEnabled">false</item>
+        <item name="hintEnabled">true</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="boxStrokeColor">@color/textinputlayout_bordercolor</item>
+    </style>
+
+    <style name="BottomSheetTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <!--        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">8dp</item>
+        <item name="cornerSizeTopLeft">8dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <dimen name="textInputLayoutRadius">8dp</dimen>
+
+    <style name="Theme.MobileBanking.ToolBarStyle" parent="">
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+        <item name="android:titleTextStyle">@style/ActionbarTitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/ActionbarSubTitleTextStyle</item>
+        <item name="android:background">@drawable/bar_bg</item>
+    </style>
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="ActionbarTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ActionbarSubTitleTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@style/TextAppearance.Design.CollapsingToolbar.Expanded">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CustomBottomSheetDialog" parent="@style/ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheet</item>
+    </style>
+
+    <style name="CustomBottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="shapeAppearanceOverlay">@style/CustomShapeAppearanceBottomSheetDialog</item>
+    </style>
+
+    <style name="CustomShapeAppearanceBottomSheetDialog" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">16dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+
+
+    <style name="TextViewSubtitle" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/nunito_sans_semibold</item>
+    </style>
+
+
+
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="font">@font/nunito_sans</item>
+        <item name="boxStrokeColor">@color/textinputlayout_bordercolor</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="expandedHintEnabled">false</item>
+        <item name="hintEnabled">true</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="hintTextAppearance">@style/TextLabel</item>
+        <item name="boxCornerRadiusBottomEnd">@dimen/textInputLayoutRadius</item>
+        <item name="boxCornerRadiusTopEnd">@dimen/textInputLayoutRadius</item>
+        <item name="boxCornerRadiusBottomStart">@dimen/textInputLayoutRadius</item>
+        <item name="boxCornerRadiusTopStart">@dimen/textInputLayoutRadius</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">12sp</item>
+        <item name="hintTextColor">@color/black</item>
+    </style>
+
+
+    <style name="otpInputCustomWhite" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textSize">11sp</item>
+        <item name="endIconTint">@android:color/white</item>
+        <item name="boxBackgroundColor">#F7F7F7</item>
+    </style>
+
+    <style name="MyCustomEditTextStyle">
+        <item name="editTextStyle">@style/TextInputLayoutStyle</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="roundedImageViewRounded">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+</resources>

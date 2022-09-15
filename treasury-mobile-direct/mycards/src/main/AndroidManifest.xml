@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ekenya.rnd.mycards">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <dist:module
+        dist:instant="false"
+        dist:title="@string/title_my_cards">
+        <dist:delivery>
+            <dist:on-demand />
+        </dist:delivery>
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+    <application>
+        <activity
+            android:usesCleartextTraffic="false"
+            android:label="MyCards"
+            android:exported="false"
+            android:name="com.ekenya.rnd.tmd.ui.ActivityMainMyTmd" />
+
+        <receiver
+            android:name="com.ekenya.rnd.tmd.utils.SMSBroadcastReceiver"
+            android:exported="true"
+            android:permission="com.google.android.gms.auth.api.phone.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.gms.auth.api.phone.SMS_RETRIEVED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+
+
+</manifest>

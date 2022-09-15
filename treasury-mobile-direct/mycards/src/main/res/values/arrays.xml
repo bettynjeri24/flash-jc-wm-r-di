@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="accountProvider" >
+        <item>Awesome Jim- A/C #1234 •••• •••• 2344 (personal)</item>
+        <item>Awesome Jim- A/C #1234 •••• •••• 2344 (personal)</item>
+        <item>Awesome Jim- A/C #1234 •••• •••• 2344 (joint)</item>
+        <item>Awesome Jim- A/C #1234 •••• •••• 2344(personal)</item>
+    </string-array>
+
+    <string-array name="branchProvider" >
+        <item>Garden City</item>
+        <item>Jumia</item>
+        <item>Two Rivers</item>
+    </string-array>
+
+    <string-array name="reasonsProviders" >
+        <item>Lost Card</item>
+        <item>Card stolen</item>
+        <item>I was mugged</item>
+    </string-array>
+
+    <string-array name="creditType">
+        <item>Debit</item>
+        <item>Credit</item>
+    </string-array>
+
+    <string-array name="cardLogos">
+        <item>Union Pay</item>
+        <item>Visa</item>
+        <item>Master Card</item>
+    </string-array>
+
+    <string-array name="employmentStatus" >
+        <item>Employed</item>
+        <item>Self Employed</item>
+    </string-array>
+
+</resources>

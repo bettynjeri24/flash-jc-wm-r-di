@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translucent_scrim_top">#cc6200EE</color>
+    <color name="translucent_scrim_top_center">#0C6200EE</color>
+    <color name="translucent_scrim_bottom">#cc6200EE</color>
+    <color name="translucent_scrim_bottom_center">#0D6200EE</color>
+</resources>

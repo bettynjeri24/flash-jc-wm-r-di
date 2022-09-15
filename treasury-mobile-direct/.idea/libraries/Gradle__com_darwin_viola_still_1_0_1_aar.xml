@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.darwin.viola:still:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ef729895235aa8f69146731e2387bcdf/transformed/jetified-still-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ef729895235aa8f69146731e2387bcdf/transformed/jetified-still-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ef729895235aa8f69146731e2387bcdf/transformed/jetified-still-1.0.1/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.darwin.viola/still/1.0.1/84bc3a40fbd2d18ef5a6cae9db78a9d3da0819dc/still-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.darwin.viola/still/1.0.1/76e21f38fa6f7098f2424eedc4341b567031917b/still-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

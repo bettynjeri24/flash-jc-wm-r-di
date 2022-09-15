@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--    <color name="primary">#1AA7E1</color>-->
+<!--    <color name="primarydark">#014bb3</color>-->
+<!--    <color name="primaryDarker">#083273</color>-->
+    <color name="color1">#f69414</color>
+    <color name="white">#FFFFFFFF</color>
+<!--    <color name="card_green">#41B21F</color>-->
+<!--    <color name="back_groundgrey">#40E4E4E4</color>-->
+<!--    <color name="text_color">#000000</color>-->
+<!--    <color name="withdraw_money">#B51F1F</color>-->
+<!--    <color name="deposit_money">#36B51F</color>-->
+<!--    <color name="textinputlayout_bordercolor">#666666</color>-->
+<!--    <color name="textGrey">#b5b3b3</color>-->
+</resources>
