@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100dp"
+        android:background="@color/textColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/custom_toolbar"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                app:layout_collapseMode="pin"
+                android:background="@color/textColor"
+                android:layout_height="?attr/actionBarSize"
+                >
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/custom_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_50dp"
+      >
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLoan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.homepage.home.dashboard.shares.ShareRequestDetailsFragment"
+        android:elevation="@dimen/_200dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:paddingBottom="@dimen/_20dp"
+        app:cardCornerRadius="@dimen/_5dp"
+        app:cardUseCompatPadding="true"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_15dp">
+            <TextView
+                android:id="@+id/tv_transType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/_13sp"
+                android:text="Transfer Type"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_transTypeValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_transType"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_transType"
+                tools:text="saless" />
+
+            <TextView
+                android:id="@+id/tv_shareTT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_13sp"
+                android:text="@string/share_transferred"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_transType" />
+
+            <TextView
+                android:id="@+id/text_ShareTT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_shareTT"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_shareTT"
+                tools:text="20000" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_13sp"
+                android:text="Name"
+                app:layout_constraintStart_toStartOf="@+id/tv_shareTT"
+                app:layout_constraintTop_toBottomOf="@+id/tv_shareTT" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_name"
+                tools:text="20000" />
+
+            <TextView
+                android:id="@+id/tv_MNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_13sp"
+                android:text="@string/member_number"
+                app:layout_constraintStart_toStartOf="@+id/tv_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <TextView
+                android:id="@+id/text_MNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_MNo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_MNo"
+                tools:text="20000" />
+            <TextView
+                android:id="@+id/tv_m0bileN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_13sp"
+                android:text="@string/mobile_number"
+                app:layout_constraintStart_toStartOf="@+id/tv_MNo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_MNo"  />
+
+            <TextView
+                android:id="@+id/text_m0bileN"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:layout_marginEnd="10dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_m0bileN"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_m0bileN"
+                tools:text="20000" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_13sp"
+                android:text="Status"
+                app:layout_constraintStart_toStartOf="@+id/tv_m0bileN"
+                app:layout_constraintTop_toBottomOf="@+id/tv_m0bileN" />
+
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/textColor"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_status"
+                tools:text="20000" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnReject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:theme="@style/ButtonTheme"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:background="@drawable/btn_less_radius"
+            android:text="@string/reject"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

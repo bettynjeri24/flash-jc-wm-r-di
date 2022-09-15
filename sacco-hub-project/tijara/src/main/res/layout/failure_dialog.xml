@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ldialog"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical"
+            android:background="@drawable/dialog_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/ic_failed_bg"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_cancel_black_24dp"
+                android:padding="8dp"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center_horizontal"
+                android:text="FAILED!"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="#FF0000" />
+
+            <TextView
+                android:id="@+id/dlgmessage"
+                android:layout_width="match_parent"
+                android:fontFamily="sans-serif"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal"
+                android:text="Error occured!"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textColor="@color/black" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/errdialogclose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Close"
+                android:textAllCaps="false"
+                android:theme="@style/ButtonTheme"
+                android:textColor="@color/white"
+                android:background="@drawable/dialog_close_fail"
+                android:textSize="16sp"
+                android:layout_marginStart="16dp"
+                app:backgroundTint="#FF0000"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,267 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary2</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark2</item>
+        <item name="colorAccent">@color/buttonColor</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:autofilledHighlight" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+    <style name="FragmentTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/textColor</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:autofilledHighlight" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+    <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@drawable/rounded_background</item>
+    </style>
+
+    <style name="LOGIN_PIN_Pad_MaterialButtonDefaultStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+    <style name="keyboard_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:showDividers">none</item>
+    </style>
+
+    <style name="LoginLayoutStyle.white" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:colorAccent">@color/black</item>
+        <item name="android:colorActivatedHighlight">@color/black</item>
+    </style>
+
+    <style name="MyTextInputLayout_overlay">
+        <item name="colorOnSurface">@color/buttonColor</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="backgroundColor">@color/buttonColor</item>
+    </style>
+
+    <style name="ColoredEdittextStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxBackgroundMode">outline</item>
+        <item name ="boxBackgroundColor">@color/etColor</item>
+        <item name ="hintTextColor">@color/buttonColor</item>
+        <item name ="android:textColorHint">@color/hintColor</item>
+        <item name="boxStrokeWidth">0.0dp</item>
+        <item name="colorOnSurface">#FFC002</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="boxStrokeWidthFocused">0.0dp</item>
+        <item name="boxCornerRadiusBottomEnd">9dp</item>
+        <item name="boxCornerRadiusBottomStart">9dp</item>
+        <item name="boxCornerRadiusTopEnd">9dp</item>
+        <item name="boxCornerRadiusTopStart">9dp</item>
+        <item name="colorPrimary">@color/etColor</item>
+        <item name="colorAccent">@color/etColor</item>
+
+    </style>
+    <!-- <style name="textInputLayoutOutlinedBoxCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+         <item name="boxStrokeColor">@color/white</item>
+         <item name="android:textColor">@color/white</item>
+         <item name="android:textColorHint">@color/white</item>
+         <item name="android:textSize">11sp</item>
+         <item name="boxStrokeWidth">1dp</item>
+         <item name="boxStrokeWidthFocused">1dp</item>
+     </style>-->
+
+    <style name="SplashScreenTheme" parent = "Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="ButtonTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/buttonColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar"/>
+
+    <style name="ButtonThemeWhite" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+    <style name="OutlineStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/hintColor</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name ="hintTextColor">@color/buttonColor</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name ="android:textColorHint">@color/hintColor</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="colorOnSurface">#FFC002</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:radius">1.4dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="colorPrimary">@color/etColor</item>
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+    <style name="exposedDropdownMenuCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="boxStrokeColor">@color/hintColor</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="hintTextColor">@color/hintColor</item>
+        <item name="boxBackgroundColor">@android:color/transparent</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="android:radius">1.4dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="endIconTint">@color/hintColor</item>
+    </style>
+    <style name="EditTextStyle" parent="Widget.MaterialComponents.ActionBar.Solid">
+        <item name="boxStrokeColor">@color/hintColor</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name ="hintTextColor">@color/buttonColor</item>
+        <item name ="android:textColorHint">@color/buttonColor</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="colorOnSurface">#FFC002</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:radius">1.4dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="colorPrimary">@color/etColor</item>
+        <item name="fontFamily">@font/poppins</item>
+    </style>
+
+    <style name="textInputLayoutOutlinedBoxCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/stroke_state</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="colorOnSurface">@color/buttonColor</item>
+
+        <item name="hintTextColor">@color/hintColor</item>
+        <item name="android:textSelectHandle">@color/buttonColor</item>
+        <item name="android:radius">1.4dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+    </style>
+    <style name="SearchViewTheme" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">12sp</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+
+    </style>
+    <style name="ShapeAppearanceOverlay.MyApp.Button.Rounded" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="spinnerTheme" parent= "Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu">
+        <item name="endIconDrawable">@drawable/drop_arrow</item>
+        <item name="iconSize">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="hintTextColor">@color/buttonColor</item>
+    </style>
+    <style name="D1NoTitleDim" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme"
+        parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bsheet_white_bg</item>
+    </style>
+
+    <!--Bottom sheet theme with pink background-->
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/corn</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <!--Bottom sheet theme with image background-->
+    <style name="BottomSheetDialogimageTheme" parent="BaseBottomimageSheetDialog">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/white</item>
+    </style>
+
+    <style name="BottomimageSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bsheetback</item>
+        <item name="android:topLeftRadius">25dp</item>
+        <item name="android:topRightRadius">25dp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <style name="BaseBottomimageSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomimageSheet</item>
+    </style>
+    <style name="AppTheme.Toolbar" parent="AppTheme">
+        <!--This line changes the color of text in Toolbar-->
+        <item name="android:textColorPrimary">@color/black</item>
+        <!--This line changes the color of icons in toolbar (back, overflow menu icons)-->
+        <item name="android:textColorSecondary">@color/black</item>
+    </style>
+
+    <dimen name="_8sp">8sp</dimen>
+    <style name="ShapeAppearanceOverlay.App.CornerSize50Percent" parent="">
+        <item name="cornerSize">50%</item>
+    </style>
+    <style name="keypad_buttons_style" parent="Widget.MaterialComponents.TextView">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">@dimen/_10dp</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:clickable">true</item>
+        <item name="background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:foreground">?android:attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_width">0dp</item>
+    </style>
+    <style name="pin_views">
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:background">@drawable/inactive_pin_bg</item>
+        <item name="android:layout_marginEnd">12dp</item>
+        <item name="android:layout_height">20dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_width">20dp</item>
+    </style>
+</resources>

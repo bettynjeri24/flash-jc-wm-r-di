@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/app_logo"
+        layout="@layout/app_logo_imageview" />
+
+    <TextView
+        android:id="@+id/tv_fragTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/what_s_your_number"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_logo" />
+
+    <TextView
+        android:id="@+id/tv_provideDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/please_provide_your_phone_number_to_login_to_your_account"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_fragTitle"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragTitle" />
+
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:background="@drawable/rounded_layout"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        app:ccp_areaCodeDetectedCountry="true"
+        app:ccp_customMasterCountries="et,ke,GH"
+        app:ccp_defaultNameCode="KE"
+        app:ccp_showFullName="false"
+        app:ccp_showNameCode="false"
+        app:ccp_textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/til_PhoneNumber"
+        app:layout_constraintStart_toStartOf="@id/tv_fragTitle"
+        app:layout_constraintTop_toBottomOf="@id/tv_provideDetails" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_PhoneNumber"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+
+        app:layout_constraintStart_toEndOf="@id/ccp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_provideDetails">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_phonenumber"
+            style="@style/signupedittext_style"
+            android:hint="@string/mobileNumber"
+            android:inputType="number"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_emailAddress"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            style="@style/signupedittext_style"
+            android:hint="@string/txt_emailAddress"
+            android:inputType="textEmailAddress"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_alreadyWithAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text="Already have an account?"
+        android:textColor="#6f7070"
+        android:textSize="12sp"
+
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_emailAddress" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="@string/login"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tv_alreadyWithAccount"
+        app:layout_constraintTop_toTopOf="@id/tv_alreadyWithAccount" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continueToLogin"
+        style="@style/main_buttons_style"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:text="@string/txt_continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:progressTint="@color/app_mustard"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/btn_continueToLogin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ccp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

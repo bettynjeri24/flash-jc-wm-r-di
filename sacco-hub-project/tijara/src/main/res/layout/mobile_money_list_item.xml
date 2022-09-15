@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="mobileProperties"
+            type="com.ekenya.rnd.tijara.network.model.ServiceProviderItem" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Constraint_Loan"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="@dimen/_4dp"
+        android:layout_height="@dimen/_60dp">
+
+        <ImageView
+            android:id="@+id/viewLine"
+            android:layout_width="@dimen/_40dp"
+            android:layout_height="@dimen/_40dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@drawable/ic_phone" />
+
+        <TextView
+            android:id="@+id/tv_loanOption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:generalName="@{mobileProperties.name}"
+            app:layout_constraintStart_toEndOf="@+id/viewLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="Loan Option"
+            android:textSize="@dimen/_13sp"
+            android:layout_marginStart="@dimen/_15dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_loanOption"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:tint="@color/hintColor"
+            android:layout_marginEnd="@dimen/_11dp"
+            app:layout_constraintTop_toTopOf="@+id/tv_loanOption"
+            app:srcCompat="@drawable/bank_arrow" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

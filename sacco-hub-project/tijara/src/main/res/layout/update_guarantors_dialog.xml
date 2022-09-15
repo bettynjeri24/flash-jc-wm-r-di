@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_20dp">
+
+        <View
+            android:id="@+id/viewB"
+            android:layout_width="69dp"
+            android:layout_height="@dimen/_5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_15dp"
+            android:background="@color/etColor"
+            app:layout_constraintCircleRadius="@dimen/_5dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_guarontor"
+            android:textColor="@color/textColor"
+            android:layout_marginTop="@dimen/_20dp"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintTop_toBottomOf="@+id/viewB"
+            android:layout_marginStart="@dimen/_15dp"
+            android:id="@+id/tv_sOne"
+            app:layout_constraintStart_toStartOf="parent" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_memberNo"
+            style="@style/OutlineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:hint="@string/member_number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_sOne"
+            app:suffixTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_memberNo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:maxLength="30"
+                android:focusable="false"
+                android:textColor="@color/hintColor"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_enter_amount"
+            style="@style/OutlineStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:hint="@string/enter_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tl_memberNo"
+            app:suffixText="KES"
+            app:suffixTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_loan_amount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:maxLength="30"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/cursor" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/addSpin"
+            style="@style/SpinKitView.Small.ThreeBounce"
+            android:layout_width="@dimen/_200dp"
+            android:layout_height="@dimen/_40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:background="@drawable/progress_bg"
+
+            android:visibility="gone"
+            app:SpinKit_Color="@color/buttonColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/BtnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:background="@drawable/btn_normal_bg"
+            android:text="@string/update"
+            android:layout_marginTop="@dimen/_30dp"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold"
+            android:theme="@style/ButtonTheme"
+           app:layout_constraintTop_toBottomOf="@id/tl_enter_amount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

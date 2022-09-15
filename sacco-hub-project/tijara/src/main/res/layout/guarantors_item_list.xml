@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="guarantors"
+            type="com.ekenya.rnd.tijara.network.model.GuarantorData" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/requestList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_100dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_5dp"
+        app:cardUseCompatPadding="true"
+        android:layout_marginTop="@dimen/_20dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ClGuarantors"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:paddingBottom="@dimen/_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/iv_loan"
+                android:layout_width="0dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/ic_car_image"
+
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLoantitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sp"
+                android:layout_toEndOf="@id/iv_loan"
+                app:generalName="@{guarantors.loanName}"
+                app:layout_constraintStart_toEndOf="@id/iv_loan"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Personal Loan" />
+            <TextView
+                android:id="@+id/tvAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_14sp"
+                android:layout_toEndOf="@id/iv_loan"
+                app:generalName="@{guarantors.amountRequested}"
+                app:layout_constraintEnd_toStartOf="@id/ImageBack"
+                app:layout_constraintTop_toTopOf="@+id/tvLoantitle"
+                app:layout_constraintBottom_toBottomOf="@+id/tvLoantitle"
+                tools:text="Personal Loan" />
+
+            <TextView
+                android:id="@+id/text_limit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="@dimen/_13sp"
+                android:textColor="@color/hintColor"
+                app:generalName="@{guarantors.name}"
+                app:layout_constraintStart_toStartOf="@+id/tvLoantitle"
+                app:layout_constraintTop_toBottomOf="@+id/tvLoantitle" />
+
+            <TextView
+                android:id="@+id/tv_percentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_13sp"
+                android:textColor="@color/hintColor"
+                app:layout_constraintBottom_toBottomOf="@+id/text_limit"
+                app:layout_constraintStart_toStartOf="@id/tvAmount"
+                app:layout_constraintTop_toTopOf="@+id/text_limit"
+                tools:text="3 years" />
+
+            <ImageView
+                android:id="@+id/ImageBack"
+                android:layout_width="@dimen/_8dp"
+                android:layout_height="@dimen/_15dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:src="@drawable/ic_back_loans"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_DetailsLoan"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:paddingBottom="@dimen/_10dp"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_3dp"
+                    android:layout_marginEnd="@dimen/_5dp"
+                    android:background="@color/etColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/member_number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_interest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    tools:text="10%"
+                    app:generalName="@{guarantors.memberNumber}"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_interest"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/text_interest" />
+
+                <TextView
+                    android:id="@+id/text_amont_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/status"
+                    app:layout_constraintStart_toStartOf="@+id/text_interest"
+                    app:layout_constraintTop_toBottomOf="@+id/text_interest" />
+
+                <TextView
+                    android:id="@+id/tv_amount_paid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    tools:text="2000"
+                    android:textColor="@color/textColor"
+                    app:generalName="@{guarantors.status}"
+                    app:layout_constraintBottom_toBottomOf="@+id/text_amont_paid"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/text_amont_paid" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/appbarlayout"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content">
+
+         <!--   <ImageView
+                android:id="@+id/close_icon"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:src="@drawable/ic_exit"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+-->
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expenditure"
+                android:textAlignment="center"
+                android:textColor="#707070"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/close_icon"
+                app:layout_constraintTop_toTopOf="@+id/close_icon" />
+-->
+            <TextView
+                android:id="@+id/tv_hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:text="Hello,"
+                android:textColor="@color/black_text_color"
+                android:textSize="22sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Alex Mwangi"
+                android:textColor="@color/app_mustard"
+                android:textSize="28sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@id/tv_hello"
+                app:layout_constraintTop_toBottomOf="@id/tv_hello" />
+
+            <RelativeLayout
+                android:id="@+id/spinner_layout"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:background="@drawable/gradient_spinner"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toTopOf="@id/tv_hello">
+
+                <Spinner
+                    android:id="@+id/month_spinner"
+                    style="@style/spinner_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:backgroundTint="@color/black_text_color"
+                    android:entries="@array/frequency"
+                    android:padding="0dp"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:layout_marginTop="8dp"
+            android:text="Here is your monthly expenditure statistics \n for your Account"
+            android:textColor="@color/black_text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbarlayout" />
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_info" />
+
+        <TextView
+            android:id="@+id/tv_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="Withdrawals"
+            android:textColor="@color/black_text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/graph" />
+
+        <TextView
+            android:id="@+id/monthlyWithdrawalAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:text="GHS 0.00"
+            android:textColor="#1319cd"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_withdraw" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+
+            android:id="@+id/progressbar"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:indeterminate="false"
+            android:progress="0"
+            app:indicatorColor="#1319cd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_withdraw"
+            app:layout_constraintTop_toBottomOf="@id/tv_withdraw"
+            app:trackColor="#ced5e1"
+            app:trackCornerRadius="20dp"
+            app:trackThickness="5dp" />
+
+        <TextView
+            android:id="@+id/tv_sendMoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="Send Money"
+            android:textColor="@color/black_text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/tv_withdraw"
+            app:layout_constraintTop_toBottomOf="@id/progressbar" />
+
+        <TextView
+            android:id="@+id/monthlySendMoneyAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:text="GHS 0.00"
+            android:textColor="#13cd30"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_sendMoney" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+
+            android:id="@+id/progressbarsendmoney"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:indeterminate="false"
+            android:progress="0"
+            app:indicatorColor="#24d03f"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_withdraw"
+            app:layout_constraintTop_toBottomOf="@id/tv_sendMoney"
+            app:trackColor="#ced5e1"
+            app:trackCornerRadius="20dp"
+            app:trackThickness="5dp" />
+
+        <TextView
+            android:id="@+id/tv_bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="Bills"
+            android:textColor="#6c6c6c"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/tv_sendMoney"
+            app:layout_constraintTop_toBottomOf="@id/progressbarsendmoney" />
+
+        <TextView
+            android:id="@+id/monthlyBillsAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:text="GHS 0.00"
+            android:textColor="#f76710"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_bills" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+
+            android:id="@+id/progressbarbills"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:indeterminate="false"
+            android:progress="0"
+            app:indicatorColor="#f76710"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_withdraw"
+            app:layout_constraintTop_toBottomOf="@id/tv_bills"
+            app:trackColor="#ced5e1"
+            app:trackCornerRadius="20dp"
+            app:trackThickness="5dp" />
+
+        <TextView
+            android:id="@+id/tv_savings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="Savings"
+            android:textColor="@color/black_text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/tv_bills"
+            app:layout_constraintTop_toBottomOf="@id/progressbarbills" />
+
+        <TextView
+            android:id="@+id/monthlySavingsAverage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:text="GHS 0.00"
+            android:textColor="#bf13cd"
+
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_savings" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+
+            android:id="@+id/progressbarsavings"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            android:indeterminate="false"
+            android:progress="0"
+            app:indicatorColor="#bf13cd"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_withdraw"
+            app:layout_constraintTop_toBottomOf="@id/tv_savings"
+            app:trackColor="#ced5e1"
+            app:trackCornerRadius="20dp"
+            app:trackThickness="5dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

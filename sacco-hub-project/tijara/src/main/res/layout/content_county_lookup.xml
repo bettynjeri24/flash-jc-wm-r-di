@@ -1,0 +1,104 @@
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnAccLookUP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_60dp"
+                tools:context=".ui.homepage.home.dashboard.billpayment.CountyLookUpFragment">
+
+                <TextView
+                    android:id="@+id/tvDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/_50dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/_14sp"
+                    android:text="@string/select_county"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:layout_marginEnd="@dimen/_15dp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tiType"
+                    style="@style/exposedDropdownMenuCustom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:layout_marginEnd="@dimen/_15dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    app:endIconTint="@color/black"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDetails">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/countySpinner"
+                        android:layout_width="match_parent"
+                        android:focusable="false"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/select_county"
+                        android:textColor="@color/hintColor" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/tl_AccNo"
+                    style="@style/OutlineStyle"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:layout_marginEnd="@dimen/_15dp"
+                    android:layout_marginTop="@dimen/_20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tiType"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_AccNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/biller_number"
+                        android:inputType="phone"
+                        android:maxLength="13"
+                        android:singleLine="true"
+                        android:textCursorDrawable="@drawable/cursor" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAccLookUP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:theme="@style/ButtonTheme"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:background="@drawable/btn_normal_bg"
+            android:text="@string/continu"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

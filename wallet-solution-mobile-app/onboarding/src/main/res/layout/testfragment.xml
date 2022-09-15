@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:elevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/close_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_exit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:text="Top Up Wallet"
+
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/appbarlayout" />
+
+    <TextView
+        android:id="@+id/tv_addinfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="Your money is secured by Tyler-soft Eclectics"
+        android:textColor="#6f7070"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/optionOneRadioButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_addinfo"
+        app:layout_constraintTop_toBottomOf="@id/tv_addinfo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e4e4e4"
+
+            android:padding="@dimen/margin_16dp">
+
+            <TextView
+                android:id="@+id/currency_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GHS"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_WalletBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="Balance: GHS 98,000.00"
+                android:textColor="#6f7070"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@+id/tv_amount"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/currency_spinner" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:text="Enter Amount"
+                android:textColor="#1319ce"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tv_WalletBalance"
+                app:layout_constraintTop_toTopOf="@id/currency_spinner" />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="20,000.00"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_WalletBalance"
+                app:layout_constraintStart_toStartOf="@+id/tv_amount"
+                app:layout_constraintTop_toTopOf="@+id/tv_WalletBalance" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_addinfo"
+        app:layout_constraintTop_toBottomOf="@id/optionOneRadioButton">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e4e4e4"
+
+            android:padding="@dimen/margin_16dp">
+
+            <TextView
+                android:id="@+id/tv_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="From"
+                android:textColor="#6f7070"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_detailsaddedsuccesfully"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Credit card details added securely"
+                android:textColor="#6f7070"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="@id/button_change"
+                app:layout_constraintStart_toStartOf="@+id/tv_debitorcredit"
+                app:layout_constraintTop_toBottomOf="@id/tv_debitorcredit" />
+
+            <TextView
+                android:id="@+id/tv_debitorcredit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Debit or Credit Card"
+                android:textColor="#1319cd"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toEndOf="@+id/tv_from"
+                app:layout_constraintTop_toBottomOf="@id/tv_from" />
+
+            <Button
+                android:id="@+id/button_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/app_orange"
+                android:text="change"
+                android:textColor="#ffffff"
+                android:textSize="8sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_detailsaddedsuccesfully"
+                app:layout_constraintTop_toTopOf="@id/tv_debitorcredit" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/app_mustard"
+        android:padding="16dp"
+        android:text="@string/txt_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/optionOneRadioButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/optionOneRadioButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

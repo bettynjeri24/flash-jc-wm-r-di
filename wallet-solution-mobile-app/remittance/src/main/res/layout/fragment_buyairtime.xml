@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/ic_bg"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/layout_top"
+        android:background="@color/colorPrimary"
+        >
+        <include
+            layout="@layout/header_layout"
+            android:id="@+id/layout_header"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layout_header"
+
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textSize="@dimen/textsize_small"
+            android:layout_marginStart="@dimen/layout_margin"
+            android:text="@string/str_amount_to_spend"
+            android:paddingBottom="@dimen/layout_margin"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layout_top"
+        android:layout_margin="@dimen/layout_margin"
+        >
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/layout_margin"
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/TextInputLayoutOutline"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_enter_amount"
+            android:imeOptions="actionNext"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlPhonenumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/layout_margin"
+            app:endIconMode="custom"
+            app:endIconTint="@color/colorPrimary"
+            app:endIconDrawable="@drawable/ic_phonebook"
+            app:endIconCheckable="true"
+            android:backgroundTint="@color/colorPrimary"
+            app:layout_constraintTop_toBottomOf="@id/tlAmount"
+            style="@style/TextInputLayoutOutline"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_enter_phone_number"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group_button_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:checkedButton="@id/radio_myaccount"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tlPhonenumber">
+            <RadioButton
+                android:id="@+id/radio_myaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:backgroundTint="@color/colorPrimary"
+                app:buttonTint="@color/colorPrimary"
+                android:text="@string/str_my_account" />
+            <RadioButton
+                android:id="@+id/radio_others"
+                android:layout_marginStart="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:buttonTint="@color/colorPrimary"
+                android:text="@string/str_other_account" />
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spinner_provider"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_button_account" />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="2dp"
+            android:background="#61272727"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner_provider"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_provider"
+            app:layout_constraintStart_toStartOf="@+id/spinner_provider"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_provider" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/str_pay_from"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/layout_margin"
+            app:layout_constraintTop_toBottomOf="@id/view1"
+            android:id="@+id/tvBrand"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spn_payfrom"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/spiner_height"
+            android:layout_marginTop="@dimen/layout_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="horizontal"
+
+            app:layout_constraintTop_toBottomOf="@id/tvBrand"/>
+        <View
+            android:id="@+id/vBrand"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="#61272727"
+            app:layout_constraintTop_toBottomOf="@id/spn_payfrom"
+            app:layout_constraintStart_toStartOf="@id/spn_payfrom"
+            app:layout_constraintEnd_toEndOf="@id/spn_payfrom"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBuyAirtime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_layout_margin"
+            android:layout_marginBottom="50dp"
+            android:paddingBottom="@dimen/large_layout_margin"
+            android:padding="10dp"
+            android:text="@string/btn_continue_title"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp"
+            app:layout_constraintTop_toBottomOf="@id/vBrand"
+            app:layout_constraintEnd_toEndOf="parent"
+            style="@style/MaterialButtonDefaultStyle"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

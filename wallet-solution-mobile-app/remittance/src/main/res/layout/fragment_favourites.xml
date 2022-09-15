@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/ic_bg"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/layout_top"
+        android:background="@color/colorPrimary"
+        >
+        <include
+            layout="@layout/header_layout"
+            android:id="@+id/layout_header"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layout_header"
+
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textSize="@dimen/textsize_medium"
+            android:layout_marginStart="@dimen/layout_margin"
+            android:text=""
+            android:paddingBottom="@dimen/layout_margin"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_top"
+        android:layout_marginTop="@dimen/layout_margin"
+        >
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSendMode"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/layout_margin"
+            android:background="@color/colorWhite"
+            app:cardCornerRadius="@dimen/medium_layout_margin"
+            android:elevation="5dp"
+            android:layout_marginBottom="@dimen/layout_margin"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/ivCashWithdrawal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/large_layout_margin"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/umeme" />
+
+                <TextView
+                    android:id="@+id/tvCashWithdrawal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="Umeme prepaid"
+                    android:textColor="@color/colorBlue"
+                    android:fontFamily="@font/nunito_sans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/ivCashWithdrawal"
+                    app:layout_constraintLeft_toRightOf="@id/ivCashWithdrawal"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/layout_margin"/>
+                <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:text="AC 5656554"
+                    android:textColor="@color/colorBlackText"
+                    android:fontFamily="@font/nunito_sans"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/ivCashWithdrawal"
+                    app:layout_constraintLeft_toRightOf="@id/ivCashWithdrawal"
+                    app:layout_constraintTop_toBottomOf="@id/tvCashWithdrawal"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

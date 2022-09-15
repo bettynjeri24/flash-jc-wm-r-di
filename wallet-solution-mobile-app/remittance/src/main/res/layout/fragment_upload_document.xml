@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/onboard_bg">
+
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/layout_margin"
+        android:paddingEnd="@dimen/layout_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_header">
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans"
+            android:text="@string/str_provide_doc_details"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_medium_small"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlIdType"
+            style="@style/MyTextInputLayout"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:hint="@string/str_id_type"
+            android:textColorHint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/et_id_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:completionThreshold="0"
+                android:imeOptions="actionDone"
+                android:inputType="none"
+                android:maxLines="1"
+                android:paddingStart="@dimen/large_layout_margin"
+                android:paddingEnd="@dimen/large_layout_margin" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlNationalID"
+            style="@style/TextInputLayoutOutline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:textColorHint="@android:color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tlIdType">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_nin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_national_id"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textColor="@android:color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <View
+            android:id="@+id/viewCenter"
+            android:layout_width="5dp"
+            android:layout_height="3dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvIdFront"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/str_id_front_photo"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toStartOf="@id/viewCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tlNationalID" />
+
+        <ImageView
+            android:id="@+id/iv_front_id"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/large_layout_margin"
+            android:src="@mipmap/ic_camera"
+            app:layout_constraintEnd_toStartOf="@id/viewCenter"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvIdFront" />
+
+        <TextView
+            android:id="@+id/tvIDBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/str_id_back_photo"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewCenter"
+            app:layout_constraintTop_toBottomOf="@id/tlNationalID" />
+
+        <ImageView
+            android:id="@+id/iv_back_id"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/large_layout_margin"
+            android:src="@mipmap/ic_camera"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@id/viewCenter"
+            app:layout_constraintTop_toBottomOf="@id/tvIDBack" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUploadDoc"
+            style="@style/MaterialButtonDefaultStyle"
+            android:text="@string/btn_continue_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

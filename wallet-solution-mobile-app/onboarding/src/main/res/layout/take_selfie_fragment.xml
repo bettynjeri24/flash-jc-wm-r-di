@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/app_mustard"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:elevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_width="match_parent"
+            android:background="@color/app_mustard"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:paddingTop="30dp"
+
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/close_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/ic_back__2_"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/tv_letsVerifyidentity"
+        app:layout_constraintTop_toBottomOf="@id/appbarlayout"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:text="Take a Selfie"/>
+
+    <TextView
+        android:id="@+id/tv_timeinfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:lineSpacingExtra="18sp"
+        android:text="We will compare the photo in your document with your selfie to verify that it’s your identification"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@id/tv_letsVerifyidentity"
+        app:layout_constraintStart_toStartOf="@id/tv_letsVerifyidentity"
+        app:layout_constraintTop_toBottomOf="@id/tv_letsVerifyidentity" />
+    <TextView
+        android:id="@+id/tv_straightFace"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin_16dp"
+        android:drawableLeft="@drawable/ic_user__1_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="34dp"
+        android:layout_margin="@dimen/margin_16dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_timeinfo"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:text="Please keep a straight face"/>
+    <TextView
+        android:id="@+id/tv_noGlasses"
+        app:layout_constraintEnd_toEndOf="@id/tv_straightFace"
+        app:layout_constraintStart_toStartOf="@id/tv_straightFace"
+        app:layout_constraintTop_toBottomOf="@id/tv_straightFace"
+        android:layout_width="0dp"
+        android:drawableLeft="@drawable/ic_glasses"
+        android:drawablePadding="@dimen/margin_16dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:layout_marginTop="16dp"
+        android:textColor="#ffffff"
+        android:text="Please remove any glasses to ensure your eyes are captured"/>
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_take_selfie"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:padding="16dp"
+        android:text="@string/txt_continue"
+        android:textColor="@color/app_mustard"
+        android:textSize="@dimen/textsize_12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timeinfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_timeinfo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_take_selfie"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timeinfo"
+        app:layout_constraintStart_toStartOf="@+id/tv_timeinfo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_noGlasses"
+        app:srcCompat="@drawable/ic_take_selfie" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="terms_text_msg"><![CDATA[I accept Privacy policy, Terms & Condition of   Bank]]></string>
+
+
+    <!-- Strings used for fragments for navigation -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- pin pad numbers-->
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="str_sales">Sales</string>
+    <string name="btn_continue_title">Continuez</string>
+    <string name="str_choose_language">Choisissez votre langue</string>
+    <string name="btn_register_title">S\'inscrire</string>
+    <string name="str_login">Connexion</string>
+    <string name="btn_okay">D\'accord</string>
+    <string name="btn_cancel">Annuler</string>
+    <string name="btn_dismiss">Rejeter</string>
+</resources>

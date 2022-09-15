@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/rounded_corner_bottom_sheet</item>
+        <item name="textInputStyle">@style/TextInputLayoutCustom</item>
+    </style>
+
+    <style name="TextInputLayoutCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="hintTextColor">@color/colorAccent</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+        <item name="colorControlHighlight">@color/colorWhite</item>
+        <item name="boxStrokeColor">@color/colorWhite</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="textInputLayoutOutlinedBoxCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/accent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textSize">11sp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="boxStrokeErrorColor">@color/colorAccent</item>
+        <item name="errorTextColor">@color/colorPrimaryDark</item>
+        <item name="errorIconTint">@color/accent</item>
+        <item name="android:textCursorDrawable">@null</item>
+    </style>
+</resources>

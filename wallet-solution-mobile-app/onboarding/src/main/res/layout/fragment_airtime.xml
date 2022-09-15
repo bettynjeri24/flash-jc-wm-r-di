@@ -1,0 +1,167 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/margin_16dp"
+    android:layout_height="match_parent"
+    tools:context="com.ekenya.rnd.dashboard.view.AirtimeFragment">
+    <TextView
+        android:id="@+id/tv_signUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawablePadding="@dimen/margin_16dp"
+        android:gravity="center_vertical"
+        android:text="Buy Airtime"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/saf_airtime"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_signUp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/grey_round_bgwithnoborder"
+
+
+        android:padding="@dimen/margin_16dp">
+
+        <ImageView
+            android:id="@+id/saf_logo"
+            android:layout_width="50dp"
+            android:src="@drawable/safaricom"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_safaricom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:text="MTN Ghana Airtime"
+            android:textColor="@color/black_text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/saf_logo"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_arrow_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ethiopiatel"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/saf_airtime"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/grey_round_bgwithnoborder"
+
+
+        android:padding="@dimen/margin_16dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:id="@+id/bill_option_logo"
+            android:layout_width="50dp"
+            android:src="@drawable/mtn"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_billName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AirtelTigo Airtime"
+            android:textColor="@color/black_text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@id/bill_option_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="100dp" />
+
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_arrow_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/telebirr_airtime"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/ethiopiatel"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/grey_round_bgwithnoborder"
+
+
+        android:padding="@dimen/margin_16dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <ImageView
+            android:id="@+id/bill_option_logo2"
+            android:layout_width="50dp"
+            android:src="@drawable/telebir"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telebirr"
+            android:textColor="@color/black_text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@id/bill_option_logo2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:layout_editor_absoluteX="100dp" />
+
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_arrow_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

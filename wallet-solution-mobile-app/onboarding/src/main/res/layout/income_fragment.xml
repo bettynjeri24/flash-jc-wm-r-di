@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/appbarlayout"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:text="Hello,"
+                android:textColor="#aeaeae"
+                android:textSize="22sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Alex Mwangi"
+                android:textColor="@color/app_mustard"
+                android:textSize="28sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@id/tv_hello"
+                app:layout_constraintTop_toBottomOf="@id/tv_hello" />
+
+            <RelativeLayout
+                android:id="@+id/spinner_layout"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:background="@drawable/gradient_spinner"
+                android:padding="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintTop_toTopOf="@id/tv_hello">
+
+                <Spinner
+                    android:id="@+id/month_spinner"
+                    style="@style/spinner_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:backgroundTint="@color/black_text_color"
+                    android:entries="@array/frequency"
+                    android:padding="0dp"
+                    android:spinnerMode="dropdown" />
+            </RelativeLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_info"
+            android:layout_marginStart="@dimen/margin_16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbarlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="#707070"
+            android:text="Here is a summary of your cashflow and income in your \n Account"/>
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="10dp"
+            android:padding="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_info" />
+
+
+
+     <androidx.cardview.widget.CardView
+         app:cardCornerRadius="10dp"
+         app:cardElevation="0dp"
+         android:id="@+id/cardviewIncome"
+         android:layout_marginEnd="@dimen/margin_16dp"
+         android:layout_marginStart="@dimen/margin_16dp"
+         android:orientation="vertical"
+         android:backgroundTint="@color/grey_40percent"
+         app:layout_constraintTop_toBottomOf="@id/graph"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <TextView
+                 android:id="@+id/tv_totalIncomeAmount"
+                 android:layout_marginEnd="@dimen/margin_16dp"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintTop_toTopOf="@id/tv_income"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:textSize="12sp"
+                 android:textColor="#147ad6"
+                 android:text="GHS 1,000.00"/>
+         <TextView
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:id="@+id/tv_income"
+             android:layout_margin="@dimen/margin_16dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:textSize="12sp"
+             android:textColor="#000000"
+             android:text="Income"/>
+
+         <com.google.android.material.progressindicator.LinearProgressIndicator
+
+             android:id="@+id/progressbar"
+             android:layout_width="0dp"
+             android:layout_height="5dp"
+             android:layout_marginBottom="@dimen/margin_16dp"
+             android:layout_marginTop="@dimen/margin_16dp"
+             android:indeterminate="false"
+             android:progress="70"
+             app:indicatorColor="#1319cd"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:layout_marginEnd="@dimen/margin_16dp"
+             app:layout_constraintStart_toStartOf="@id/tv_income"
+             app:layout_constraintTop_toBottomOf="@id/tv_income"
+             app:trackColor="#ced5e1"
+             app:trackCornerRadius="20dp"
+             app:trackThickness="5dp" />
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+     </androidx.cardview.widget.CardView>
+     <androidx.cardview.widget.CardView
+         app:cardCornerRadius="10dp"
+         android:layout_margin="@dimen/margin_16dp"
+         android:orientation="vertical"
+         app:cardElevation="0dp"
+         app:layout_constraintBottom_toBottomOf="parent"
+         android:backgroundTint="@color/grey_40percent"
+         app:layout_constraintTop_toBottomOf="@id/cardviewIncome"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+             <TextView
+                 android:layout_marginEnd="@dimen/margin_16dp"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintTop_toTopOf="@id/tv_cashflow"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textStyle="bold"
+                 android:textSize="12sp"
+                 android:textColor="#ec6666"
+                 android:text="+ 40%"/>
+         <TextView
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             android:id="@+id/tv_cashflow"
+             android:layout_margin="@dimen/margin_16dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textStyle="normal"
+             android:textSize="12sp"
+             android:textColor="#000000"
+             android:text="Cashflow"/>
+
+         <com.google.android.material.progressindicator.LinearProgressIndicator
+
+             android:id="@+id/progressbarcashflow"
+             android:layout_width="0dp"
+             android:layout_height="5dp"
+             android:layout_marginBottom="@dimen/margin_16dp"
+             android:layout_marginTop="@dimen/margin_16dp"
+             android:indeterminate="false"
+             android:progress="70"
+             app:indicatorColor="#ec6666"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             android:layout_marginEnd="@dimen/margin_16dp"
+             app:layout_constraintStart_toStartOf="@id/tv_cashflow"
+             app:layout_constraintTop_toBottomOf="@id/tv_cashflow"
+             app:trackColor="#ced5e1"
+             app:trackCornerRadius="20dp"
+             app:trackThickness="5dp" />
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+     </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

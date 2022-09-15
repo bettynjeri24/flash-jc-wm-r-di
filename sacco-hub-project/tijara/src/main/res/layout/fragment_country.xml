@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+   <data>
+       <variable
+           name="viewmodel"
+           type="com.ekenya.rnd.tijara.ui.auth.onboarding.CountryViewmodel" />
+   </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/frag"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".ui.auth.onboarding.CountryFragment">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:layout_marginTop="@dimen/_56dp"
+                android:src="@drawable/app_logo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:text="@string/welcome_to_tijara_let_check"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:visibility="gone"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/spinner_background"
+                android:contentDescription="@string/country_picker"
+                android:gravity="start"
+                android:padding="@dimen/_5dp"
+                android:textAlignment="gravity"
+                app:ccpDialog_showTitle="true"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_clickable="true"
+                app:ccp_contentColor="@color/black"
+                app:ccp_customMasterCountries="TZ,KE,UG,CM"
+                app:ccp_hintExampleNumber="true"
+                app:ccp_showArrow="false"
+                app:ccp_showFlag="true"
+                app:ccp_showFullName="true"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="false"
+                app:ccp_textGravity="LEFT"
+                app:ccp_textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
+            <include
+                android:id="@+id/progressbar"
+                android:visibility="gone"
+                layout="@layout/spinkit_dialog_loading"
+                />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_phone"
+                style="@style/OutlineStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                app:placeholderTextColor="@color/hintColor"
+                app:placeholderText="E.G. 0712345678"
+                android:hint="@string/phone_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ccp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/tvconfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:text="@string/please_confirm_your_country_code"
+                android:textColor="@color/hintColor"
+                android:textSize="@dimen/_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tl_phone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/occupation_input_layout"
+                style="@style/exposedDropdownMenuCustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:visibility="gone"
+                android:weightSum="400"
+                app:boxBackgroundColor="@android:color/transparent"
+                app:layout_constraintTop_toBottomOf="@+id/tvconfirm">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autocomplete_occupation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="false"
+                    android:hint="occupation"
+                    android:inputType="none"
+                    android:maxLength="60"
+                    android:singleLine="true"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="normal" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/cb_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_marginBottom="@dimen/_30dp"
+                android:text="@string/i_agree_to_the"
+                app:layout_constraintBottom_toTopOf="@+id/getStarted"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tvTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/terms_and_condition"
+                android:textColor="@color/textColor"
+                android:layout_marginStart="@dimen/_3dp"
+                app:layout_constraintTop_toTopOf="@id/cb_account"
+              app:layout_constraintBottom_toBottomOf="@id/cb_account"
+                app:layout_constraintStart_toEndOf="@id/cb_account"
+               />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/getStarted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:layout_marginBottom="@dimen/_25dp"
+                android:background="@drawable/btn_normal_bg"
+                android:text="@string/continu"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                android:theme="@style/ButtonTheme"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

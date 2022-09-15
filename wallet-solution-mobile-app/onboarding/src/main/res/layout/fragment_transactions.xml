@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/history"
+        android:textColor="@color/black_text_color"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/options_layout" />
+
+    <RelativeLayout
+        android:id="@+id/spinner_layout"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:background="@drawable/gradient_spinner"
+        android:padding="0dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="@id/tv_history">
+
+        <Spinner
+            android:id="@+id/month_spinner"
+            style="@style/spinner_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/black_text_color"
+            android:entries="@array/month"
+            android:padding="5dp"
+            android:spinnerMode="dropdown" />
+    </RelativeLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/options_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ic_topup"
+            style="@style/dashboard_options_icons_style"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:src="@drawable/ic_top_up_2"
+            app:layout_constraintEnd_toStartOf="@+id/ic_withdraw"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ic_withdraw"
+            style="@style/dashboard_options_icons_style"
+
+            android:src="@drawable/ic_withdraw_3"
+            app:layout_constraintEnd_toStartOf="@+id/ic_billPayments"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ic_topup"
+            app:layout_constraintTop_toTopOf="@id/ic_topup" />
+
+        <ImageView
+            android:id="@+id/ic_billPayments"
+            style="@style/dashboard_options_icons_style"
+
+            android:src="@drawable/ic_bill_payments"
+            app:layout_constraintEnd_toStartOf="@+id/ic_sendMoney"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ic_withdraw"
+            app:layout_constraintTop_toTopOf="@id/ic_topup" />
+
+        <ImageView
+            android:id="@+id/ic_sendMoney"
+            style="@style/dashboard_options_icons_style"
+
+            android:src="@drawable/ic_send_money"
+            app:layout_constraintEnd_toStartOf="@+id/ic_payMerchant"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ic_billPayments"
+            app:layout_constraintTop_toTopOf="@id/ic_topup" />
+
+        <ImageView
+            android:id="@+id/ic_payMerchant"
+            style="@style/dashboard_options_icons_style"
+
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_paymerchantic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/ic_sendMoney"
+            app:layout_constraintTop_toTopOf="@id/ic_topup" />
+
+
+        <TextView
+            android:id="@+id/img_topup"
+            style="@style/dashboard_textview_optionsstyle"
+            android:text="Fund\nWallet"
+            app:layout_constraintEnd_toEndOf="@+id/ic_topup"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@+id/ic_topup"
+            app:layout_constraintTop_toBottomOf="@id/ic_topup" />
+
+        <TextView
+            android:id="@+id/img_withdraw"
+
+            style="@style/dashboard_textview_optionsstyle"
+            android:text="Withdraw\nMoney"
+            app:layout_constraintEnd_toEndOf="@+id/ic_withdraw"
+            app:layout_constraintStart_toStartOf="@+id/ic_withdraw"
+            app:layout_constraintTop_toTopOf="@+id/img_topup" />
+
+        <TextView
+            android:id="@+id/img_billpayment"
+            style="@style/dashboard_textview_optionsstyle"
+            android:text="Bill\nPayment"
+            app:layout_constraintEnd_toEndOf="@+id/ic_billPayments"
+            app:layout_constraintStart_toStartOf="@+id/ic_billPayments"
+            app:layout_constraintTop_toTopOf="@+id/img_withdraw" />
+
+        <TextView
+            android:id="@+id/img_sendmoney"
+            style="@style/dashboard_textview_optionsstyle"
+            android:text="Send\nMoney"
+            app:layout_constraintEnd_toEndOf="@+id/ic_sendMoney"
+            app:layout_constraintStart_toStartOf="@+id/ic_sendMoney"
+            app:layout_constraintTop_toTopOf="@+id/img_billpayment" />
+
+        <TextView
+            android:id="@+id/img_paymerchant"
+            style="@style/dashboard_textview_optionsstyle"
+            android:layout_marginEnd="2dp"
+            android:text="Pay\nMerchant"
+            app:layout_constraintEnd_toEndOf="@+id/ic_payMerchant"
+            app:layout_constraintStart_toStartOf="@+id/ic_payMerchant"
+            app:layout_constraintTop_toTopOf="@+id/img_sendmoney" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_transactions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16dp"
+        android:background="@drawable/grey_round_bgwithnoborder"
+        android:padding="5dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_layout" />
+
+    <TextView
+        android:id="@+id/tv_Notransactions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/ic_no_transactions"
+        android:drawablePadding="@dimen/margin_16dp"
+        android:text="@string/no_transactions_history"
+        android:textAlignment="center"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_history" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/export_statement"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:layout_marginBottom="30dp"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:text="@string/export_statement"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:visibility="invisible"
+        app:iconTint="@color/white"
+        app:layout_anchorGravity="bottom|right|end"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

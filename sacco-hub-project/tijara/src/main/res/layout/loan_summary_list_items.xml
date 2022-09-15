@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_marginBottom="@dimen/_10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tType"
+            android:layout_width="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_height="wrap_content"
+            tools:text="@string/withdraw"
+            android:layout_marginTop="@dimen/_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="@dimen/_14sp"
+            android:textColor="@color/hintColor"
+            />
+
+        <TextView
+            android:id="@+id/tAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textC"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_15dp"
+            app:layout_constraintTop_toTopOf="@id/tType"
+            app:layout_constraintBottom_toBottomOf="@id/tType"
+            tools:text="20000" />
+        <TextView
+            android:id="@+id/tDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="12/12/2021"
+            android:layout_marginTop="@dimen/_10dp"
+            app:layout_constraintTop_toBottomOf="@id/tType"
+            app:layout_constraintStart_toStartOf="@id/tType"
+            android:textSize="@dimen/_13sp"
+            android:textColor="@color/hintColor"/>
+
+        <TextView
+            android:id="@+id/tEType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hintColor"
+            android:textSize="@dimen/_13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/_15dp"
+            app:layout_constraintTop_toTopOf="@id/tDate"
+            tools:text="Failed" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/etColor"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="@dimen/_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tDate"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

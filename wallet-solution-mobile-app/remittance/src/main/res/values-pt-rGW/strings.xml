@@ -1,0 +1,101 @@
+<resources>
+    <string name="title_home">Início</string>
+    <string name="title_favouriteBill">Cartera</string>
+    <string name="title_offers">Oferta</string>
+    <string name="title_more">Mas</string>
+    <string name="already_have_acc">Bu tene dja conta?</string>
+    <string name="alternative_details">Preenchi informaçon ku no na pidiu li bas</string>
+
+    <string name="terms_text_msg"><![CDATA[N’lei i n’ceta política di Privacidade, Termos ku Condiçons di Banco]]></string>
+
+    <string name="welcome_description">Simples &amp; seguro ku acesso rápido a bu contas ku transferências</string>
+    <string name="deposit_cash">Pa deposita, partilha é informaçons:</string>
+
+    <!-- Strings used for fragments for navigation -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- pin pad numbers-->
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="withdraw_cash">Pa levanta, partilha é informaçons:</string>
+    <string name="str_choose_language">Escolha seu idioma</string>
+    <string name="btn_continue_title">Continua</string>
+    <string name="str_login">Entra</string>
+    <string name="btn_register_title">Registro</string>
+    <string name="str_send_money">Recebi dinhero</string>
+    <string name="str_receive_money">Recebi dinhero</string>
+    <string name="str_micro_loans">Microcrédito</string>
+    <string name="str_pay_bills">Pagamento di facturas</string>
+    <string name="str_school_fees">Mensalidade di Escola</string>
+    <string name="str_deposit">Depósito</string>
+    <string name="str_withdraw">Levantamento</string>
+    <string name="str_resend_code">Reenvia Código na</string>
+    <string name="str_get_help">Ajuda</string>
+    <string name="str_pay_merchants">Paga fornecedores</string>
+    <string name="str_confirm_and_receive">Confirma &amp; pagamento</string>
+    <string name="str_id_front_photo">Dianti</string>
+    <string name="str_buy_airtime">Compra online</string>
+    <string name="str_wallet_balance">Saldo di cartera Lamparam</string>
+    <string name="str_good_afternoon">Bo tardi, %1$s</string>
+    <string name="str_enter_phone_number">Número di telemóvel</string>
+    <string name="str_enter_amount">Montante</string>
+    <string name="str_amount_to_spend">Cantu ku bu misti gasta?</string>
+    <string name="str_other_account">Utros</string>
+    <string name="str_my_account">Nha conta</string>
+    <string name="str_pay_from">Paga ku</string>
+    <string name="str_enter_details_to_apply">Inseri informaçons di dpósito</string>
+    <string name="str_deposit_from">Depósito a partir di</string>
+    <string name="str_deposit_Amount">Montante</string>
+    <string name="str_national_id">Inseri documento</string>
+    <string name="str_deposit_narration">Descritivo</string>
+    <string name="btn_deposit_title">Depósito</string>
+    <string name="str_enter_details_to_withdraw">Inseri informaçons di dpósito</string>
+    <string name="str_withdraw_from">Levanta di</string>
+    <string name="str_withdraw_amount">Montante</string>
+    <string name="str_enter_withdraw_narration">Descritivo</string>
+    <string name="btn_withdraw_title">Levntamento</string>
+    <string name="str_enter_pin_to_proceed">Inseri Pin pa avança</string>
+    <string name="str_buy_artime_from">Compra online ku</string>
+    <string name="str_amount">Montante</string>
+    <string name="str_tax">Taxa</string>
+    <string name="str_total">Total</string>
+    <string name="str_enter_account_number">Número di konta</string>
+    <string name="str_click_here">Clica li</string>
+    <string name="str_payment_purpose">Descritivo</string>
+    <string name="str_pin_desc">Introduzi código di 4 números ku mandado pa bu número di telefone</string>
+    <string name="str_id_type">Tipo di documento</string>
+    <string name="str_provide_doc_details">Número di documento</string>
+    <string name="str_enter_card_number">Número di carton</string>
+    <string name="str_otp_desc">Introduzi código di 4 números ku mandado pa bu número di telefone</string>
+    <string name="str_just_one_more_step">Só mas um passo</string>
+    <string name="str_personal_info">Bu informaçon</string>
+    <string name="str_doc_photo">Foto di documento</string>
+    <string name="str_verification_code">Código di verificaçon</string>
+    <string name="str_phone_number">Número di telefone</string>
+    <string name="str_welcome_to_app">Bem-vindo a Mobile App!</string>
+    <string name="mobile_number">Número di telemóvel</string>
+    <string name="account_activation">Mensagem ku código pa confirma bu conta na enviado pa bu número di telemóvel</string>
+    <string name="mobile_money">Mobile Money</string>
+    <string name="str_id_back_photo">Tras</string>
+    <string name="enter_4_digit_code_instr">Introduzi código di 4 números ku mandado pa bu número di telefone %1$s</string>
+    <string name="national_id">Bilheti di identidadi</string>
+    <string name="full_name">Nomi completo</string>
+    <string name="str_email">Email</string>
+    <string name="referral_code">"Código di transferência "</string>
+    <string name="str_create_account">Cria bu conta</string>
+    <string name="just_one_step">Só mas um passo</string>
+    <string name="alternative_mobile_number">Número di telemóvel alternativo</string>
+    <string name="str_select_school">Selecciona Escola</string>
+    <string name="resend_code_timeout">Reenvia Código na 00:%1$d</string>
+    <string name="btn_okay">Okay</string>
+    <string name="cash_withdraw">Levantamento di dinhero</string>
+</resources>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginStart="@dimen/margin_16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:textStyle="normal"
+        android:textSize="22sp"
+        android:textColor="@color/black_text_color"
+        android:text="Create your Budget"/>
+    <TextView
+        android:id="@+id/tv_addinfo"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        android:layout_marginTop="@dimen/margin_16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:text="You can set a budget for your spending to be able to track
+your finances better and get notified when you are almost
+exceeding the set budget"
+        android:textColor="@color/black_text_color"
+        />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/optionOneRadioButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_addinfo"
+        app:layout_constraintTop_toBottomOf="@id/tv_addinfo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottomsheet_greycolor"
+            android:paddingStart="10dp"
+            android:paddingTop="@dimen/margin_16dp"
+            android:paddingEnd="@dimen/margin_16dp"
+            android:paddingBottom="@dimen/margin_16dp">
+            <TextView
+                android:id="@+id/currency_spinner"
+                android:backgroundTint="@color/black_text_color"
+                android:padding="0dp"
+                android:text="GHS"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_WalletBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:visibility="invisible"
+                android:text="Balance: GHS 98,000.00"
+                android:textColor="#6f7070"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@+id/tv_amount"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/currency_spinner" />
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="20,000.00"
+                android:inputType="number"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_amount"
+                app:layout_constraintTop_toBottomOf="@id/tv_amount"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="43dp"
+                android:text="Enter Amount"
+                android:textColor="@color/app_orange"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tv_WalletBalance"
+                app:layout_constraintTop_toTopOf="@id/currency_spinner" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_toDestination"
+        style="@style/exposed_dropdown_style"
+        android:background="@drawable/rounded_layout"
+        android:focusable="false"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionOneRadioButton">
+
+        <AutoCompleteTextView
+            android:focusable="false"
+
+            android:id="@+id/textField2"
+            style="@style/signupedittext_style"
+            android:hint="Cycles:"
+            android:textColor="@color/black_text_color"
+
+            android:inputType="textCapSentences"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/bg_blue"
+        android:padding="16dp"
+
+        android:text="@string/txt_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/optionOneRadioButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/optionOneRadioButton"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

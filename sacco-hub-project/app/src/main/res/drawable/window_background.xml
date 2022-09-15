@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>  <!-- Add Background color as per your necessity-->
+        <color android:color="@color/white" />
+    </item>
+    <item>
+        <!-- Add Bitmap with gravity as center to align the content in center -->
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/app_launcher" />
+    </item>
+</layer-list>

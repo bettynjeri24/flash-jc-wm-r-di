@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <TextView
+        android:transitionName="dstv_image"
+
+        android:drawableLeft="@drawable/ic_dstv"
+        android:drawablePadding="@dimen/margin_16dp"
+        android:id="@+id/tv_fragTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="14dp"
+        android:text="@string/dstv"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_provideDetails"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:lineSpacingExtra="12sp"
+        android:text="@string/how_much_would_you_to_pay"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_fragTitle"
+        app:layout_constraintTop_toBottomOf="@id/tv_fragTitle" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/optionOneRadioButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_provideDetails"
+        app:layout_constraintTop_toBottomOf="@+id/til_accountName">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottomsheet_greycolor"
+            android:paddingStart="10dp"
+            android:visibility="invisible"
+            android:id="@+id/amountlayout"
+            android:paddingTop="@dimen/margin_16dp"
+            android:paddingEnd="@dimen/margin_16dp"
+            android:paddingBottom="@dimen/margin_16dp">
+
+            <TextView
+                android:id="@+id/currency_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black_text_color"
+                android:padding="0dp"
+
+                android:spinnerMode="dropdown"
+                android:text="@string/tollo_currency"
+                android:textColor="@color/black_text_color"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tv_WalletBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Balance: GHS 98,000.00"
+                android:textColor="@color/black_text_color"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@+id/tv_amount"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/currency_spinner" />
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="20,000.00"
+                android:inputType="number"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_amount"
+                app:layout_constraintTop_toBottomOf="@id/tv_amount"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="43dp"
+                android:text="@string/enter_amount"
+                android:textColor="@color/app_mustard"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tv_WalletBalance"
+                app:layout_constraintTop_toTopOf="@id/currency_spinner" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_accountNumber"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_provideDetails">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_accountNumber"
+            style="@style/signupedittext_style"
+            android:hint="@string/account_number"
+            android:inputType="number"
+            android:maxLength="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_accountName"
+        android:visibility="invisible"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_accountNumber">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_accountname"
+            style="@style/signupedittext_style"
+            android:hint="@string/account_name"
+
+            android:inputType="text"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_emailAddress"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            style="@style/signupedittext_style"
+            android:hint="@string/txt_emailAddress"
+            android:inputType="textEmailAddress"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_alreadyWithAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text="Already have an account?"
+        android:textColor="#6f7070"
+        android:textSize="12sp"
+
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@id/loginBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/til_emailAddress" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:text="@string/login"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/tv_alreadyWithAccount"
+        app:layout_constraintTop_toTopOf="@id/tv_alreadyWithAccount" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        style="@style/main_buttons_style"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:text="@string/account_lookup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:progressTint="@color/app_mustard"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_accountName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

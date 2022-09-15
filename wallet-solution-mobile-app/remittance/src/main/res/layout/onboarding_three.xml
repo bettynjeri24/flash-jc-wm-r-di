@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/onboarding3">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingLeft="@dimen/medium_layout_margin"
+        android:paddingRight="@dimen/medium_layout_margin"
+
+        >
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:id="@+id/imgLogo"
+            android:src="@drawable/ic_lamparam"/>
+        <View
+            android:layout_width="2dp"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/vGuideline"
+            android:layout_marginTop="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvWelcome"
+            android:text="@string/str_welcome_to_app"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_large"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/vGuideline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/large_layout_margin"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvDescription"
+            android:inputType="textMultiLine"
+            android:text="@string/onboard_three"
+            android:fontFamily="@font/nunito_sans_light"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_medium_small"
+            android:layout_marginTop="@dimen/medium_layout_margin"
+            android:textAlignment="center"
+            app:layout_constraintTop_toBottomOf="@id/tvWelcome"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

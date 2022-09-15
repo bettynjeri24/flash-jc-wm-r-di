@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/fragment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_16dp"
+            android:text="Traffic penalty"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragment_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:lineSpacingExtra="3dp"
+            android:text="Register your penalty to Addis Abeba\nTraffic Management Agency"
+            android:textColor="@color/black_text_color"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/fragment_title"
+            app:layout_constraintTop_toBottomOf="@id/fragment_title" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_selectRegion"
+            style="@style/exposed_dropdown_style"
+            android:layout_width="0dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_layout"
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_info">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCmpleteRegion"
+                style="@style/signupedittext_style"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:hint="Lincense Region:"
+                android:inputType="textCapSentences" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_linceseGrade"
+            style="@style/exposed_dropdown_style"
+            android:layout_width="0dp"
+            android:background="@drawable/rounded_layout"
+            android:focusable="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_selectRegion">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteLincenceGrade"
+                style="@style/signupedittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:hint="Licence Grade:"
+                android:inputType="textCapSentences" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_driverName"
+            style="@style/textinputlayout_style"
+            android:background="@drawable/rounded_layout"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_lincenseNo" >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_driverName"
+                style="@style/signupedittext_style"
+                android:hint="Driver Name"
+                android:inputType="number"
+                android:maxLength="12" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_driverID"
+            style="@style/textinputlayout_style"
+            android:background="@drawable/rounded_layout"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_driverName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_driverID"
+                style="@style/signupedittext_style"
+                android:layout_height="match_parent"
+                android:hint="Driver ID"
+                android:inputType="number"
+                android:maxLength="14" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_ticketNumber"
+            style="@style/textinputlayout_style"
+            android:background="@drawable/rounded_layout"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_driverID">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_ticketNumber"
+                style="@style/signupedittext_style"
+                android:hint="Ticket Number"
+                android:inputType="number"
+                android:maxLength="14" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_plateRegion"
+            style="@style/exposed_dropdown_style"
+            android:background="@drawable/rounded_layout"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_driverID">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompletePlateRegion"
+                style="@style/signupedittext_style"
+                android:focusable="false"
+                android:hint="Plate Region:"
+                android:inputType="textCapSentences" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_plateCode"
+            style="@style/textinputlayout_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_layout"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/til_plateNumber"
+            app:layout_constraintTop_toBottomOf="@+id/til_ticketNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_plate_code"
+                style="@style/signupedittext_style"
+                android:hint="Plate code"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_plateNumber"
+            style="@style/textinputlayout_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_layout"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/til_plateCode"
+            app:layout_constraintEnd_toStartOf="@+id/til_plateCode"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/til_plateCode">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_plate_number"
+                style="@style/signupedittext_style"
+                android:hint="Plate number"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_violationDate"
+            style="@style/textinputlayout_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_layout"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/til_dateAccused"
+            app:layout_constraintTop_toBottomOf="@+id/til_plateNumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_violate_date"
+                style="@style/signupedittext_style"
+                android:hint="Violation date"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_dateAccused"
+            style="@style/textinputlayout_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_layout"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/til_violationDate"
+            app:layout_constraintEnd_toStartOf="@+id/til_violationDate"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/til_violationDate">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_dateAccused"
+                style="@style/signupedittext_style"
+                android:hint="Date accused"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lAutoCmpleteViolationGrade"
+            style="@style/exposed_dropdown_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_layout"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@+id/til_violationDate">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteVilationGrade"
+                style="@style/signupedittext_style"
+                android:focusable="false"
+                android:hint="Violation Grade"
+                android:inputType="textCapSentences" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlAutoCmpleteOffenceID"
+            style="@style/exposed_dropdown_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_layout"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_continue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lAutoCmpleteViolationGrade">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteOffenceID"
+                style="@style/signupedittext_style"
+                android:focusable="false"
+                android:hint="Offence ID:"
+                android:inputType="textCapSentences" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_lincenseNo"
+            style="@style/textinputlayout_style"
+            android:background="@drawable/rounded_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/til_linceseGrade">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_lincencse_accno"
+                style="@style/signupedittext_style"
+                android:hint="Enter driver’s licence number"
+                android:inputType="text" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_continue"
+            style="@style/main_buttons_style"
+            android:text="@string/txt_continue"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/app_mustard"
+            android:background="#75B8B8B8"
+            android:visibility="gone"
+            android:padding="30dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_continue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/til_lincenseNo" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

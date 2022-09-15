@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/Constants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ewallet/build/tmp/kapt3/stubs/debug/com/ekenya/rnd/dashboard/base/ViewModelFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/ewallet/build/tmp/kapt3/stubs/debug/com/ekenya/rnd/dashboard/data/model/TopUpResponse.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/build/tmp/kapt3/stubs/debug/com/ekenya/rnd/onboarding/di/TourismComponent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/build/tmp/kapt3/stubs/debug/com/ekenya/rnd/onboarding/di/injectables/OtherModule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/build/tmp/kapt3/stubs/debug/com/ekenya/rnd/onboarding/di/injectables/TourismFragmentModule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/dashboard/RegisterStepTwo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/dashboard/data/api/ApiService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/dashboard/data/api/ApiServiceDashBoard.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/dashboard/data/api/RetrofitBuilder.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/dashboard/data/model/RegisterUserResp.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/dashboard/datadashboard/api/ApiServiceDashBoard.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/dashboard/repositories/MainRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/dashboard/view/HomeFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/dashboard/view/LandingPageFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/dashboard/viewmodels/LoginViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/onboarding/DummyFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/onboarding/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/onboarding/data/api/RemoteDataSource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/onboarding/di/OnboardingComponent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/onboarding/di/TourismComponent.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/onboarding/di/TourismInjector.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/onboarding/di/injectables/OtherModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/onboarding/di/injectables/TourismFragmentModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/onboarding/ui/AccountLookUpFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/java/com/ekenya/rnd/onboarding/ui/GetStartedFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/res/layout/account_lookup_fragment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/res/navigation/dashboard_navigation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/res/navigation/mari_wallet_onboarding_navigation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/onboarding/src/main/res/navigation/onboarding_navigation_new.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

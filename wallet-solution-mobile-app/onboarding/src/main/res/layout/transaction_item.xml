@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    >
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:text="Ochola Tony"
+        android:textColor="@color/app_mustard"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_transactionTime"
+        app:layout_constraintEnd_toStartOf="@+id/tv_transactionAmount"
+        app:layout_constraintStart_toEndOf="@id/avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <TextView
+        android:id="@+id/tv_transactionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="10:45 am"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/username"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <TextView
+
+        android:id="@+id/avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:background="@drawable/profile_bg"
+        android:backgroundTint="@color/white"
+        android:padding="5dp"
+        android:text="OT"
+        android:textColor="@color/black_text_color"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_transactionTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_transactionRef"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REF: XVH89JQU"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/tv_transactionAmount"
+        app:layout_constraintTop_toTopOf="@id/tv_transactionTime" />
+
+    <TextView
+        android:id="@+id/tv_transactionAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:text="- GHS 21,000.00"
+        android:textColor="#cd1313"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/username" />
+</androidx.constraintlayout.widget.ConstraintLayout>

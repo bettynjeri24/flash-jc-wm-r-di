@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/fragment_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="22sp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:textColor="#000000"
+        android:text="Airline ticketing"/>
+
+    <TextView
+        android:id="@+id/fragment_info"
+        android:layout_marginTop="@dimen/margin_16dp"
+        app:layout_constraintStart_toStartOf="@id/fragment_title"
+        app:layout_constraintTop_toBottomOf="@id/fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="@color/black_text_color"
+        android:lineSpacingExtra="3dp"
+        android:text="Please provide details required below"/>
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_selectRegion"
+        style="@style/exposed_dropdown_style"
+        android:background="@drawable/rounded_layout"
+        android:focusable="false"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragment_info">
+
+        <AutoCompleteTextView
+            android:focusable="false"
+
+            android:id="@+id/regionspinner"
+            style="@style/signupedittext_style"
+            android:hint="Select Airline:"
+            android:inputType="textCapSentences"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_accountNumber"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_selectRegion"
+        tools:layout_editor_absoluteX="133dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_accountNumber"
+            style="@style/signupedittext_style"
+            android:hint="Enter booking number"
+            android:maxLength="12"
+            android:inputType="number"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        style="@style/main_buttons_style"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:text="@string/txt_continue"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

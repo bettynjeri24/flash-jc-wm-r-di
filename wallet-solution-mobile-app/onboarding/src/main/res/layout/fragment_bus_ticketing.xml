@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_signUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawableLeft="@drawable/ic_intercape"
+        android:drawablePadding="@dimen/margin_16dp"
+        android:gravity="center_vertical"
+        android:text="@string/intercape_title"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_WelcomeTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:text="Please provide the details below to check for available tickets"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_signUp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_ownNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+
+        android:elevation="0dp"
+        android:text="@string/one_way_text"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:cornerRadius="12dp"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_otherNumber"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_WelcomeTxt" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_otherNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:backgroundTint="@color/btn_grey"
+
+        android:text="@string/return_trip"
+        android:textColor="@color/greytextcolor_forbtngrey"
+        android:textSize="8sp"
+        app:cornerRadius="12dp"
+        app:elevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_ownNumber"
+        app:layout_constraintTop_toTopOf="@+id/btn_ownNumber">
+
+
+    </com.google.android.material.button.MaterialButton>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_ownNumber">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/margin_16dp"
+            app:layout_constraintTop_toBottomOf="@id/btn_ownNumber">
+
+
+            <!--
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_selectAirline"
+                            style="@style/exposed_dropdown_style"
+                            android:background="@drawable/rounded_layout"
+                            android:focusable="false"
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/til_numberOfchildrenSeats">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/et_withLuggage"
+
+                                style="@style/signupedittext_style"
+                                android:focusable="false"
+                                android:hint="With Luggage:"
+                                android:inputType="textCapSentences"
+                                android:textColor="@color/black_text_color"
+
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+            -->
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_fromDestination"
+                style="@style/exposed_dropdown_style"
+                android:background="@drawable/rounded_layout"
+                android:focusable="false"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <AutoCompleteTextView
+                    android:id="@+id/textField"
+
+                    style="@style/signupedittext_style"
+                    android:focusable="false"
+                    android:hint="From:"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/black_text_color"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_toDestination"
+                style="@style/exposed_dropdown_style"
+                android:background="@drawable/rounded_layout"
+                android:focusable="false"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/til_fromDestination">
+
+                <AutoCompleteTextView
+                    android:id="@+id/textField2"
+
+                    style="@style/signupedittext_style"
+                    android:focusable="false"
+                    android:hint="To:"
+                    android:inputType="textCapSentences"
+
+                    android:textColor="@color/black_text_color"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_SelectPreferedAirline"
+                style="@style/exposed_dropdown_style"
+                android:background="@drawable/rounded_layout"
+                android:focusable="false"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/til_toDestination">
+
+                <AutoCompleteTextView
+                    android:id="@+id/preferredAirline"
+
+                    style="@style/signupedittext_style"
+                    android:focusable="false"
+                    android:hint="Select Airline:"
+                    android:inputType="textCapSentences"
+
+                    android:textColor="@color/black_text_color"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_SelectClassAirline"
+                style="@style/exposed_dropdown_style"
+                android:background="@drawable/rounded_layout"
+                android:focusable="false"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@+id/til_SelectPreferedAirline">
+
+                <AutoCompleteTextView
+                    android:id="@+id/preferredClass"
+
+                    style="@style/signupedittext_style"
+                    android:focusable="false"
+                    android:hint="Select Class:"
+                    android:inputType="textCapSentences"
+
+                    android:textColor="@color/black_text_color"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_numberOfchildrenSeats"
+                            style="@style/textinputlayout_style"
+                            android:layout_width="0dp"
+                            android:hint="No Of Children Seats:"
+                            android:background="@drawable/rounded_layout"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/til_numberOfAdultSeats"
+                            app:layout_constraintTop_toBottomOf="@+id/til_toDestination">
+
+                            <EditText
+                                android:id="@+id/textFieldnumberofseats"
+                                style="@style/signupedittext_style"
+                                android:inputType="number"
+
+                                android:textColor="@color/black_text_color"
+
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+            -->
+            <!--
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/til_numberOfAdultSeats"
+                            android:background="@drawable/rounded_layout"
+                            style="@style/textinputlayout_style"
+
+                            android:layout_width="0dp"
+                            app:layout_constraintEnd_toStartOf="@id/til_numberOfchildrenSeats"
+                            android:hint="No Of Adult Seats:"
+
+
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/til_toDestination">
+
+                            <EditText
+                                android:id="@+id/textFieldadultnumberofseats"
+
+                                style="@style/signupedittext_style"
+                                android:inputType="number"
+
+
+                                android:textColor="@color/black_text_color"
+
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+            -->
+
+            <EditText
+                android:id="@+id/et_departureDate"
+                style="@style/textinputlayout_style"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@drawable/rounded_layout"
+                android:drawableRight="@drawable/ic_calender"
+                android:drawablePadding="@dimen/margin_16dp"
+                android:focusable="false"
+                android:padding="@dimen/margin_16dp"
+                android:text="Departure Date"
+                android:textSize="@dimen/textsize_12sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/til_SelectClassAirline" />
+
+            <EditText
+                android:id="@+id/et_returndate"
+                style="@style/textinputlayout_style"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@drawable/rounded_layout"
+                android:drawableRight="@drawable/ic_calender"
+                android:drawablePadding="@dimen/margin_16dp"
+                android:focusable="false"
+                android:padding="@dimen/margin_16dp"
+                android:text="Return Date"
+                android:textSize="@dimen/textsize_12sp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/et_departureDate" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_continue"
+                style="@style/main_buttons_style"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginBottom="@dimen/margin_16dp"
+                android:text="@string/txt_continue"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/et_returndate" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

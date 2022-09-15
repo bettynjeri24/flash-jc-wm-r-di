@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_home">Início</string>
+    <string name="title_favouriteBill">Carteira</string>
+    <string name="title_offers">Ofertas</string>
+    <string name="title_more">Mais</string>
+    <string name="already_have_acc">Já tem conta?</string>
+    <string name="alternative_details">Forneça a informação solicitada a seguir</string>
+
+    <string name="account_activation">Uma mensagem com o código de verificação da sua conta será enviada para o seu número de telemóvel</string>
+    <string name="terms_text_msg"><![CDATA[Li e aceito a política de Privacidade, Termos e Condições do Banco]]></string>
+
+
+    <string name="welcome_description">Simples &amp; Seguro com acesso rápido às suas contas e transferências</string>
+    <string name="deposit_cash">Para depositar, queira partilhar as seguintes informações:</string>
+
+    <!-- Strings used for fragments for navigation -->
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <!-- pin pad numbers-->
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+    <string name="withdraw_cash">Para levantar, queira partilhar as seguintes informações:</string>
+    <string name="str_choose_language">Escolha seu idioma</string>
+    <string name="btn_continue_title">Continuar</string>
+    <string name="str_login">Login</string>
+    <string name="btn_register_title">Registro</string>
+    <string name="str_receive_money">Recepção de dinheiro</string>
+    <string name="str_send_money">Envio de dinheiro</string>
+    <string name="str_micro_loans">Microcrédito</string>
+    <string name="str_pay_bills">Pagamento di facturas</string>
+    <string name="str_school_fees">Mensalidade de Escola</string>
+    <string name="str_deposit">Depósito</string>
+    <string name="str_withdraw">Levantamento</string>
+    <string name="str_resend_code">Reenviar Código em</string>
+    <string name="str_get_help">Ajuda</string>
+    <string name="str_pay_merchants">Pagamento a fornecedores</string>
+    <string name="str_confirm_and_receive">Confirmar &amp; pagamento</string>
+    <string name="str_id_front_photo">Frente</string>
+    <string name="str_welcome_to_app">Bem-vindo ao Lamparam Mobile App!</string>
+    <string name="str_buy_airtime">Compra online</string>
+    <string name="str_wallet_balance">Saldo da carteira Lamparam</string>
+    <string name="str_good_afternoon">Boa tarde, %1$s</string>
+    <string name="str_enter_phone_number">Número de telemóvel</string>
+    <string name="str_enter_amount">Montante</string>
+    <string name="str_amount_to_spend">Quanto pretende gastar?</string>
+    <string name="str_other_account">Outros</string>
+    <string name="str_my_account">Minha conta</string>
+    <string name="str_pay_from">Pagar com</string>
+    <string name="str_enter_details_to_apply">Insira os detalhes do depósito</string>
+    <string name="str_deposit_from">Depósito a partir de</string>
+    <string name="str_deposit_Amount">Montante</string>
+    <string name="str_national_id">Insira Documento</string>
+    <string name="str_deposit_narration">Descritivo</string>
+    <string name="btn_deposit_title">Depósito</string>
+    <string name="str_enter_details_to_withdraw">Insira os detalhes do levantamento</string>
+    <string name="str_withdraw_from">Levantar de</string>
+    <string name="str_withdraw_amount">Montante</string>
+    <string name="str_enter_withdraw_narration">Descritivo</string>
+    <string name="btn_withdraw_title">Levantamento</string>
+    <string name="str_enter_pin_to_proceed">Insira Pin para avançar</string>
+    <string name="str_buy_artime_from">Compra online com a</string>
+    <string name="str_amount">Montante</string>
+    <string name="str_tax">Taxa</string>
+    <string name="str_total">Total</string>
+    <string name="str_enter_account_number">Número de conta</string>
+    <string name="str_click_here">Clique aqui</string>
+    <string name="str_payment_purpose">Descritivo</string>
+    <string name="str_pin_desc">Introduza o Código de 4 dígitos enviado para o seu número de telefone</string>
+    <string name="str_id_type">Tipo de documento</string>
+    <string name="str_provide_doc_details">Número do documento</string>
+    <string name="str_enter_card_number">Número do cartão</string>
+    <string name="str_otp_desc">Introduza o Código de 4 dígitos enviado para o seu número de telefone</string>
+    <string name="str_just_one_more_step">Só mais um passo</string>
+    <string name="str_personal_info">Informação pessoal</string>
+    <string name="str_doc_photo">Fotografia do documento</string>
+    <string name="str_verification_code">Código de verificação</string>
+    <string name="str_phone_number">Número de telefone</string>
+    <string name="mobile_number">Número de telemóvel</string>
+    <string name="mobile_money">Mobile Money</string>
+    <string name="str_id_back_photo">Verso</string>
+    <string name="enter_4_digit_code_instr">Introduza o Código de 4 dígitos enviado para o seu número de telefone %1$s</string>
+    <string name="national_id">Documento de Identificação</string>
+    <string name="full_name">Nome completo</string>
+    <string name="str_email">Email</string>
+    <string name="referral_code">"Código de transferência "</string>
+    <string name="str_create_account">Crie a sua conta</string>
+    <string name="just_one_step">Só mais um passo</string>
+    <string name="alternative_mobile_number">Número de telemóvel alternativo</string>
+    <string name="select_occupation">Ocupação</string>
+    <string name="str_select_school">Seleccione a escola</string>
+    <string name="resend_code_timeout">Reenviar Código em 00:%1$d</string>
+    <string name="btn_okay">Okay</string>
+    <string name="cash_withdraw">Levantamento de dinheiro</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Style for "btn" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+
+    <item
+        android:state_focused="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/clicked_bg" />
+
+    <item
+        android:state_focused="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/clicked_bg" />
+
+</selector>

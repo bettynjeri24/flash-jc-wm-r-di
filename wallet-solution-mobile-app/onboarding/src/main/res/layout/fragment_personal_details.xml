@@ -1,0 +1,267 @@
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:contentInsetStart="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent">
+
+                    <ImageView
+
+                        android:id="@+id/close_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/margin_16dp"
+                        android:layout_marginTop="25dp"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_baseline_arrow_back_24"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/user_Image"
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_default_profile_icon"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/close_icon" />
+
+                    <TextView
+                        android:id="@+id/user_legal_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_16dp"
+                        android:layout_marginBottom="@dimen/margin_16dp"
+                        android:fontFamily="@font/nunito_sans"
+                        android:text="Alex Mwangi Wanjohi"
+                        android:textAlignment="center"
+                        android:textColor="@color/app_orange"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/user_Image" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/appbarlayout">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_firstName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:background="@drawable/billpayments_options_background"
+                android:padding="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_firstName"
+                    style="@style/dashboard_textview_optionsstyle"
+                    android:text="Full Name"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/tv_firstNameValue"
+                    style="@style/dashboard_textview_optionsstyle"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@id/tv_firstName"
+                    app:layout_constraintTop_toBottomOf="@id/tv_firstName"
+
+                    tools:text="Alex" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_IDNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:background="@drawable/billpayments_options_background"
+                android:padding="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/layout_firstName">
+
+                <TextView
+                    android:id="@+id/tv_IDNumber"
+                    style="@style/dashboard_textview_optionsstyle"
+                    android:text="National  Card Number"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+
+                    android:id="@+id/tv_IDNumberValue"
+                    style="@style/dashboard_textview_optionsstyle"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@id/tv_IDNumber"
+                    app:layout_constraintTop_toBottomOf="@id/tv_IDNumber"
+
+                    tools:text="Alex" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_DateOfBirth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:background="@drawable/billpayments_options_background"
+                android:padding="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/layout_IDNumber">
+
+                <TextView
+
+                    android:id="@+id/tv_dob"
+                    style="@style/dashboard_textview_optionsstyle"
+                    android:text="Date of Birth"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_dob_Value"
+                    style="@style/dashboard_textview_optionsstyle"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@id/tv_dob"
+                    app:layout_constraintTop_toBottomOf="@id/tv_dob"
+                    tools:text="Alex" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layout_Gender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:background="@drawable/billpayments_options_background"
+                android:padding="@dimen/margin_16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toBottomOf="@id/layout_DateOfBirth">
+
+                <TextView
+
+                    android:id="@+id/tv_gender"
+                    style="@style/dashboard_textview_optionsstyle"
+                    android:text="Gender"
+                    app:layout_constraintStart_toStartOf="parent"
+
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_gender_Value"
+                    style="@style/dashboard_textview_optionsstyle"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="@id/tv_gender"
+                    app:layout_constraintTop_toBottomOf="@id/tv_gender"
+                    tools:text="Female" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:clickable="false"
+
+                app:ccp_customMasterCountries="et,ke,GH"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_16dp"
+                android:background="@drawable/rounded_layout"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                app:ccp_areaCodeDetectedCountry="true"
+                app:ccp_defaultNameCode="KE"
+                app:ccp_showFullName="false"
+                app:ccp_showNameCode="false"
+                app:ccp_textSize="12sp"
+                app:layout_constraintStart_toStartOf="@id/layout_Gender"
+                app:layout_constraintTop_toBottomOf="@id/layout_Gender" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_PhoneNumber"
+                style="@style/textinputlayout_style"
+                android:background="@drawable/rounded_layout"
+
+                app:layout_constraintBottom_toBottomOf="@+id/ccp"
+                app:layout_constraintStart_toEndOf="@id/ccp"
+                app:layout_constraintTop_toTopOf="@+id/ccp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_phonenumber"
+                    style="@style/signupedittext_style"
+                    android:hint="@string/mobileNumber"
+                    android:inputType="number"
+                    android:clickable="false"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

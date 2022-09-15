@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CBG Remittance</string>
+     <string name="title_support">Support Chat</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="signup_text">Sign Up to Tyler-Soft Eclectics</string>
+    <string name="full_name">Full Name</string>
+    <string name="txt_continue">CONTINUE</string>
+    <string name="txt_emailAddress">Email Address</string>
+    <string name="otpver_text">OTP Verification Code</string>
+    <string name="devicever_text">Device Verification Code</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_9">9</string>
+    <string name="verify_identity">VERIFY IDENTITY</string>
+    <string name="try_again">TRY AGAIN</string>
+    <string name="firstName">First Name</string>
+    <string name="middleName">Middle Name</string>
+    <string name="fund_wallet">FUND WALLET</string>
+    <string name="lastname">Last Name</string>
+    <string name="id_number">ID Number</string>
+    <string name="title_activity_main2">MainActivity</string>
+</resources>

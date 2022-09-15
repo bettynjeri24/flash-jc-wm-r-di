@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="firstPassViewModel"
+            type="com.ekenya.rnd.tijara.ui.auth.login.ChangeFirstPinViewModel" />
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:paddingBottom="@dimen/_30dp"
+        android:fillViewport="true"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/_20dp"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="0dp"
+                android:layout_marginTop="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize">
+
+                <ImageView
+                    android:id="@+id/ivBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:src="@drawable/ic_baseline_arrow_back_24"
+                    app:tint="@color/black" />
+
+            </androidx.appcompat.widget.Toolbar>
+            <include
+                android:id="@+id/progressr"
+                android:visibility="gone"
+                layout="@layout/spinkit_dialog_loading"
+                />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5dp"
+                app:layout_constraintTop_toBottomOf="@id/tBar"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_15dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_15sp"
+                android:text="Identification" />
+            <TextView
+                android:id="@+id/tv_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/_15sp"
+                android:text="@string/please_set_a_new_password"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_oldPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/old_pin"
+                android:layout_marginTop="@dimen/_20dp"
+                style="@style/OutlineStyle"
+                app:layout_constraintTop_toBottomOf="@id/tv_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                app:endIconMode="password_toggle"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_oldPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:maxLength="50"
+                    android:singleLine="true"
+                    android:textCursorDrawable="@drawable/cursor"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordTi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OutlineStyle"
+                app:endIconMode="password_toggle"
+                android:layout_marginTop="@dimen/_20dp"
+                android:hint="@string/new_pin"
+                app:counterEnabled="true"
+                app:layout_constraintTop_toBottomOf="@id/tl_oldPass"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordConfirmTi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/OutlineStyle"
+                app:endIconMode="password_toggle"
+                app:layout_constraintTop_toBottomOf="@id/etPasswordTi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:counterEnabled="true"
+                android:layout_marginTop="@dimen/_20dp"
+                android:hint="@string/confirm_pin"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPasswordConfirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnChangePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/ButtonTheme"
+                android:layout_marginTop="@dimen/_30dp"
+                app:layout_constraintTop_toBottomOf="@id/etPasswordConfirmTi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:background="@drawable/btn_normal_bg"
+                android:text="@string/change_pin"
+                android:textAllCaps="true"
+                app:disableButton="@{firstPassViewModel.responseStatus}"
+                android:clickable="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                android:focusable="true" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

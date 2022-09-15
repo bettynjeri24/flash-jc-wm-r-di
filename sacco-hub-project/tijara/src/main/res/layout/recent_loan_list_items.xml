@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15dp"
+        android:layout_marginEnd="@dimen/_15dp"
+        >
+        <ImageView
+            android:id="@+id/iv_call"
+            android:layout_width="@dimen/_45dp"
+            android:layout_height="@dimen/_45dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_baseline_call_made_24"
+            android:layout_marginStart="@dimen/_10dp"
+            android:background="@drawable/call_received_bg"
+            android:layout_marginTop="@dimen/_10dp"/>
+        <TextView
+            android:id="@+id/police_sacco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sp"
+            android:text="Kenya Police Sacco"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_toEndOf="@+id/iv_call"
+            android:layout_marginTop="@dimen/_15dp"/>
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sp"
+            android:text="02/09/2021"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_toEndOf="@+id/iv_call"
+            android:layout_below="@id/police_sacco"
+            android:layout_marginTop="@dimen/_10dp"/>
+        <TextView
+            android:id="@+id/Kes_loan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sp"
+            android:text="Kes 9,000"
+            android:textStyle="bold"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_15dp"/>
+        <TextView
+            android:id="@+id/tv_paid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sp"
+            android:text="paid"
+            android:textColor="#0070FE"
+            android:layout_below="@id/Kes_loan"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:background="@color/grey_200"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:layout_below="@id/tv_paid"
+            android:layout_marginBottom="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_10dp"/>
+
+    </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

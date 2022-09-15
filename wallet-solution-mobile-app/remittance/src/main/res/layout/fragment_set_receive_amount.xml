@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRemittancetitle"
+        style="@style/pageTopMessagesStyle"
+        android:paddingStart="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="1dp"
+        android:text="Cash Pickup"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBar" />
+
+    <TextView
+        android:id="@+id/tvMtoOptionsTitle"
+        style="@style/pageTopMessagesStyle"
+        android:paddingStart="25dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="12dp"
+        android:text="Proceed to Cashout from our agent short code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRemittancetitle" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlReceiveAmount"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_marginEnd="8dp"
+        app:hintTextColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMtoOptionsTitle"
+        app:prefixText="GHS "
+        app:prefixTextColor="@color/black">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etReceiveAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/signupedittext_style"
+            android:hint="@string/expected_amount"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlRefNo"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_marginEnd="8dp"
+        app:hintTextColor="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tlReceiveAmount">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etRefNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_reference_number"
+            android:imeOptions="actionDone"
+            style="@style/signupedittext_style"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlPurpose"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_marginEnd="@dimen/medium_layout_margin"
+        app:hintTextColor="@color/colorAccent"
+        app:layout_constraintEnd_toStartOf="@id/btSetAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tlRefNo">
+
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
+            android:id="@+id/etPurpose"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:completionThreshold="0"
+            android:hint="@string/enter_money_purpose"
+            android:imeOptions="actionDone"
+            android:inputType="none"
+            style="@style/signupedittext_style"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textSize="14sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btSetAmount"
+        style="@style/MaterialButtonDefaultStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:padding="10dp"
+        app:cornerRadius="12dp"
+        android:paddingBottom="@dimen/large_layout_margin"
+        android:text="@string/btn_continue_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

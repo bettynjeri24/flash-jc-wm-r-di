@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_bank_item"
+    android:layout_margin="2dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="2dp"
+    app:cardBackgroundColor="#F4F4F4">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <ImageView
+            android:id="@+id/drawableTextView"
+            android:layout_width="@dimen/image_icon_width"
+            android:layout_height="@dimen/image_icon_width"
+            android:layout_margin="8dp"
+            tools:src="@drawable/universidade_colinas"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_bank_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/colorBlackText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/drawableTextView"
+            app:layout_constraintTop_toTopOf="@id/drawableTextView"
+            tools:text="First Alliance Bank" />
+        <TextView
+            android:id="@+id/tv_bank_account"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/drawableTextView"
+            app:layout_constraintTop_toBottomOf="@id/tv_bank_name"
+            tools:text="Account no" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

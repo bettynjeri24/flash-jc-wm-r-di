@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100dp"
+        android:background="@color/textColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/custom_toolbar"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                app:layout_collapseMode="pin"
+                android:background="@color/textColor"
+                android:layout_height="?attr/actionBarSize"
+                >
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/custom_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_60dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.homepage.home.userprofile.HelpFragment">
+        <RelativeLayout
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_70dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/buttonColor"/>
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.13" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            app:cardCornerRadius="@dimen/_8dp"
+            tools:ignore="MissingConstraints">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingBottom="@dimen/_5dp">
+
+                <TextView
+                    android:id="@+id/tv_lLimit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:textSize="@dimen/_15sp"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:text="Customer service"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:id="@+id/vew1"
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:background="@color/hintColor"
+                    android:layout_marginTop="@dimen/_5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_lLimit"
+                    android:layout_height="@dimen/_1dp"/>
+                <TextView
+                    android:id="@+id/tv_call"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="15dp"
+                    android:textSize="@dimen/_15sp"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:text="@string/call_our_customers_service_support_team_hotline_for_immediate_help_enquiry_or_query"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_15dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vew1" />
+                <View
+                    android:id="@+id/vew2"
+                    android:layout_width="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:background="@color/hintColor"
+                    android:layout_marginTop="@dimen/_15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_call"
+                    android:layout_height="@dimen/_1dp"/>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cl_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:paddingBottom="@dimen/_5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vew2"
+                   >
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnViewBal"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35dp"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:background="@drawable/btn_normal_bg"
+                        android:text="Call Us"
+                        android:drawableStart="@android:drawable/stat_sys_phone_call"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sp"
+                        android:textAlignment="center"
+                        android:theme="@style/ButtonTheme"
+                        android:layout_marginEnd="@dimen/_2dp"
+                        app:layout_constraintEnd_toStartOf="@+id/btn_state"
+                        app:layout_constraintHorizontal_chainStyle="spread"
+                        app:layout_constraintStart_toStartOf="parent" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_state"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/_35dp"
+                        android:textAlignment="center"
+                        android:layout_marginEnd="@dimen/_18dp"
+                        android:layout_marginStart="@dimen/_2dp"
+                        android:background="@drawable/btn_less_radius"
+                        app:layout_constraintTop_toTopOf="@+id/btnViewBal"
+                        android:text="Email Us"
+                        android:drawableStart="@android:drawable/ic_dialog_email"
+                        android:textAllCaps="false"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/_12sp"
+                        android:theme="@style/ButtonTheme"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/btnViewBal" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/tv_loanLimitValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_30dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="@dimen/_20sp"
+                    android:text="Frequently Asked Questions"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textColor="@color/textColor"
+                    app:layout_constraintTop_toBottomOf="@id/cl_btn"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

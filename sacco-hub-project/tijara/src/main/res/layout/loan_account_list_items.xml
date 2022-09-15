@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="loanProperties"
+            type="com.ekenya.rnd.tijara.network.model.ActivesLoan" />
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:id="@+id/requestList"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_10dp"
+            app:cardCornerRadius="@dimen/_8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardUseCompatPadding="true">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/constraint_loan"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            app:generalName="@{loanProperties.product}"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Ordinary Loans" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_view_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="33dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/btn_less_radius"
+            android:text="@string/view_summary"
+            android:textAllCaps="false"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/_12sp"
+            android:textStyle="bold"
+            android:theme="@style/ButtonTheme"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_product"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_product" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginTop="@dimen/_4dp"
+            android:background="@color/grey_100"
+            app:layout_constraintTop_toBottomOf="@+id/btn_view_summary"
+             />
+
+        <TextView
+            android:id="@+id/tv_acNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/account_number"
+            android:textColor="@color/hintColor"
+            android:textSize="13sp"
+            android:layout_marginStart="@dimen/_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view3" />
+
+        <TextView
+            android:id="@+id/acNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hintColor"
+            android:textSize="13sp"
+            android:layout_marginEnd="@dimen/_10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_acNo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_acNo"
+            tools:text="23457" />
+
+        <TextView
+            android:id="@+id/tv_titlle_loanBal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/hintColor"
+            android:textSize="13sp"
+            android:text="@string/loan_balance"
+            app:layout_constraintStart_toStartOf="@+id/tv_acNo"
+            app:layout_constraintTop_toBottomOf="@+id/tv_acNo" />
+
+        <TextView
+            android:id="@+id/tv_loan_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            tools:text="TextView"
+            android:textColor="@color/hintColor"
+            android:textSize="13sp"
+            app:generalName="@{loanProperties.loanBalance}"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_titlle_loanBal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_titlle_loanBal" />
+
+        <TextView
+            android:id="@+id/tv_lastAmountP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/hintColor"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:text="@string/last_amount_paid"
+            app:layout_constraintStart_toStartOf="@+id/tv_titlle_loanBal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_titlle_loanBal" />
+
+        <TextView
+            android:id="@+id/tv_amountPaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            tools:text="TextView"
+            android:textColor="@color/hintColor"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_lastAmountP"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_lastAmountP" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.core.widget.NestedScrollView>
+</layout>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100dp"
+        android:background="@color/textColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/custom_toolbar"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                app:layout_collapseMode="pin"
+                android:background="@color/textColor"
+                android:layout_height="?attr/actionBarSize"
+                >
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/custom_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_60dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_30dp"
+        tools:context="com.ekenya.rnd.tijara.ui.homepage.home.dashboard.pesalink.PesalinkPhoneCheckFragment">
+
+        <TextView
+            android:id="@+id/tvDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textColor="@color/bluer"
+            android:textSize="@dimen/_14sp"
+            android:text="Membership card"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"/>
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_3dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvDetails">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rb_myself"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableStart="@drawable/radio_button_state_icon"
+                    android:drawablePadding="@dimen/_15dp"
+                    android:padding="@dimen/_10dp"
+                    android:paddingStart="@dimen/_15dp"
+                    android:text="New Card"
+                    android:textColor="@color/radio_button_text_color"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintEnd_toStartOf="@+id/rb_others"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioButton
+                    android:id="@+id/rb_others"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_40dp"
+                    android:button="@null"
+                    android:checked="false"
+                    android:drawableStart="@drawable/radio_button_state_icon"
+                    android:drawablePadding="@dimen/_15dp"
+                    android:paddingStart="@dimen/_15dp"
+                    android:text="Card Replacement"
+                    android:textColor="@color/radio_button_text_color"
+                    android:textSize="@dimen/_14sp"
+                    app:layout_constraintStart_toEndOf="@+id/rb_myself"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RadioGroup>
+        <TextView
+            android:id="@+id/tvsBranch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            android:layout_marginTop="@dimen/_20dp"
+            android:textColor="@color/bluer"
+            android:textSize="@dimen/_14sp"
+            android:text="Select branch for pickup"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"/>
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spBranch"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_55dp"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:background="@drawable/spinner_background"
+            android:textAlignment="textStart"
+            android:theme="@style/spinnerTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvsBranch" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:theme="@style/ButtonTheme"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:background="@drawable/btn_normal_bg"
+            android:text="@string/continu"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold" />
+        <include
+            android:id="@+id/progressr"
+            android:visibility="gone"
+            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            layout="@layout/spinkit_dialog_loading"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

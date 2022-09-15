@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/app_mustard"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_marginTop="80dp"
+
+        android:id="@+id/tv_letsVerifyidentity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Hold on! We  Verify \n your Identity"
+        android:textColor="#ffffff"
+        android:textSize="28sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_timeinfo"
+        android:layout_width="0dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="25dp"
+        android:lineSpacingExtra="18sp"
+        android:text="This may take a few seconds, we will notify you when the process is complete"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@id/tv_letsVerifyidentity"
+        app:layout_constraintStart_toStartOf="@id/tv_letsVerifyidentity"
+        app:layout_constraintTop_toBottomOf="@id/tv_letsVerifyidentity" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_verifyIdentity"
+        style="@style/main_buttons_style"
+        android:backgroundTint="@color/white"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:visibility="invisible"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:text="@string/verify_identity"
+        android:textColor="@color/bg_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/btn_verifyIdentity"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timeinfo"
+        app:layout_constraintStart_toStartOf="@+id/tv_timeinfo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_timeinfo"
+        >
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:indeterminate="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:background="@drawable/circle_shape"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="100"
+
+            android:progress="0" />
+
+    <!--<ProgressBar
+        android:progressDrawable="@drawable/circular_progress_bar"
+        android:background="@drawable/circle_shape"
+        app:layout_constraintTop_toTopOf="parent"
+        android:max="100"
+        android:progress="65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="250dp"
+        android:id="@+id/progressbar"
+        android:layout_height="250dp"
+        android:progressTint="@color/white"
+
+        style="?android:attr/progressBarStyleHorizontal"
+
+
+         />-->
+        <TextView
+            android:id="@+id/percent"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="#00000000"
+            android:text="0%"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+        />
+        <TextView
+
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="#00000000"
+            android:text="verifying"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/percent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

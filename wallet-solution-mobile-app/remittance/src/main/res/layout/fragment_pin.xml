@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@mipmap/onboard_bg">
+
+    <ImageView
+        android:id="@+id/iv_top"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:src="@drawable/awash_transparent_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/nunito_sans"
+        android:text="@string/str_enter_pin_to_proceed"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_top" />
+
+    <LinearLayout
+        android:id="@+id/ll_dots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView9">
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/medium_layout_margin"
+            app:srcCompat="@drawable/pin_oval_unfilled"
+            tools:srcCompat="@drawable/pin_oval_filled" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="@dimen/medium_layout_margin"
+            app:srcCompat="@drawable/pin_oval_unfilled" />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/medium_layout_margin"
+            app:srcCompat="@drawable/pin_oval_unfilled" />
+
+        <ImageView
+            android:id="@+id/iv_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/medium_layout_margin"
+            app:srcCompat="@drawable/pin_oval_unfilled" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_fields"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:layout_marginBottom="@dimen/medium_layout_margin"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_max="500dp"
+        app:layout_constraintHeight_min="300dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_dots"
+        app:layout_constraintWidth_max="350dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_1"
+                style="@style/otp_texts"
+                android:text="@string/_1"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                style="@style/otp_texts"
+                android:text="@string/_2"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tv_3"
+                style="@style/otp_texts"
+                android:text="@string/_3"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_4"
+                style="@style/otp_texts"
+                android:text="@string/_4"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tv_5"
+                style="@style/otp_texts"
+                android:text="@string/_5"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tv_6"
+                style="@style/otp_texts"
+                android:text="@string/_6"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tv_7"
+                style="@style/otp_texts"
+                android:text="@string/_7"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tv_8"
+                style="@style/otp_texts"
+                android:text="@string/_8"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/tv_9"
+                style="@style/otp_texts"
+                android:text="@string/_9"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:id="@+id/rv_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/click_bg">
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/chevron_left"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_0"
+                style="@style/otp_texts"
+                android:text="@string/_0"
+                android:textAlignment="center" />
+
+            <RelativeLayout
+                android:id="@+id/rv_finger"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/click_bg">
+
+                <ImageView
+                    android:id="@+id/iv_finger"
+                    android:layout_width="28dp"
+                    android:layout_height="30dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/finger_print"
+                    app:tint="@color/white" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

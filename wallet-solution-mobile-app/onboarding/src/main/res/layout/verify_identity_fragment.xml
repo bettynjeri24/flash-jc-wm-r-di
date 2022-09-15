@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/app_mustard"
+
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:id="@+id/tv_letsVerifyidentity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/lets_verifyidenttitle_txt"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_timeinfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/verify_identity_txt"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@id/tv_letsVerifyidentity"
+        app:layout_constraintStart_toStartOf="@id/tv_letsVerifyidentity"
+        app:layout_constraintTop_toBottomOf="@id/tv_letsVerifyidentity" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_verifyIdentity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/white"
+        android:padding="16dp"
+        android:text="@string/verify_identity"
+        android:textColor="@color/app_mustard"
+        android:textSize="@dimen/textsize_12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timeinfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_timeinfo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_verify_user"
+        app:layout_constraintBottom_toTopOf="@+id/btn_verifyIdentity"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timeinfo"
+        app:layout_constraintStart_toStartOf="@+id/tv_timeinfo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_timeinfo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:background="@color/app_blue"
+
+        android:layout_height="match_parent">
+
+
+
+
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:id="@+id/tv_letsVerifyidentity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:text="@string/lets_verifyidenttitle_txt"
+                android:textColor="#ffffff"
+                android:textSize="24sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_timeinfo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:lineSpacingExtra="8sp"
+                android:text="@string/verify_identity_txt"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="@id/tv_letsVerifyidentity"
+                app:layout_constraintStart_toStartOf="@id/tv_letsVerifyidentity"
+                app:layout_constraintTop_toBottomOf="@id/tv_letsVerifyidentity" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_verifyIdentity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:backgroundTint="@color/white"
+                android:padding="16dp"
+                android:text="@string/verify_identity"
+                android:textColor="@color/app_blue"
+                android:textSize="@dimen/textsize_12sp"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_timeinfo"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_timeinfo" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_verify_user"
+                app:layout_constraintBottom_toTopOf="@+id/btn_verifyIdentity"
+                app:layout_constraintEnd_toEndOf="@+id/tv_timeinfo"
+                app:layout_constraintStart_toStartOf="@+id/tv_timeinfo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_timeinfo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    -->

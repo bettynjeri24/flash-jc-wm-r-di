@@ -1,0 +1,57 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ekenya.rnd.dashboard.view.SecuritySettingsFragment">
+    <TextView
+        android:id="@+id/tv_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16dp"
+        android:text="Security features"        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/personaldetails_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:background="@drawable/billpayments_options_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_account"
+        app:layout_constraintTop_toBottomOf="@id/tv_account"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_enableFingerprint"
+            style="@style/profile_textview_style"
+            android:drawableLeft="@drawable/ic_enablefingerprint"
+            android:drawableRight="@drawable/ic_arrow_next"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Enable Fingerprint"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="8dp" />
+
+        <TextView
+            android:id="@+id/tv_changePin"
+            style="@style/profile_textview_style"
+            android:drawableLeft="@drawable/ic_changepin"
+            android:drawableRight="@drawable/ic_arrow_next"
+            android:fontFamily="@font/nunito_sans"
+            android:text="Change Pin"
+            app:layout_constraintTop_toBottomOf="@id/tv_enableFingerprint"
+            tools:layout_editor_absoluteX="-182dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

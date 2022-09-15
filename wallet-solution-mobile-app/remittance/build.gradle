@@ -1,0 +1,132 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-android-extensions'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 22
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildFeatures {
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    /*externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }*/
+    ndkVersion '21.4.7075529'
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            //manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar', '.so'], dir: 'libs')
+    api project(":common")
+
+    //kotlin support
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.20"
+    //implementation("androidx.core:core-ktx:$kotlin_version")
+
+    //UI frameworks
+    implementation 'androidx.appcompat:appcompat:1.3.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //material
+    implementation 'com.google.android.material:material:1.4.0'
+
+    //Navigation UI
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+
+    //livedata
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$livedata_version"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$livedata_version"
+//    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+//    implementation 'androidx.lifecycle:lifecycle-common:2.3.1'
+//    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.3.1'
+
+    //ScanQRCode
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+    implementation 'com.hbb20:ccp:2.2.4'
+
+    //circular imageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.synnapps:carouselview:0.1.5'
+
+    //retrofit lib
+    implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-gson:$retrofit_version"
+    implementation "com.squareup.retrofit2:converter-scalars:$retrofit_version"
+    //retrofit logging
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.1"
+
+    /* //jetsec
+     implementation "androidx.security:security-crypto:1.0.0-rc03"*/
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //Google APis
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
+    implementation 'com.google.android.gms:play-services-auth-api-phone:17.5.1'
+
+    //Emulator and rooted devices Detector
+//    implementation 'com.github.mofneko:EmulatorDetector:1.1.0'
+//    implementation 'com.scottyab:rootbeer-lib:0.0.8'
+
+    //logging the app
+    implementation 'com.jakewharton.timber:timber:4.7.1'
+
+    //biometric dependency
+    implementation "androidx.biometric:biometric-ktx:1.2.0-alpha03"
+
+    //dagger
+    implementation "com.google.dagger:dagger:$dagger_version"
+    kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+    //security
+    implementation("androidx.security:security-crypto:1.1.0-alpha03")
+
+    //argon for hashing pwds
+    implementation 'com.lambdapioneer.argon2kt:argon2kt:1.3.0'
+
+    /*//main app module dependency
+    implementation(name: 'A26Library-debug', ext: 'aar')*/
+    //sweet alert
+    implementation 'com.github.f0ris.sweetalert:library:1.6.2'
+}

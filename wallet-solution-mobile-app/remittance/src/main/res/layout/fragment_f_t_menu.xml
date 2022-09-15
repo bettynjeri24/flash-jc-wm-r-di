@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvRemittancetitle"
+        style="@style/pageTopMessagesStyle"
+        android:paddingStart="25dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="1dp"
+        android:text="@string/str_send_money"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBar" />
+
+    <TextView
+        android:id="@+id/tvMtoOptionsTitle"
+        style="@style/pageTopMessagesStyle"
+        android:paddingStart="25dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="12dp"
+        android:text="Select money transfer option"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRemittancetitle" />
+
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/layout_toolbar"
+        android:background="@color/float_transparent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/medium_layout_margin"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvMtoOptionsTitle">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcvFTMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:layout_marginEnd="8dp"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

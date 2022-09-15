@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/ic_bg"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/layout_top"
+        android:background="@color/colorPrimary"
+        >
+        <include
+            layout="@layout/header_layout"
+            android:id="@+id/layout_header"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/layout_header"
+
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textSize="@dimen/textsize_medium"
+            android:layout_marginStart="@dimen/layout_margin"
+            android:text="ID:2522525585"
+            android:paddingBottom="@dimen/layout_margin"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_top"
+        android:layout_marginTop="@dimen/layout_margin"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/layout_school"
+            android:layout_marginBottom="@dimen/layout_margin">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/avator"
+                android:id="@+id/imgProfile"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="@dimen/layout_margin"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/imgProfile"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textSize="@dimen/textsize_small"
+                android:text="Alladin Nginyo"
+                android:textColor="@color/colorBlackText"
+                android:id="@+id/tvName"
+                android:layout_marginTop="@dimen/layout_margin"
+                android:layout_marginStart="@dimen/layout_margin"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvIdNo"
+                android:text="ID 4545545"
+                android:textColor="@color/colorBlackText"
+                app:layout_constraintStart_toEndOf="@id/imgProfile"
+                app:layout_constraintTop_toBottomOf="@id/tvName"
+                android:layout_marginStart="@dimen/layout_margin"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/chevron_right"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="@dimen/large_layout_margin"
+                app:tint="@color/txtGray" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="@dimen/medium_layout_margin"
+                app:layout_constraintTop_toBottomOf="@id/imgProfile"
+                android:background="@color/lightGray"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+<View
+    android:layout_width="@dimen/layout_margin"
+    android:layout_height="1dp"
+    android:id="@+id/vGuideline"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="6dp"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:layout_marginStart="@dimen/layout_margin"
+            app:cardBackgroundColor="@color/colorWhite"
+            android:id="@+id/cardBalance"
+            app:layout_constraintTop_toBottomOf="@id/layout_school"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/vGuideline">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="210dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_ImageView"
+                    android:layout_width="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/paymerchants"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_padding_tiny"
+                    />
+                <TextView
+                    android:id="@+id/title_TextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_layout_margin"
+                    android:layout_marginEnd="@dimen/medium_layout_margin"
+
+                    android:text="@string/str_check_balance"
+                    android:textAllCaps="true"
+                    android:scrollHorizontally="false"
+                    android:maxLines="2"
+                    android:textColor="@color/colorBlackText"
+                    app:layout_constraintBottom_toBottomOf="@+id/icon_ImageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/icon_ImageView"
+                    app:layout_constraintTop_toTopOf="@+id/icon_ImageView" />
+
+
+                />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="6dp"
+            android:layout_marginTop="@dimen/layout_margin"
+           android:layout_marginEnd="@dimen/layout_margin"
+            app:cardBackgroundColor="@color/colorWhite"
+            android:id="@+id/cardPayFee"
+            app:layout_constraintTop_toBottomOf="@id/layout_school"
+            app:layout_constraintStart_toEndOf="@id/vGuideline"
+          app:layout_constraintEnd_toEndOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="210dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_ImageView2"
+                    android:layout_width="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/paymerchants"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_padding_tiny"
+                    />
+                <TextView
+                    android:id="@+id/title_TextView2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_layout_margin"
+                    android:layout_marginEnd="@dimen/medium_layout_margin"
+                    android:text="@string/str_pay_school_fees"
+                    android:textAllCaps="true"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/colorBlackText"
+                    app:layout_constraintBottom_toBottomOf="@+id/icon_ImageView2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/icon_ImageView2"
+                    app:layout_constraintTop_toTopOf="@+id/icon_ImageView2" />
+
+
+                />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="6dp"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:layout_marginStart="@dimen/layout_margin"
+            app:cardBackgroundColor="@color/colorWhite"
+            android:id="@+id/card3"
+            app:layout_constraintTop_toBottomOf="@id/cardBalance"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/vGuideline">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="210dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_ImageView3"
+                    android:layout_width="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/paymerchants"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_padding_tiny"
+                    />
+                <TextView
+                    android:id="@+id/title_TextView3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_layout_margin"
+                    android:layout_marginEnd="@dimen/medium_layout_margin"
+
+                    android:text="@string/str_check_performance"
+                    android:textAllCaps="true"
+                    android:scrollHorizontally="false"
+                    android:maxLines="2"
+                    android:textColor="@color/colorBlackText"
+                    app:layout_constraintBottom_toBottomOf="@+id/icon_ImageView3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/icon_ImageView3"
+                    app:layout_constraintTop_toTopOf="@+id/icon_ImageView3" />
+
+
+                />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="6dp"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:layout_marginEnd="@dimen/layout_margin"
+            app:cardBackgroundColor="@color/colorWhite"
+            android:id="@+id/card4"
+            app:layout_constraintTop_toBottomOf="@id/cardPayFee"
+            app:layout_constraintStart_toEndOf="@id/vGuideline"
+            app:layout_constraintEnd_toEndOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="210dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon_ImageView4"
+                    android:layout_width="40dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_height="40dp"
+                    android:src="@mipmap/paymerchants"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/margin_padding_tiny"
+                    />
+                <TextView
+                    android:id="@+id/title_TextView4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/medium_layout_margin"
+                    android:layout_marginEnd="@dimen/medium_layout_margin"
+                    android:text="@string/str_school_calendar"
+                    android:textAllCaps="true"
+                    android:scrollHorizontally="false"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/colorBlackText"
+                    app:layout_constraintBottom_toBottomOf="@+id/icon_ImageView4"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/icon_ImageView4"
+                    app:layout_constraintTop_toTopOf="@+id/icon_ImageView4" />
+
+
+                />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

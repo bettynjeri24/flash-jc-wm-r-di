@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_manual_verification"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/manual_verification"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_inforequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:text="Please provide all details required below"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_manual_verification" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/btn_group"
+        android:layout_margin="@dimen/margin_16dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/billpayments_options_background"
+
+        app:layout_constraintTop_toBottomOf="@id/tv_inforequest">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_OmangCard"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingTop="0dp"
+            android:layout_marginEnd="16dp"
+
+
+            android:text="@string/use_omang_card"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            app:elevation="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_usePassport"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_usePassport"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:text="@string/use_passport"
+
+            android:textColor="@color/greytextcolor_forbtngrey"
+            android:textSize="10sp"
+            app:cornerRadius="5dp"
+            app:elevation="0dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_OmangCard"
+            app:layout_constraintTop_toTopOf="@+id/btn_OmangCard">
+
+
+        </com.google.android.material.button.MaterialButton>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_firstName"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_group">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_firstname"
+            style="@style/signupedittext_style"
+            android:hint="@string/firstName"
+            android:inputType="textCapSentences"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_middleName"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_firstName"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_middlename"
+            style="@style/signupedittext_style"
+            android:hint="@string/middleName"
+            android:inputType="textCapSentences"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_lastName"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_middleName"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_lastname"
+            style="@style/signupedittext_style"
+
+            android:hint="@string/lastname"
+            android:inputType="textCapSentences"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_idNumber"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+        android:focusable="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_lastName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_IDNumber"
+
+            style="@style/signupedittext_style"
+            android:inputType="number"
+
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <EditText
+        android:id="@+id/et_calender"
+        style="@style/textinputlayout_style"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:background="@drawable/rounded_layout"
+        android:drawableRight="@drawable/ic_calender"
+        android:drawablePadding="@dimen/margin_16dp"
+        android:focusable="false"
+        android:padding="@dimen/margin_16dp"
+        android:text="Date Of Birth"
+        android:textSize="@dimen/textsize_12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_idNumber" />
+
+    <Spinner
+        android:id="@+id/coursesspinner"
+
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_layout"
+        android:spinnerMode="dropdown"
+        android:theme="@style/ThemeOverlay.AppCompat.Light"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/et_calender"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/et_calender"
+        app:layout_constraintTop_toTopOf="@id/et_calender" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:fontFamily="@font/nunito_sans"
+        android:lineSpacingExtra="12sp"
+        android:text="Step 2 of 3"
+        android:textAlignment="center"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_calender" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_continue"
+        style="@style/main_buttons_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:text="@string/txt_continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <!--</ScrollView>-->

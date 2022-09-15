@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/usingMobile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:lineHeight="28dp"
+            android:text="@string/please_provide"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_idnumber"
+            style="@style/textInputLayoutOutlinedBoxCustom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="@color/black"
+            android:weightSum="400"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/usingMobile">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/id_number"
+                 android:inputType="number"
+                android:maxLength="14"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_surname"
+            style="@style/textInputLayoutOutlinedBoxCustom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="@color/black"
+            android:weightSum="400"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ti_idnumber">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/surname"
+                android:inputType="textCapSentences"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                 android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_middlename"
+            style="@style/textInputLayoutOutlinedBoxCustom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="false"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:weightSum="400"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tl_surname">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/middle_name"
+                android:inputType="textCapSentences"
+                android:maxLength="15"
+                 android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_lastname"
+            style="@style/textInputLayoutOutlinedBoxCustom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="@color/black"
+            android:weightSum="400"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ti_middlename">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/lastname"
+                android:inputType="textCapSentences"
+                android:maxLength="15"
+                 android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ti_email"
+            style="@style/textInputLayoutOutlinedBoxCustom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="16dp"
+            android:textColorHint="@color/black"
+            android:weightSum="400"
+            app:boxStrokeColor="@color/black"
+            app:hintTextColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ti_lastname">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:singleLine="true"
+                 android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="normal" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnContinue"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_continue_deviceactivation"
+            android:paddingStart="36dp"
+            android:paddingLeft="36dp"
+            android:paddingEnd="36dp"
+            android:paddingRight="36dp"
+            android:text="REGISTER"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/ti_email"
+            app:layout_constraintStart_toStartOf="@+id/ti_email"
+            app:layout_constraintTop_toBottomOf="@+id/tvTerms" />
+
+
+        <androidx.appcompat.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:visibility="invisible"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:layout_collapseMode="pin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/transparent" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:buttonTint="@color/black"
+            android:checked="false"
+            android:gravity="center_vertical|fill_vertical"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toStartOf="@+id/tvTerms"
+            app:layout_constraintStart_toStartOf="@+id/ti_email"
+            app:layout_constraintTop_toBottomOf="@+id/ti_email"
+            app:useMaterialThemeColors="true" />
+
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:autoLink="web"
+            android:clickable="true"
+            android:text="By clicking on 'continue' you are agreeing to our terms and conditions as well as privacy policy"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/checkBox"
+            app:layout_constraintEnd_toEndOf="@+id/ti_email"
+            app:layout_constraintStart_toEndOf="@+id/checkBox"
+            app:layout_constraintTop_toTopOf="@+id/checkBox"
+            tools:targetApi="p" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="shareReceived"
+            type="com.ekenya.rnd.tijara.network.model.RequestsReceived" />
+    </data>
+    <androidx.cardview.widget.CardView
+    android:id="@+id/cardLoan"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_200dp"
+    app:cardBackgroundColor="@color/white"
+    android:layout_marginBottom="@dimen/_20dp"
+    android:paddingBottom="@dimen/_20dp"
+    app:cardCornerRadius="@dimen/_5dp"
+    app:cardUseCompatPadding="true"
+    >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/_15dp">
+
+            <TextView
+                android:id="@+id/tv_shareTT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:textSize="@dimen/_12sp"
+                android:text="@string/transfer_type"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_ShareTT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                app:generalName="@{shareReceived.transactionType}"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_shareTT"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_shareTT"
+                tools:text="20000" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_12sp"
+                android:text="@string/shares_to_transfer"
+                app:layout_constraintStart_toStartOf="@+id/tv_shareTT"
+                app:layout_constraintTop_toBottomOf="@+id/tv_shareTT" />
+
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                app:priceInt="@{shareReceived.numberOfShares}"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_name"
+                tools:text="20000" />
+
+            <TextView
+                android:id="@+id/tv_MNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_12sp"
+                android:text="@string/name"
+                app:layout_constraintStart_toStartOf="@+id/tv_name"
+                app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+            <TextView
+                android:id="@+id/text_MNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                app:generalName="@{shareReceived.memberName}"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_MNo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_MNo"
+                tools:text="20000" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/_12sp"
+                android:text="Status"
+                app:layout_constraintStart_toStartOf="@+id/tv_MNo"
+                app:layout_constraintTop_toBottomOf="@+id/tv_MNo" />
+
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/textColor"
+                app:generalName="@{shareReceived.status}"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_status"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tv_status"
+                tools:text="20000" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CLPending"
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_3dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv_status"
+                android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMore"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:text="@string/view_details"
+                    android:textSize="@dimen/_12sp"
+                    android:layout_marginStart="@dimen/_10dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btnAccept"
+                    android:theme="@style/ButtonTheme"
+                    android:background="@drawable/btn_normal_bg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAccept"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="@string/accept_transfer"
+                    android:textSize="@dimen/_12sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/btnMore"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:theme="@style/ButtonTheme"
+                    android:textColor="@color/textColor"
+                    android:layout_marginStart="@dimen/_3dp"
+                    android:background="@drawable/btn_less_radius"
+                    app:layout_constraintStart_toEndOf="@+id/btnMore"
+                    app:layout_constraintTop_toTopOf="@+id/btnMore" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/ClApproved"
+                android:layout_width="match_parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_3dp"
+                android:layout_marginStart="@dimen/_3dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/tv_status"
+                android:layout_height="wrap_content">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAPPDetail"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_35dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginStart="15dp"
+                    android:text="@string/view_details"
+                    android:textSize="@dimen/_12sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:theme="@style/ButtonTheme"
+                    android:background="@drawable/btn_normal_bg"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="spread_inside"
+                    app:layout_constraintStart_toStartOf="parent"
+                    />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

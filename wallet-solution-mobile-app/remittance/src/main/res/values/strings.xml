@@ -1,0 +1,277 @@
+<resources>
+    <string name="app_name" translatable="false">Lamparam</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_favouriteBill">Wallet</string>
+    <string name="title_scanPay">SCAN &amp; PAY </string>
+    <string name="title_offers">Offers</string>
+    <string name="title_more">More</string>
+
+    <string name="already_have_acc">Already have an account? </string>
+    <string name="alternative_details">Provide us with details we have requested below</string>
+
+    <string name="account_activation">Using Phone Number provided, we will text you the a code to verify your account </string>
+    <string name="terms_text_msg"><![CDATA[I accept Privacy policy, Terms & Condition of Lamparam]]></string>
+    <string name="register_description">By continue this confirm the personal information shared is known to you.We share send you an activation code to your phone number</string>
+
+    <string name="welcome_description"> Simple &amp; Secure with quick access to your accounts and transfer</string>
+    <string name="onboard_two">Experience the way to manage your money in one place</string>
+    <string name="onboard_three">Shop without a wallet. \n Go cashless. We got you covered</string>
+    <string name="receive_cash">Share the details below to receive money</string>
+    <string name="deposit_cash">To Deposit Money share the below details  ..</string>
+    <string name="withdraw_cash">To Withdraw Money share the below details  ..</string>
+    <string name="send_cash">To Send Money Enter following beneficiary details ..</string>
+    <string name="cashout_desc">To cashout from our Agent short code</string>
+    <string name="create_student">All your school service errands available in one place</string>
+
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_on_boarding">OnBoardingActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="resend_code_timeout">Resend Code</string>
+    <!-- pin pad numbers-->
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+
+    <string name="currency">GHS</string>
+    <string name="currency_lamp">GHS</string>
+    <string name="pin_instr">Enter the 4-digit secret code sent to you to complete this transaction</string>
+
+    <string name="str_sales">Sales</string>
+    <string name="str_good_morning">Good Morning, %1$s</string>
+    <string name="str_good_afternoon">Good Afternoon, %1$s</string>
+    <string name="str_good_evening">Good Evening, %1$s</string>
+    <string name="str_congraturation">Congratulation</string>
+    <string name="str_loan_limit_desc">Your loan limit is GHS</string>
+    <string name="str_enter_amount_to_apply">Enter Amount to Apply</string>
+    <string name="str_amount_applied">Amount Applied</string>
+    <string name="str_charges">Charges</string>
+    <string name="str_amount_to_spend">How much do you wish to spend</string>
+    <string name="str_enter_amount">Enter Amount</string>
+    <string name="str_enter_phone_number">Enter Phone Number</string>
+    <string name="str_my_account">My Account</string>
+    <string name="str_other_account">Others</string>
+    <string name="str_pay_from">Pay From</string>
+    <string name="btn_continue_title">CONTINUE</string>
+    <string name="str_enter_details_to_apply">Enter Deposit details Below</string>
+    <string name="str_deposit_from">Deposit From</string>
+    <string name="str_deposit_Amount">Deposit Amount</string>
+    <string name="str_national_id">Enter Kebele ID</string>
+    <string name="str_deposit_narration">Enter Narration</string>
+    <string name="btn_deposit_title">Deposit</string>
+    <string name="str_enter_details_to_withdraw">Enter Withdraw details Below</string>
+    <string name="str_withdraw_from">Withdraw From</string>
+    <string name="str_withdraw_amount">Withdraw Amount</string>
+    <string name="str_enter_withdraw_narration">Enter Narration</string>
+    <string name="btn_withdraw_title">Withdraw</string>
+    <string name="str_enter_pin_to_proceed">Enter Pin to proceed</string>
+    <string name="str_buy_artime_from">Buy airtime From</string>
+    <string name="str_amount">Amount</string>
+    <string name="str_tax">Tax</string>
+    <string name="str_total">Total</string>
+    <string name="str_enter_account_number">Account Number</string>
+    <string name="str_click_here">Click here</string>
+    <string name="str_create_student">Create student</string>
+    <string name="str_wallet_balance">Lamparam Wallet Balance</string>
+    <string name="str_send_again">Send again</string>
+    <string name="str_login">Login</string>
+    <string name="btn_register_title">Register</string>
+    <string name="str_payment_purpose">Payment Purpose</string>
+    <string name="str_confirm_payment_to">Confirm Payment To </string>
+    <string name="str_loan_limit_is">Loan Limit is</string>
+    <string name="str_pay_loan">Apply Loan</string>
+    <string name="str_loan_ministatement">Loan Statement</string>
+    <string name="str_loan_fullstatement">Full Statement</string>
+    <string name="str_enter_agent_no_details">Enter Agent Number Below</string>
+    <string name="str_agent_no">Agent Number</string>
+    <string name="str_enter_receiver_details">Enter Receiver Details Below</string>
+    <string name="str_enter_fullname">Enter Full Name</string>
+    <string name="str_receiver_national_id">Receiver National ID</string>
+    <string name="str_receiver_destination_country">Receiver Destination Country</string>
+    <string name="str_sender_details">Enter Sender Details Below</string>
+    <string name="str_sender_fullname">Sender Full Name</string>
+    <string name="str_payment_details">Enter Payment Details Below</string>
+    <string name="str_fee_amount">Fee Amount</string>
+    <string name="str_school_no">School Account No</string>
+    <string name="btn_pay_fee">Pay Fees</string>
+    <string name="str_electricity_prepaid">Prepaid</string>
+    <string name="str_electricity_postpaid">Postpaid</string>
+    <string name="str_meter_no">Meter Number</string>
+    <string name="str_meter_name">Account Name</string>
+    <string name="str_make_payments_from">Make Payment From..</string>
+    <string name="str_scan_qr_code">SCAN QR CODE</string>
+    <string name="str_enter_merchant_id">ENTER MERCHANT ID</string>
+    <string name="str_receiver_full_name">Receiver Full Name</string>
+    <string name="str_enter_sender_phone_number">Sender Full Name</string>
+    <string name="str_enter_sender_id_no">Sender ID Number</string>
+    <string name="str_send_money_to">Send Money to </string>
+    <string name="str_enter_dob">Date Of Birth</string>
+    <string name="str_email">Email</string>
+    <string name="str_create_account">Create your account</string>
+    <string name="str_merchant_id">Merchant ID</string>
+    <string name="str_merchant_details">Merchant Details</string>
+    <string name="str_phone_number">Phone Number</string>
+    <string name="str_merchant_branch">Merchant Branch</string>
+    <string name="str_select_school">Select School</string>
+    <string name="str_fees_balance">Fee Balance</string>
+    <string name="str_date_colon">Date:</string>
+    <string name="str_term_colon">Term:</string>
+    <string name="str_amount_paid_colon">Amount Paid:</string>
+    <string name="str_balance_colon">Balance:</string>
+    <string name="str_pin_desc">Enter the 4-digit secret code sent to your phone\n to complete this transaction </string>
+    <string name="str_resend_code">Resend Code in</string>
+    <string name="str_beneficiary_details">Enter Beneficiary Details Below</string>
+    <string name="str_student_details">Enter Student Details Below</string>
+    <string name="str_student_no">Student Number</string>
+    <string name="str_enter_gender">Choose Gender</string>
+    <string name="str_your_details">Enter Your Details Below</string>
+    <string name="str_enter_your_fullname">Your Full Name</string>
+    <string name="str_check_balance">Check \nBalance"</string>
+    <string name="str_pay_school_fees">Pay School \nFees</string>
+    <string name="str_id_type">ID Type</string>
+    <string name="str_provide_doc_details">Provide us with document ID</string>
+    <string name="str_check_performance">Check Grade \Performance</string>
+    <string name="str_school_calendar">School \nCalendar</string>
+    <string name="str_enter_card_number">Enter Card Number</string>
+    <string name="str_id_front_photo">Take ID Front</string>
+    <string name="str_id_back_photo">Take ID Back</string>
+    <string name="str_otp_desc">Enter the 4-digit code sent to your phone </string>
+    <string name="str_recent_transactions">Recent Transaction</string>
+    <string name="str_see_all">See All</string>
+    <string name="str_morning">Good Morning</string>
+    <string name="str_admission_open">Admission open</string>
+    <string name="str_admission_desc">For Secondary school student \n starting at 14</string>
+    <string name="btn_enroll_now">ENROLL NOW</string>
+    <string name="str_welcome_to_app">Welcome to Lamparam Mobile App</string>
+    <string name="str_choose_language">Choose Your Language</string>
+    <string name="btn_okay">Okay</string>
+    <string name="successful_creation">You have successfully created a Lamparam account</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_dismiss">Dismiss</string>
+
+
+    <string name="str_receive_from">Receive money from</string>
+    <string name="str_confirm_and_receive">Confirm &amp; Receive Payment</string>
+    <string name="str_buy_airtime">Buy Airtime</string>
+    <string name="str_receive_money">Cash Pickup</string>
+    <string name="str_send_money">Send Money</string>
+    <string name="str_pay_merchants">Pay \nMerchants</string>
+    <string name="str_pay_bills">Pay Bills</string>
+    <string name="str_school_fees">School Fees</string>
+    <string name="str_deposit">Deposit</string>
+    <string name="str_withdraw">Withdraw</string>
+    <string name="str_get_help">Assistant\nBrinsam</string>
+    <string name="str_micro_loans">Micro-Loan</string>
+
+    <string name="str_just_one_more_step">Just One Step</string>
+    <string name="str_personal_info">Personal Details</string>
+    <string name="str_doc_photo">Document Photo</string>
+    <string name="str_verification_code">Verification Code</string>
+    <string name="enter_otp_to_proceed">Enter OTP to proceed</string>
+    <string name="my_wallet_balance">My Wallet Balance</string>
+    <string name="repay">Repay</string>
+    <string name="receiver_details">Receiver Details</string>
+    <string name="receive_money_to">Receive Money To;</string>
+    <string name="mobile_money_details">Mobile Money Details;</string>
+    <string name="mobile_money_service">Mobile Money Service</string>
+    <string name="bank_details">Bank Details;</string>
+    <string name="alternative_mobile_number">Alternative Mobile Number</string>
+    <string name="money_purpose">Money Purpose</string>
+    <string name="relationship">Relationship</string>
+    <string name="expected_amount">Expected Amount</string>
+    <string name="enter_money_purpose">Enter Money Purpose</string>
+    <string name="mobile_money">Mobile Money</string>
+    <string name="bank">Bank</string>
+    <string name="wallet">Wallet</string>
+    <string name="enter_4_digit_code_instr">Enter the 4-digit code sent to you at %1$s</string>
+    <string name="admission_open">2021 Admission open</string>
+    <string name="secondary_school_instr">For Secondary school student \n starting at 14th March</string>
+    <string name="open_issues">Open Issues</string>
+    <string name="just_one_step">Just One Step</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="please_accept_terms">Please accept terms first</string>
+    <string name="select_occupation">Select Occupation</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="national_id">National ID</string>
+    <string name="full_name">Full Name</string>
+    <string name="cash_withdraw">Cash Withdraw</string>
+    <string name="select_bank">Select Bank</string>
+    <string name="enter_transfer_amount">Enter Transfer Amount</string>
+    <string name="enter_reference_number">Enter Reference number</string>
+    <string name="accept">Accept</string>
+    <string name="address_residence">Address/Residence</string>
+    <string name="verification_code">Verification code</string>
+
+    <string name="driver_licence">Driver Licence</string>
+    <string name="passport">Passport</string>
+
+    <!-- otp fields -->
+    <string name="dash" translatable="false">_</string>
+    <string name="_1" translatable="false">1</string>
+    <string name="_2" translatable="false">2</string>
+    <string name="_3" translatable="false">3</string>
+    <string name="_4" translatable="false">4</string>
+    <string name="_5" translatable="false">5</string>
+    <string name="_6" translatable="false">6</string>
+    <string name="_7" translatable="false">7</string>
+    <string name="_8" translatable="false">8</string>
+    <string name="_9" translatable="false">9</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="add_data">Provide additional data</string>
+    <string name="cash_deposit">Cash Deposit</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="get_started">Get Started</string>
+    <string name="take_selfie">Take Selfie</string>
+    <string name="fingerprint_login">Fingerprint Login</string>
+    <string name="use_password">Use Password</string>
+    <string name="fingerprint_desc">Use your fingerprint for faster, easier access to your account</string>
+    <string name="invalid_pin">Invalid user pin! Please try again</string>
+    <string name="change_language">Change Language</string>
+    <string name="balance_value"><![CDATA[<small>GHS</small> <big><b>%1$s</b></big>]]></string>
+    <string name="secret_code">Enter OTP Code</string>
+    <string name="funds_transfer">Funds Transfer</string>
+    <string name="transfer_cash">To transfer funds, select the options available below</string>
+    <string name="transfer">Transfer</string>
+    <string name="transfer_instruction">Select type of Fund transfer you wish to perform</string>
+    <string name="select_transfer_option">Select Transfer Option</string>
+    <string name="my_bank_accounts">My Bank Accounts</string>
+    <string name="other_bank_accounts">Other Bank Accounts</string>
+    <string name="transfer_amount">Transfer Amount</string>
+    <string name="select_account_type">Select Account Type</string>
+    <string name="my_bank_account">My Bank account</string>
+    <string name="my_microfinance_account">My Micro-finance account</string>
+    <string name="select_account">Select Account</string>
+    <string name="enter_account_number">Enter Account Number</string>
+    <string name="transfer_money_note">Transferring money from Lamparam account to other Lamparam Account</string>
+    <string name="transfer_money_note1">Transferring money from Lamparam account my Bank/ Microfinance Account</string>
+    <string name="transfer_money_note2">Transferring money from Lamparam account other Bank/ Microfinance Account</string>
+    <string name="select_microfinance_institution">Select micro-finance institution</string>
+    <string name="i_have_account">Click here if you already have an account</string>
+    <string name="permission_warning">Required permissions not granted. App is exiting!!!</string>
+    <string name="capture_selfie_img">Capture Selfie Image</string>
+    <string name="set_a_new_pin_to_allow_login">Please set a 4-digit pin to use in Login process</string>
+    <string name="enter_new_pin">Enter New PIN</string>
+    <string name="confirm_pin">Confirm PIN</string>
+    <string name="create_pin">Create a 4-digit PIN</string>
+    <string name="input_required">Input required</string>
+    <string name="sender_details_info">Name: %1$s\nID number: %2$s\nPhone: %3$s</string>
+    <string name="receive_details_info">Name: %1$s\nAcct number: %2$s\nPurpose: %3$s</string>
+    <string name="money_transfer_operators">Select one money transfer operators options</string>
+    <string name="id_number">Enter ID number</string>
+
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/onboard_bg">
+
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/layout_margin"
+        android:paddingEnd="@dimen/layout_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_header">
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans"
+            android:text="@string/account_activation"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_medium_small"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/cpp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccpDialog_textColor="@android:color/black"
+            app:ccp_autoDetectCountry="true"
+            app:ccp_clickable="true"
+            app:ccp_contentColor="@android:color/white"
+            app:ccp_textSize="@dimen/textsize_medium"
+            app:layout_constraintBottom_toBottomOf="@id/tl_reg_phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tl_reg_phone" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="20" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_reg_phone"
+            style="@style/TextInputLayoutOutline"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cpp"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_enter_phone_number"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:textColor="@color/colorWhite"
+                android:textColorHighlight="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tl_acct"
+            style="@style/TextInputLayoutOutline"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="@color/colorWhite"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tl_reg_phone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_acct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/enter_account_number"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColor="@color/colorWhite"
+                android:textColorHighlight="@color/colorWhite"
+                android:textColorHint="@color/colorWhite" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/cb_registered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/i_have_account"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:visibility="gone"
+            android:textSize="16sp"
+            app:buttonTint="@color/colorWhite"
+            android:layout_marginStart="@dimen/main_margin"
+            android:layout_marginEnd="@dimen/main_margin"
+            app:layout_constraintBottom_toTopOf="@+id/btn_activate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:useMaterialThemeColors="false" />
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_activate"
+            style="@style/MaterialButtonDefaultStyle"
+            android:text="@string/btn_continue_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

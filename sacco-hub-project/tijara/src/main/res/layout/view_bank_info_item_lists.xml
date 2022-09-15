@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="bankProprerties"
+            type="com.ekenya.rnd.tijara.network.model.BankInfo" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Cl_Bank"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingBottom="@dimen/_20dp">
+
+
+     <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/CL_BankInfo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground">
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/group_icon"
+                    android:layout_width="@dimen/_30dp"
+                    android:layout_marginStart="@dimen/_20dp"
+                    android:layout_height="@dimen/_30dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/selected_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/initials"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:paddingRight="@dimen/_5dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/group_icon"
+                    app:layout_constraintEnd_toEndOf="@+id/group_icon"
+                    app:layout_constraintStart_toStartOf="@+id/group_icon"
+                    app:layout_constraintTop_toTopOf="@+id/group_icon"
+                    tools:text="DM" />
+
+                <TextView
+                    android:id="@+id/tv_pInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:gravity="center"
+                    app:generalName="@{bankProprerties.bank}"
+                    android:text="@string/sell_shares"
+                    android:textSize="@dimen/_13sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/group_icon"
+                    app:layout_constraintStart_toEndOf="@+id/group_icon"
+                    app:layout_constraintTop_toTopOf="@+id/group_icon" />
+
+                <ImageView
+                    android:id="@+id/image_pInfo"
+                    android:layout_width="@dimen/_18dp"
+                    android:layout_height="@dimen/_18dp"
+                    android:layout_marginEnd="@dimen/_15dp"
+                    android:src="@drawable/arrow_right"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_pInfo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_pInfo" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/vieShare"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:background="@color/etColor"
+            app:layout_constraintTop_toBottomOf="@id/CL_BankInfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

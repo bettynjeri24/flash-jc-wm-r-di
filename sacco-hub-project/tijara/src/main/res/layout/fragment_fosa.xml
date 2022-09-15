@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/_10dp"
+        android:layout_marginStart="@dimen/_2dp"
+        android:background="@drawable/elevated_bg"
+        android:elevation="@dimen/_55dp"
+        android:layout_marginEnd="@dimen/_2dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/cardTextColor"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="FOSA" />
+
+        <TextView
+            android:id="@+id/tv_current_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/current_bal"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_product_name"
+            app:layout_constraintTop_toBottomOf="@+id/tv_product_name" />
+
+        <TextView
+            android:id="@+id/tv_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/kes"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_current_bal"
+            app:layout_constraintEnd_toStartOf="@+id/tv_current_amount"
+            app:layout_constraintTop_toTopOf="@+id/tv_current_bal"
+            android:layout_marginEnd="@dimen/_15dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_current_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_currency"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_currency"
+            tools:text="20,000" />
+
+        <TextView
+            android:id="@+id/tv_available_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/avail_bal"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintStart_toStartOf="@+id/tv_current_bal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_current_bal" />
+
+        <TextView
+            android:id="@+id/tv_def_currency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/kes"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginEnd="@dimen/_15dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_available_bal"
+            app:layout_constraintEnd_toStartOf="@+id/tv_available_amount"
+            app:layout_constraintTop_toTopOf="@+id/tv_available_bal" />
+
+        <TextView
+            android:id="@+id/tv_available_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20dp"
+            tools:text="40,000"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_def_currency"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_def_currency" />
+        <TextView
+            android:id="@+id/tv_saving_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/last_saving_date"
+            app:layout_constraintStart_toStartOf="@+id/tv_available_bal"
+            app:layout_constraintTop_toBottomOf="@+id/tv_available_bal" />
+
+        <TextView
+            android:id="@+id/tv_dateSaved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10/07/2021"
+            android:layout_marginEnd="@dimen/_20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_saving_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_saving_date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

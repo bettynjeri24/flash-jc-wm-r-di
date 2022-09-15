@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/mtoolBar"
+            layout="@layout/layout_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_top">
+
+        <TextView
+            android:id="@+id/tvRemittancetitle"
+            style="@style/pageTopMessagesStyle"
+            android:paddingStart="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="1dp"
+            android:text="Send Money"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvActionTitleSendMoney"
+            style="@style/pageTopMessagesStyle"
+            android:paddingStart="25dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="12dp"
+            android:text="Proceed to Cashout from our agent short code"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvRemittancetitle" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlFullName"
+            style="@style/textinputlayout_style"
+            android:background="@drawable/rounded_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvActionTitleSendMoney">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etFullName"
+                style="@style/signupedittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_enter_fullname"
+                android:imeOptions="actionNext"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlPhoneNo"
+            style="@style/textinputlayout_style"
+            android:background="@drawable/rounded_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            app:layout_constraintEnd_toEndOf="@+id/tlFullName"
+            app:layout_constraintStart_toStartOf="@+id/tlFullName"
+            app:layout_constraintTop_toBottomOf="@id/tlFullName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"
+                style="@style/signupedittext_style"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlIdNoV"
+            style="@style/textinputlayout_style"
+            android:background="@drawable/rounded_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            app:layout_constraintEnd_toEndOf="@+id/tlFullName"
+            app:layout_constraintStart_toStartOf="@+id/tlFullName"
+            app:layout_constraintTop_toBottomOf="@id/tlPhoneNo">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etIdNo"
+                style="@style/signupedittext_style"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/id_number"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlAmount"
+            style="@style/textinputlayout_style"
+            android:background="@drawable/rounded_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            app:prefixText="GHS"
+            app:layout_constraintEnd_toEndOf="@+id/tlPhoneNo"
+            app:layout_constraintStart_toStartOf="@+id/tlPhoneNo"
+            app:layout_constraintTop_toBottomOf="@id/tlIdNoV">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSendAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/str_enter_amount"
+                style="@style/signupedittext_style"
+                android:imeOptions="actionNext"
+                android:inputType="number" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tlSendPurpose"
+            style="@style/textinputlayout_style"
+            android:background="@drawable/rounded_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin"
+            app:boxStrokeColor="@android:color/black"
+            app:layout_constraintEnd_toEndOf="@+id/tlAmount"
+            app:layout_constraintStart_toStartOf="@+id/tlAmount"
+            app:layout_constraintTop_toBottomOf="@id/tlAmount">
+
+            <com.google.android.material.textfield.MaterialAutoCompleteTextView
+                android:id="@+id/etSendPurpose"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:completionThreshold="0"
+                style="@style/signupedittext_style"
+                android:hint="@string/enter_money_purpose"
+                android:imeOptions="actionDone"
+                android:inputType="none"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSendMoney"
+            style="@style/MaterialButtonDefaultStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:padding="10dp"
+            android:paddingBottom="@dimen/large_layout_margin"
+            android:text="@string/btn_continue_title"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

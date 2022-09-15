@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg">
+
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="30dp"
+        android:layout_height="3dp"
+        android:background="@color/app_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_selectSourceofFunds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="16dp"
+        android:text="Fund From"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/rv_paymentOptions"
+        app:layout_constraintTop_toBottomOf="@id/view20" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_paymentOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_selectSourceofFunds"
+        tools:layout_editor_absoluteX="10dp" />
+
+    <!--   <androidx.core.widget.NestedScrollView
+           android:id="@+id/layout_paymentOptions"
+
+           app:layout_constraintTop_toBottomOf="@id/tv_selectSourceofFunds"
+
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+
+       android:layout_width="match_parent"
+       app:layout_constraintTop_toBottomOf="@id/tv_selectSourceofFunds"
+       android:layout_height="wrap_content">
+
+       <androidx.cardview.widget.CardView
+           app:layout_constraintTop_toBottomOf="@id/cardviewBank"
+           android:layout_width="0dp"
+           android:background="@color/grey_40percent"
+           android:id="@+id/cardviewDebitorCredit"
+
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/margin_16dp"
+           android:layout_marginEnd="@dimen/margin_16dp"
+           app:cardCornerRadius="10dp"
+           android:layout_marginBottom="@dimen/margin_16dp"
+           app:cardElevation="0dp"
+
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginStart="@dimen/margin_16dp"
+           >
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/grey_40percent"
+               android:padding="@dimen/margin_16dp">
+               <ImageView
+                   android:id="@+id/img_groupsavings"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/telebir"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/tv_optionDebitOrCreditCard"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/margin_16dp"
+                   android:text="@string/telebirr_cash"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="12sp"
+                   android:textStyle="normal"
+                   app:layout_constraintStart_toEndOf="@+id/img_groupsavings"
+                   app:layout_constraintTop_toTopOf="@+id/img_groupsavings" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="6dp"
+                   android:text="Use Your Mobile Money to make Payments"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="10sp"
+                   android:textStyle="normal"
+                   app:layout_constraintBottom_toBottomOf="@+id/img_groupsavings"
+                   app:layout_constraintEnd_toStartOf="@+id/debitcardview"
+                   app:layout_constraintStart_toStartOf="@+id/tv_optionDebitOrCreditCard"
+                   app:layout_constraintTop_toBottomOf="@id/tv_optionDebitOrCreditCard" />
+               <ImageView
+                   android:id="@+id/debitcardview"
+                   android:layout_height="12dp"
+                   android:layout_width="12dp"
+                   android:layout_marginEnd="@dimen/margin_16dp"
+                   android:background="@drawable/ic_arrow_next"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           app:layout_constraintTop_toBottomOf="@id/cardviewDebitorCredit"
+           android:layout_width="0dp"
+           android:background="@color/grey_40percent"
+           android:id="@+id/cardviewtelebirrCash"
+
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/margin_16dp"
+           android:layout_marginEnd="@dimen/margin_16dp"
+           app:cardCornerRadius="10dp"
+           android:layout_marginBottom="@dimen/margin_16dp"
+           app:cardElevation="0dp"
+
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginStart="@dimen/margin_16dp"
+           >
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/grey_40percent"
+               android:padding="@dimen/margin_16dp">
+               <ImageView
+                   android:id="@+id/img_telebirr"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_bank"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/tv_optionTelebirr"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/margin_16dp"
+                   android:text="@string/debit_or_credit_card"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="12sp"
+                   android:textStyle="normal"
+                   app:layout_constraintStart_toEndOf="@+id/img_telebirr"
+                   app:layout_constraintTop_toTopOf="@+id/img_telebirr" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="6dp"
+                   android:text="Use Your Card to make Payments"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="10sp"
+                   android:textStyle="normal"
+                   app:layout_constraintBottom_toBottomOf="@+id/img_telebirr"
+                   app:layout_constraintEnd_toStartOf="@+id/telebirview"
+                   app:layout_constraintStart_toStartOf="@+id/tv_optionTelebirr"
+                   app:layout_constraintTop_toBottomOf="@id/tv_optionTelebirr" />
+               <ImageView
+                   android:id="@+id/telebirview"
+                   android:layout_height="12dp"
+                   android:layout_width="12dp"
+                   android:layout_marginEnd="@dimen/margin_16dp"
+                   android:background="@drawable/ic_arrow_next"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           app:layout_constraintTop_toBottomOf="@id/cardViewWallet"
+           android:layout_width="0dp"
+           android:background="@color/grey_40percent"
+           android:id="@+id/cardviewMpesa"
+
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/margin_16dp"
+           android:layout_marginEnd="@dimen/margin_16dp"
+           app:cardCornerRadius="10dp"
+           android:layout_marginBottom="@dimen/margin_16dp"
+           app:cardElevation="0dp"
+
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginStart="@dimen/margin_16dp"
+           >
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/grey_40percent"
+
+               android:padding="@dimen/margin_16dp">
+               <ImageView
+                   android:id="@+id/img_mpesaCash"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/safaricom"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/tv_optionMpesaCash"
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/margin_16dp"
+                   android:text="@string/safaricom_mpesa"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="12sp"
+                   android:textStyle="normal"
+                   app:layout_constraintStart_toEndOf="@+id/img_mpesaCash"
+                   app:layout_constraintTop_toTopOf="@+id/img_mpesaCash" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="6dp"
+                   android:text="Use Your Mobile Money to make Payments"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="10sp"
+                   android:textStyle="normal"
+                   app:layout_constraintBottom_toBottomOf="@+id/img_mpesaCash"
+                   app:layout_constraintEnd_toStartOf="@+id/mpesaview"
+                   app:layout_constraintStart_toStartOf="@+id/tv_optionMpesaCash"
+                   app:layout_constraintTop_toBottomOf="@id/tv_optionMpesaCash" />
+               <ImageView
+                   android:id="@+id/mpesaview"
+                   android:layout_height="12dp"
+                   android:layout_width="12dp"
+                   android:layout_marginEnd="@dimen/margin_16dp"
+                   android:background="@drawable/ic_arrow_next"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           app:layout_constraintTop_toBottomOf="@id/cardviewMpesa"
+           android:layout_width="0dp"
+           android:background="@color/grey_40percent"
+           android:id="@+id/cardviewEthiocash"
+
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/margin_16dp"
+           android:layout_marginEnd="@dimen/margin_16dp"
+           app:cardCornerRadius="10dp"
+           android:layout_marginBottom="@dimen/margin_16dp"
+           app:cardElevation="0dp"
+
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginStart="@dimen/margin_16dp"
+           >
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/grey_40percent"
+
+               android:padding="@dimen/margin_16dp">
+               <ImageView
+                   android:id="@+id/img_ethiocash"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ethiopia_tel"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/tv_optionEthiocash"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/margin_16dp"
+                   android:text="@string/ethio_cash"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="12sp"
+                   android:textStyle="normal"
+                   app:layout_constraintStart_toEndOf="@+id/img_ethiocash"
+                   app:layout_constraintTop_toTopOf="@+id/img_ethiocash" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="6dp"
+                   android:text="Use Your Mobile Money to make Payments"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="10sp"
+                   android:textStyle="normal"
+                   app:layout_constraintBottom_toBottomOf="@+id/img_ethiocash"
+                   app:layout_constraintEnd_toStartOf="@+id/ethiocashview"
+                   app:layout_constraintStart_toStartOf="@+id/tv_optionEthiocash"
+                   app:layout_constraintTop_toBottomOf="@id/tv_optionEthiocash" />
+               <ImageView
+                   android:id="@+id/ethiocashview"
+                   android:layout_height="12dp"
+                   android:layout_width="12dp"
+                   android:layout_marginEnd="@dimen/margin_16dp"
+                   android:background="@drawable/ic_arrow_next"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           app:layout_constraintTop_toBottomOf="@id/cardviewEthiocash"
+           android:layout_width="0dp"
+           android:background="@color/grey_40percent"
+           android:id="@+id/cardviewBank"
+
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/margin_16dp"
+           android:layout_marginEnd="@dimen/margin_16dp"
+           app:cardCornerRadius="10dp"
+           android:layout_marginBottom="@dimen/margin_16dp"
+           app:cardElevation="0dp"
+
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginStart="@dimen/margin_16dp"
+           >
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/grey_40percent"
+
+               android:padding="@dimen/margin_16dp">
+               <ImageView
+                   android:id="@+id/img_bank"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_bank"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/tv_optionbank"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/margin_16dp"
+                   android:text="@string/bank"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="12sp"
+                   android:textStyle="normal"
+                   app:layout_constraintStart_toEndOf="@+id/img_bank"
+                   app:layout_constraintTop_toTopOf="@+id/img_bank" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="6dp"
+                   android:text="Use Your Bank to make Payments"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="10sp"
+                   android:textStyle="normal"
+                   app:layout_constraintBottom_toBottomOf="@+id/img_bank"
+                   app:layout_constraintEnd_toStartOf="@+id/bankView"
+                   app:layout_constraintStart_toStartOf="@+id/tv_optionbank"
+                   app:layout_constraintTop_toBottomOf="@id/tv_optionbank" />
+               <ImageView
+                   android:id="@+id/bankView"
+                   android:layout_height="12dp"
+                   android:layout_width="12dp"
+                   android:layout_marginEnd="@dimen/margin_16dp"
+                   android:background="@drawable/ic_arrow_next"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </androidx.cardview.widget.CardView>
+       <androidx.cardview.widget.CardView
+           android:id="@+id/cardViewWallet"
+           app:cardElevation="0dp"
+           app:layout_goneMarginTop="40dp"
+           app:layout_constraintTop_toTopOf="parent"
+           android:layout_width="0dp"
+           android:background="#e4e4e4"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="@dimen/margin_16dp"
+           android:layout_marginEnd="@dimen/margin_16dp"
+           app:cardCornerRadius="10dp"
+
+           app:layout_constraintEnd_toEndOf="parent"
+           android:layout_marginStart="@dimen/margin_16dp"
+           app:layout_constraintStart_toStartOf="parent"
+           >
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/grey_40percent"
+
+               android:padding="@dimen/margin_16dp">
+               <ImageView
+                   android:id="@+id/img_Savings2"
+                   android:layout_width="50dp"
+                   android:layout_height="50dp"
+                   android:src="@drawable/ic_towallet"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <TextView
+                   android:id="@+id/tv_optionMariWallet"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="@dimen/margin_16dp"
+                   android:text="@string/tollo_cash_wallet"
+                   android:textColor="@color/app_mustard"
+                   android:textSize="12sp"
+                   android:textStyle="normal"
+                   app:layout_constraintStart_toEndOf="@+id/img_Savings2"
+                   app:layout_constraintTop_toTopOf="@+id/img_Savings2" />
+
+               <TextView
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="6dp"
+                   android:text="Use your wallet to make payments"
+                   android:textColor="@color/black_text_color"
+                   android:textSize="10sp"
+                   android:textStyle="normal"
+                   app:layout_constraintBottom_toBottomOf="@+id/img_Savings2"
+                   app:layout_constraintEnd_toStartOf="@+id/walletcardview"
+                   app:layout_constraintStart_toStartOf="@+id/tv_optionMariWallet"
+                   app:layout_constraintTop_toBottomOf="@id/tv_optionMariWallet" />
+               <ImageView
+                   android:id="@+id/walletcardview"
+                   android:layout_height="wrap_content"
+                   android:layout_width="wrap_content"
+                   android:layout_marginEnd="@dimen/margin_16dp"
+                   android:background="@drawable/ic_arrow_next"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+       </androidx.cardview.widget.CardView>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+      &lt;!&ndash; </ScrollView>&ndash;&gt;
+       </androidx.core.widget.NestedScrollView>
+
+       <Button
+           android:id="@+id/btn_Continue"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:layout_marginEnd="@dimen/margin_16dp"
+           android:text="@string/txt_continue"
+           android:textSize="10sp"
+           android:textStyle="normal"
+           app:layout_constraintBottom_toBottomOf="@+id/tv_selectSourceofFunds"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintTop_toTopOf="@id/tv_selectSourceofFunds" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

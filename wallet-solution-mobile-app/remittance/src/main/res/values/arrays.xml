@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_array_titles">
+        <item>🇬🇧 English</item>
+        <item>🇵🇹 Portuguese</item>
+        <item>🇬🇼 Criolo</item>
+        <item>🇫🇷 French</item>
+    </string-array>
+    <string-array name="language_array_values">
+        <item>en</item>
+        <item>pt</item>
+        <item>pt-rGW</item>
+        <item>fr</item>
+    </string-array>
+
+    <string-array name="docs_array_values">
+        <item>@string/national_id</item>
+        <item>@string/driver_licence</item>
+        <item>@string/passport</item>
+    </string-array>
+
+
+</resources>

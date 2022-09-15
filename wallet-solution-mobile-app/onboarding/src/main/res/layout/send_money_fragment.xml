@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+    <TextView
+        android:id="@+id/fragment_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="22sp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:textColor="#000000"
+        android:text="Send Money"/>
+
+    <TextView
+        android:id="@+id/fragment_info"
+        android:layout_marginTop="@dimen/margin_16dp"
+        app:layout_constraintStart_toStartOf="@id/fragment_title"
+        app:layout_constraintTop_toBottomOf="@id/fragment_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="@color/black_text_color"
+        android:lineSpacingExtra="3dp"
+        android:text="Send money to friends and family both locally &amp; \n internationally"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tv_createbankrecipientcard"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toBottomOf="@id/fragment_info"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:layout_constraintStart_toStartOf="@id/fragment_title"
+        android:background="@drawable/billpayments_options_background"
+
+        android:padding="@dimen/margin_16dp">
+
+        <ImageView
+            android:id="@+id/option_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_bank"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@id/option_logo"
+            app:layout_constraintTop_toTopOf="@id/option_logo"
+            android:id="@+id/tv_createbankrecipient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="@color/app_mustard"
+            android:text="Send to Bank"/>
+        <TextView
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="@id/tv_createbankrecipient"
+            app:layout_constraintTop_toBottomOf="@id/tv_createbankrecipient"
+            android:id="@+id/tv_createbankrecipientinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="12sp"
+            android:textColor="@color/black_text_color"
+            android:text="@string/transfer_money_to_any_bank"/>
+
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_arrow_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tv_toMobilecard"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_createbankrecipientcard"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:layout_constraintStart_toStartOf="@id/fragment_title"
+        android:background="@drawable/billpayments_options_background"
+
+        android:padding="@dimen/margin_16dp">
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_arrow_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/option2_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_tomobile"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@id/option2_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tv_toMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="@color/app_mustard"
+            android:text="Send to Mobile"/>
+        <TextView
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="@id/tv_toMobile"
+            app:layout_constraintTop_toBottomOf="@id/tv_toMobile"
+            android:id="@+id/tv_sendtoMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="12sp"
+            android:textColor="@color/black_text_color"
+            android:text="Send money to your mobile"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toWalletcard"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_width="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_toMobilecard"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:layout_constraintStart_toStartOf="@id/fragment_title"
+        android:background="@drawable/billpayments_options_background"
+
+        android:padding="@dimen/margin_16dp">
+        <ImageView
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_arrow_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <ImageView
+            android:id="@+id/option3_logo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_towallet"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:layout_marginStart="24dp"
+            app:layout_constraintStart_toEndOf="@id/option3_logo"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/tv_toWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            android:textColor="@color/app_mustard"
+            android:text="Send to Wallet"/>
+        <TextView
+            android:layout_marginTop="6dp"
+            app:layout_constraintStart_toStartOf="@id/tv_toWallet"
+            app:layout_constraintTop_toBottomOf="@id/tv_toWallet"
+            android:id="@+id/tv_sendtoWallet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="12sp"
+            android:textColor="@color/black_text_color"
+            android:text="Send money to another Wallet"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TIJARA</string>
+    <string name="title_etourism">TIJARA</string>
+    <string name="title_support">Support Chat</string>
+    <string name="title_scanning_lib">Scanning</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_onBoarding_main">OnBoardingActivity</string>
+    <string name="powered_eclectics">Powered by Eclectics</string>
+    <string name="root_message">This Device can not run on Rooted devices , unroot your device and try again</string>
+    <string name="emulator_message">This application does not work on virtual devices or simulators. You need an actual device to run it!</string>
+    <string name="ok">OK</string>
+</resources>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="accountItems"
+            type="com.ekenya.rnd.tijara.network.model.TransactionDetails" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:id="@+id/requestList"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_5dp"
+        android:elevation="@dimen/_60dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_20dp">
+
+        <TextView
+            android:id="@+id/tv_title_bal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/opening_balance"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/tv_amountInSh"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:textStyle="bold"
+            android:text="@string/kes"/>
+
+        <TextView
+            android:id="@+id/tv_amountInSh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_alignParentEnd="true"
+            tools:text="100000" />
+        <View
+            android:id="@+id/viewAc"
+            android:layout_width="match_parent"
+            android:background="#E2F4F5"
+            android:layout_below="@+id/tv_amountInSh"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_height="@dimen/_1dp"/>
+        <TextView
+            android:id="@+id/tv_ref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_marginStart="@dimen/_20dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/_10dp"
+            android:text="@string/ref"
+            android:layout_below="@id/viewAc" />
+
+        <TextView
+            android:id="@+id/tv_refNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/viewAc"
+            android:layout_marginTop="@dimen/_10dp"
+            tools:text="DR1234" />
+        <TextView
+            android:id="@+id/tv_debit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/_20dp"
+            android:text="@string/debit_amount"
+            android:layout_below="@+id/tv_ref"
+             />
+
+        <TextView
+            android:id="@+id/tv_debitAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_below="@+id/tv_ref"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/_20dp"
+            tools:text="2000" />
+
+        <TextView
+            android:id="@+id/textCredit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginEnd="10dp"
+            android:text="@string/credit_amount"
+            android:layout_marginStart="@dimen/_20dp"
+           android:layout_alignParentStart="true"
+           android:layout_below="@id/tv_debit" />
+
+        <TextView
+            android:id="@+id/tv_creditAmnt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/tv_debitAmount"
+            android:layout_marginTop="@dimen/_10dp"
+            tools:text="2000" />
+        <TextView
+            android:id="@+id/tv_titleTDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="@dimen/_20dp"
+            android:layout_below="@id/tv_creditAmnt"
+            android:text="@string/transaction_date"
+            />
+
+        <TextView
+            android:id="@+id/tv_TDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_below="@id/tv_creditAmnt"
+            android:layout_marginEnd="@dimen/_20dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10dp"
+            tools:text="02/222021" />
+
+
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

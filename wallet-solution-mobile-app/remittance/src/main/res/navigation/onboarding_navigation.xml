@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_splashScreen">
+    <fragment
+        android:id="@+id/nav_splashScreen"
+        android:name="com.ekenya.lamparam.ui.onboarding.SplashScreen"
+        tools:layout="@layout/fragment_splash_screen">
+        <action
+            android:id="@+id/action_nav_splashScreen_to_nav_choose_language"
+            app:destination="@id/nav_choose_language"
+            app:popUpTo="@id/nav_splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_nav_splashScreen_to_nav_pin"
+            app:destination="@id/nav_pin"
+            app:popUpTo="@id/nav_splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_choose_language"
+        android:name="com.ekenya.lamparam.ui.onboarding.LanguageScreen"
+        tools:layout="@layout/fragment_choose_language">
+        <action
+            android:id="@+id/action_nav_choose_language_to_nav_mainOnBoarding"
+            app:destination="@id/nav_mainOnBoarding" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_mainOnBoarding"
+        android:name="com.ekenya.lamparam.ui.onboarding.MainOnBoarding"
+        tools:layout="@layout/fragment_main_onboarding">
+        <action
+            android:id="@+id/action_nav_mainOnBoarding_to_nav_createAccount"
+            app:destination="@id/nav_createAccount" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_createAccount"
+        android:name="com.ekenya.lamparam.ui.onboarding.registration.CreateAccount"
+        tools:layout="@layout/fragment_create_account">
+        <action
+            android:id="@+id/action_nav_createAccount_to_nav_regPersonalInfo"
+            app:destination="@id/nav_regPersonalInfo" />
+        <action
+            android:id="@+id/action_nav_createAccount_to_nav_pin"
+            app:destination="@id/nav_pin" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_regPersonalInfo"
+        android:name="com.ekenya.lamparam.ui.onboarding.registration.RegPersonalInfo"
+        tools:layout="@layout/fragment_reg_personal_info">
+        <action
+            android:id="@+id/action_nav_regPersonalInfo_to_policyFragment"
+            app:destination="@id/policyFragment" />
+        <action
+            android:id="@+id/action_nav_regPersonalInfo_to_nav_uploadDoc"
+            app:destination="@id/nav_uploadDoc" />
+        <argument
+            android:name="accept"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_alternativeData"
+        android:name="com.ekenya.lamparam.ui.onboarding.registration.RegAlternantiveStep"
+        tools:layout="@layout/fragment_reg_alternantive_step">
+        <action
+            android:id="@+id/action_nav_alternativeData_to_nav_verificationCode"
+            app:destination="@id/nav_verificationCode" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_uploadDoc"
+        android:name="com.ekenya.lamparam.ui.onboarding.registration.UploadDocument"
+        tools:layout="@layout/fragment_upload_document">
+        <action
+            android:id="@+id/action_nav_uploadDoc_to_nav_alternativeData"
+            app:destination="@id/nav_alternativeData" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_verificationCode"
+        android:name="com.ekenya.lamparam.ui.onboarding.registration.VerificationCode"
+        tools:layout="@layout/fragment_verification_code">
+        <argument
+            android:name="phone"
+            app:argType="string" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="dob"
+            app:argType="string" />
+        <argument
+            android:name="address"
+            app:argType="string" />
+        <argument
+            android:name="docType"
+            app:argType="string" />
+        <argument
+            android:name="docNumber"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_nav_verificationCode_to_changePinFragment"
+            app:destination="@id/changePinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pin"
+        android:name="com.ekenya.lamparam.ui.login.PinFragment"
+        tools:layout="@layout/fragment_pin"/>
+    <fragment
+        android:id="@+id/policyFragment"
+        android:name="com.ekenya.lamparam.ui.onboarding.PolicyFragment"
+        android:label="fragment_policy"
+        tools:layout="@layout/fragment_policy" />
+    <fragment
+        android:id="@+id/changePinFragment"
+        android:name="com.ekenya.lamparam.ui.onboarding.registration.ChangePinFragment"
+        android:label="fragment_change_pin"
+        tools:layout="@layout/fragment_change_pin" >
+        <action
+            android:id="@+id/action_changePinFragment_to_nav_pin"
+            app:destination="@id/nav_pin" />
+    </fragment>
+</navigation>

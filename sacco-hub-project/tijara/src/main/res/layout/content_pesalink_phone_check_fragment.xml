@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/fragment_buy_airtime"
+        >
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnPhoneCheck"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:textColor="@color/bluer"
+                    android:textSize="@dimen/_14sp"
+                    android:text="@string/mobile_details"
+                    android:layout_marginStart="@dimen/_15dp"
+                    android:layout_marginEnd="@dimen/_15dp"/>
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10dp"
+                    android:layout_marginStart="@dimen/_3dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvDetails">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_myself"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableStart="@drawable/radio_button_state_icon"
+                            android:drawablePadding="@dimen/_15dp"
+                            android:padding="@dimen/_10dp"
+                            android:paddingStart="@dimen/_15dp"
+                            android:text="Myself"
+                            android:textColor="@color/radio_button_text_color"
+                            android:textSize="@dimen/_14sp"
+                            app:layout_constraintEnd_toStartOf="@+id/rb_others"
+                            app:layout_constraintHorizontal_chainStyle="packed"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <RadioButton
+                            android:id="@+id/rb_others"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_40dp"
+                            android:button="@null"
+                            android:checked="false"
+                            android:drawableStart="@drawable/radio_button_state_icon"
+                            android:drawablePadding="@dimen/_15dp"
+                            android:paddingStart="@dimen/_15dp"
+                            android:text="@string/other_contacts"
+                            android:textColor="@color/radio_button_text_color"
+                            android:textSize="@dimen/_14sp"
+                            app:layout_constraintStart_toEndOf="@+id/rb_myself"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </RadioGroup>
+                <LinearLayout
+                    android:id="@+id/ll_Phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:layout_marginEnd="@dimen/_15dp"
+                    android:layout_marginTop="@dimen/_10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/radioGroup"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/codePicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:theme="@style/AppTheme"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_showArrow="false"
+                        app:ccp_showFlag="false"
+                        android:paddingBottom="@dimen/_10dp"
+                        android:backgroundTint="#AD707070"
+                        android:layout_marginEnd="@dimen/_2dp"
+                        app:ccp_customMasterCountries="TZ,KE,UG,CM"
+                        app:ccp_textSize="16sp"
+                        app:ccp_contentColor="@color/textColor"
+                        app:ccp_showNameCode="false"
+                        />
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:id="@+id/tl_phone"
+                        style="@style/OutlineStyle"
+                        android:layout_marginStart="@dimen/_2dp"
+                        android:layout_marginTop="@dimen/_5dp"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/ic_contacts_book"
+                        android:drawableTint="@color/textColor"
+                        android:layout_weight="1.2"
+                        app:counterEnabled="true"
+
+                        >
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/et_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="@string/phone_number"
+                            android:inputType="phone"
+                            android:maxLength="13"
+                            android:singleLine="true"
+                            android:textCursorDrawable="@drawable/cursor" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPhoneCheck"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50dp"
+            android:layout_marginStart="@dimen/_15dp"
+            android:theme="@style/ButtonTheme"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:background="@drawable/btn_normal_bg"
+            android:text="@string/continu"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="@dimen/_30dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

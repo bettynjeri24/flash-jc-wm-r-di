@@ -1,0 +1,22 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ekenya.rnd.scannerlib" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+6-->D:\MariWallet\wallet-solution-mobile-app\scannerlib\src\main\AndroidManifest.xml
+7        android:targetSdkVersion="30" />
+7-->D:\MariWallet\wallet-solution-mobile-app\scannerlib\src\main\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.CAMERA" />
+9-->D:\MariWallet\wallet-solution-mobile-app\scannerlib\src\main\AndroidManifest.xml:5:5-65
+9-->D:\MariWallet\wallet-solution-mobile-app\scannerlib\src\main\AndroidManifest.xml:5:22-62
+10
+11    <meta-data
+11-->D:\MariWallet\wallet-solution-mobile-app\scannerlib\src\main\AndroidManifest.xml:7:5-9:31
+12        android:name="com.huawei.hms.ml.DEPENDENCY"
+12-->D:\MariWallet\wallet-solution-mobile-app\scannerlib\src\main\AndroidManifest.xml:8:9-52
+13        android:value="ocr" />
+13-->D:\MariWallet\wallet-solution-mobile-app\scannerlib\src\main\AndroidManifest.xml:9:9-29
+14
+15</manifest>

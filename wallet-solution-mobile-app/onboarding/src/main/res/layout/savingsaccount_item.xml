@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView app:layout_constraintTop_toBottomOf="@id/tv_title"
+    android:layout_margin="@dimen/margin_16dp"
+    app:layout_constraintStart_toStartOf="parent"
+    android:id="@+id/optionOneRadioButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp"
+    android:layout_marginEnd=
+        "@dimen/margin_16dp"
+    app:cardCornerRadius="10dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f6f6f6"
+
+        android:padding="@dimen/margin_16dp">
+        <ImageView
+            android:id="@+id/img_Savings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_personalsavings"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:id="@+id/tv_savingsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/img_Savings"
+            android:textColor="#000000"
+            android:text="Car Savings Account"/>
+
+        <TextView
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:id="@+id/tv_percent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved 10%"
+            android:textColor="#ec6666"
+            android:textSize="8sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_savingsTitle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GHS 20,000.00/ 300,000.00"
+            android:textColor="#707070"
+            android:textSize="8sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_percent" />
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+
+            android:id="@+id/progressbar"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:indeterminate="false"
+            android:progress="10"
+            app:indicatorColor="#ec6666"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_percent"
+            app:layout_constraintTop_toBottomOf="@id/tv_percent"
+            app:trackColor="#ced5e1"
+            app:trackCornerRadius="20dp"
+            app:trackThickness="5dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:text="Deadline: Dec 30, 2021, 149 Days to go"
+            android:textColor="#707070"
+            android:textSize="8sp"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@id/progressbar" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

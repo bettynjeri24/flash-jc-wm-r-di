@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/colorAccent"
+        android:shadowColor="#26000000"
+        android:shadowDx="0"
+        android:shadowDy="15" />
+
+    <size
+        android:height="100dp"
+        android:width="100dp" />
+</shape>

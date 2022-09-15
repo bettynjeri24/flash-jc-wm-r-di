@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/getStartedFragment">
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.SignUpFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_signUpFragment_to_verifyIdentityFragment"
+            app:destination="@id/verifyIdentityFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerStepTwo2"
+        android:name="com.ekenya.rnd.dashboard.RegisterStepTwo"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.OtpVerificationFragment"
+        android:label=""
+        tools:layout="@layout/otp_verification_fragment">
+        <action
+            android:id="@+id/action_otpVerificationFragment_to_InitialPin"
+            app:destination="@id/initialPinFragment" />
+        <action
+
+            android:id="@+id/action_otpVerificationFragment_to_createNewPinFragment"
+            app:destination="@id/createNewPinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createNewPinFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.CreateNewPinFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_createNewPinFragment_to_confirmFragment"
+            app:destination="@id/confirmFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.ConfirmFragment"
+        android:label="">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/verifyIdentityFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.VerifyIdentityFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_verifyIdentityFragment_to_manualVerificationFragment"
+            app:destination="@id/manualVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manualVerificationFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.ManualVerificationFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_manualVerificationFragment_to_capturePhotosFragment"
+            app:destination="@id/capturePhotosFragment" />
+        <action
+            android:id="@+id/action_manualVerificationFragment_to_takeSelfieFragment"
+            app:destination="@id/takeSelfieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/capturePhotosFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.CapturePhotosFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_capturePhotosFragment_to_takeSelfieFragment"
+            app:destination="@id/takeSelfieFragment" />
+        <action
+            android:id="@+id/action_capturePhotosFragment_to_finalDetailsVerificationFragment"
+            app:destination="@id/finalDetailsVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/takeSelfieFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.TakeSelfieFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_takeSelfieFragment_to_finalDetailsVerificationFragment"
+            app:destination="@id/finalDetailsVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalDetailsVerificationFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.FinalDetailsVerificationFragment"
+        android:label="">
+        <action
+            android:id="@+id/finalDetailsVerificationFragment_toAccountLookUp"
+            app:destination="@id/accountLookUpFragment"
+            app:popUpTo="@id/getStartedFragment" />
+        <action
+            android:id="@+id/finalDetailsVerificationFragment_toDeviceVerification"
+            app:destination="@+id/deviceVerificationFragment" />
+        <action
+            android:id="@+id/action_finalDetailsVerificationFragment_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationFragment" />
+        <action
+            android:id="@+id/action_finalDetailsVerificationFragment_to_getStartedFragment"
+            app:destination="@id/getStartedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeDepositFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.MakeDepositFragment"
+        android:label="">
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/segFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.SegFragment"
+        android:label=""
+        tools:layout="@layout/seg_fragment">
+        <action
+            android:id="@+id/action_segFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_segFragment_to_accountLookUpFragment"
+            app:destination="@id/accountLookUpFragment" />
+        <action
+            android:id="@+id/action_segFragment_to_getStartedFragment"
+            app:destination="@id/getStartedFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/testFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.TestFragment"
+        android:label="" />
+    <fragment
+        android:id="@+id/accountLookUpFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.AccountLookUpFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_accountLookUpFragment_to_deviceVerificationFragment"
+            app:destination="@id/deviceVerificationFragment" />
+        <action
+            android:id="@+id/action_accountLookUpFragment_to_getHelpFragment"
+            app:destination="@+id/helpFragment2" />
+        <action
+            android:id="@+id/action_accountLookUpFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+        <action
+            android:id="@+id/action_accountLookUpFragment_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getStartedFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.GetStartedFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_getStartedFragment_to_accountLookUpFragment"
+            app:destination="@id/accountLookUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/helpFragment2"
+        android:name="com.ekenya.rnd.dashboard.view.HelpFragment"
+        android:label="HelpFragment" />
+    <fragment
+        android:id="@+id/deviceVerificationFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.DeviceVerificationFragment"
+        android:label="">
+        <action
+            android:id="@+id/deviceVerificationFragmenttocreatepinaction"
+            app:destination="@id/createNewPinFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/initialPinFragment"
+        android:name="com.ekenya.rnd.onboarding.ui.InitialPinFragment"
+        android:label="fragment_initial_pin"
+        tools:layout="@layout/fragment_initial_pin" />
+    <fragment
+        android:id="@+id/aboutUsFragment2"
+        android:name="com.ekenya.rnd.dashboard.view.AboutUsFragment"
+        android:label="" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.ekenya.rnd.dashboard.view.LoginFragment"
+        android:label="loginFragment" />
+<!--    <fragment-->
+<!--        android:id="@+id/accountLookUpFragment2"-->
+<!--        android:name="com.ekenya.rnd.onboarding.ui.AccountLookUpFragment"-->
+<!--        android:label="" >-->
+<!--        <action-->
+<!--            android:id="@+id/action_accountLookUpFragment_to_loginFragment"-->
+<!--            app:destination="@id/loginFragment" />-->
+
+<!--    </fragment>-->
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.ekenya.rnd.dashboard.view.HomeFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/airtimeFragment"
+        android:name="com.ekenya.rnd.dashboard.view.AirtimeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_airtime" />
+
+    <fragment
+        android:id="@+id/orangeAirtimeFragment"
+        android:name="com.ekenya.rnd.dashboard.view.BuyAirtimeFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/mascomAirtimeFragment"
+        android:name="com.ekenya.rnd.dashboard.view.MascomAirtimeFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/billPaymentsConfirmationFragment"
+        android:name="com.ekenya.rnd.dashboard.view.BillPaymentsConfirmationFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/billPaymentsFragment"
+        android:name="com.ekenya.rnd.dashboard.view.BillPaymentsFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_billPaymentsFragment_to_absaRepaymentsFragment"
+            app:destination="@id/absaRepaymentsFragment" />
+        <action
+            android:id="@+id/action_billPaymentsFragment_to_dstvpaymentsFragment"
+            app:destination="@id/dstvPayments"
+            app:popUpTo="@id/billPaymentsFragment" />
+        <action
+            android:id="@+id/action_billPaymentsFragment_to_orangeAirtimeFragment"
+            app:destination="@id/orangeAirtimeFragment" />
+        <action
+            android:id="@+id/action_billPaymentsFragment_to_botswanapower"
+            app:destination="@+id/botswanaPowerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/botswanaAccountLookupFragment"
+        android:name="com.ekenya.rnd.dashboard.view.BotswanaAccountLookupFragment"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/dstvPayments"
+        android:name="com.ekenya.rnd.dashboard.view.DstvPayments"
+        android:label="" />
+
+    <fragment
+        android:id="@+id/absaRepaymentsFragment"
+        android:name="com.ekenya.rnd.dashboard.view.AbsaRepaymentsFragment"
+        android:label="" />
+
+
+    <fragment
+        android:id="@+id/sendMoneyFragment2"
+        android:name="com.ekenya.rnd.dashboard.view.SendMoneyFragment"
+        android:label="">
+        <action
+            android:id="@+id/action_sendMoneyFragment2_to_sendToBankFragment"
+            app:destination="@id/sendToBankFragment" />
+        <action
+            android:id="@+id/action_sendMoneyFragment2_to_sendToMobileFragment"
+            app:destination="@id/sendToMobileFragment" />
+        <action
+            android:id="@+id/action_sendMoneyFragment2_to_sendToWalletFragment"
+            app:destination="@id/sendToWalletFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/withdrawFragment2"
+        android:name="com.ekenya.rnd.dashboard.view.WithdrawFragment"
+        android:label="">
+        <action
+            android:id="@+id/withdrawFragment_to_withdrawConfirmation"
+            app:destination="@id/withdrawConfirmationFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/growthFragment"
+        android:name="com.ekenya.rnd.dashboard.view.GrowthFragment"
+        android:label="" />
+
+
+</navigation>

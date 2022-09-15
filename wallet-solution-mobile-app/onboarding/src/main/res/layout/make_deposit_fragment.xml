@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:elevation="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_width="match_parent"
+            android:background="@color/app_mustard"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:paddingTop="30dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/close_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_back_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:background="@color/app_mustard"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/appbarlayout"
+>
+
+    <TextView
+        android:id="@+id/tv_letsVerifyidentity"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:text="Hurray! Fund your wallet"/>
+
+    <TextView
+        android:id="@+id/tv_timeinfo"
+        android:layout_width="0dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="25dp"
+        android:lineSpacingExtra="18sp"
+        android:text="Start using your Tyler-Soft Wallet Today, You can send,withdraw and spend money at your convinence"
+        android:textColor="#ffffff"
+        android:textSize="14sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@id/tv_letsVerifyidentity"
+        app:layout_constraintStart_toStartOf="@id/tv_letsVerifyidentity"
+        app:layout_constraintTop_toBottomOf="@id/tv_letsVerifyidentity" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Continue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:padding="16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="@string/fund_wallet"
+        android:textColor="@color/app_mustard"
+        android:textSize="@dimen/textsize_12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_skiptoDashboard"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timeinfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_timeinfo" />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_skiptoDashboard"
+        android:layout_width="0dp"
+        style="?attr/materialButtonOutlinedStyle"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:padding="16dp"
+        android:text="SKIP"
+        app:strokeColor="@color/white"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timeinfo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_timeinfo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="198dp"
+        android:layout_height="221dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Continue"
+        app:layout_constraintEnd_toEndOf="@+id/tv_timeinfo"
+        app:layout_constraintStart_toStartOf="@+id/tv_timeinfo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_timeinfo"
+        app:srcCompat="@drawable/ic_fill_46" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

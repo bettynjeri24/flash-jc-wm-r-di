@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topuplayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <TextView
+
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:drawableLeft="@drawable/ic_dstv"
+            android:drawablePadding="@dimen/margin_16dp"
+            android:text="Dstv"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_SendingAmount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="You’re sending"
+            android:textColor="@color/black_text_color"
+            android:textSize="12sp"
+            android:textStyle="normal"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+        <TextView
+            android:id="@+id/sendingAmountValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="GHS 1,000.00 "
+            android:textColor="#000000"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/tv_SendingAmount"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+        <ScrollView
+            android:id="@+id/scrollView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_SendingAmount"
+            app:layout_constraintTop_toBottomOf="@id/tv_SendingAmount"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/optionOneRadioButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:layout_marginEnd="@dimen/margin_16dp"
+            android:layout_marginBottom="@dimen/margin_16dp"
+            app:cardElevation="0dp"
+
+            app:layout_constraintBottom_toTopOf="@id/btn_paynow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:background="@drawable/confirmtrans_bg"
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_agentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:text="Biller:"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_agentNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="DSTV"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@id/tv_agentName"
+                    app:layout_constraintTop_toBottomOf="@id/tv_agentName" />
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:background="@color/grey_40percent"
+
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_agentNameValue" />
+
+                <TextView
+                    android:id="@+id/tv_agentNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:text="Account Number:"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view6" />
+
+                <TextView
+                    android:id="@+id/tv_accountNumberValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="33012345678"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@id/tv_agentNumber"
+                    app:layout_constraintTop_toBottomOf="@id/tv_agentNumber" />
+
+                <TextView
+                    android:id="@+id/tv_accountName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:text="Account Name:"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view1" />
+
+                <TextView
+                    android:id="@+id/tv_accountNameValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="Test Account"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@id/tv_agentNumber"
+                    app:layout_constraintTop_toBottomOf="@id/tv_accountName" />
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:background="@color/grey_40percent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_accountNumberValue" />
+
+                <View
+                    android:id="@+id/view6"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:background="@color/grey_40percent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_accountNameValue" />
+
+                <TextView
+                    android:id="@+id/tv_withdrawFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="Pay From:"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@id/tv_accountNumberValue"
+                    app:layout_constraintTop_toBottomOf="@id/view2" />
+
+                <TextView
+                    android:id="@+id/tv_payFromValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="CBG Wallet"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@id/tv_withdrawFrom"
+                    app:layout_constraintTop_toBottomOf="@id/tv_withdrawFrom" />
+
+                <View
+                    android:id="@+id/view3"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:background="@color/grey_40percent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_payFromValue" />
+
+                <TextView
+                    android:id="@+id/tv_transactionCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="@string/service_charge"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@id/tv_accountNumberValue"
+                    app:layout_constraintTop_toBottomOf="@id/view3" />
+
+                <TextView
+                    android:id="@+id/transactionCostAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="GHS 0.00"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@id/tv_accountNumberValue"
+                    app:layout_constraintTop_toBottomOf="@id/tv_transactionCost" />
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_margin="@dimen/margin_16dp"
+                    android:background="@color/grey_40percent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/transactionCostAmount" />
+
+                <TextView
+                    android:id="@+id/tv_totalAmountToPay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="Total:"
+                    android:textColor="@color/black_text_color"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:visibility="visible"
+
+                    app:layout_constraintStart_toStartOf="@id/tv_accountNumberValue"
+                    app:layout_constraintTop_toBottomOf="@id/view4" />
+
+
+                <TextView
+                    android:id="@+id/totalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:text="GHS 0.00"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="@+id/tv_totalAmountToPay"
+                    app:layout_constraintTop_toBottomOf="@id/tv_totalAmountToPay" />
+
+                <TextView
+                    android:id="@+id/paymentReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/margin_16dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="Family"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:visibility="invisible"
+                    app:layout_constraintStart_toStartOf="@id/paymentReason"
+                    app:layout_constraintTop_toBottomOf="@id/totalAmount" />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_paynow"
+            style="@style/main_buttons_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="@color/app_mustard"
+            android:padding="16dp"
+            android:text="PAY NOW"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_12sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

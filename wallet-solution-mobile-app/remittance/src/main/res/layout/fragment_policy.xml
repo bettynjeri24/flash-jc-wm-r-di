@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/onboard_bg"
+    tools:context=".ui.onboarding.PolicyFragment">
+
+    <include
+        android:id="@+id/layout_header"
+        layout="@layout/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito_sans"
+            app:layout_constraintTop_toBottomOf="@id/layout_header"
+            android:layout_margin="@dimen/medium_layout_margin"
+            android:text="Click accept to accept terms"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_medium_small" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_accept_terms"
+            style="@style/MaterialButtonDefaultStyle"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_layout_margin"
+            android:layout_marginBottom="50dp"
+            android:padding="10dp"
+            android:paddingBottom="@dimen/large_layout_margin"
+            android:text="@string/accept"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

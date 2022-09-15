@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_currentWalletBalance"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="14dp"
+        android:layout_marginTop="24dp"
+
+        android:text="Current Wallet Balance GHS 200,000.00"
+        android:textAlignment="center"
+        android:textColor="#848484"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/et_Amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:focusableInTouchMode="false"
+        android:maxLength="12"
+        android:inputType="textNoSuggestions"
+        android:background="@null"
+
+        android:hint="Enter Amount"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textColor="#8d8d8d"
+        android:textSize="32sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/tv_currentWalletBalance" />
+
+    <TextView
+        android:id="@+id/tv_minimumAmount"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Minimum fund wallet: GHS 100.00"
+        android:textAlignment="center"
+        android:textColor="#f76710"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toBottomOf="@id/et_Amount" />
+
+    <Button
+        android:id="@+id/btn_one"
+        style="@style/keypad_buttons_style"
+        android:layout_marginTop="24dp"
+        android:text="@string/_1"
+        app:layout_constraintBottom_toTopOf="@+id/btn_four"
+        app:layout_constraintEnd_toStartOf="@+id/btn_two"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_minimumAmount" />
+
+    <Button
+        android:id="@+id/btn_two"
+        style="@style/keypad_buttons_style"
+        android:text="@string/_2"
+        app:layout_constraintEnd_toStartOf="@+id/btn_three"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_one"
+        app:layout_constraintTop_toTopOf="@+id/btn_one" />
+
+    <Button
+        android:id="@+id/btn_three"
+        style="@style/keypad_buttons_style"
+        android:text="@string/_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_two"
+        app:layout_constraintTop_toTopOf="@+id/btn_one" />
+
+    <Button
+        android:id="@+id/btn_four"
+        style="@style/keypad_buttons_style"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_seven"
+        app:layout_constraintEnd_toStartOf="@+id/btn_five"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_one"
+        app:layout_constraintTop_toBottomOf="@+id/btn_one" />
+
+    <Button
+        android:id="@+id/btn_five"
+        style="@style/keypad_buttons_style"
+        android:text="@string/_5"
+        app:layout_constraintEnd_toStartOf="@+id/btn_six"
+        app:layout_constraintStart_toStartOf="@+id/btn_two"
+        app:layout_constraintTop_toTopOf="@+id/btn_four" />
+
+    <Button
+        android:id="@+id/btn_six"
+        style="@style/keypad_buttons_style"
+        android:text="@string/_6"
+        app:layout_constraintEnd_toEndOf="@+id/btn_three"
+        app:layout_constraintStart_toStartOf="@+id/btn_three"
+        app:layout_constraintTop_toTopOf="@+id/btn_five" />
+
+    <Button
+        android:id="@+id/btn_seven"
+        style="@style/keypad_buttons_style"
+        android:text="@string/_7"
+        app:layout_constraintBottom_toTopOf="@+id/btn_useFingerprint"
+        app:layout_constraintEnd_toStartOf="@+id/btn_eight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_four"
+        app:layout_constraintTop_toBottomOf="@+id/btn_four" />
+
+    <Button
+        android:id="@+id/btn_eight"
+        style="@style/keypad_buttons_style"
+        android:text="8"
+        app:layout_constraintEnd_toStartOf="@+id/btn_nine"
+        app:layout_constraintStart_toStartOf="@+id/btn_five"
+        app:layout_constraintTop_toTopOf="@+id/btn_seven" />
+
+    <Button
+        android:id="@+id/btn_nine"
+        style="@style/keypad_buttons_style"
+        android:text="@string/_9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_six"
+        app:layout_constraintTop_toTopOf="@+id/btn_eight" />
+
+    <TextView
+        android:id="@+id/btn_useFingerprint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:visibility="invisible"
+        android:padding="12dp"
+        android:textSize="32sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+
+        android:text="00"
+        android:textAlignment="center"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_continue"
+        app:layout_constraintEnd_toStartOf="@+id/btn_zero"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btn_seven"
+        app:layout_constraintTop_toBottomOf="@+id/btn_seven" />
+
+    <Button
+        android:id="@+id/btn_zero"
+        style="@style/keypad_buttons_style"
+        android:text="0"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Delete"
+        app:layout_constraintStart_toStartOf="@+id/btn_eight"
+        app:layout_constraintTop_toTopOf="@+id/btn_useFingerprint" />
+
+    <ImageView
+        android:id="@+id/btn_Delete"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:padding="@dimen/margin_16dp"
+        android:src="@drawable/ic_delete"
+        app:cornerRadius="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btn_nine"
+        app:layout_constraintTop_toTopOf="@+id/btn_zero" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        style="@style/main_buttons_style"
+        android:text="@string/txt_continue"
+        android:visibility="visible"
+        android:alpha=".5"
+        android:enabled="false"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

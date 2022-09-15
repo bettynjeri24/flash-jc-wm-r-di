@@ -1,0 +1,576 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/topView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/accent"
+        android:paddingHorizontal="15dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/selectedYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2021"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/selectedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Thur, 24 Nov"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/selectedYear" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topView">
+
+        <ImageView
+            android:id="@+id/prevMonthBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_marginTop="10dp"
+            app:tint="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/selectedMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="November 2021"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintStart_toEndOf="@id/prevMonthBtn"
+            app:layout_constraintEnd_toStartOf="@id/nextMonthBtn"
+            app:layout_constraintTop_toTopOf="@id/prevMonthBtn"
+            app:layout_constraintBottom_toBottomOf="@id/prevMonthBtn"/>
+
+        <ImageView
+            android:id="@+id/nextMonthBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_forward"
+            app:tint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/prevMonthBtn"/>
+
+        <TableLayout
+            android:id="@+id/calendarTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:focusable="true"
+            android:stretchColumns="0,1,2,3,4,5,6"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/prevMonthBtn">
+
+            <TableRow
+                android:id="@+id/rowHeading"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rowHeadingColOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="5dp"
+                    android:text="M"
+                    android:textAlignment="center"
+                    android:textColor="#737272" />
+
+                <TextView
+                    android:id="@+id/rowHeadingColTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="5dp"
+                    android:text="M"
+                    android:textAlignment="center"
+                    android:textColor="#737272" />
+
+                <TextView
+                    android:id="@+id/rowHeadingColThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:padding="5dp"
+                    android:text="M"
+                    android:textAlignment="center"
+                    android:textColor="#737272" />
+
+                <TextView
+                    android:id="@+id/rowHeadingColFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:padding="5dp"
+                    android:text="M"
+                    android:textAlignment="center"
+                    android:textColor="#737272" />
+
+                <TextView
+                    android:id="@+id/rowHeadingColFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:padding="5dp"
+                    android:text="M"
+                    android:textAlignment="center"
+                    android:textColor="#737272" />
+
+                <TextView
+                    android:id="@+id/rowHeadingColSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:padding="5dp"
+                    android:text="M"
+                    android:textAlignment="center"
+                    android:textColor="#737272" />
+
+                <TextView
+                    android:id="@+id/rowHeadingColSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:padding="5dp"
+                    android:text="M"
+                    android:textAlignment="center"
+                    android:textColor="#737272" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rowOne"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rowOneColOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowOneColTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowOneColThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowOneColFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowOneColFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowOneColSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowOneColSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rowTwo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rowTwoColOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowTwoColTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowTwoColThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowTwoColFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowTwoColFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowTwoColSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowTwoColSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rowThree"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rowThreeColOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowThreeColTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowThreeColThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowThreeColFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowThreeColFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowThreeColSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowThreeColSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rowFour"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rowFourColOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFourColTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFourColThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFourColFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFourColFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFourColSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFourColSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rowFive"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rowFiveColOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFiveColTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFiveColThree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="2"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFiveColFour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="3"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFiveColFive"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="4"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFiveColSix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="5"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowFiveColSeven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="6"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/rowSix"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/rowSixColOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/rowSixColTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:padding="5dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black" />
+            </TableRow>
+        </TableLayout>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:spinnerMode="dialog"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/calendarTable"
+            app:layout_constraintBottom_toTopOf="@id/ok"/>
+
+        <TextView
+            android:id="@+id/ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:textColor="@color/accent"
+            android:textSize="16sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="45dp"
+            app:layout_constraintTop_toBottomOf="@id/spinner"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CANCEL"
+            android:textColor="@color/accent"
+            android:textSize="16sp"
+            android:layout_marginEnd="30dp"
+            app:layout_constraintBottom_toBottomOf="@id/ok"
+            app:layout_constraintEnd_toStartOf="@id/ok"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

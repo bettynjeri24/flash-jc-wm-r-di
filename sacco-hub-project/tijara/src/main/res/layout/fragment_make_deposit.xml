@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="depositViewmodel"
+            type="com.ekenya.rnd.tijara.ui.homepage.home.dashboard.buyairtime.BuyAirtimeViewmodel"/>
+    </data>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+        <include
+            android:id="@+id/progressr"
+            android:visibility="gone"
+            layout="@layout/spinkit_dialog_loading"
+            />
+        <include
+            android:id="@+id/content"
+            layout="@layout/content_make_deposit" />
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/textColor"
+            >
+              <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tbToolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:contentInsetEnd="0dp"
+                    app:contentInsetStart="0dp">
+                  <androidx.constraintlayout.widget.ConstraintLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent">
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/custom_toolbar"
+                    android:layout_width="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_height="wrap_content" />
+                  </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

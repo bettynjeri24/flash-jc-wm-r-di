@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/tv_signUp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:drawablePadding="@dimen/margin_16dp"
+        android:gravity="center_vertical"
+        android:text="School fees payment"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_WelcomeTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:text="Please provide the details below"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_signUp" />
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_fullName"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_WelcomeTxt">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_fullname"
+            style="@style/signupedittext_style"
+            android:hint="Enter school ID"
+            android:inputType="textCapSentences"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- <com.hbb20.CountryCodePicker
+         android:id="@+id/ccp"
+         android:layout_width="wrap_content"
+         android:layout_height="0dp"
+         android:background="@drawable/rounded_layout"
+         android:gravity="center_vertical"
+         android:padding="10dp"
+         app:ccp_areaCodeDetectedCountry="true"
+         app:ccp_defaultNameCode="KE"
+         app:ccp_customMasterCountries="KE,BW"
+         app:ccp_showFullName="false"
+         app:ccp_showNameCode="false"
+         app:ccp_textSize="12sp"
+         app:layout_constraintBottom_toBottomOf="@id/til_PhoneNumber"
+         app:layout_constraintStart_toStartOf="@id/til_fullName"
+         app:layout_constraintTop_toTopOf="@id/til_PhoneNumber" />
+
+
+     <com.google.android.material.textfield.TextInputLayout
+         android:id="@+id/til_PhoneNumber"
+         style="@style/textinputlayout_style"
+         android:background="@drawable/rounded_layout"
+
+         app:layout_constraintStart_toEndOf="@id/ccp"
+         app:layout_constraintTop_toBottomOf="@+id/til_fullName">
+
+         <com.google.android.material.textfield.TextInputEditText
+             android:id="@+id/et_phonenumber"
+             style="@style/signupedittext_style"
+             android:hint="@string/mobileNumber"
+             android:inputType="number"
+
+
+             />
+
+     </com.google.android.material.textfield.TextInputLayout>
+ -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_emailAddress"
+        style="@style/textinputlayout_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_fullName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            style="@style/signupedittext_style"
+            android:hint="Enter students ID number"
+            android:inputType="textEmailAddress"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        style="@style/main_buttons_style"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        android:text="@string/txt_continue"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_sendOtpTitle"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:text="Send OTP Via"/>
+    <TextView
+        android:id="@+id/tv_chooseoption"
+        android:layout_marginTop="17dp"
+        android:layout_margin="@dimen/margin_16dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_sendOtpTitle"
+        app:layout_constraintStart_toStartOf="@id/tv_sendOtpTitle"
+        app:layout_constraintTop_toBottomOf="@id/tv_sendOtpTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:textColor="#6f7070"
+        android:text="We are sorry for the issue. Kindly choose what means you
+would like to recieve your OTP Code."/>
+
+    <CheckBox
+        android:id="@+id/checkbox_number"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@id/tv_sendOtpTitle"
+        app:layout_constraintStart_toStartOf="@id/tv_sendOtpTitle"
+        app:layout_constraintTop_toBottomOf="@id/tv_chooseoption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:checked="true"
+
+        android:textColor="#000000"
+        android:text="Via SMS ********1916"/>
+
+    <CheckBox
+        android:id="@+id/checkbox_email"
+        app:layout_constraintEnd_toEndOf="@id/tv_sendOtpTitle"
+        app:layout_constraintStart_toStartOf="@id/tv_sendOtpTitle"
+        app:layout_constraintTop_toBottomOf="@id/checkbox_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="12sp"
+        android:checked="false"
+
+
+        android:textColor="#000000"
+        android:text="Via Email alex******@gmail.com"            />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_getPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/app_mustard"
+        android:padding="16dp"
+        android:text="@string/txt_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tv_sendOtpTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/tv_sendOtpTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

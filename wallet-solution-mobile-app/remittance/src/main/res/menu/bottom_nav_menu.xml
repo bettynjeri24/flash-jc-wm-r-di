@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:enabled="true"
+        android:icon="@mipmap/home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/nav_walletStmt"
+        android:enabled="true"
+        android:icon="@mipmap/favbills"
+        android:title="@string/title_favouriteBill" />
+
+    <item
+        android:id="@+id/nav_paymerchant"
+        android:enabled="true"
+        android:icon="@mipmap/scan"
+        android:title="@string/title_scanPay" />
+
+    <item
+        android:id="@+id/navOffers"
+        android:enabled="true"
+        android:icon="@mipmap/offers"
+        android:title="@string/title_offers" />
+
+    <item
+        android:id="@+id/nav_moreFragment"
+        android:enabled="true"
+        android:icon="@mipmap/more"
+        android:title="@string/title_more" />
+
+</menu>

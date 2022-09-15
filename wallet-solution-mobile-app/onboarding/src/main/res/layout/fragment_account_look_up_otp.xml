@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include
+        android:id="@+id/app_logo"
+        layout="@layout/app_logo_imageview" />
+
+    <TextView
+        android:id="@+id/tv_otpvercodetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="26dp"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        android:text="@string/devicever_text"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_logo" />
+
+    <TextView
+        android:id="@+id/tv_codeSentto"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="12dp"
+        android:lineSpacingExtra="12sp"
+        android:text="We’ve sent you a code to +267 709******09"
+        android:textAlignment="center"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/tv_otpvercodetxt"
+        app:layout_constraintStart_toStartOf="@+id/tv_otpvercodetxt"
+        app:layout_constraintTop_toBottomOf="@id/tv_otpvercodetxt" />
+
+    <EditText
+        android:id="@+id/til_digit1"
+
+        style="@style/textinputotp_style"
+        android:background="@drawable/rounded_layout"
+        android:inputType="number"
+        android:maxLength="1"
+
+        app:layout_constraintTop_toBottomOf="@+id/tv_codeSentto"
+        app:layout_constraintEnd_toStartOf="@+id/til_digit2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="176dp"></EditText>
+
+    <EditText
+        android:id="@+id/til_digit2"
+        style="@style/textinputotp_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codeSentto"
+
+        app:layout_constraintEnd_toStartOf="@+id/til_digit3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/til_digit1"
+        tools:layout_editor_absoluteY="176dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/til_digit3"
+        style="@style/textinputotp_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codeSentto"
+
+        app:layout_constraintEnd_toStartOf="@+id/til_digit4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/til_digit2"
+        tools:layout_editor_absoluteY="176dp">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/til_digit4"
+        style="@style/textinputotp_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codeSentto"
+
+        app:layout_constraintEnd_toStartOf="@+id/til_digit5"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/til_digit3"
+        tools:layout_editor_absoluteY="176dp">
+
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/til_digit5"
+        style="@style/textinputotp_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codeSentto"
+
+        app:layout_constraintEnd_toStartOf="@+id/til_digit6"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/til_digit4"
+        tools:layout_editor_absoluteY="176dp">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/til_digit6"
+        style="@style/textinputotp_style"
+        android:background="@drawable/rounded_layout"
+        app:layout_constraintTop_toBottomOf="@+id/tv_codeSentto"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/til_digit5"
+        tools:layout_editor_absoluteY="176dp">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="Resend in 0:15"
+        android:textAlignment="center"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_digit1" />
+
+    <Button
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="bypass"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/bypass_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_resendOtp"
+        android:layout_width="0dp"
+
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/app_mustard"
+        android:padding="16dp"
+        android:text="@string/resend_otp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12sp"
+        android:visibility="invisible"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

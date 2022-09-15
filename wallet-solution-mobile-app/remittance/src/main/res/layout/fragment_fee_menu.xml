@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/ic_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.13" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            app:layout_constraintBottom_toTopOf="@id/guideline"
+            android:background="@color/colorPrimary"
+            android:id="@+id/layout_top">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans_bold"
+                android:id="@+id/txtAccno2"
+                android:textAlignment="center"
+                android:paddingTop="@dimen/layout_margin"
+                android:paddingBottom="@dimen/textsize_medium_small"
+                android:textSize="30sp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/colorBlack"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline"
+            app:layout_constraintBottom_toBottomOf="@id/guideline"
+
+            app:cardCornerRadius="10dp"
+            android:elevation="8dp"
+            android:id="@+id/cardBalance"
+            android:background="@color/white"
+            app:cardBackgroundColor="@android:color/transparent"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutbalance"
+                android:layout_width="wrap_content"
+                android:paddingEnd="32dp"
+                android:paddingStart="@dimen/large_layout_margin"
+                android:layout_height="100dp"
+                android:background="@color/white"
+                android:paddingLeft="@dimen/layout_margin">
+
+                <TextView
+                    android:id="@+id/txtAccno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:paddingTop="@dimen/layout_margin"
+                    android:paddingBottom="@dimen/textsize_medium_small"
+                    android:text="@string/str_wallet_balance"
+                    android:textColor="@color/colorBlackText"
+                    android:textSize="@dimen/textsize_medium_large"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtAccName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    android:paddingBottom="@dimen/margin_padding_small"
+                    android:text="GHS..  10,000.00 "
+                    android:textSize="@dimen/text_size_large"
+                    android:textColor="@color/colorBlackText"
+                    app:layout_constraintTop_toBottomOf="@id/txtAccno" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@id/cardBalance"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="@dimen/medium_layout_margin"
+            android:background="@mipmap/ic_bg">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/rcvScholFeeMenu"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

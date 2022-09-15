@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekenya.rnd.dashboard.view.LandingPageFragment">
+
+    <com.flaviofaria.kenburnsview.KenBurnsView
+
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/landing" />
+
+    <include
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="70dp"
+        android:id="@+id/appbarlayout"
+        layout="@layout/app_logo_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <!--
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            android:background="@android:color/transparent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:background="@android:color/transparent"
+                app:elevation="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/close_icon"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:background="?selectableItemBackgroundBorderless"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:src="@drawable/ic_exit"
+                        android:visibility="invisible"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/logo_image"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_tollo"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+    -->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_fromDestination"
+        style="@style/exposed_dropdown_style"
+        android:background="@drawable/transparent_background"
+        android:layout_width="wrap_content"
+        android:alpha="0.5"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:focusable="false"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appbarlayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/app_language"
+            style="@style/signupedittext_style"
+            android:focusable="false"
+            android:text="English:"
+            android:inputType="textCapSentences"
+            android:textColor="@color/black_text_color"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="40dp"
+         android:src="@drawable/mariwallet_logo"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintTop_toTopOf="parent" />
+ -->
+    <TextView
+        android:id="@+id/tv_Greetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45dp"
+        android:lineSpacingExtra="12sp"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/tv_aboutUs"
+        app:layout_constraintStart_toStartOf="@id/tv_aboutUs"
+        tools:text="Good Morning Alex!  \n
+Enjoy cashless  \n transactions " />
+
+    <TextView
+        android:id="@+id/tv_aboutUs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:drawableLeft="@drawable/ic_info"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/about_us"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/btn_login"
+        app:layout_constraintStart_toStartOf="@id/btn_login" />
+
+    <TextView
+        android:id="@+id/tv_help"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:drawableLeft="@drawable/ic_help"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/help"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@id/tv_location"
+        app:layout_constraintTop_toTopOf="@id/tv_aboutUs" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="8dp"
+        android:gravity="center_vertical"
+        android:text="@string/locate_us"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@id/tv_aboutUs"
+        app:layout_constraintTop_toTopOf="@id/tv_aboutUs" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/app_mustard"
+        android:padding="16dp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

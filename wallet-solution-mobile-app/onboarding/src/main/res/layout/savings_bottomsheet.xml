@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <View
+        android:id="@+id/view20"
+        android:layout_width="30dp"
+        android:layout_height="3dp"
+        android:background="@color/app_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/view20"
+        android:id="@+id/tv_selectSourceofFunds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:text="Select Type of account:"/>
+
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toBottomOf="@id/cardViewPersonalSavingsAccount"
+        android:layout_width="0dp"
+        android:id="@+id/cardviewGroupSavings"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:cardCornerRadius="10dp"
+        android:layout_marginBottom="@dimen/margin_16dp"
+        app:cardElevation="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="@dimen/margin_16dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_40percent"
+
+            android:padding="@dimen/margin_16dp">
+            <ImageView
+                android:id="@+id/img_groupsavings"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_groupsavingsicon"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                app:layout_constraintTop_toBottomOf="@id/img_groupsavings"
+                app:layout_constraintStart_toStartOf="@id/img_groupsavings"
+                android:id="@+id/tv_optionTwo"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="Group Savings Account"/>
+            <TextView
+                android:layout_marginTop="6dp"
+                app:layout_constraintStart_toStartOf="@id/tv_optionTwo"
+                app:layout_constraintTop_toBottomOf="@id/tv_optionTwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:textSize="10sp"
+                android:textColor="#6f7070"
+                android:text="Put aside money for a group spending or culture"/>
+            <View
+                android:id="@+id/optionTwoRadioButton"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:background="@drawable/ic_arrow_next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPersonalSavingsAccount"
+        app:layout_constraintTop_toBottomOf="@id/tv_selectSourceofFunds"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="@dimen/margin_16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_40percent"
+
+            android:padding="@dimen/margin_16dp">
+            <ImageView
+                android:id="@+id/img_Savings2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_personalsavings"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_optionOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Personal Savings Account"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/img_Savings2"
+                app:layout_constraintTop_toBottomOf="@+id/img_Savings2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Put your money aside for your own personal needs"
+                android:textColor="#6f7070"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintStart_toStartOf="@+id/tv_optionOne"
+                app:layout_constraintTop_toBottomOf="@id/tv_optionOne" />
+
+            <View
+                android:id="@+id/optionOneRadioButton"
+                android:layout_height="20dp"
+                android:layout_width="20dp"
+                android:layout_marginEnd="@dimen/margin_16dp"
+                android:background="@drawable/ic_arrow_next"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

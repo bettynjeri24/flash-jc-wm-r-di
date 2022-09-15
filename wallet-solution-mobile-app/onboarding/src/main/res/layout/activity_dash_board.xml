@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/coordinator"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_dashboard"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/bottomnav_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/dashboard_navigation" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:id="@+id/bottomnav_layout"
+        >
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_view"
+            android:layout_width="0dp"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="?android:attr/windowBackground"
+            android:clipChildren="false"
+            app:labelVisibilityMode="labeled"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@color/bottomnav_color_selector"
+            app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/mari_wallet_bottom_menu">
+
+            <ImageView
+                android:id="@+id/scan"
+
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@android:color/transparent"
+                android:elevation="0dp"
+                android:scaleType="center"
+                app:fabSize="normal"
+                app:srcCompat="@drawable/ic_scan" />
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

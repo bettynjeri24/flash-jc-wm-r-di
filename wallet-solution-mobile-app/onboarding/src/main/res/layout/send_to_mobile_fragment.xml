@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:text="Send to Mobile"
+
+        android:textColor="#000000"
+        android:textSize="22sp"
+        android:textStyle="normal"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_addinfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:text="How much would you like to send?"
+        android:textColor="@color/black_text_color"
+        android:textSize="12sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/optionOneRadioButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16dp"
+        android:layout_marginEnd="@dimen/margin_16dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_addinfo"
+        app:layout_constraintTop_toBottomOf="@id/tv_addinfo">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bottomsheet_greycolor"
+            android:paddingStart="10dp"
+            android:paddingTop="@dimen/margin_16dp"
+            android:paddingEnd="@dimen/margin_16dp"
+            android:paddingBottom="@dimen/margin_16dp">
+            <TextView
+                android:id="@+id/currency_spinner"
+                android:backgroundTint="@color/black_text_color"
+                android:padding="0dp"
+                android:text="@string/tollo_currency"
+                android:textColor="@color/black_text_color"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"
+                />
+
+
+
+            <TextView
+                android:id="@+id/tv_WalletBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Balance: GHS 98,000.00"
+                android:textColor="@color/black_text_color"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toStartOf="@+id/tv_amount"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/currency_spinner" />
+
+            <EditText
+                android:id="@+id/et_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="20,000.00"
+                android:inputType="number"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/tv_amount"
+                app:layout_constraintTop_toBottomOf="@id/tv_amount"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="43dp"
+                android:text="@string/enter_amount"
+                android:textColor="@color/app_mustard"
+                android:textSize="10sp"
+                android:textStyle="normal"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tv_WalletBalance"
+                app:layout_constraintTop_toTopOf="@id/currency_spinner" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Continue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/bg_blue"
+        android:padding="16dp"
+        android:text="@string/txt_continue"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_12sp"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/optionOneRadioButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/optionOneRadioButton" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_selectProvider"
+        style="@style/exposed_dropdown_style"
+        android:background="@drawable/rounded_layout"
+        android:focusable="false"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/optionOneRadioButton">
+
+        <AutoCompleteTextView
+            android:focusable="false"
+
+            android:id="@+id/providerSpinner"
+            style="@style/signupedittext_style"
+            android:hint="Select Mobile Money Provider:"
+            android:inputType="textCapSentences"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.hbb20.CountryCodePicker
+        android:id="@+id/ccp"
+        app:ccp_customMasterCountries="et,ke,GH"
+
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_layout"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        app:ccp_areaCodeDetectedCountry="true"
+        app:ccp_defaultNameCode="KE"
+        app:ccp_showFullName="false"
+        app:ccp_showNameCode="false"
+        app:ccp_textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/phoneNumber_layout"
+        app:layout_constraintStart_toStartOf="@+id/optionOneRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/til_selectProvider" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:id="@+id/phoneNumber_layout"
+            android:paddingTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ccp"
+            app:layout_constraintTop_toBottomOf="@+id/til_selectProvider"
+            android:background="@drawable/rounded_layout"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:layout_margin="@dimen/margin_16dp"
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/textinputlayout_style"
+                android:layout_weight="3.5"
+        android:id="@+id/til_PhoneNumber"
+                android:layout_margin="0dp"
+                android:background="@drawable/rounded_layout"
+
+                android:orientation="horizontal"
+                app:boxCollapsedPaddingTop="0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ccp"
+                app:layout_constraintTop_toBottomOf="@+id/optionOneRadioButton">
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">-->
+
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_phonenumber"
+                    style="@style/signupedittext_style"
+                    android:layout_marginEnd="0dp"
+
+                    android:hint="@string/mobileNumber"
+                    android:inputType="number"
+
+
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <ImageView
+                android:id="@+id/ic_Contacts"
+                android:layout_width="0dp"
+                android:padding="0dp"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_contact"/>
+
+
+        </LinearLayout>
+
+<!--
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_PhoneNumber"
+        style="@style/textinputlayout_style"
+        android:orientation="horizontal"
+        android:background="@drawable/rounded_layout"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ccp"
+        app:layout_constraintTop_toBottomOf="@+id/optionOneRadioButton">
+        &lt;!&ndash;<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">&ndash;&gt;
+
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_phonenumber"
+                style="@style/signupedittext_style"
+
+                android:hint="@string/mobileNumber"
+                android:inputType="number"
+
+
+                />
+            &lt;!&ndash;<ImageView
+
+                android:layout_width="0dp"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_contact"/>
+        </LinearLayout>&ndash;&gt;
+
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+-->
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:progressTint="@color/app_mustard"
+        android:visibility="invisible"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ccp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

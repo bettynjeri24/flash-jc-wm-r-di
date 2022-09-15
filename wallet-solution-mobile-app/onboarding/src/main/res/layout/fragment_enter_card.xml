@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<TextView
+android:id="@+id/tv_signUp"
+android:layout_height="wrap_content"
+android:layout_marginStart="14dp"
+
+android:layout_marginTop="@dimen/margin_16dp"
+android:layout_width="0dp"
+android:text="Enter Card Details"
+    android:textColor="@color/black_text_color"
+android:textSize="22sp"
+android:textStyle="normal"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+android:id="@+id/tv_WelcomeTxt"
+android:layout_height="wrap_content"
+android:layout_marginEnd="@dimen/margin_16dp"
+android:layout_marginStart="@dimen/margin_16dp"
+android:layout_marginTop="@dimen/margin_16dp"
+android:layout_width="0dp"
+android:text="Your card is secured by a bank"
+android:textColor="@color/black_text_color"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="1.0"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/tv_signUp" />
+
+<com.google.android.material.textfield.TextInputLayout
+style="@style/textinputlayout_style"
+android:background="@drawable/rounded_layout"
+android:id="@+id/til_cardNumber"
+
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/tv_WelcomeTxt">
+
+<com.google.android.material.textfield.TextInputEditText
+    style="@style/signupedittext_style"
+    android:hint="@string/card_number"
+    android:maxLength="16"
+    android:id="@+id/et_cardNumber"
+    android:inputType="number"
+
+    />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+
+<com.google.android.material.textfield.TextInputLayout
+style="@style/textinputlayout_style"
+android:background="@drawable/rounded_layout"
+android:id="@+id/til_cvv"
+
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.5"
+app:layout_constraintStart_toEndOf="@+id/til_expirydate"
+app:layout_constraintTop_toBottomOf="@+id/til_cardNumber">
+
+<com.google.android.material.textfield.TextInputEditText
+    style="@style/signupedittext_style"
+    android:hint="CVV"
+    android:maxLength="3"
+    android:id="@+id/et_cvv"
+    android:inputType="number"
+
+
+    />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<com.google.android.material.textfield.TextInputLayout
+style="@style/textinputlayout_style"
+android:background="@drawable/rounded_layout"
+android:id="@+id/til_expirydate"
+app:layout_constraintEnd_toStartOf="@+id/til_cvv"
+app:layout_constraintHorizontal_bias="0.5"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/til_cardNumber">
+
+<com.google.android.material.textfield.TextInputEditText
+    style="@style/signupedittext_style"
+    android:hint="Expires"
+    android:maxLength="6"
+    android:id="@+id/et_expiry"
+    android:inputType="number"
+
+    />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <!-- <TextView
+         android:id="@+id/tv_alreadyWithAccount"
+         android:gravity="center_vertical"
+         app:layout_constraintStart_toStartOf="parent"
+         app:layout_constraintEnd_toEndOf="parent"
+         app:layout_constraintTop_toBottomOf="@id/til_emailAddress"
+         android:layout_width="wrap_content"
+         android:layout_height="0dp"
+         android:textStyle="normal"
+
+         android:layout_marginTop="32dp"
+         android:textSize="12sp"
+         android:textColor="#6f7070"
+         app:layout_constraintBottom_toBottomOf="@id/loginBtn"
+         android:text="Already have an account?"/>
+     <Button
+         android:id="@+id/loginBtn"
+         android:textSize="12sp"
+         android:padding="0dp"
+         app:layout_constraintTop_toTopOf="@id/tv_alreadyWithAccount"
+         app:layout_constraintStart_toEndOf="@id/tv_alreadyWithAccount"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/login"
+
+         style="@style/Widget.MaterialComponents.Button.TextButton"
+         />-->
+
+
+<com.google.android.material.button.MaterialButton
+style="@style/main_buttons_style"
+android:id="@+id/btn_continue"
+android:layout_marginBottom="@dimen/margin_16dp"
+android:layout_marginTop="@dimen/margin_16dp"
+android:text="@string/txt_continue"
+android:textColor="@color/white"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

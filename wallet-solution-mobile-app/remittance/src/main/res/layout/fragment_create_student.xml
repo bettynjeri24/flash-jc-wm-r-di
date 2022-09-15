@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/ic_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/layout_header"
+            layout="@layout/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin"
+
+            android:fontFamily="@font/nunito_sans_bold"
+            android:paddingBottom="@dimen/layout_margin"
+            android:text="@string/create_student"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_medium"
+            app:layout_constraintTop_toBottomOf="@id/layout_header" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/layout_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_top">
+
+        <ImageView
+            android:id="@+id/imgStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/students"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnCreateStudent"
+            style="@style/MaterialButtonDefaultStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin"
+            android:layout_marginEnd="@dimen/layout_margin"
+            android:layout_marginBottom="50dp"
+            android:padding="10dp"
+            android:paddingBottom="@dimen/large_layout_margin"
+            android:text="@string/str_create_student"
+            android:textAllCaps="false"
+            app:cornerRadius="50dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

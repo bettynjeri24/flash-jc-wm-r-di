@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../cargildigitalpayment-dantest/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FFOfflineUssdFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../cargildigitalpayment-dantest/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FarmForceBuyerFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../cargildigitalpayment-dantest/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FarmForceBuyerLoginFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../cargildigitalpayment-dantest/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FarmForceBuyerLoginFragmentTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../cargildigitalpayment-dantest/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/viewmodel/FFBaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../cargildigitalpayment-dantest/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/viewmodel/FarmForceCargillViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../cargildigitalpayment-dantest/app/src/main/java/io/eclectics/cargilldigital/utils/dk/BaseCommonCargillFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../cargildigitalpayment-dantest/app/src/main/java/io/eclectics/cargilldigital/utils/dk/CustomDialogs.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../cargildigitalpayment-dantest/app/src/main/java/io/eclectics/cargilldigital/utils/dk/DkUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.idea/gradle.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/.idea/misc.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/ekenya/rnd/baseapp/BaseApp.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/Constants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/changepassword/forgetPin/SelfiePinFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/login/LoginPinFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/login/LoginViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/onboarding/CountryFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/onboarding/CountryViewmodel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/onboarding/DeviceVerificationFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/onboarding/LandingPageFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/registration/ConfirmPinFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/registration/DefaultPinFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/registration/RegistarationOtpFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/java/com/ekenya/rnd/tijara/ui/auth/registration/RegistrationViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/tijara/src/main/res/navigation/onboarding_navigation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/deeplinking/FarmForceSenderMainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/custom/CustomDialogs.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/custom/UtilsCargill.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/insurance-module/insurance/src/main/java/com/ekenya/rnd/insurance/di/InsureTechInjector.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/insurance-module/insurance/src/main/java/com/ekenya/rnd/insurance/insuretech/claims/motor/ClaimsList.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/insurance-module/insurance/src/main/java/com/ekenya/rnd/insurance/insuretech/claims/motor/ClaimsPolicy.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/insurance-module/insurance/src/main/java/com/ekenya/rnd/insurance/insuretechUpdate/ui/claims/claimpolicy/submitclaim/SubmitClaimsFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/insurance-module/insurance/src/main/java/com/ekenya/rnd/insurance/insuretechUpdate/ui/insuranceproduct/HomeFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/investment-module/investment/src/main/java/com/ekenya/rnd/investment/investment/assets/CalculateActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

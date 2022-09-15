@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <include
+            android:id="@+id/progressr"
+            android:visibility="gone"
+            layout="@layout/spinkit_dialog_loading"
+            />
+        <include
+            android:id="@+id/content"
+            layout="@layout/content_paybill" />
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            android:background="@color/textColor"
+            >
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tbToolBar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:contentInsetEnd="0dp"
+                app:contentInsetStart="0dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <include
+                        android:id="@+id/toolbar"
+                        layout="@layout/custom_toolbar"
+                        android:layout_width="match_parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:layout_height="wrap_content" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
+            android:background="@drawable/unselected_background"
+            app:civ_border_color="@android:color/transparent"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/splash_log"
+            app:layout_anchor="@id/app_bar"
+            app:layout_anchorGravity="center|bottom"
+            android:padding="@dimen/_2dp"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize50Percent"
+            />
+        <TextView
+            android:id="@+id/initials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="22dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:textSize="18sp"
+            app:layout_anchor="@id/app_bar"
+            app:layout_anchorGravity="center|bottom"
+            tools:text="DM" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

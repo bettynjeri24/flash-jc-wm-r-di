@@ -1,0 +1,22 @@
+com/ekenya/rnd/scannerlib/models/CardDetails.java
+ com.ekenya.rnd.scannerlib.models.CardDetails
+com/ekenya/rnd/scannerlib/BuildConfig.java
+ com.ekenya.rnd.scannerlib.BuildConfig
+com/ekenya/rnd/scannerlib/models/IdScanResult.java
+ com.ekenya.rnd.scannerlib.models.IdScanResult
+com/ekenya/rnd/scannerlib/ScannerInterface.java
+ com.ekenya.rnd.scannerlib.ScannerInterface
+ com.ekenya.rnd.scannerlib.ScannerInterface$CardType
+com/ekenya/rnd/scannerlib/ScannerInterfaceImp.java
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$1
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$2
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$3
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$4
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$4$1
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$5
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$6
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$7
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$CardResults
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$LivenessResults
+ com.ekenya.rnd.scannerlib.ScannerInterfaceImp$VerificationScore

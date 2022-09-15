@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="@dimen/_30dp"
+            tools:context=".ui.homepage.home.dashboard.MakeDepositFragment">
+
+            <View
+                android:id="@+id/topView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_12dp"
+                android:background="@color/textColor"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:background="@color/textColor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/topView"
+                android:id="@+id/main_toolbar">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Proceed"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_100dp"/>
+            </androidx.appcompat.widget.Toolbar>
+            <TextView
+                android:id="@+id/tv_title_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_18sp"
+                android:layout_marginTop="@dimen/_30dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:text="@string/are_you_sure_you_want_to_pay_loan"
+                android:layout_below="@id/main_toolbar"/>
+            <TextView
+                android:id="@+id/tv_transaction_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_12sp"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="Transaction costs: 00.00"
+                android:layout_below="@id/tv_title_confirm"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelloanBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:theme="@style/ButtonTheme"
+                android:layout_marginTop="@dimen/_40dp"
+                android:layout_marginStart="@dimen/_30dp"
+                android:layout_below="@+id/tv_transaction_cost"
+                android:background="@drawable/btn_no_border"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold" />
+            <View
+                android:layout_width="@dimen/_2dp"
+                android:layout_height="@dimen/_100dp"
+                android:id="@+id/view"
+                android:layout_marginTop="@dimen/_15dp"
+                android:layout_marginStart="@dimen/_15dp"
+                android:layout_toEndOf="@id/cancelloanBtn"
+                android:layout_below="@id/tv_transaction_cost"
+                android:background="@color/etColor"/>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/okayLoanBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:theme="@style/ButtonTheme"
+                android:layout_marginTop="@dimen/_40dp"
+                android:layout_toEndOf="@id/view"
+                android:layout_marginStart="@dimen/_15dp"
+                android:gravity="center"
+                android:layout_below="@+id/tv_transaction_cost"
+                android:background="@drawable/btn_no_border"
+                android:text="Okay"
+                android:textAllCaps="false"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

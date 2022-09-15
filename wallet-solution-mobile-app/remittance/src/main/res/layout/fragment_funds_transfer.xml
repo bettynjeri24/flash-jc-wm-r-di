@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fundTransfer.FundsTransferFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <include
+            android:id="@+id/layout_header"
+            layout="@layout/header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/layout_margin"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:paddingBottom="@dimen/layout_margin"
+            android:text="@string/transfer_cash"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_small"
+            app:layout_constraintTop_toBottomOf="@id/layout_header" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingStart="@dimen/main_margin"
+        android:paddingEnd="@dimen/main_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_top">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="@dimen/small_margin"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btn_transfer">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_transfer_option"
+                    android:textColor="@color/colorBlackText"
+                    android:layout_marginTop="@dimen/main_margin"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="@dimen/textsize_small"
+                    android:fontFamily="@font/nunito_sans_bold"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:id="@+id/rg_transfer_option"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@id/rb_lamparam"
+                    android:orientation="horizontal"
+                    android:weightSum="3"
+                    app:layout_constraintTop_toBottomOf="@id/textview">
+
+                    <RadioButton
+                        android:id="@+id/rb_lamparam"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_my_account"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_bank_accounts"/>
+
+                    <RadioButton
+                        android:id="@+id/rb_other_account"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="12sp"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:layout_height="wrap_content"
+                        android:text="@string/other_bank_accounts"/>
+
+                </RadioGroup>
+
+                <ImageView
+                    android:id="@+id/iv_dots"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layerType="software"
+                    android:src="@drawable/dotted_line"
+                    android:layout_marginTop="@dimen/small_margin"
+                    app:layout_constraintTop_toBottomOf="@id/rg_transfer_option"/>
+
+                <TextView
+                    android:id="@+id/tv_send_to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorBlackText"
+                    android:text="@string/transfer_money_note"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="@dimen/textsize_small"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginTop="@dimen/small_margin"
+                    app:layout_constraintTop_toBottomOf="@id/iv_dots" />
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transfer_amount"
+                    android:textColor="@color/colorBlackText"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="@dimen/textsize_small"
+                    android:fontFamily="@font/nunito_sans"
+                    android:layout_marginTop="@dimen/medium_margin"
+                    app:layout_constraintTop_toBottomOf="@id/tv_send_to" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tl_my_lamparam"
+                    style="@style/TextInputLayoutOutline"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/small_margin"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:prefixText="XOX   "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv_2">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etAgentNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:imeOptions="actionDone"
+                        android:inputType="number" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- cv_bank_accounts -->
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/cv_my_accounts"
+                    android:layout_width="match_parent"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toBottomOf="@id/tl_my_lamparam"
+                    android:layout_height="0dp">
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/select_account_type"
+                        android:textColor="@color/colorBlackText"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textSize="@dimen/textsize_small"
+                        android:fontFamily="@font/nunito_sans_bold"
+                        android:layout_marginTop="@dimen/main_margin"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <RadioGroup
+                        android:id="@+id/rg_bank_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:weightSum="2"
+                        android:checkedButton="@id/rb_bank"
+                        android:layout_marginTop="@dimen/medium_margin"
+                        app:layout_constraintTop_toBottomOf="@id/tv_3">
+
+                        <RadioButton
+                            android:id="@+id/rb_bank"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/nunito_sans_bold"
+                            android:layout_height="wrap_content"
+                            android:text="@string/my_bank_account"/>
+
+                        <RadioButton
+                            android:id="@+id/rb_microfinance"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:textSize="12sp"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/nunito_sans_bold"
+                            android:layout_height="wrap_content"
+                            android:text="@string/my_microfinance_account"/>
+
+                    </RadioGroup>
+
+                    <!-- cl my accounts -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_my_accounts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@id/rg_bank_type">
+
+                        <TextView
+                            android:id="@+id/tv_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_account"
+                            android:textColor="@color/colorBlackText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textSize="@dimen/textsize_small"
+                            android:fontFamily="@font/nunito_sans"
+                            android:layout_marginTop="@dimen/medium_margin"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tl_my_accounts"
+                            style="@style/TextInputLayoutOutline"
+                            android:layout_width="0dp"
+                            app:endIconMode="dropdown_menu"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/medium_margin"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_4">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/et_my_account"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/medium_margin"
+                                android:paddingEnd="@dimen/medium_margin"
+                                android:inputType="none"
+                                android:imeOptions="actionDone" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <!-- cl other accounts -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/cl_other_accounts"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"
+                        app:layout_constraintTop_toBottomOf="@id/rg_bank_type">
+
+                        <TextView
+                            android:id="@+id/tv_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/str_beneficiary_details"
+                            android:textColor="@color/colorBlackText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textSize="@dimen/textsize_small"
+                            android:fontFamily="@font/nunito_sans_bold"
+                            android:layout_marginTop="@dimen/medium_margin"
+                            app:layout_constraintTop_toTopOf="parent"/>
+
+                        <TextView
+                            android:id="@+id/tv_full_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/full_name"
+                            android:textColor="@color/colorBlackText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textSize="@dimen/textsize_small"
+                            android:fontFamily="@font/nunito_sans"
+                            android:layout_marginTop="@dimen/medium_margin"
+                            app:layout_constraintTop_toBottomOf="@id/tv_5"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tl_full_name"
+                            style="@style/TextInputLayoutOutline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/small_margin"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_full_name">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_beneficiary_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textPersonName"
+                                android:paddingStart="@dimen/medium_margin"
+                                android:paddingEnd="@dimen/medium_margin"
+                                android:imeOptions="actionDone" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/tv_bank_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/select_bank"
+                            android:textColor="@color/colorBlackText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textSize="@dimen/textsize_small"
+                            android:fontFamily="@font/nunito_sans"
+                            android:layout_marginTop="@dimen/medium_margin"
+                            app:layout_constraintTop_toBottomOf="@id/tl_full_name"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tl_bank_name"
+                            style="@style/TextInputLayoutOutline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/small_margin"
+                            app:endIconMode="dropdown_menu"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_bank_name">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/et_bank_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/medium_margin"
+                                android:inputType="none"
+                                android:paddingEnd="@dimen/medium_margin"
+                                android:imeOptions="actionNext" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <TextView
+                            android:id="@+id/tv_acct_number"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/enter_account_number"
+                            android:textColor="@color/colorBlackText"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:textSize="@dimen/textsize_small"
+                            android:fontFamily="@font/nunito_sans"
+                            android:layout_marginTop="@dimen/medium_margin"
+                            app:layout_constraintTop_toBottomOf="@id/tl_bank_name"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/tl_acct_number"
+                            style="@style/TextInputLayoutOutline"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/small_margin"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_acct_number">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/et_acct_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingStart="@dimen/medium_margin"
+                                android:paddingEnd="@dimen/medium_margin"
+                                android:imeOptions="actionNext" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_transfer"
+            style="@style/MaterialButtonDefaultStyle"
+            android:text="@string/transfer"
+            android:layout_marginBottom="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

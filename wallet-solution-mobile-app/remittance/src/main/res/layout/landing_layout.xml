@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    >
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_gravity="bottom|end"
+        android:clipChildren="false"
+        app:defaultNavHost="true"
+        app:itemIconTint="@color/colorPrimary"
+        app:itemTextColor="@color/colorPrimary"
+        app:labelVisibilityMode="labeled"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/bg2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/layout_margin"
+        android:layout_marginRight="@dimen/layout_margin"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/layout_margin"
+        android:id="@+id/layoutIcon">
+
+        <ImageView
+            android:id="@+id/flexipay_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_padding_xtiny"
+            android:background="@mipmap/eximlogo"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--            <ImageView-->
+        <!--                android:id="@+id/flexipay_back"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:background="@drawable/ic_arrow_back"-->
+        <!--                android:layout_marginStart="@dimen/margin_padding_normal"-->
+        <!--                android:layout_marginTop="@dimen/margin_padding_normal"-->
+        <!--                app:layout_constraintStart_toStartOf="parent"-->
+        <!--                app:layout_constraintTop_toTopOf="parent"-->
+        <!--                android:visibility="gone"-->
+        <!--                app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+        <ImageView
+            android:id="@+id/ivNotification"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="@dimen/margin_padding_xtiny"
+            android:layout_marginEnd="8dp"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/notifications" />
+
+        <TextView
+            android:id="@+id/transactionReceiver1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="@dimen/layout_margin"
+            android:fontFamily="@font/nunito_sans_light"
+            android:gravity="center_horizontal"
+            android:text="Good Afternoon, Awesome"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/textsize_medium"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView6"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_padding_xtiny"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@mipmap/avator"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/flexipay_logo"
+            android:textAlignment="center"
+            android:textColor="@color/colorBrown"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textSize="@dimen/textsize_medium"
+            android:layout_marginTop="@dimen/layout_margin"
+
+            android:text="Good Afternoon, Wilfred"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/layoutIcon"
+        android:id="@+id/layoutToolbar">
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="16dp"
+            app:tint="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ic_backbtn"
+            tools:ignore="ContentDescription" />
+        <ImageView
+            android:id="@+id/imglogo"
+            android:layout_width="200dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintStart_toEndOf="@id/btn_back"
+            app:layout_constraintTop_toTopOf="parent"
+
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/tvActionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Sales"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:id="@+id/imgHomeMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_close"
+            app:tint="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutToolbar"
+        android:textAlignment="center"
+        android:textColor="@color/colorBrown"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:textSize="@dimen/textsize_medium"
+        android:layout_marginTop="@dimen/layout_margin"
+        android:id="@+id/tvTitleExplanation"
+        android:text="@string/str_good_afternoon"/>
+    <fragment
+        android:id="@+id/navHostFragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/nav_view"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleExplanation"
+        app:layout_constraintVertical_bias="1.0"
+        app:navGraph="@navigation/lamparam_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

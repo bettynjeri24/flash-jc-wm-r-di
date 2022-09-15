@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_dashData"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:layout_marginStart="@dimen/_5dp"
+        android:background="@android:color/transparent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_iconHolder"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
+            android:src="@drawable/h_airtime"
+            android:layout_marginTop="@dimen/_10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_iconText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12sp"
+            android:layout_marginTop="@dimen/_3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@+id/iv_iconHolder"
+            tools:text="Buy Shares" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

@@ -1,0 +1,214 @@
+<resources>
+
+    <string name="get_started">GET STARTED</string>
+    <string name="txt_continue">CONTINUE</string>
+    <string name="link_card_walkthtroughtxt">Link your Debit &amp; Credit card with \n Your Wallet to make your \n transactions easier</string>
+    <string name="spend_track">Spend &amp; track your expenses and \n Cashflow within your set budget \n In the wallet</string>
+
+    <string name="seamless">Simple, Seamless &amp; Convenient way \n To send &amp; receive money from \n Friends &amp; Family  </string>
+    <string name="btv_onboardingSubheader">You can request, send and receive money to your \n Wallet from both local and international senders \n &amp; receivers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="onboardingscreentitletxt">Welcome to Tyler-Soft Eclectics</string>
+    <string name="base_url">https://test-api.ekenya.co.ke/botswana-wallet/api/</string>
+    <string name="verify_identity_txt">We are required to verify your Identity before you can start transactions with your mobile wallet. Use either a passport or a national Identification Card</string>
+    <string name="lets_verifyidenttitle_txt">Let’s Verify Your Identity Alex!</string>
+    <string name="select_Gender">Select Gender</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="fragment_titles">
+        <item>Welcome to MariWallet</item>
+        <item>Link Debit &amp; Credit</item>
+        <item>Financial Management</item>
+
+    </string-array>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="growth">Growth</string>
+    <string name="scan">Scan</string>
+    <string name="bill_payment">Bill Payment</string>
+    <string name="send_money">Send Money</string>
+    <string name="pay_merchant">Pay Merchant</string>
+    <string name="promo_image">promo_image</string>
+    <string name="transactions">Transactions</string>
+    <string name="see_all">See All</string>
+    <string name="promotions">Promotions</string>
+    <string name="sign_up_to_mari_wallet">Sign Up to Tollo Cash Wallet</string>
+    <string name="login">Login</string>
+    <string name="what_s_your_number">What’s your number?</string>
+    <string name="credit_card_details_added_securely">Credit card details added securely</string>
+    <string name="from">From</string>
+    <string name="about_us">About Us</string>
+    <string name="help">Help</string>
+    <string name="locate_us">Locate Us</string>
+    <string name="please_provide_your_phone_number_to_login_to_your_account">Please provide your phone number to login to your account</string>
+    <string name="top_up">Top Up</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="no_transactions_history">No Transactions History</string>
+    <string name="upcoming_bills">Upcoming Bills</string>
+    <string name="card_number">Card Number</string>
+    <string name="fund_wallet">Top Up Wallet</string>
+    <string name="history">History</string>
+    <string name="invite_friends">INVITE FRIENDS</string>
+    <string name="absa_payments">ABSA Payments</string>
+    <string name="forgot_pin">Forgot Pin?</string>
+    <string name="mobile_wallet">Mobile Wallet</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="mobile_money">Safaricom Mpesa</string>
+    <string name="mari_wallet">Tollo Wallet</string>
+    <string name="withdraw_from">Withdraw from</string>
+    <string name="buy_from">Buy from</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="buy_for_myself">Buy for myself</string>
+    <string name="buy">Buy</string>
+    <string name="invalidamount_errortext">Please enter a valid Amount</string>
+    <string name="no_savings_account">No Savings Account Yet</string>
+    <string name="add_title">Add Title</string>
+    <string name="savings_cycles">Savings Cycles</string>
+    <string name="transfer_money_to_any_bank">Transfer money to any bank</string>
+    <string name="account_number">Account Number</string>
+    <string name="provide_dstv_accountnumber_txt">Please provide your DSTV account number</string>
+    <string name="how_much_would_you_to_pay">How much would you like to pay?</string>
+    <string name="account_name">Account Name</string>
+    <string name="ooops_sorry">Ooops! Sorry</string>
+    <string name="register_account">Request Failed</string>
+    <string name="manual_verification">Identity Verification</string>
+    <string name="savings_accounts">Savings Accounts</string>
+    <string name="pay_from">Get Funds From</string>
+    <string name="feature_coming_soon">Feature Coming Soon</string>
+    <string name="withdraw_from_txt">Withdraw From</string>
+    <string name="fingerprint_login">Fingerprint_login</string>
+    <string name="use_password">Use Password</string>
+    <string name="fingerprint_desc">Fingerprint desc....</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="photo_capture_error">Unable to Capture Photo</string>
+    <string name="sorry_text">OOPs Sorry</string>
+    <string name="use_omang_card">USE KEBELE ID</string>
+    <string name="use_passport">USE PASSPORT</string>
+    <string name="send_now">Send Now</string>
+    <string name="mobile_money_text">Mobile Money</string>
+    <string name="scan_card_details">Scan Card</string>
+    <string name="fund_wallet_succesful">Request Received</string>
+    <string name="enter_valid_name_txt_err">Please enter a valid Account Name</string>
+    <string name="enter_valid_account_name_txt_err">Please enter a valid Account number</string>
+    <string name="botswana_power">Canal+</string>
+    <string name="dstv">Dstv</string>
+    <string name="derash_payments">Derash payments</string>
+    <string name="airplane">Airline Tickets</string>
+    <string name="ethiopia_tel">Ethio Telecom </string>
+    <string name="safaricom">MTN Ghana </string>
+    <string name="canal">Canal+</string>
+    <string name="school">School fees</string>
+    <string name="orange_Airtime">Orange Airtime</string>
+    <string name="transaction_failed">Request Failed</string>
+    <string name="registration_succesful">Registration Succesful</string>
+    <string name="mascom_airtime">AirtelTigo Airtime</string>
+    <string name="send_to_wallet">Send to Wallet</string>
+    <string name="intercape_title">Airplane  ticketing</string>
+    <string name="one_way_text">One way</string>
+    <string name="return_trip">Return Trip</string>
+    <string name="minimum_amount_text">Minimum fund wallet: GHS 100.00</string>
+    <string name="maximum_amount_text">Maximum amount: GHS 100,000.00</string>
+    <string name="top_up_wallet">Top Up Wallet</string>
+    <string name="personal_savings_text">Personal Savings</string>
+    <string name="group_savings_txt">Group Savings</string>
+    <string name="export_statement">Export Statement</string>
+    <string name="service_charge">Service Charge: </string>
+    <string name="error_code_401">401</string>
+    <string name="success_code_00">00</string>
+    <string name="success_code_000">000</string>
+    <string name="error_code_55">55</string>
+    <string name="categorize_budget">Categorize Your Budget</string>
+    <string name="all">All</string>
+    <string name="electricity">Electricity</string>
+    <string name="water">Water</string>
+    <string name="airtime">Airtime</string>
+    <string name="tollo_currency">GHS</string>
+    <string name="contact_url">https://nationaltelecomservice.com/contact/</string>
+    <string name="app_default_currency">GHS</string>
+    <string name="ethiotel_mobile_money">Ethio Cash</string>
+    <string name="tollo_cash_wallet">Tollo Cash Wallet</string>
+    <string name="telebirr_cash">Telebirr Cash</string>
+    <string name="meter_number">Enter Meter Number</string>
+    <string name="safaricom_mpesa">Safaricom Mpesa</string>
+    <string name="ethio_cash">Ethio Cash</string>
+    <string name="bank">Bank</string>
+    <string name="debit_or_credit_card">Debit or Credit Card</string>
+    <string name="capture_front_document_text">Tap to Capture Front Side of Your Kebele ID Card</string>
+    <string name="capture_back_document_text">Tap to Capture Back Side of Your Kebele ID Card</string>
+    <string name="pay_with_points">Pay with points</string>
+    <string name="redeem_points">Redeem points</string>
+    <string name="transfer_points">Transfer Points</string>
+    <string name="bills_airtime"><![CDATA[Bills & Airtime]]></string>
+    <string name="sendmoney_remittance"><![CDATA[Send money & Remittance]]></string>
+    <string name="deliverynCashwithdrawals"><![CDATA[Delivery & Cash withdrawals]]></string>
+    <string name="frequent">Frequent</string>
+    <string name="allbillers">All Billers</string>
+    <string name="traffic_fines">Traffic Fines</string>
+    <string name="ethiotelcom_postpaid">Ethiotelecom postpaid</string>
+    <string name="payment_option">Select payment option</string>
+    <string name="account_lookup">Account Lookup</string>
+    <string name="acc_name">Account name</string>
+    <string name="available_balance">Available balance</string>
+    <string name="actual_balance">Actual balance</string>
+    <string name="amount">Amount</string>
+    <string name="trxcharge">Charges</string>
+    <string name="trxtax">Tax</string>
+    <string name="narration">Narration</string>
+    <string name="txnRef">Reference number</string>
+    <string name="cancel">CANCEL</string>
+    <string name="confirm_button">CONFIRM</string>
+    <string name="insufficient_balance">Insufficient Account Balance</string>
+    <string name="airtime_top_req" translatable="false">AirtimeTopup</string>
+    <string name="buy_saf_service" translatable="false">SAFARICOM</string>
+
+    <string-array name="month">
+        <item>January</item>
+
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="fromAgent">
+        <item>Agent</item>
+        <item>ATM</item>
+    </string-array>
+    <string-array name="currency_entries">
+        <item>GHS</item>
+    </string-array>
+
+    <string-array name="frequency">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+    <string name="please_provide">Please provide the correct details below to get registered in our mobile App</string>
+    <string name="middle_name">Middle name</string>
+    <string name="surname">Surname</string>
+    <string name="email">Email</string>
+    <string name="kcb_bank_field_agent">ddd</string>
+
+</resources>

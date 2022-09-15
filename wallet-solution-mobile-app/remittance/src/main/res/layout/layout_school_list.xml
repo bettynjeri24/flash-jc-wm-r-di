@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:cardCornerRadius="6dp"
+    app:cardUseCompatPadding="false"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/colorWhite">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/title_TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+               android:layout_margin="@dimen/large_layout_margin"
+                android:text="Primary School"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:textSize="@dimen/text_size_large"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:textColor="@color/colorBlackText"
+                app:layout_constraintHorizontal_bias="0.0"
+                  app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/icon_ImageView"
+                android:src="@drawable/chevron_right"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginEnd="@dimen/large_layout_margin"
+                app:tint="@color/black" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

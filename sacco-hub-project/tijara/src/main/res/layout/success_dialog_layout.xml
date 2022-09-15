@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:elevation="@dimen/_45dp"
+        android:padding="@dimen/_20dp"
+        android:layout_marginBottom="@dimen/_30dp"
+        tools:context=".ui.homepage.home.dashboard.MakeDepositFragment">
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:src="@drawable/ic_check"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/success"
+            android:textColor="#0afd00"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textSize="@dimen/_18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/iv_check"
+            app:layout_constraintStart_toStartOf="@+id/iv_check"
+            app:layout_constraintTop_toBottomOf="@+id/iv_check" />
+
+        <TextView
+            android:id="@+id/tv_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="@id/tv_success"
+            app:layout_constraintStart_toStartOf="@id/tv_success"
+            app:layout_constraintTop_toBottomOf="@+id/tv_success"
+            tools:text="@string/emulator_message" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/okayBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_no_border"
+            android:gravity="center"
+            android:text="Okay"
+            android:layout_marginTop="@dimen/_30dp"
+            android:textAllCaps="false"
+            android:textColor="#0afd00"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold"
+            android:theme="@style/ButtonTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_msg" />
+    </LinearLayout>
+
+</layout>

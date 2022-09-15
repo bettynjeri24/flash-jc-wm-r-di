@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="welcome_to">Bienvenue à</string>
+    <string name="welcome_to_tijara">Bienvenue à,\nSaccohub</string>
+    <string name="select_preferred_language">Sélectionnez la langue préférée</string>
+    <string name="select_your_country">Sélectionnez votre pays</string>
+    <string name="get_started">Commencer</string>
+    <string name="powered_eclectics">Alimenté par: Eclectics</string>
+    <string name="login">Connexion</string>
+    <string name="open_new_account">Ouvrir un \nnouveau compte</string>
+    <string name="help">Aider</string>
+    <string name="about_us">À propos de nous</string>
+    <string name="settings">Paramètres</string>
+</resources>

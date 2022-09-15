@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:apps="http://schemas.android.com/apk/res-auto">
+
+    <data>
+<variable
+    name="viewModel"
+    type="com.ekenya.rnd.tijara.ui.homepage.services.MyAccountsViewModel" />
+    </data>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/Coontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100dp"
+        android:background="@color/textColor"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            apps:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/custom_toolbar"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                apps:layout_collapseMode="pin"
+                android:background="@color/textColor"
+                android:layout_height="?attr/actionBarSize"
+                >
+                <include
+                    android:id="@+id/toolbar"
+                    layout="@layout/custom_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize" />
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sv_scrool"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:paddingBottom="@dimen/_70dp"
+        apps:layout_behavior="@string/appbar_scrolling_view_behavior"
+      >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.homepage.services.MyAccountsFragment">
+        <include
+            android:id="@+id/white_bgLoading"
+            android:visibility="gone"
+            layout="@layout/white_bg_spinkit"
+            />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            apps:layout_constraintTop_toTopOf="parent"
+            apps:layout_constraintStart_toStartOf="parent"
+            apps:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/_15dp"
+            android:layout_marginEnd="@dimen/_15dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp"
+            android:text="Here are your Sacco’s! Select one and continue to switch accounts" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_select_sacco"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:paddingBottom="@dimen/_30dp"
+            apps:layout_constraintTop_toBottomOf="@+id/tv_title"
+            apps:layout_constraintStart_toStartOf="parent"
+            apps:layout_constraintEnd_toEndOf="parent"
+            tools:itemCount="2"
+            apps:listAccSaccos="@{viewModel.loginSaccos}"
+            apps:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/select_sacco_item_list"
+            android:layout_marginTop="@dimen/_10dp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sacco_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15dp"
+            android:theme="@style/ButtonTheme"
+            android:visibility="gone"
+            android:layout_marginEnd="@dimen/_15dp"
+            apps:layout_constraintBottom_toBottomOf="parent"
+            apps:layout_constraintStart_toStartOf="parent"
+            apps:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/btn_normal_bg"
+            android:text="@string/continu"
+            android:textAllCaps="true"
+            android:clickable="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_16sp"
+            android:textStyle="bold"
+            android:focusable="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</layout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_20dp"
+    android:paddingBottom="@dimen/_20dp"
+    style="@style/alert_dialog_dark"
+    android:layout_height="match_parent">
+
+
+        <com.github.ybq.android.spinkit.SpinKitView
+            android:id="@+id/spin_kit"
+            style="@style/SpinKitView.Large.ThreeBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:SpinKit_Color="@color/ForestGreen"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <TextView
+            android:id="@+id/tv_pbText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/spin_kit"
+            android:text="@string/please_wait" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
