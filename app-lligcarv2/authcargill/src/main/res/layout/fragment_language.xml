@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/city_img"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/city_img"
+        android:paddingBottom="@dimen/main_side"
+        android:translationY="@dimen/medium_side"
+        app:layout_constraintBottom_toTopOf="@id/cl_language_chooser"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/large_margin"
+            android:fontFamily="@font/nunitosans_bold_common"
+            android:src="@drawable/white_logo"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_language_chooser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_bg"
+        android:padding="@dimen/main_side"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/tv_language_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_bold_common"
+            android:text="@string/select_your_language_preference"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="#222222"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/rg_language"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_top"
+            android:layout_marginBottom="@dimen/main_top"
+            android:checkedButton="@+id/radio_button_1"
+            android:paddingStart="@dimen/main_top"
+            android:paddingEnd="@dimen/main_top"
+            app:layout_constraintBottom_toTopOf="@id/btn_continue_language"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_language_title">
+            <RadioButton
+                android:id="@+id/rb_french"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/medium_side"
+                android:layout_marginBottom="@dimen/medium_side"
+                android:background="@drawable/rg_border"
+                android:button="@null"
+                android:drawableEnd="@drawable/language_selector_bg"
+                android:fontFamily="@font/nunitosans_regular_common"
+                android:paddingStart="@dimen/main_top"
+                android:paddingEnd="@dimen/medium_side"
+                android:text="@string/french"
+                android:textAllCaps="true"
+                tools:checked="true"
+                android:textColor="#B4B3B4" />
+            <RadioButton
+                android:id="@+id/rb_english"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/medium_side"
+
+                android:background="@drawable/rg_border"
+                android:button="@null"
+                android:drawableEnd="@drawable/language_selector_bg"
+                android:fontFamily="@font/nunitosans_regular_common"
+                android:paddingStart="@dimen/main_top"
+                android:paddingEnd="@dimen/medium_side"
+                android:text="@string/english"
+                android:textAllCaps="true"
+                android:textColor="#B4B3B4"
+                tools:checked="false" />
+
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_continue_language"
+            style="@style/primary_button"
+
+            android:text="@string/cont"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

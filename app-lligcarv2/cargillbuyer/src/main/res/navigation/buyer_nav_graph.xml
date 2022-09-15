@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/buyerHomeFragment">
+
+    <fragment
+        android:id="@+id/successfulFragment"
+        android:name="com.ekenya.rnd.cargillbuyer.utils.BuyerSuccessfulFragment"
+        android:label="fragment_sucessful_wallet"
+        tools:layout="@layout/fragment_sucessful">
+        <action
+            android:id="@+id/action_successfulFragment_to_buyerHomeFragment"
+            app:destination="@id/buyerHomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/commonAuthFragment"
+        android:name="com.ekenya.rnd.common.auth.CommonAuthFragment"
+        android:label="CommonAuthFragment" />
+
+    <fragment
+        android:id="@+id/buyerHomeFragment"
+        android:name="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.BuyerHomeFragment"
+        android:label="fragment_buyer_home"
+        tools:layout="@layout/fragment_buyer_home">
+        <action
+            android:id="@+id/action_buyerHomeFragment_to_listOfFarmersFragment"
+            app:destination="@id/listOfFarmersFragment" />
+        <action
+            android:id="@+id/action_buyerHomeFragment_to_buyerFundsRequestedListFragment"
+            app:destination="@id/buyerFundsRequestedListFragment" />
+        <action
+            android:id="@+id/action_buyerHomeFragment_to_FFPendingPaymentListFragment"
+            app:destination="@id/fFPendingPaymentListFragment" />
+        <action
+            android:id="@+id/action_buyerHomeFragment_to_buyerRequestFundFragment"
+            app:destination="@id/buyerRequestFundFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/listOfFarmersFragment"
+        android:name="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.farmers.ListOfFarmersFragment"
+        android:label="ListOfFarmersFragment"
+        tools:layout="@layout/fragment_list_of_farmers" >
+        <action
+            android:id="@+id/action_listOfFarmersFragment_to_farmerDetailsBottomSheetFragment"
+            app:destination="@id/farmerDetailsBottomSheetFragment" />
+        <action
+            android:id="@+id/action_listOfFarmersFragment_to_buyerPayFarmerFragment"
+            app:destination="@id/buyerPayFarmerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyerFundsRequestedListFragment"
+        android:name="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.fundrequest.BuyerFundsRequestedListFragment"
+        android:label="BuyerFundsRequestedListFragment"
+        tools:layout="@layout/fragment_funds_requested_list" />
+    <fragment
+        android:id="@+id/fFPendingPaymentListFragment"
+        android:name="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.ffpendingpayments.FFPendingPaymentListFragment"
+        android:label="fragment_ff_pending_payment_list"
+        tools:layout="@layout/fragment_ff_pending_payment_list">
+        <action
+            android:id="@+id/action_fFPendingPaymentListFragment_to_ffPendingPaymentDetailsFragment"
+            app:destination="@id/ffPendingPaymentDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyerRequestFundFragment"
+        android:name="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.fundrequest.BuyerRequestFundFragment"
+        android:label="BuyerRequestFundFragment"
+        tools:layout="@layout/fragment_request_fund_buyer" />
+    <fragment
+        android:id="@+id/ffPendingPaymentDetailsFragment"
+        android:name="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.ffpendingpayments.FfPendingPaymentDetailsFragment"
+        android:label="fragment_pending_payment_details"
+        tools:layout="@layout/fragment_pending_payment_details">
+        <argument
+            android:name="ffPendingPaymentsData"
+            app:argType="com.ekenya.rnd.cargillbuyer.data.responses.FfPendingPaymentsData" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyerRecentTranactionFragment"
+        android:name="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.latestTransactions.BuyerRecentTransactionsFragment"
+        android:label="BuyerRecentTranactionFragment"
+        tools:layout="@layout/fragment_buyer_recent_tranaction" />
+    <dialog
+        android:id="@+id/farmerDetailsBottomSheetFragment"
+        android:name="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.farmers.FarmerDetailsBottomSheetFragment"
+        android:label="fragment_farmer_details_bottom_sheet"
+        tools:layout="@layout/fragment_farmer_details_bottom_sheet" >
+        <argument
+            android:name="farmerDetailsData"
+            app:argType="com.ekenya.rnd.cargillbuyer.data.responses.FarmerDetailsData" />
+    </dialog>
+    <fragment
+        android:id="@+id/buyerPayFarmerFragment"
+        tools:layout="@layout/fragment_buyer_pay_farmer"
+        android:name="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.farmers.BuyerPayFarmerFragment"
+        android:label="BuyerPayFarmerFragment" >
+        <argument
+            android:name="farmerDetailsData"
+            app:argType="com.ekenya.rnd.cargillbuyer.data.responses.FarmerDetailsData" />
+    </fragment>
+</navigation>

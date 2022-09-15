@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_gray"
+    >
+    <include
+        layout="@layout/transfer_layout_top"
+        android:id="@+id/mainLayoutToolbar"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvBuyers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/medium_side"
+        android:layout_marginEnd="@dimen/medium_side"
+        android:layout_marginTop="@dimen/medium_side"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/adapter_coopbuyer_fundrequest" />
+</androidx.constraintlayout.widget.ConstraintLayout>

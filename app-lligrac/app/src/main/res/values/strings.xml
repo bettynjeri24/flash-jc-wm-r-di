@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">Cargill</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="paid_amount">Paid Amount</string>
+    <string name="balance_amount">Balance</string>
+    <string name="request_float">Request Funds</string>
+    <string name="cooperative_label">Cooperative</string>
+    <string name="other_user">Other user</string>
+    <string name="field_agent">Field Agent</string>
+    <string name="buyer_id">Agent ID</string>
+    <string name="cooperative_id">User ID</string>
+    <string name="add_cashout_channel">Add Beneficiary Cash out channel</string>
+    <string name="channel_name">Channel Name</string>
+    <string name="channel_number">Channel Acc</string>
+    <string name="privacy_policy">I Accept privacy policy, Terms and Conditions of Cargill Digital Payment </string>
+    <string name="greetings_afternoon">Good Afternoon</string>
+    <string name="reset_pin">Reset your pin</string>
+    <string name="enter_your_pin">Enter new Pin</string>
+    <string name="enter_your_old_pin">Enter Old Pin</string>
+    <string name="new_confirm_notmatch">New and confirm pin does not match</string>
+    <string name="confirm_pin">Confirm your Pin</string>
+    <string name="validation_phone_number">Enter a valid phone number</string>
+    <string name="validation_amount">Enter a valid amount</string>
+
+    <!-- General wallet -->
+    <string name="select_card">Select card</string>
+    <string name="statement">Statement</string>
+    <string name="submit">submit</string>
+    <!--  COOPERATIVE PROFILE  -->
+    <string name="evalue_booking">Book E-value</string>
+    <string name="ensure_printconnect">Please connect the printer and try again</string>
+    <string name="funds_topup">Funds Top up</string>
+    <string name="evalue_list">Purchase history</string>
+    <string name="evalue_dashboard">Provisions</string>
+    <string name="evalue_analysis">E-value Analysis</string>
+    <string name="coop_buyers">Buyers</string>
+    <string name="booking_fee">Booking fee</string>
+    <string name="coop_buyer_requests">Request</string>
+    <string name="buyer_fund_requests"> Funds Request</string>
+    <string name="search_buyer">Search buyer</string>
+    <string name="request">Request</string>
+    <string name="request_sttle">Check balance,top up and view report</string>
+    <string name="approve">Approve</string>
+    <string name="confirm_amount"> Confirm amount</string>
+    <string name="approve_funds_request_title">Approve funds request </string>
+    <string name="top_up">Top-up</string>
+    <string name="allocate_money">Allocate money</string>
+    <string name="booked_by">Booked By</string>
+    <string name="booking_reason">Booking Reason</string>
+    <string name="request_transaction">request transaction</string>
+
+
+    <!-- Farmer profile-->
+    <string name="transfer_money">Transfer Funds</string>
+    <string name="transfer_money_gwallet">Transfer Funds</string>
+    <string name="from">From</string>
+    <string name="my_accounts">My Account</string>
+    <string name="mt_account_tsubbtle">Add &amp; remove accounts</string>
+    <string name="remove_account">Remove</string>
+    <string name="msg_welcome_cargill">Welcome to Cargill Digital Payment</string>
+    <string name="msg_phone_number">Please enter your mobile number to activate your account.</string>
+    <string name="msg_producer_number">Please enter your produce code to activate your account.</string>
+    <string name="add_more">ADD MORE</string>
+    <string name="transaction_statement">Transaction Statement</string>
+    <string name="view_mini_full_statement">View mini &amp; full statment</string>
+    <string name="full_statement_title">The statement shall be sent to below email address"</string>
+    <string name="pick_startdate">Pick Start date</string>
+    <string name="end_date"> Pick End date</string>
+    <string name="start_date_hint">Start date</string>
+    <string name="end_date_hint">End date</string>
+    <string name="producer_code">Cooperative ID</string>
+    <string name="beneficiary_account">Beneficiary Account </string>
+    <string name="no_beneficiary_list">No beneficiary account found, Kindly add beneficiary account</string>
+    <string name="no_transaction_list">No recent transaction found</string>
+    <string name="verify_set_pin">Verify and set pin</string>
+    <!-- toolbar -->
+    <string name="transfer_money_toolbar">Transfer Funds</string>
+    <string name="transfer_money_tsubttle">Transfer funds all across</string>
+    <string name="add_beneficiary">Add beneficiary account</string>
+    <string name="remove_beneficiary_acc">Remove beneficiary account</string>
+    <string name="add_beneficiary_subbtle">Add your beneficiary account</string>
+    <string name="beneficiary_name">Beneficiary account name</string>
+    <string name="select_provider">Select Account provider</string>
+    <string name="add">Add</string>
+    <string name="operator">Operator </string>
+    <string name="verification_code">Verification Code</string>
+    <string name="activate_account">Activate your account</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="please_enter_digit_otp">Please enter the 4-digit code we have sent</string>
+    <string name="otp_to_your_number">to your number</string>
+    <string name="otp_expire">This session will expire in 30 seconds</string>
+    <string name="verify">Verify</string>
+    <string name="welcome_enter_pin">Enter pin to proceed </string>
+    <string name="enter_secure_pin">Please enter your secure PIN </string>
+    <string name="new_old_cannotbe_same">New and old pin cannot be the same</string>
+    <string name="connect_with_us_on_social_media">Connect With Us On Social Media</string>
+
+    <string name="contact_us_as_below">For Feedback, Requests, Queries or Complaints,  \nContact Us as below</string>
+    <string name="contact_email" translatable="false">online@cargillwallet.cm</string>
+    <string name="contact_phone" translatable="false">+225 0703 035850</string>
+    <string name="contact_phone_2" translatable="false">225 0703 035850</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="enetr_receive_amount">Receive amount</string>
+    <string name="transfer">Transfer</string>
+    <string name="dashboard_greetings">Good Afternoon </string>
+    <string name="amount_requested">Amount requested</string>
+    <!-- transfer submenu -->
+    <string name="transfer_towallet">Transfer to Wallet</string>
+    <string name="transfer_towallet_subttle">Transfer to other wallet</string>
+    <string name="cargill_wallet">Cargill wallet</string>
+    <string name="transfer_to_cargill_wallet_subttle">Transfer to cargill wallet</string>
+    <string name="select_wallet">Select Wallet</string>
+    <string name="enter_phoneNo">Enter Phone Number</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="transfer_tobank">Transfer to bank</string>
+    <string name="transfer_tobank_subttle">Transfer to Bank Account</string>
+    <string name="select_bank">Select Bank</string>
+    <string name="account_number">Account Number</string>
+    <string name="account_name">Account Name</string>
+    <string name="enter_account_number">Enter account number</string>
+    <string name="enter_account_name">Enter account name</string>
+    <string name="transfer_totelco">Transfer to Telcos</string>
+    <string name="transfer_tocard">Transfer to Card</string>
+    <string name="transfer_tocard_subttle">Transfer  Funds to credit cards</string>
+    <string name="transfer_totelco_subttle">Transfer to other mobile provider</string>
+    <string name="transfer_to_telco_wallet">Transfer to Telco Wallet</string>
+    <string name="enter_comments">Enter comments</string>
+    <string name="farmer">Farmer</string>
+    <string name="station">Section:</string>
+    <string name="logout">Logout</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="location">Location</string>
+    <string name="msg_transaction_otp">Transaction OTP</string>
+    <string name="msg_wait_transaction_otp">Please wait for the Transaction OTP sent to your mobile number</string>
+    <string name="msg_date">Date</string>
+    <string name="confirm_transaction">Confirm Transaction</string>
+    <string name="confirm">Confirm</string>
+    <string name="transaction_amount">TRANSACTION AMOUNT</string>
+    <string name="transaction_cost">Transaction Cost</string>
+    <string name="excise_duty_cost">Total Cost</string>
+
+    <string name="account_to_be_debited">Account to be debited</string>
+    <string name="msg_sending_request">Sending your request, please wait.....</string>
+    <string name="msg_request_was_successful">Your request was Successful!</string>
+    <string name="done">Done</string>
+    <string name="msg_description">Description</string>
+    <string name="msg_reference_no">Reference No.</string>
+    <string name="msg_time">Time</string>
+    <string name="msg_debited_account">Debited Account</string>
+    <string name="msg_request_failed">Your Request Failed</string>
+    <string name="msg_ok">OK</string>
+    <string name="msg_zero">0.00</string>
+    <string name="msg_recipient">Recipient</string>
+    <string name="login">Login</string>
+    <string name="password">Enter your pin</string>
+    <string name="forgot_pass">Forgot pin? Reset</string>
+    <string name="home"></string>
+    <string name="pay_farmer_dashboard">Payment </string>
+    <string name="dashboard_transaction" translatable="false">Transactions</string>
+    <string name="funds_request_made">Request made</string>
+    <string name="collection_history">Funds Disbursement History</string>
+    <string name="view_all">View All</string>
+    <string name="hide_balance">Hide Balance</string>
+    <string name="input_required">Input Required</string>
+    <string name="your_float_balance_is">Your %1$s Float Balance is:</string>
+    <string name="search_farmer">Search farmer</string>
+    <string name="purchase_from">PURCHASE FROM: %1$S</string>
+    <string name="due_amount">Amount </string>
+    <string name="select_payment_option">Select Payment Option</string>
+    <string name="other">Other</string>
+    <string name="pay">Pay</string>
+    <string name="greetings_evening">Good Evening!</string>
+    <string name="greetings_morning">Good Morning!</string>
+    <string name="greetings_night">Good Night!</string>
+    <string name="confirm_add_beneficiary">confirm add beneficiary account</string>
+    <string name="debit_title">Désignation du compte </string>
+    <string name="confirm_remove_beneficiary">confirm remove beneficiary account</string>
+    <string name="our_mobile_platform">Notre plateforme mobile</string>
+    <string name="welcome_to">Bienvenue à</string>
+    <string name="select_your_language_preference">Select Your Language Preference</string>
+    <string name="select_your_language_preference_en" translatable="false">Select Your Language Preference</string>
+    <string name="select_your_language_preference_fr" translatable="false">Sélectionnez votre langue préférée</string>
+    <string name="account_instr">Which one are you?\nPlease Select &amp; Proceed</string>
+    <string name="agent">Agent</string>
+    <string name="proceed">Proceed</string>
+    <string name="cont">Continue</string>
+    <string name="wallet_account">Wallet Account </string>
+    <string name="farmer_id">Company ID</string>
+    <string name="available_balance">Available Balance</string>
+    <string name="recent_transactions">Recent Transactions</string>
+    <string name="coming_soon">Coming soon</string>
+    <string name="actual_balance">Monthly Expenditure</string>
+    <string name="inssufficient_funds">Your wallet has insufficient funds to make this transaction</string>
+    <string name="inssufficient_funds_sbttl">Insufficient funds</string>
+    <string name="no_internet">No Internet connection check your network and try again</string>
+    <string name="privacy_n_security">privacy and security</string>
+
+    <string name="change_pin">Change PIN</string>
+    <string name="contact_us">Contact us</string>
+    <string name="printer_settings">Printer Settings</string>
+    <string name="print_cust_copy">Print customer copy</string>
+    <string name="print_receipt">Print Receipt</string>
+    <string name="print_buyer_copy">Print Buyer copy</string>
+    <string name="decline_topup_title">Reject funds request</string>
+    <string name="decline">Decline</string>
+    <string name="request_rejected">Rejected</string>
+    <string name="confirm_decline">requested by</string>
+    <!-- Buyer -->
+    <string name="pay_farmer">Pay Farmers</string>
+    <string name="pay_farmer_directly_title">Make a direct payment </string>
+    <string name="fund_request">Fund Request</string>
+    <string name="pending_payments">Pending Payments</string>
+    <string name="pending_payments_subttl">View &amp; pay pending request</string>
+    <string name="fund_request_ttle">Top up your wallet today</string>
+    <string name="ff_scan_pay">Scan QR and Pay</string>
+    <string name="scan_qr_code">scan qr code</string>
+    <string name="email_address">Email</string>
+
+    <string name="farm_details">Farm Details</string>
+    <string name="farm_size">certification Number</string>
+    <string name="name">Name</string>
+    <string name="fund_booking">Fund booking</string>
+    <string name="call_text">Call/ Text</string>
+    <string name="assign_evoucher">Pay Farmer</string>
+    <string name="pay_farmer_title">Pay Farmer </string>
+    <string name="more">More</string>
+    <string name="pay_or_scan">Pay farmers directly or scan to pay</string>
+    <string name="select_pay_for">Select Pay For</string>
+    <string name="approved">Approved</string>
+    <string name="awaits_approved">awaits approval</string>
+    <string name="aprove_evalue_sbbt">Approve Evalue request</string>
+    <string name="send_request">Send </string>
+    <string name="aprove_evalue_confirmation">Approve purchase </string>
+    <string name="top_up_title">Top up the digital wallet </string>
+    <string name="allocate_money_sbtt">Funds top up detail </string>
+
+    <string name="total_collected_weight">Total Weight Collected</string>
+    <string name="date_joined">Date Joined</string>
+    <string name="quality">Credit Score</string>
+    <string name="very_poor">Very Poor</string>
+    <string name="poor">Poor</string>
+    <string name="good">Good</string>
+    <string name="very_good">Very Good</string>
+    <string name="excellent">Excellent</string>
+    <string name="add_farmer">Add farmer</string>
+
+
+    <string name="statistics">Statistics</string>
+    <string name="farmers">Farmers</string>
+
+
+    <string name="we_apologise_for_any_inconvenience">We apologise for any Inconvenience caused.Please contact our office to report this matter</string>
+    <string name="invalid_credentials">Invalid Credentials</string>
+    <string name="check_your_internet_connection">Please check your Internet connection</string>
+    <string name="entered_incorrect_details">You have entered incorrect details</string>
+    <string name="try_again">Try Again</string>
+
+
+    <string name="recent_collections">Recent Disbursements</string>
+    <string name="total_no">Total: %1$s</string>
+    <string name="float_balnce">Balance</string>
+    <string name="attach_farm_document">Attach Farm Document</string>
+    <string name="salutation">Salutation</string>
+    <string name="surname">Surname</string>
+    <string name="given_names">Given Names</string>
+    <string name="gender">Gender</string>
+
+    <string name="mtn_money">MTN Money</string>
+    <string name="buyer">FARMER: %1$S</string>
+    <string name="buyer_title">Buyer Profile</string>
+
+    <string name="english" translatable="false">English</string>
+    <string name="french" translatable="false">French</string>
+
+    <string name="raw_amount" translatable="false">%1$s <small>CFA</small></string>
+    <!-- pin pad numbers-->
+    <string name="number_zero">0</string>
+    <string name="number_one">1</string>
+    <string name="number_two">2</string>
+    <string name="number_three">3</string>
+    <string name="number_four">4</string>
+    <string name="number_five">5</string>
+    <string name="number_six">6</string>
+    <string name="number_seven">7</string>
+    <string name="number_eight">8</string>
+    <string name="number_nine">9</string>
+
+    <!--salutations -->
+
+    <!-- gender -->
+    <string name="acres">Acres</string>
+    <string name="farm_size_acres">Farm Size (Acres)</string>
+
+    <string name="disbursed">Disbursed</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_printer">PrinterActivity</string>
+    <!-- Strings used for fragments for navigation -->
+
+    <string name="retry">Retry</string>
+    <string name="error_message">Error Message</string>
+    <string name="ok">Okay</string>
+    <string name="cancel_transaction">Cancel Transaction</string>
+    <string name="enable_offline_capability">Allow Offline capability when no internet.</string>
+    <string name="directives">Directives</string>
+    <string name="cancel">Cancel</string>
+    <string name="enabled_offline_capability">Offline capability enabled</string>
+    <string name="invalid_phonenumber_cancel_transaction_and_try_again">Invalid phone number,cancel transaction and try again</string>
+    <string name="invalid_purchase_id">Invalid purchase id</string>
+    <string name="new_data_available">Uploading pending data to server…</string>
+    <!--Status Codes to senf to -->
+    <string name="success_transaction_recieved">SUCCESS_TRANSACTION_RECIEVED</string>
+    <string name="error_session_timeout">ERROR_SESSION_TIMEOUT</string>
+    <string name="error_buyer_account_disabled">ERROR_BUYER_ACCOUNT_DISABLED</string>
+    <string name="error_farmer_account_disabled">ERROR_FARMER_ACCOUNT_DISABLED</string>
+    <string name="error_buyer_account_doesnt_exist">ERROR_BUYER_ACCOUNT_DOESNT_EXIST</string>
+    <string name="error_farmer_account_doesnt_exist">ERROR_FARMER_ACCOUNT_DOESNT_EXIST</string>
+    <string name="error_transcation_canceled">ERROR_TRANSCATION_CANCELED</string>
+    <string name="error_duplicate_purchaseid">ERROR_DUPLICATE_PURCHASEID</string>
+    <string name="error_network_connection_failed">ERROR_NETWORK_CONNECTION_FAILED</string>
+    <string name="status_code_message_to_farmforce">Message</string>
+
+    <!---->
+    <string name="please_enter_your_mobile_number_and_cooperative_id_to_activate_your_account">Please enter your mobile number and cooperative Id to activate your account</string>
+    <string name="continue_text">Continue</string>
+    <string name="retry_request">Retry Request</string>
+    <string name="accept_privacy_policy">Please accept privacy policy</string>
+    <string name="sending_request_cargill">Sending request cargill</string>
+    <string name="reset_pin_warning_message">Please visit your branch or call customer care to reset PIN</string>
+
+
+</resources>

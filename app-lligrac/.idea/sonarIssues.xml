@@ -1,0 +1,2129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JETCOMPOSE/app/src/main/java/com/example/jetcompose/InfoActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JETCOMPOSE/app/src/main/java/com/example/jetcompose/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JETCOMPOSE/app/src/main/java/com/example/jetcompose/compose/InfoCompose.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JETCOMPOSE/app/src/main/java/com/example/jetcompose/compose/TvshowComposeItems.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JETCOMPOSE/app/src/main/java/com/example/jetcompose/model/TvShow.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JETCOMPOSE/app/src/main/java/com/example/jetcompose/model/TvShows.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JETCOMPOSE/app/src/main/java/com/example/jetcompose/utils/Utils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JETCOMPOSE/app/src/main/res/values/themes.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../JETCOMPOSE/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MyBixolonTest/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MyBixolonTest/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MyBixolonTest/app/src/main/java/com/example/mybixolontest/BixolonPrinterActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MyBixolonTest/app/src/main/java/com/example/mybixolontest/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MyBixolonTest/app/src/main/res/layout/activity_bixolon.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MyBixolonTest/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../MyBixolonTest/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../WorkManagerPeriodicRequest/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../WorkManagerPeriodicRequest/app/src/main/java/com/ikhiloyaimokhai/workmanagersyncremotedata/workers/SyncDataWorker.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../WorkManagerPeriodicRequest/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android-printer-bixolon-spp-r310/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android-printer-bixolon-spp-r310/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../android-printer-bixolon-spp-r310/printermodule/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/generated/hilt/component_sources/debug/io/eclectics/cargilldigital/AppCargillDigital_HiltComponents.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/generated/source/kapt/debug/io/eclectics/cargilldigital/data/repository/repos/FarmForceRepository_Factory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/io/eclectics/cargildigitalapp/adapter/BeneficiaryAccAdapter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/io/eclectics/cargildigitalapp/ui/login/LoginAccountFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/io/eclectics/cargilldigital/data/db/entity/FarmForceData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/io/eclectics/cargilldigital/di/OtherModules.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FarmForceBuyerFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/build/tmp/kapt3/stubs/debug/io/eclectics/cargilldigital/utils/workmanager/SyncDataWorker.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/proguard-rules.pro">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargildigitalapp/ui/login/LoginAccountFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/AppCargillDigital.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/MainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/adapter/FarmersAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/db/CargillDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/db/CargillDatabase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/db/CommonCustomTypeConverter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/db/Converters.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/db/dao/CargillUserDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/db/dao/FarmForceDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/db/dao/FarmForcelDao.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/db/entity/FarmForceData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/model/BuyerAccount.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/network/ApiClientService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/network/NetworkInterceptor.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/network/RemoteDataSource.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/repos/BaseRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/repos/FarmForceRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/repository/GeneralRequestRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/repository/authrepos/AuthRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/repository/baserepo/BaseRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/responses/UserLoginResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/data/responses/authresponses/UserLoginResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/di/GeneralDiModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/di/OtherModules.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/model/BuyerAccount.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/network/ApiEndpointObj.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/network/RestClient.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/network/Webservice.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/printer/PrinterDataAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/auth/AuthCargillActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/auth/login/AuthViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/auth/login/LoginAccountFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/auth/login/LoginFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/auth/login/LoginPinFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/auth/login/LookUpPhoneNumberCoopIdFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/base/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/beneficiaryaccount/AddBeneficiaryAccount.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/beneficiaryaccount/FarmerLinkedAccount.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/bottomsheet/BottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/FarmForceBuyerMainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/dashboard/BuyerDashboard.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/dashboard/BuyerRecentTranaction.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/dashboard/CheckFarmersFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/dashboard/CheckFloatFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/dashboard/DashboardFundsRequestList.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/dashboard/FloatMgmt.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FFOfflineUssdFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FarmForceBuyerFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FarmForceBuyerLoginFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FarmForceBuyerLoginFragmentTest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FarmForceBuyerMainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FarmForceCargillViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/FarmForceUssdFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/viewmodel/FFBaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/farmforcedeeplink/viewmodel/FarmForceCargillViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/fundrequest/FundsRequestHistory.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/payfarmer/BuyerFarmerList.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/buyerprofile/payfarmer/FFQrFarmerPayment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/confirmation/ConfirmAddChanelAccount.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/cooperativeprofile/DeclineDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/cooperativeprofile/coopbuyers/CoopBuyerList.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/cooperativeprofile/dashboard/CooperativeDashboard.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/cooperativeprofile/evalue/EvalueBooking.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/cooperativeprofile/fundsrequest/ApproveBuyerFundRequest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/cooperativeprofile/fundsrequest/BuyerFundsRequest.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmerprofile/MoreRecentTransaction.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmerprofile/SendMoneyAccountList.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmerprofile/dashboard/FarmerHomeFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/FarmForceBuyerFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/FarmForceBuyerLoginFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/FarmForceBuyerMainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/SavedDataForSyncFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/SavedDataForSyncListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/fflogin/FarmForceBuyerLoginFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/saveddatatosync/SavedDataForSyncFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/saveddatatosync/SavedDataForSyncListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/viewmodel/FFBaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/viewmodel/FFSharedViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/farmforcedeeplink/viewmodel/FarmForceCargillViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/generalwalletprofile/dashboard/GeneralWalletDashboard.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/generalwalletprofile/gwalletaccounts/GwalletAccountList.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/generalwalletprofile/gwalletaccounts/GwalletLinkedAccounts.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/login/AuthViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/login/LoginAccountFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/login/LoginFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/login/LoginViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/login/LookUpPhoneNumberCoopIdFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/lookup/CompanyIDLookup.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/lookup/UserPhoneLookup.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/otpverification/OnboardingOtp.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/pinmgmt/ChangePinFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/pinmgmt/SetAccountPin.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ui/splash/SplashFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ussd/UssdFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/ussd/UssdktObj.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/CustomDialogs.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/DkUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/FieldValidation.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/GlobalMethods.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/LoggerHelper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/NetworkUtility.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/UtilPreference.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/UtillPreference.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/dk/AES.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/dk/BaseCommonCargillFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/dk/Constants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/dk/CustomDialogs.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/dk/DkUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/dk/ExtensionFunctions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/dk/MyCustomKeyboard.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/dk/SweetAlertDialogUsage.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/dk/dialogAPiResponses.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/workmanager/SyncDataWorker.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/workmanager/WorkManagerUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/workmanager/WorkerUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/utils/workmanager/WorkerUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/viewmodel/GeneralViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/io/eclectics/cargilldigital/viewmodel/SendUSSD.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/btn_rounded_corners_filled.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/rounded_corners_radius_10dp.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_rounded_corners_filled_cargill.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_rounded_stroke_cargill.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/card_view_rounded_corners_bg.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_auth_cargill.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/activity_farm_force_buyer_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/adapter_coop_disbursment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/dialog_custom_warning_layout.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/farmer_home_fragment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_buyer_dashboard.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_cooperative_dashboard.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_farm_force_buyer.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_login_account.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_login_pin.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_lookup_phone_account_id.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_offline_ussd.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_pending_payment_details.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/fragment_saved_data_for_sync.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/item_adapter_saved_for_sync.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/layout/layout_custom_keyboard_auth.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/navigation/auth_cargill_nav.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/navigation/farm_force_navigation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/colors.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/Constants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/abstractions/BaseActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/abstractions/BaseBottomSheetDialogFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/abstractions/BaseDaggerFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/abstractions/BaseDialogFragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/base/BaseCommonCargillFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/dialog_confirm/ConfirmDialogCommon.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/dk/CustomDialogs.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/common/src/main/java/com/ekenya/rnd/common/dk/DkUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/settings.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mobile-banking-project/esavings-module-mobile-banking/esavings/src/main/java/com/ekenya/rnd/esavings/ui/SavingsWithdrawFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mobile-banking-project/settings.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mobile-banking-project/wallet-module-mb2/wallet/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mobile-banking-project/wallet-module-mb2/wallet/src/main/java/com/ekenya/rnd/wallet/WalletMainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../mobile-banking-project/wallet-module-mb2/wallet/src/main/res/layout/item_beneficiary_mm_layout_wallet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../wallet-solution-mobile-app/onboarding/src/main/java/com/ekenya/rnd/dashboard/RegisterStepTwo.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../wallet-solution-mobile-app/onboarding/src/main/java/com/ekenya/rnd/onboarding/ui/AccountLookUpFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../wallet-solution-mobile-app/onboarding/src/main/res/navigation/mari_wallet_onboarding_navigation.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/access-control-app/accesscontrol/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/access-control-app/accesscontrol/src/main/java/com/ekenya/rnd/accesscontrol/data/repository/BaseRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/access-control-app/accesscontrol/src/main/java/com/ekenya/rnd/accesscontrol/utils/utilities/G4sUtils.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/build/generated/source/kapt/prodDebug/com/ekenya/rnd/baseapp/di/DaggerAppComponent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/proguard-rules.pro">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/AndroidManifest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/cpp/native-lib.cpp">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/CargillMainApp.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/bixolon/DemoDummyData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/bixolon/StarReceipt.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/di/injectables/FragmentModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/AppMainFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/BTAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/BixolonPrinterActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/BixolonPrinterTActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/FarmForceSenderMainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/bixolon/BixolonPrinterActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/bixolon/BixolonPrinterFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/bixolon/BlueToothData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/bixolon/BlueToothDeviceListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/bixolon/BlueToothListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/bixolon/Commented.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/bixolon/MainActivity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/bixolon/PrinterData.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/deeplinking/FarmForceSenderMainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/offlineussd/OfflineUssdFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/workmanager/NetworkConstraint.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/java/com/ekenya/rnd/baseapp/ui/workmanager/SyncDataWorker.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/activity_bixolon.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/activity_bixolon_printer_tactivity.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/activity_farm_force_sender_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/activity_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/bluetooth_list_row.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/fragment_bixolon_bluetooth.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/fragment_bixolon_printer.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/fragment_blue_tooth_device_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/fragment_bluetooth_devices_layout.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/fragment_main.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/app/src/main/res/layout/item_adapter_bluetooth_devices.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/authcargill/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/authcargill/proguard-rules-cargill-auth.pro">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/authcargill/src/main/java/com/ekenya/rnd/authcargill/ui/AuthCargillViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/authcargill/src/main/java/com/ekenya/rnd/authcargill/ui/language/LanguageFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/authcargill/src/main/java/com/ekenya/rnd/authcargill/ui/login/LoginPinFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/authcargill/src/main/java/com/ekenya/rnd/authcargill/ui/login/LookUpPhoneNumberCoopIdFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/authcargill/src/main/java/com/ekenya/rnd/authcargill/ui/splash/SplashFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/authcargill/src/main/java/com/ekenya/rnd/authcargill/utils/UtilsAuthCargill.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/build/generated/source/kapt/debug/com/ekenya/rnd/cargillbuyer/di/DaggerCargillBuyerComponent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/build/generated/source/navigation-args/debug/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/BuyerHomeFragmentDirections.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/build/generated/source/navigation-args/debug/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/ffpendingpayments/FFPendingPaymentListFragmentArgs.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/proguard-rules-cargill-buyer.pro">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/data/models/PaymentOptions.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/data/network/CargillBuyerApiService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/data/repository/BuyerRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/data/responses/BuyerPurchaseResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/data/responses/BuyerTopUpRequestsResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/data/responses/FarmerDetailsRes.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/data/responses/FarmerDetailsResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/data/responses/FfPendingPaymentsResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/data/responses/GeneralResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/data/responses/LatestTransactionsResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/di/injectables/CargillBuyerFragmentModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/adapter/BuyerHomeTabsAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/adapter/BuyerTopUpRequestsAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/adapter/FarmerListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/adapter/FfPendingPaymentsListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/adapter/LatestTransactionsAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/BuyerCargillViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/BuyerHomeFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/BuyerRecentTranactionFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/CargillBuyerViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/FundsRequestedListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/TabBuyerFundsRequestedListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/farmers/BuyerPayFarmerFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/farmers/BuyerPaymentOptionSpinnerAdatper.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/farmers/BuyerPaymentOptionSpn.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/farmers/FarmerDetailsBottomSheetFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/farmers/FarmerListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/farmers/ListOfFarmersFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/ffpendingpayments/FFPendingPaymentListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/ffpendingpayments/FfPendingPaymentDetailsFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/ffpendingpayments/FfPendingPaymentsListAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/ffpendingpayments/PendingPaymentDetailsFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/fundrequest/BuyerFundsRequestedListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/fundrequest/BuyerRequestFundFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/buyerprofile/latestTransactions/BuyerRecentTranactionFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/printer/PrinterDataAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/tabs/TabBuyerFundsRequestedListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/ui/tabs/TabBuyerRecentTranactionFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/utils/BuyerSuccessfulFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/java/com/ekenya/rnd/cargillbuyer/utils/BuyerToolBarMgmt.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/adapter_buyer_fundsrequest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/adapter_buyer_transactions.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/adapter_printer_layout.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_buyer_home.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_buyer_pay_farmer.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_buyer_recent_tranaction.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_buyer_recent_tranaction_tab.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_farmer_details_bottom_sheet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_ff_pending_payment_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_funds_requested_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_funds_requested_list_buyer_tab.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_list_of_farmers.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_pending_payment_details.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/fragment_request_fund_buyer.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/item_adapter_farmers.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/layout/item_adapter_pending_payments.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillbuyer/src/main/res/navigation/buyer_nav_graph.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/build/generated/data_binding_base_class_source_out/debug/out/com/ekenya/rnd/cargillcoop/databinding/ActivityMainCoopBinding.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/di/injectables/CargillCoopFragmentModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/CoopMainActivity.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/CoopMainFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/CoopMainViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/coopbuyerlist/CoopBuyerDetailsListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/evalue/ApproveEvalueRequestFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/evalue/EvalueBookingFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/evalue/EvalueRequestListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/fundrequest/BuyerRequestApprovalFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/fundrequest/FundRequestsByBuyerFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/recenttransaction/CoopRecentTransactionFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/recenttransaction/GraphAnalysisFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/java/com/ekenya/rnd/cargillcoop/ui/recenttransaction/RecentTransactionAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/activity_main_coop.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/adapter_coop_disbursment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/adapter_coopbuyer_fundrequest.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/fragment_approve_evalue_request.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/fragment_buyer_request_approval.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/fragment_coop_buyer_details_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/fragment_coop_home.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/fragment_coop_recent_transaction.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/fragment_evalue_booking.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/fragment_evalue_request_list.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/fragment_first_coop.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/fragment_fund_requests_by_buyer.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/layout/fragment_graph_analysis.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/navigation/coop_nav_graph.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillcoop/src/main/res/navigation/nav_graph.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/build/generated/source/kapt/debug/com/ekenya/rnd/cargillfarmer/di/DaggerCargillComponent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/build/tmp/kapt3/stubs/debug/com/ekenya/rnd/cargillfarmer/di/CargillComponent.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/build/tmp/kapt3/stubs/debug/com/ekenya/rnd/cargillfarmer/di/injectables/ActivityCargillModule.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/proguard-rules-farmer-cargill.pro">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/CargillFarmerBaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/FarmerViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/data/db/FarmerAppDatabase.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/data/repository/FarmerRepository.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/di/injectables/ActivityCargillModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/di/injectables/FragmentCargillModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/ui/farmerprofile/MoreRecentTransactionFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/ui/farmerprofile/dashboard/FarmerHomeFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/ui/farmerprofile/farmerviewvodel/FarmerViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/ui/farmerprofile/fundtransfer/SendMoneyAccountListFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/ui/farmerprofile/fundtransfer/TransferToCard.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/ui/farmerprofile/fundtransfer/TransferToTelcoFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/ui/farmerprofile/manageaccounts/FarmerAddBeneficiaryFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/ui/farmerprofile/manageaccounts/FarmerLinkedAccountFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/ui/farmerprofile/statements/FarmerMiniStatementCargillFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/ui/otp/OTPFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/utils/FarmerConstants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/utils/base/BaseFarmerSuccessfulFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/utils/base/BaseSuccessfulFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/java/com/ekenya/rnd/cargillfarmer/utils/base/FarmerSuccessfulFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/cargillfarmer/src/main/res/layout/farmer_home_fragment.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/proguard-rules.pro">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/Constants.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/abstractions/BaseDaggerFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/auth/CommonAuthFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/data/db/entity/UserLoginResponse.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/encryption/EncryptionService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/encryption/EncryptionService.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/encryption/EncryptionServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/encryption/EncryptionServiceImpl.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/base/BaseCommonAuthCargillDIFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/base/BaseCommonBuyerCargillDIFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/base/BaseCommonCargillCoopFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/base/BaseCommonCargillDIFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/base/BaseCommonFarmerCargillDIFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/base/viewmodel/BaseViewModel.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/custom/CargillCustomProgressDialog.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/custom/CustomDialogs.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/custom/FieldValidationCommon.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/custom/UtilsCargill.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/custom/UtilsCargillCommonV1.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/java/com/ekenya/rnd/common/utils/services/GoogleSMSReceiver.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/res/layout/layout_custom_keyboard_auth.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/res/layout/transfer_layout_top.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/res/values-fr/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/common/src/main/res/values/styles.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/gradle.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/cargill-app-dynamic-features/settings.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/common/src/main/java/com/ekenya/rnd/common/auth/CommonAuthFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/build.gradle">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/di/injectables/FragmentWalletModule.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/adapters/AddBeneficiaryMobileMoneyWalletAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/fundtransfer/mobile_money/MainMobileMoneyFundTransferWalletFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/fundtransfer/mobile_money/MobileMoneyFundTransferWalletFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/fundtransfer/mobile_money/adapter/AdapterSelectContactWallet.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/fundtransfer/mobile_money/adapter/AdapterSplitMobileMoneyContact.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/fundtransfer/mobile_money/adapter/MobileMoneyViewPagerAdapter.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/fundtransfer/mobile_money/selectcontacts/FragmentSelectContactWallet.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/fundtransfer/mobile_money/selectcontacts/FragmentSplitSendToMobileMoneyWallet.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/fundtransfer/mobile_money/tabs/TabAllContactsWalletFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/fundtransfer/mobile_money/tabs/TabFrequentContactsFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/ui/myaccount/tabs/TabHolderMyAccountsFragment.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/java/com/ekenya/rnd/wallet/utils/UtilsWallet.kt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/res/layout/fragment_main_mobile_money_ft_wallet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/res/layout/fragment_select_contact_wallet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/res/layout/fragment_split_mobile_moeny_wallet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/res/layout/fragment_tab_all_contacts_wallet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/res/layout/fragment_tab_frequent_contacts_wallet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/res/layout/item_beneficiary_mm_layout_wallet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/res/layout/item_split_contact_wallet.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/res/values/dimens.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/StudioProjects/wallet-module-mb/wallet/src/main/res/values/strings.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

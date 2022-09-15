@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    >
+    <include
+        layout="@layout/payfarmer_tool_bar"
+        android:id="@+id/mainLayoutToolbar"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar"
+        android:text="Scan Sample Qr code"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:id="@+id/tvScanTitle"
+        android:background="@color/white_gray"
+        android:layout_margin="@dimen/medium_side"
+        android:textColor="@color/primary_green"
+        android:layout_marginTop="@dimen/medium_side"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_logout"
+        style="@style/MaterialConfirmationButtonDefaultStyle"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="scan ff qr code"
+        android:visibility="visible" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvScanTitle"
+        app:layout_constraintBottom_toTopOf="@id/btn_logout"
+        android:src="@mipmap/maureenqr"
+        android:id="@+id/profileQRCode"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="@dimen/medium_side"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:backgroundTint="@color/colorDivider"
+    android:orientation="vertical"
+    tools:context="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.ffpendingpayments.FfPendingPaymentDetailsFragment">
+
+    <include
+        android:id="@+id/mainLayoutToolbar"
+        layout="@layout/transfer_layout_top" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_side"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_side"
+            android:background="@drawable/balance_cardview"
+            android:elevation="5dp"
+            android:padding="@dimen/margin_padding_small"
+            android:paddingLeft="@dimen/landing_card_radius"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvCustName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_padding_small"
+                android:textColor="@color/white_cargill"
+                android:textSize="@dimen/textsize_large"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Evans Mwangi" />
+
+            <TextView
+                android:id="@+id/tvOutType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitosans_semibold_common"
+                android:paddingBottom="@dimen/margin_padding_small"
+                android:textColor="@color/white_gray"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintTop_toBottomOf="@id/tvCustName"
+                tools:text="Type : Cocoa Purchase" />
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunitosans_semibold_common"
+                android:paddingBottom="@dimen/margin_padding_small"
+                android:textColor="@color/white_cargill"
+                app:layout_constraintTop_toBottomOf="@id/tvOutType"
+                tools:text="Total Amount: 50 000 CFA" />
+
+            <TextView
+                android:id="@+id/tvPaidAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/margin_padding_small"
+                android:textColor="@color/white_cargill"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTotalAmount"
+                tools:text="Paid: 25 000 CFA" />
+
+            <TextView
+                android:id="@+id/tvBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/margin_padding_small"
+                android:textColor="@color/white_cargill"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTotalAmount"
+                tools:text="Balance:25 000 CFA" />
+
+            <TextView
+                android:id="@+id/tvActualBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white_cargill"
+                android:textSize="@dimen/text_size_normal"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvPaidAmount"
+                tools:text="KES 159,328.32" />
+
+            <TextView
+                android:id="@+id/tvAvailableBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_vertical_margin"
+                android:textColor="@color/white_cargill"
+                android:textSize="@dimen/text_size_normal"
+                android:visibility="gone"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvBalance"
+                tools:text="KES 159,328.32" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_padding_small"
+            app:layout_constraintTop_toBottomOf="@id/layoutCustomer">
+
+            <TextView
+                android:id="@+id/tvReferenceNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/landing_card_radius"
+                android:fontFamily="@font/nunitosans_semibold_common"
+                android:text="Ref No: 11541151515"
+                android:textColor="@color/colorPrimaryText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/landing_card_radius"
+                android:fontFamily="@font/nunitosans_bold_common"
+                android:text="Status: "
+                android:textColor="@color/accent2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/landing_card_radius"
+                android:fontFamily="@font/nunitosans_semibold_common"
+                android:text="Date: 04/05/2022 | 12:30"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvReferenceNumber" />
+
+            <View
+                android:id="@+id/vCoolerSpare"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toBottomOf="@id/tvDate" />
+
+            <TextView
+                android:id="@+id/tvTransIdTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_side"
+                android:fontFamily="@font/nunitosans_semibold_common"
+                android:text="Amount:"
+                android:textColor="@color/black"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vCoolerSpare" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlPayAmount"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTransIdTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPayAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_amount"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="6" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/vFforceref"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#61272727"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/tlPayAmount" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlComments"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_side"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/vFforceref">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_comments"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine"
+                    android:lines="3"
+                    android:maxLines="3" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPayFarmer"
+                style="@style/primary_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_top"
+                android:layout_marginBottom="50dp"
+                android:padding="10dp"
+                android:paddingBottom="@dimen/main_top"
+                android:text="@string/pay"
+                app:cornerRadius="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tlComments" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

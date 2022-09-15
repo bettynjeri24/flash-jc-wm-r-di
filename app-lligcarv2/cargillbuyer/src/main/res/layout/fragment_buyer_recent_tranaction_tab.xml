@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekenya.rnd.cargillbuyer.ui.tabs.TabBuyerRecentTranactionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_2dp"
+        android:background="@drawable/curved_bg"
+        android:paddingStart="@dimen/_8dp"
+        android:paddingTop="@dimen/_2dp"
+        android:paddingEnd="@dimen/_8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_recent_transactions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_4dp"
+            android:padding="@dimen/_4dp"
+            android:text="@string/recent_transactions"
+            android:textAllCaps="true"
+            android:textColor="#9B9B9B"
+            android:textSize="@dimen/_12sp_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:text="@string/view_all"
+            android:textAllCaps="true"
+            android:textColor="#04A653"
+            android:padding="@dimen/_4dp"
+            android:textSize="@dimen/_12sp_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_recent_transactions"
+            tools:layout_editor_absoluteY="34dp" />
+
+        <TextView
+            android:id="@+id/tvErrorResponse"
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/main_side"
+
+            android:fontFamily="@font/nunitosans_semibold_common"
+            android:gravity="center_vertical"
+            android:text="@string/no_transaction_list"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_vlarge"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_recent_transactions" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcLatestTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_4dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_recent_transactions"
+            tools:listitem="@layout/adapter_buyer_transactions" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

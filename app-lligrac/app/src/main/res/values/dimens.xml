@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- farmer dashboard card -->
+    <dimen name="card_height">120dp</dimen>
+    <dimen name="card_advert_height">150dp</dimen>
+    <dimen name="main_top">32dp</dimen>
+    <dimen name="main_side">16dp</dimen>
+    <dimen name="medium_side">8dp</dimen>
+    <dimen name="small_margin">6dp</dimen>
+    <dimen name="large_margin">60dp</dimen>
+    <dimen name="landing_card_radius">8dp</dimen>
+    <dimen name="material_button_conner_radius">20dp</dimen>
+    <dimen name="image_padding">10dp</dimen>
+    <dimen name="submenu_view">50dp</dimen>
+    <dimen name="submenu_icon">80dp</dimen>
+    <dimen name="medium_icon_menu">35dp</dimen>
+
+    <!-- spinner  -->
+    <dimen name="spiner_height">42dp</dimen>
+    <dimen name="margin_padding_small">6dp</dimen>
+    <dimen name="tv_comments_height">100dp</dimen>
+
+    <!-- text size -->
+    <dimen name="text_size">14sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+    <dimen name="textsize_target">13sp</dimen>
+    <dimen name="textsize_large">18sp</dimen>
+    <dimen name="textsize_vlarge">22sp</dimen>
+
+    <!-- Text Size -->
+    <dimen name="text_size_tiny">6sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_normal">13sp</dimen>
+
+    <dimen name="img_contactus">44dp</dimen>
+    <dimen name="tab_layout_height">35dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_medium">8dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_8dp">8dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_14sp_text_size">14sp</dimen>
+    <dimen name="_0dp">0dp</dimen>
+    <dimen name="_16sp_text_size">16sp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_18sp_text_size">18sp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+    <dimen name="_24dp">24dp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_12sp_text_size">12sp</dimen>
+    <dimen name="_110dp">110dp</dimen>
+    <dimen name="_22sp_text_size">22sp</dimen>
+
+</resources>

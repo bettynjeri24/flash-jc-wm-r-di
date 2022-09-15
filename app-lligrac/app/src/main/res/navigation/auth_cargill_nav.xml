@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_cargill_nav"
+    app:startDestination="@id/lookUpPhoneNumberCoopIdFragment">
+
+    <fragment
+        android:id="@+id/loginPinFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.login.LoginPinFragment"
+        android:label="fragment_login_pin"
+        tools:layout="@layout/fragment_login_pin" />
+    <fragment
+        android:id="@+id/lookUpPhoneNumberCoopIdFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.login.LookUpPhoneNumberCoopIdFragment"
+        android:label="fragment_lookup_phone_account_id"
+        tools:layout="@layout/fragment_lookup_phone_account_id" >
+        <action
+            android:id="@+id/action_lookUpPhoneNumberCoopIdFragment_to_loginPinFragment"
+            app:destination="@id/loginPinFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,28 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+        jcenter()
+    }
+}
+rootProject.name = "CargilDigitalPayment D"
+include ':app'
+include ':libs:bixolon_printer_v127'
+include ':libs:Image'
+include ':libs:PDF'
+include ':libs:jpos117-controls'
+include ':libs:icu4j-58_1'
+include ':libs:xerces'
+//include ':common'
+include ':common'

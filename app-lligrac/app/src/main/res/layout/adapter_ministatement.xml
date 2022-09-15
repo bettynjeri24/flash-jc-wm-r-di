@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:elevation="5dp"
+    android:layout_margin="5dp"
+    android:layout_marginTop="@dimen/medium_side"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/medium_side"
+        android:paddingRight="@dimen/medium_side">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sididan commercial bank"
+            android:fontFamily="@font/nunito_sans_semibold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="12sp"
+            android:textColor="@color/primary_green"
+            android:id="@+id/tvProviderName"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/medium_side"
+            android:text="RefID: 45454872454874"
+            android:id="@+id/tv_refID"
+            android:textColor="@color/txtGray"
+            android:textSize="12sp"
+            android:layout_marginTop="@dimen/margin_padding_small"
+            android:paddingBottom="@dimen/margin_padding_small"
+           app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="@font/nunito_sans"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintTop_toBottomOf="@id/tvProviderName"
+            android:background="@color/white_gray"
+            android:id="@+id/vProvider"
+            android:layout_marginTop="@dimen/margin_padding_small"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="@dimen/medium_side"
+            android:text="Jonah Njeri"
+            android:id="@+id/tvAccountNo"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/margin_padding_small"
+            android:paddingBottom="@dimen/margin_padding_small"
+            app:layout_constraintTop_toBottomOf="@id/vProvider"
+            android:fontFamily="@font/nunito_sans_semibold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="@dimen/medium_side"
+            android:text="- CFA 800 000"
+            android:id="@+id/tv_billduedate"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_marginTop="@dimen/margin_padding_small"
+            android:paddingBottom="@dimen/margin_padding_small"
+            app:layout_constraintTop_toBottomOf="@id/vProvider"
+            android:fontFamily="@font/nunito_sans_semibold"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="@id/tv_billduedate"
+            android:textSize="12sp"
+            android:textColor="@color/txtGray"
+            android:id="@+id/tv_bill_nickname"
+            android:paddingBottom="@dimen/medium_side"
+            android:layout_marginTop="@dimen/main_top"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="To: Yvone BillDamas"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

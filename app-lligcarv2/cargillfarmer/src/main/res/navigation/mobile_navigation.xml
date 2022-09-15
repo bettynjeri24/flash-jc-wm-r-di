@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/farmerHomeFragment">
+
+    <!--    /////////////////////////////////////////////////////-->
+    <fragment
+        android:id="@+id/successfulFragmentWallet"
+        android:name="com.ekenya.rnd.cargillfarmer.utils.base.FarmerSuccessfulFragment"
+        android:label="fragment_sucessful_wallet"
+        tools:layout="@layout/fragment_sucessful_wallet">
+        <action
+            android:id="@+id/action_successfulFragmentWallet_to_farmerHomeFragment"
+            app:destination="@id/farmerHomeFragment" />
+    </fragment>
+    
+    <fragment
+        android:id="@+id/commonAuthFragment"
+        android:name="com.ekenya.rnd.common.auth.CommonAuthFragment"
+        android:label="CommonAuthFragment" />
+
+    <fragment
+        android:id="@+id/homeWalletFragmentUssDTest"
+        android:name="com.ekenya.rnd.baseapp.ui.offlineussd.OfflineUssdFragment"
+        android:label="HomeCargillFragment"
+        tools:layout="@layout/fragment_offline_ussd" />
+
+    <!--    /////////////////////////////////////////////////////-->
+
+
+    <fragment
+        android:id="@+id/farmerHomeFragment"
+        android:name="com.ekenya.rnd.cargillfarmer.ui.farmerprofile.dashboard.FarmerHomeFragment"
+        android:label="FarmerHomeFragment"
+        tools:layout="@layout/farmer_home_fragment">
+        <action
+            android:id="@+id/action_farmerHomeFragment_to_farmerMiniStatementCargillFragment"
+            app:destination="@id/farmerMiniStatementCargillFragment" />
+        <action
+            android:id="@+id/action_farmerHomeFragment_to_transferToTelcoFragment"
+            app:destination="@id/transferToTelcoFragment" />
+        <action
+            android:id="@+id/action_farmerHomeFragment_to_farmerLinkedAccountFragment"
+            app:destination="@id/farmerLinkedAccountFragment" />
+        <action
+            android:id="@+id/action_farmerHomeFragment_to_moreRecentTransaction"
+            app:destination="@id/moreRecentTransaction" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sendMoneyAccountListFragment"
+        android:name="com.ekenya.rnd.cargillfarmer.ui.farmerprofile.fundtransfer.SendMoneyAccountListFragment"
+        android:label="SendMoneyAccountList"
+        tools:layout="@layout/fragment_send_money_account_list" />
+    <fragment
+        android:id="@+id/transferToCargillWallet"
+        android:name="com.ekenya.rnd.cargillfarmer.ui.farmerprofile.fundtransfer.TransferToCargillWallet"
+        android:label="TransferToCargillDIWallet"
+        tools:layout="@layout/fragment_transfer_to_cargill_wallet" />
+    <fragment
+        android:id="@+id/transferToTelcoFragment"
+        android:name="com.ekenya.rnd.cargillfarmer.ui.farmerprofile.fundtransfer.TransferToTelcoFragment"
+        android:label="TransferToTelcoFragment"
+        tools:layout="@layout/fragment_transfer_totelco" />
+    <fragment
+        android:id="@+id/moreRecentTransaction"
+        android:name="com.ekenya.rnd.cargillfarmer.ui.farmerprofile.MoreRecentTransactionFragment"
+        android:label="MoreRecentTransaction"
+        tools:layout="@layout/fragment_morerecent_transaction" />
+    <fragment
+        android:id="@+id/farmerLinkedAccountFragment"
+        android:name="com.ekenya.rnd.cargillfarmer.ui.farmerprofile.manageaccounts.FarmerLinkedAccountFragment"
+        android:label="fragment_farmer_linked_account"
+        tools:layout="@layout/fragment_farmer_linked_account" />
+    <fragment
+        android:id="@+id/farmerAddBeneficiaryFragment"
+        android:name="com.ekenya.rnd.cargillfarmer.ui.farmerprofile.manageaccounts.FarmerAddBeneficiaryFragment"
+        android:label="AddBeneficiaryAccountFragment"
+        tools:layout="@layout/fragment_add_beneficiary_account" />
+
+    <fragment
+        android:id="@+id/farmerMiniStatementCargillFragment"
+        android:name="com.ekenya.rnd.cargillfarmer.ui.farmerprofile.statements.FarmerMiniStatementCargillFragment"
+        android:label="fragment_farmer_ministatement"
+        tools:layout="@layout/fragment_farmer_ministatement" />
+
+
+
+</navigation>

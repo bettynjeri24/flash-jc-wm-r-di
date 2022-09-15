@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_gray"
+    tools:context=".ui.beneficiaryaccount.FarmerLinkedAccount">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddMore"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:strokeWidth="2dp"
+        android:padding="6dp"
+        android:textSize="@dimen/text_size"
+        android:textColor="@color/color_white"
+        app:backgroundTint="@color/primary_green"
+        app:strokeColor="@color/primary_green"
+        android:text="@string/add_more"
+        style="@style/outline_button"
+        app:icon="@drawable/ic_add_cart"
+        app:iconTint="@color/color_white"
+        android:layout_margin="@dimen/main_top"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvBeneficialyAcc"
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginTop="@dimen/medium_side"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="@dimen/medium_side"
+        android:layout_marginRight="@dimen/medium_side"
+        tools:listitem="@layout/adapter_farmer_accountlist"
+        app:layout_constraintTop_toBottomOf="@id/btnAddMore"
+        android:layout_height="0dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:layout_margin="@dimen/main_side"
+        android:text="@string/no_beneficiary_list"
+        android:textSize="@dimen/textsize_vlarge"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:id="@+id/tvErrorResponse"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

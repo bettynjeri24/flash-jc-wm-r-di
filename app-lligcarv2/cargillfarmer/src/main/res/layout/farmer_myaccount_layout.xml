@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginStart="@dimen/main_side"
+    android:layout_marginTop="@dimen/main_side"
+    android:layout_marginEnd="@dimen/main_side"
+    android:background="@color/white"
+    android:elevation="@dimen/medium_side"
+    android:id="@+id/rootMyCashOutCard"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/landing_card_radius"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/medium_side">
+
+        <View
+            android:layout_width="4dp"
+            android:layout_height="@dimen/submenu_view"
+            android:background="@color/primary_green"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivAccountIcon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="16dp"
+            android:padding="@dimen/medium_side"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@mipmap/mtnmoney" />
+
+        <ImageView
+            android:id="@+id/imgnext"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/circle_green_bg"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_side"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:layout_marginTop="@dimen/medium_side"
+            android:fontFamily="@font/nunitosans_semibold_common"
+            android:gravity="start"
+            android:maxLines="1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp_text_size"
+            app:layout_constraintEnd_toStartOf="@id/imgnext"
+            app:layout_constraintStart_toEndOf="@+id/ivAccountIcon"
+            tools:layout_editor_absoluteY="29dp"
+            tools:text="Evans Gangla" />
+
+        <TextView
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_semibold_common"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/medium_side"
+            android:textSize="@dimen/_14sp_text_size"
+            android:singleLine="true"
+            android:maxLines="1"
+            tools:text="Phone number - 225708396044"
+            app:layout_constraintEnd_toEndOf="@id/tvName"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintTop_toBottomOf="@id/tvName" />
+
+        <TextView
+            android:id="@+id/tvCreationDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_side"
+            android:fontFamily="@font/nunitosans_semibold_common"
+            android:gravity="start"
+            android:layout_marginTop="@dimen/medium_side"
+            android:textSize="@dimen/_14sp_text_size"
+            android:singleLine="true"
+            android:maxLines="1"
+            tools:text="2022-06-19 15:14:00.495 "
+            app:layout_constraintEnd_toEndOf="@id/tvName"
+            app:layout_constraintStart_toStartOf="@id/tvPhoneNumber"
+            app:layout_constraintTop_toBottomOf="@id/tvPhoneNumber" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

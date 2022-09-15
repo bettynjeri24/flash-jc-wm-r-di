@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.buyerprofile.payfarmer.BuyerFarmerList">
+    <include
+        layout="@layout/transfer_layout_top"
+        android:id="@+id/mainLayoutToolbar"/>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="@string/farmers"
+        android:textAllCaps="true"
+        android:textColor="#013E4E"
+        android:layout_marginStart="@dimen/main_side"
+        android:layout_marginEnd="@dimen/main_side"
+        android:layout_marginTop="@dimen/medium_side"
+       app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_farmer_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans"
+        android:text="@string/total_no"
+        android:textColor="#04A653"
+        android:layout_marginStart="@dimen/main_side"
+        android:layout_marginEnd="@dimen/main_side"
+        android:layout_marginTop="@dimen/medium_side"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_search"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/medium_side"
+        android:hint="@string/search_farmer"
+        app:boxBackgroundColor="#F3F7F8"
+        android:background="#F3F7F8"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        android:layout_marginStart="@dimen/main_side"
+        android:layout_marginEnd="@dimen/main_side"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_filter"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:startIconDrawable="@drawable/ic_search">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_search"
+            android:imeOptions="actionDone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iv_filter"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="@id/tl_search"
+        app:layout_constraintBottom_toBottomOf="@id/tl_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@android:color/black"
+        android:padding="15dp"
+        android:src="@drawable/filter"
+        android:layout_marginEnd="@dimen/main_side"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_farmers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/medium_side"
+        android:layout_marginEnd="@dimen/medium_side"
+        android:layout_marginTop="@dimen/medium_side"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/tl_search"
+        app:layout_constraintBottom_toTopOf="@id/v_bottom"
+        tools:listitem="@layout/adapter_pending_payments" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tl_search"
+        app:layout_constraintBottom_toTopOf="@id/v_bottom"
+        android:visibility="gone"
+        android:textColor="@color/black"
+
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/main_side"
+        android:text="@string/no_transaction_list"
+        android:textSize="@dimen/textsize_vlarge"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:id="@+id/tvErrorResponse"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        android:visibility="gone"
+        android:backgroundTint="@android:color/black"
+        app:srcCompat="@drawable/harvester"
+        app:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/shadow_down"
+        android:layerType="software"
+        android:elevation="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/v_bottom"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/v_bottom"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:elevation="8dp"
+        android:visibility="gone"
+        android:layout_height="55dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_farmer"
+            android:textAllCaps="true"
+            android:fontFamily="@font/nunito_sans"
+            android:layout_marginBottom="@dimen/medium_side"
+            android:textColor="#302A2A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

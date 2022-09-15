@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_gray"
+    tools:context="com.ekenya.rnd.cargillfarmer.ui.farmerprofile.manageaccounts.FarmerLinkedAccountFragment">
+
+    <include
+        android:id="@+id/mainLayoutToolbar"
+        layout="@layout/transfer_layout_top" />
+
+    <TextView
+        android:id="@+id/tvPrivacynsecurity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:fontFamily="@font/nunitosans_bold_common"
+        android:gravity="center_vertical"
+        android:padding="@dimen/_4dp"
+        android:text="@string/manage_my_accounts"
+        android:textColor="@color/dark_blue_cargill"
+        android:textSize="@dimen/_14sp_text_size"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAddMore"
+        app:layout_constraintEnd_toStartOf="@id/btnAddMore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAddMore" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddMore"
+        style="@style/outline_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:padding="@dimen/_6dp"
+        android:text="@string/add_more"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size"
+        app:backgroundTint="@color/primary_green"
+        app:icon="@drawable/ic_add_cart"
+        app:iconTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar"
+        app:strokeColor="@color/primary_green"
+        app:strokeWidth="2dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvBeneficiaryAcc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/medium_side"
+        android:layout_marginTop="@dimen/medium_side"
+        android:layout_marginRight="@dimen/medium_side"
+        android:layout_marginBottom="@dimen/_10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddMore"
+        tools:listitem="@layout/items_adapter_farmer_accounts" />
+
+    <TextView
+        android:id="@+id/tvErrorResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_32dp"
+        android:fontFamily="@font/nunito_sans_semibold"
+        android:text="@string/no_beneficiary_list"
+        android:textAlignment="center"
+        android:padding="@dimen/_4dp"
+        android:textColor="@color/red_text_color_cargill"
+        android:textSize="@dimen/textsize_vlarge"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/login_bg"
+    android:paddingStart="@dimen/main_top"
+    android:paddingEnd="@dimen/main_top"
+    tools:context=".ui.auth.login.LoginFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="@dimen/large_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:textSize="50sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/nunito_sans_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_user_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:src="@drawable/farmer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardview"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:translationY="-30dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="0dp"
+        style="@style/card_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@id/btn_login">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/main_side"
+            android:paddingEnd="@dimen/main_side"
+            android:paddingTop="@dimen/main_side"
+            android:paddingBottom="@dimen/large_margin">
+
+            <TextView
+                android:id="@+id/tv_username"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/main_top"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/buyer_id"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/nunito_sans"
+                android:textSize="14sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_username"
+                style="@style/MyTextInputLayout"
+                app:counterMaxLength="8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_username"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_username"
+                    style="@style/edit_texts"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/medium_side"
+                app:layout_constraintTop_toBottomOf="@id/tl_username"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/password"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/nunito_sans"
+                android:textSize="14sp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tl_password"
+                style="@style/MyTextInputLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_password"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
+                    style="@style/edit_texts"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionDone"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tv_forgot_password"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/medium_side"
+                app:layout_constraintTop_toBottomOf="@id/tl_password"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/forgot_pass"
+                android:textColor="@android:color/black"
+                android:fontFamily="@font/nunito_sans"
+                android:textSize="14sp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/primary_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/login"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

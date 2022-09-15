@@ -1,0 +1,20 @@
+{
+  "version": 3,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.ekenya.rnd.baseappcargill",
+  "variantName": "prodRelease",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "attributes": [],
+      "versionCode": 7,
+      "versionName": "1.1.1-220714",
+      "outputFile": "Cargill DFM.1.1.1-220714.apk"
+    }
+  ],
+  "elementType": "File"
+}

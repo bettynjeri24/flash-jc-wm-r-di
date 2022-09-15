@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/general_wallet_nav_graph"
+    app:startDestination="@id/nav_generalWalletDashboard">
+<fragment
+    android:id="@+id/nav_generalWalletDashboard"
+    android:name="io.eclectics.cargilldigital.ui.generalwalletprofile.dashboard.GeneralWalletDashboard"
+    tools:layout="@layout/fragment_other_users_dashboard"/>
+    <fragment
+        android:id="@+id/nav_gwalletAccList"
+        android:name="io.eclectics.cargilldigital.ui.generalwalletprofile.gwalletaccounts.GwalletAccountList"
+        tools:layout="@layout/fragment_gwallet_account_list"/>
+    <fragment
+        android:id="@+id/nav_statementFragment"
+        android:name="io.eclectics.cargilldigital.ui.generalwalletprofile.statement.WalletStatement"
+        tools:layout="@layout/fragment_wallet_statement"/>
+
+    <!--  common shared fagmenst AT THE MOMMENT INCLUDE IMEKATAA KU MAN UP -->
+    <fragment
+        android:id="@+id/nav_transactionConfirmation"
+        android:name="io.eclectics.cargilldigital.ui.confirmation.ConfirmationFragment"
+        tools:layout="@layout/fragment_confirmation"/>
+    <fragment
+        android:id="@+id/nav_pinFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.pinmgmt.PinFragment"
+        tools:layout="@layout/fragment_pin">
+    <action
+        android:id="@+id/action_genUserProfile"
+        app:destination="@id/nav_generalWalletProfile"
+        app:popUpTo="@id/general_wallet_nav_graph"
+        app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_generalWalletProfile"
+        android:name="io.eclectics.cargilldigital.ui.generalwalletprofile.dashboard.GeneralWallet"
+        tools:layout="@layout/fragment_general_wallet"/>
+    <fragment
+        android:id="@+id/nav_verifyOtp"
+        android:name="io.eclectics.cargilldigital.ui.otpverification.OTPFragment"
+        tools:layout="@layout/fragment_otp"/>
+    <fragment
+        android:id="@+id/nav_selectAccount"
+        android:name="io.eclectics.cargilldigital.ui.account.AccountsFragment"
+        tools:layout="@layout/accounts_fragment"/>
+    <!-- This can be transfered to farmer profile for easier access-->
+    <fragment
+        android:id="@+id/nav_TransferToTelco"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.TransferToTelco"
+        tools:layout="@layout/fragment_transfer_totelco"/>
+    <fragment
+        android:id="@+id/nav_TransferToBank"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.TransferToBank"
+        tools:layout="@layout/fragment_transfer_tobank"/>
+    <fragment
+        android:id="@+id/nav_transferToCard"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.TransferToCard"
+        tools:layout="@layout/fragment_transfer_tocard"/>
+    <fragment
+        android:id="@+id/nav_transferToWallet"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.TransferToWallet"
+        tools:layout="@layout/fragment_transfer_towallet"/>
+    <fragment
+        android:id="@+id/nav_farmerBeneficiaryAccount"
+        android:name="io.eclectics.cargilldigital.ui.beneficiaryaccount.FarmerLinkedAccount"
+        tools:layout="@layout/beneficiary_account_layout"/>
+    <fragment
+        android:id="@+id/nav_generalWalletLinkedAcc"
+        android:name="io.eclectics.cargilldigital.ui.generalwalletprofile.gwalletaccounts.GwalletLinkedAccounts"
+        tools:layout="@layout/fragment_gwallet_linked_accounts"/>
+    <fragment
+        android:id="@+id/nav_addBeneficiaryAccount"
+        android:name="io.eclectics.cargilldigital.ui.beneficiaryaccount.AddBeneficiaryAccount"
+        tools:layout="@layout/fragment_add_beneficiary_account"/>
+    <fragment
+        android:id="@+id/nav_confirmationAddChannel"
+        android:name="io.eclectics.cargilldigital.ui.confirmation.ConfirmAddChanelAccount"
+        tools:layout="@layout/fragment_confirm_addchanel_account"/>
+</navigation>

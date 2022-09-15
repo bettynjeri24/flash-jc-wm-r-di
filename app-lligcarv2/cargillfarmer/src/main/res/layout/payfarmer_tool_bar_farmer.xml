@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="@color/primary_green"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/toolbar_cancel"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/main_side"
+            android:background="@drawable/circle_click"
+            android:src="@drawable/ic_close"
+            app:tint="@color/white" />
+
+        <ImageView
+            android:id="@+id/imgQRCode"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/toolbar_cancel"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/main_side"
+            android:background="@drawable/circle_click"
+            android:src="@mipmap/qrcode"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:text="@string/transfer_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="22sp"
+            android:layout_marginStart="@dimen/main_side"
+            android:layout_marginTop="@dimen/main_side"
+            app:layout_constraintEnd_toStartOf="@id/imgQRCode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/toolbar_description"
+            android:text="@string/transfer_money_tsubttle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size"
+            android:fontFamily="@font/nunitosans_semibold_common"
+            android:layout_marginStart="@dimen/main_side"
+            android:layout_marginTop="@dimen/medium_side"
+            app:layout_constraintEnd_toStartOf="@id/imgQRCode"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_title" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.Toolbar>

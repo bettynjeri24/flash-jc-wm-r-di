@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_splashfragment">
+
+    <fragment
+        android:id="@+id/nav_splashfragment"
+        android:name="io.eclectics.cargilldigital.ui.splash.SplashFragment"
+        tools:layout="@layout/splash_fragment">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_selectAccount"
+        android:name="io.eclectics.cargilldigital.ui.account.AccountsFragment"
+        tools:layout="@layout/accounts_fragment"/>
+    <fragment
+        android:id="@+id/nav_loginAccountFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.login.LoginAccountFragment"
+        tools:layout="@layout/fragment_login_account">
+    </fragment>
+    <fragment
+        android:id="@+id/nav_ussdFragment"
+        android:name="io.eclectics.cargilldigital.ussd.UssdFragment"
+        tools:layout="@layout/fragment_ussd"/>
+    <fragment
+        android:id="@+id/nav_ussdWorkManagerFrag"
+        android:name="io.eclectics.cargilldigital.ussd.UssdWorkManagerFrag"
+        tools:layout="@layout/fragment_ussd"/>
+
+
+    <fragment
+        android:id="@+id/nav_loginFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.login.LoginFragment"
+        tools:layout="@layout/login_fragment"/>
+    <fragment
+        android:id="@+id/nav_setLanguage"
+        android:name="io.eclectics.cargilldigital.ui.language.LanguageFragment"
+      tools:layout="@layout/language_fragment"/>
+    <!--  Cooperative profile -->
+    <fragment
+        android:id="@+id/nav_cooperativeProfile"
+        android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.dashboard.CooperativeFragment"
+        tools:layout="@layout/fragment_cooperative">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_dashboard"
+            app:destination="@id/nav_cooperativeProfile"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <!-- Buyer profile -->
+    <fragment
+        android:id="@+id/nav_agentProfile"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.dashboard.AgentFragment"
+        tools:layout="@layout/fragment_agent">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_dashboard"
+            app:destination="@id/nav_agentProfile"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <!-- General Wallet   -->
+    <fragment
+        android:id="@+id/nav_generalWalletProfile"
+        android:name="io.eclectics.cargilldigital.ui.generalwalletprofile.dashboard.GeneralWallet"
+        tools:layout="@layout/fragment_general_wallet">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_dashboard"
+            app:destination="@id/nav_generalWalletProfile"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Farmer profile -->
+    <fragment
+        android:id="@+id/nav_farmerDashboard"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.dashboard.FarmerHomeFragment"
+        tools:layout="@layout/farmer_home_fragment">
+    <action
+        android:id="@+id/action_logout"
+        app:destination="@id/nav_loginAccountFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_dashboard"
+            app:destination="@id/nav_farmerDashboard"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_morecentTransaction"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.MoreRecentTransaction"
+        tools:layout="@layout/fragment_morerecent_transaction">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_confirmationAddChannel"
+        android:name="io.eclectics.cargilldigital.ui.confirmation.ConfirmAddChanelAccount"
+        tools:layout="@layout/fragment_confirm_addchanel_account"/>
+    <fragment
+        android:id="@+id/nav_phoneLookupFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.lookup.UserPhoneLookup"
+        tools:layout="@layout/fragment_user_phone_lookup"/>
+    <fragment
+        android:id="@+id/nav_providerIdLookup"
+        android:name="io.eclectics.cargilldigital.ui.auth.lookup.CompanyIDLookup"
+        tools:layout="@layout/fragment_company_id_lookup"/>
+    <fragment
+        android:id="@+id/nav_onboardingOtp"
+        android:name="io.eclectics.cargilldigital.ui.otpverification.OnboardingOtp"
+        tools:layout="@layout/fragment_onboarding_otp"/>
+    <fragment
+        android:id="@+id/nav_setAccountPin"
+        android:name="io.eclectics.cargilldigital.ui.auth.pinmgmt.SetAccountPin"
+        tools:layout="@layout/fragment_set_account_pin"/>
+    <fragment
+        android:id="@+id/nav_changePin"
+        android:name="io.eclectics.cargilldigital.ui.auth.pinmgmt.ChangePinFragment"
+        tools:layout="@layout/fragment_change_pin">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_contact_us"
+        android:name="io.eclectics.cargilldigital.ui.account.ProfileContactUs"
+        tools:layout="@layout/fragment_profile_contact_us"/>
+    <fragment
+        android:id="@+id/nav_privacynSecurity"
+        android:name="io.eclectics.cargilldigital.ui.account.PrivacynSecurity"
+        tools:layout="@layout/fragment_privacyn_security"/>
+    <fragment
+        android:id="@+id/nav_statementFragment"
+        android:name="io.eclectics.cargilldigital.ui.generalwalletprofile.statement.WalletStatement"
+        tools:layout="@layout/fragment_wallet_statement"/>
+
+    <fragment
+        android:id="@+id/nav_SendMoneyAccountList"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.SendMoneyAccountList"
+        tools:layout="@layout/fragment_send_money_account_list">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_farmerSendMoneyMenu"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.SendMoneyMenu"
+        tools:layout="@layout/fragment_send_moneymenu">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_transferToCargillWallet"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.TransferToCargillWallet"
+        tools:layout="@layout/fragment_transfer_to_cargill_wallet">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_TransferToTelco"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.TransferToTelco"
+        tools:layout="@layout/fragment_transfer_totelco">
+    <action
+        android:id="@+id/action_logout"
+        app:destination="@id/nav_loginAccountFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_TransferToBank"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.TransferToBank"
+        tools:layout="@layout/fragment_transfer_tobank"/>
+    <fragment
+        android:id="@+id/nav_transferToCard"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.TransferToCard"
+        tools:layout="@layout/fragment_transfer_tocard"/>
+    <fragment
+        android:id="@+id/nav_transferToWallet"
+        android:name="io.eclectics.cargilldigital.ui.farmerprofile.TransferToWallet"
+        tools:layout="@layout/fragment_transfer_towallet"/>
+    <fragment
+        android:id="@+id/nav_pinFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.pinmgmt.PinFragment"
+        tools:layout="@layout/fragment_pin">
+        <action
+            android:id="@+id/action_farmerdashboard"
+            app:destination="@id/nav_farmerDashboard"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_dashboard"
+            app:destination="@id/nav_cooperativeProfile"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_agentProfile"
+            app:destination="@id/nav_agentProfile"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_verifyOtp"
+        android:name="io.eclectics.cargilldigital.ui.otpverification.OTPFragment"
+        tools:layout="@layout/fragment_otp">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_transactionConfirmation"
+        android:name="io.eclectics.cargilldigital.ui.confirmation.ConfirmationFragment"
+        tools:layout="@layout/fragment_confirmation">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_farmerBeneficiaryAccount"
+        android:name="io.eclectics.cargilldigital.ui.beneficiaryaccount.FarmerLinkedAccount"
+        tools:layout="@layout/beneficiary_account_layout">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addBeneficiaryAccount"
+        android:name="io.eclectics.cargilldigital.ui.beneficiaryaccount.AddBeneficiaryAccount"
+        tools:layout="@layout/fragment_add_beneficiary_account">
+        <action
+            android:id="@+id/action_logout"
+            app:destination="@id/nav_loginAccountFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+
+</navigation>

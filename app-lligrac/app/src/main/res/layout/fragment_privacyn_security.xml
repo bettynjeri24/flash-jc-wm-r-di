@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".ui.account.PrivacynSecurity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_green"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:id="@+id/drawertop"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/supervisor"
+            android:background="@drawable/circle_bg"
+            android:id="@+id/imguser"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/main_top"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/nav_header_vertical_spacing"
+            android:text="Evans Gangla"
+            android:textAlignment="center"
+            android:textSize="22dp"
+            android:id="@+id/tvName"
+            app:layout_constraintTop_toBottomOf="@id/imguser"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/tvAccPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvName"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/medium_side"
+            android:text="@string/edit_profile" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:paddingBottom="@dimen/main_top"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/drawertop">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       app:layout_constraintTop_toTopOf="parent"
+        android:elevation="@dimen/medium_side"
+        app:cardCornerRadius="@dimen/medium_side"
+       android:layout_marginStart="@dimen/medium_side"
+        android:layout_marginEnd="@dimen/medium_side"
+        android:layout_marginTop="@dimen/main_side"
+        app:cardBackgroundColor="@color/primary_green"
+        android:id="@+id/cardChangePin">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_side">
+            <ImageView
+                android:layout_width="@dimen/medium_icon_menu"
+                android:layout_height="@dimen/medium_icon_menu"
+                android:src="@drawable/ic_next_chevron"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:tint="@color/color_white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_white"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/textsize_vlarge"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/change_pin"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toBottomOf="@id/cardChangePin"
+            android:elevation="@dimen/medium_side"
+            app:cardCornerRadius="@dimen/medium_side"
+            android:layout_marginStart="@dimen/medium_side"
+            android:layout_marginEnd="@dimen/medium_side"
+            android:layout_marginTop="@dimen/main_side"
+            app:cardBackgroundColor="@color/primary_green"
+            android:id="@+id/cardContactUs">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_side">
+                <ImageView
+                    android:layout_width="@dimen/medium_icon_menu"
+                    android:layout_height="@dimen/medium_icon_menu"
+                    android:src="@drawable/ic_next_chevron"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:tint="@color/color_white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textsize_vlarge"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/contact_us"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/cardContactUs"
+            android:elevation="@dimen/medium_side"
+            app:cardCornerRadius="@dimen/medium_side"
+            android:layout_marginStart="@dimen/medium_side"
+            android:layout_marginEnd="@dimen/medium_side"
+            android:layout_marginTop="@dimen/main_side"
+            app:cardBackgroundColor="@color/primary_green"
+            android:id="@+id/cardPrinterSetting">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/medium_side">
+                <ImageView
+                    android:layout_width="@dimen/medium_icon_menu"
+                    android:layout_height="@dimen/medium_icon_menu"
+                    android:src="@drawable/ic_next_chevron"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:tint="@color/color_white" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_white"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center_vertical"
+                    android:textSize="@dimen/textsize_vlarge"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/printer_settings"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

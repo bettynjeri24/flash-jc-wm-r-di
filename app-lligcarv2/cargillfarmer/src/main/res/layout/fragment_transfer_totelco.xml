@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:backgroundTint="@color/colorDivider"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mainLayoutToolbar"
+        layout="@layout/transfer_layout_top" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/main_top"
+        android:elevation="@dimen/medium_side"
+        android:translationY="-45dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/medium_side"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/medium_side"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="@dimen/medium_side"
+                android:background="@android:color/transparent"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/medium_side"
+                    android:paddingRight="@dimen/medium_side">
+
+                    <TextView
+                        android:id="@+id/tvProviderName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nunitosans_semibold_common"
+                        tools:text="Evans Gangla"
+                        android:textColor="@color/primary_green"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <View
+                        android:id="@+id/vProvider"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/margin_padding_small"
+                        android:background="@color/white_gray"
+                        app:layout_constraintTop_toBottomOf="@id/tvProviderName" />
+
+                    <TextView
+                        android:id="@+id/tvAccountNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_small"
+                        android:layout_marginEnd="@dimen/medium_side"
+                        android:fontFamily="@font/nunitosans_regular_common"
+                        android:paddingBottom="@dimen/margin_padding_small"
+                        tools:text="Phone Number: 115615510515354"
+                        android:textColor="@color/txtGray"
+                        android:textSize="12sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/vProvider" />
+
+                    <TextView
+                        android:id="@+id/tv_channelType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_padding_small"
+                        android:layout_marginEnd="@dimen/medium_side"
+                        android:fontFamily="@font/nunitosans_regular_common"
+                        android:paddingBottom="@dimen/margin_padding_small"
+                        tools:text="Type: Telco"
+                        android:textColor="@color/txtGray"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/vProvider" />
+
+
+                    <ImageView
+                        android:id="@+id/imgChannel"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:padding="5dp"
+                        android:src="@drawable/orange_money"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tvAccountNo" />
+                    <TextView
+                        android:id="@+id/tvChannelName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/main_top"
+                        android:paddingBottom="@dimen/medium_side"
+                        android:text="Orange-Money"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        app:layout_constraintLeft_toRightOf="@id/imgChannel"
+
+                        app:layout_constraintTop_toTopOf="@id/tv_channelType" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlAmount"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_side"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cardview">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_amount"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="6" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/tvCharges"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_side"
+                android:text="charges: "
+                app:layout_constraintEnd_toEndOf="@id/tlAmount"
+
+                app:layout_constraintTop_toBottomOf="@id/tlAmount" />
+
+            <TextView
+                android:id="@+id/tvTotalAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_side"
+                android:text="Total: 2500"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_large"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@id/tlAmount"
+                app:layout_constraintTop_toBottomOf="@id/tvCharges" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlComments"
+                style="@style/MyTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvTotalAmount">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tv_comments_height"
+                    android:hint="@string/enter_comments"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnTransferToTelco"
+                style="@style/primary_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_top"
+                android:layout_marginBottom="50dp"
+                android:padding="10dp"
+                android:paddingBottom="@dimen/main_top"
+                android:text="@string/transfer"
+                app:cornerRadius="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tlComments" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

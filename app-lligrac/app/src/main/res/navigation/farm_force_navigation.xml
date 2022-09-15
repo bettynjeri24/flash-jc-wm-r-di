@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/farm_force_navigation"
+    app:startDestination="@id/farmForceBuyerLoginFragment">
+
+    <fragment
+        android:id="@+id/farmForceBuyerFragment"
+        android:name="io.eclectics.cargilldigital.ui.farmforcedeeplink.FarmForceBuyerFragment"
+        android:label="fragment_farm_force_buyer"
+        tools:layout="@layout/fragment_farm_force_buyer" />
+    <fragment
+        android:id="@+id/farmForceBuyerLoginFragment"
+        tools:layout="@layout/fragment_login_account"
+        android:name="io.eclectics.cargilldigital.ui.farmforcedeeplink.fflogin.FarmForceBuyerLoginFragment"
+        android:label="FarmForceBuyerLoginFragment" >
+        <action
+            android:id="@+id/action_farmForceBuyerLoginFragment_to_farmForceBuyerFragment"
+            app:destination="@id/farmForceBuyerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_ussdFragment"
+        android:name="io.eclectics.cargilldigital.ussd.UssdFragment"
+        tools:layout="@layout/fragment_ussd"/>
+    <fragment
+        android:id="@+id/savedDataForSyncFragment"
+        android:name="io.eclectics.cargilldigital.ui.farmforcedeeplink.saveddatatosync.SavedDataForSyncFragment"
+        android:label="fragment_saved_data_for_sync"
+        tools:layout="@layout/fragment_saved_data_for_sync" />
+
+
+</navigation>

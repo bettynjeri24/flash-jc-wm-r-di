@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.farmerprofile.statements.FarmerMiniStatementCargillFragment"
+    tools:ignore="MissingDefaultResource">
+
+    <include
+        android:id="@+id/clToolBar"
+        layout="@layout/custom_toolbar_wallet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clAccountDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_blue_cargill"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clToolBar">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            app:cardBackgroundColor="@color/lightest_grey_cargill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvFrequentBills"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:fontFamily="@font/nunitosans_semibold_common"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/dark_blue_cargill"
+                    android:textSize="@dimen/_16sp_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:text="@string/mini_statement" />
+
+                <TextView
+                    android:id="@+id/tvAvailableBalance"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:fontFamily="@font/nunitosans_regular_common"
+                    android:text="@string/available_balance"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sp_text_size"
+                    app:layout_constraintEnd_toStartOf="@id/tvActualBalance"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvFrequentBills" />
+
+                <TextView
+                    android:id="@+id/tvAvailableBalanceAmount"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:fontFamily="@font/nunitosans_regular_common"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue_cargill"
+                    android:textSize="@dimen/_16sp_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/tvActualBalance"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvAvailableBalance"
+                    tools:text="3500" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="0dp"
+                    android:background="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/tvAvailableBalanceAmount"
+                    app:layout_constraintStart_toEndOf="@id/tvAvailableBalance"
+                    app:layout_constraintTop_toTopOf="@id/tvAvailableBalance" />
+
+                <TextView
+                    android:id="@+id/tvActualBalance"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:fontFamily="@font/nunitosans_regular_common"
+                    android:text="@string/available_balance"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_14sp_text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvAvailableBalance"
+                    app:layout_constraintTop_toBottomOf="@id/tvFrequentBills" />
+
+                <TextView
+                    android:id="@+id/tvActualBalanceAmount"
+                    android:layout_width="@dimen/_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginTop="@dimen/_16dp"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_marginBottom="@dimen/_16dp"
+                    android:fontFamily="@font/nunitosans_regular_common"
+                    android:textAlignment="center"
+                    android:textColor="@color/dark_blue_cargill"
+                    android:textSize="@dimen/_16sp_text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/tvAvailableBalance"
+                    app:layout_constraintTop_toBottomOf="@id/tvActualBalance"
+                    tools:text="22_000_00" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/tvRecentTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:fontFamily="@font/nunitosans_semibold_common"
+        android:text="@string/recent_transactions"
+        android:textAlignment="textStart"
+        android:textColor="@color/dark_blue_cargill"
+        android:textSize="@dimen/_16sp_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/clAccountDetails" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMiniStatement"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_16dp"
+        android:background="@color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRecentTransactions"
+        tools:listitem="@layout/item_ministatement_account_layout" />
+
+
+    <TextView
+        android:id="@+id/tvErrorResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_side"
+        android:fontFamily="@font/nunitosans_semibold_common"
+        android:gravity="center_horizontal"
+        android:text="@string/no_transaction_list"
+        android:textAlignment="center"
+        android:textColor="@color/red_text_color_cargill"
+        android:textSize="@dimen/textsize_vlarge"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRecentTransactions" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

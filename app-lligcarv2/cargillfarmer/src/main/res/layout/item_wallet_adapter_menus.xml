@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/medium_margin">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvWalletMenu"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_margin="@dimen/small_margin"
+        android:elevation="20dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        app:cardBackgroundColor="@drawable/card_click_wallet"
+        app:cardCornerRadius="65dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_holder"
+            android:layout_width="match_parent"
+            android:layout_height="61dp"
+            android:background="@drawable/oval_container_wallet"
+            android:padding="@dimen/medium_margin">
+
+            <ImageView
+                android:id="@+id/iv_menu_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/medium_margin"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="@color/colorPrimary"
+                tools:src="@drawable/ic_bill_payment" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_menu_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_margin"
+        android:fontFamily="@font/nunitosans_bold_common"
+        android:textAlignment="center"
+        android:textColor="#ff000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cvWalletMenu"
+        tools:text="@string/my_accounts" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

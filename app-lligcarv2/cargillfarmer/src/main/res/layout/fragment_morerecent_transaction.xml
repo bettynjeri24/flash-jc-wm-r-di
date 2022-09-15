@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_gray">
+
+    <include
+        android:id="@+id/mainLayoutToolbar"
+        layout="@layout/transfer_layout_top" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_side"
+        android:layout_marginTop="@dimen/medium_side"
+        android:layout_marginEnd="@dimen/main_side"
+        android:fontFamily="@font/nunitosans_bold_common"
+        android:text="@string/buyer_fund_requests"
+        android:textAllCaps="true"
+        android:textColor="#013E4E"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar" />
+
+    <TextView
+        android:id="@+id/tv_farmer_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_side"
+        android:layout_marginTop="@dimen/medium_side"
+        android:layout_marginEnd="@dimen/main_side"
+        android:fontFamily="@font/nunitosans_regular_common"
+        android:text="@string/total_no"
+        android:textColor="#04A653"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_search"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/main_side"
+        android:layout_marginTop="@dimen/medium_side"
+        android:layout_marginEnd="@dimen/main_side"
+        android:hint="@string/search_buyer"
+        android:visibility="gone"
+        app:boxBackgroundColor="@android:color/white"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:startIconDrawable="@drawable/ic_search">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iv_filter"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/main_side"
+        android:background="@android:color/black"
+        android:padding="15dp"
+        android:src="@drawable/filter"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/tl_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tl_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvRecentTransaction"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/medium_side"
+        android:layout_marginTop="@dimen/medium_side"
+        android:layout_marginEnd="@dimen/medium_side"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar"
+        tools:listitem="@layout/item_adapter_morerecent_transction" />
+
+    <TextView
+        android:id="@+id/tvErrorResponse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_side"
+        android:fontFamily="@font/nunitosans_semibold_common"
+        android:gravity="center_horizontal"
+        android:text="@string/no_transaction_list"
+        android:textAlignment="center"
+        android:textColor="@color/red_text_color_cargill"
+        android:textSize="@dimen/textsize_vlarge"
+        android:visibility="gone"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

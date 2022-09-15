@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    tools:openDrawer="start">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include
+            layout="@layout/layout_top"
+            android:visibility="gone"
+            android:id="@+id/mainLayoutToolbar"/>
+        <fragment
+            android:id="@+id/nav_host_fragment_content_main"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:defaultNavHost="true"
+            app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:navGraph="@navigation/nav_graph" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:id="@+id/navViewConstraint"
+            android:background="@color/white_gray">
+            <androidx.constraintlayout.widget.ConstraintLayout  android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/primary_green"
+                app:layout_constraintTop_toTopOf="parent"
+                android:gravity="bottom"
+                android:orientation="vertical"
+                android:id="@+id/drawertop"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@mipmap/supervisor"
+                    android:background="@drawable/circle_bg"
+                    android:id="@+id/imguser"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:layout_marginTop="@dimen/main_top"
+                     />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:text="Evans Gangla"
+                    android:textAlignment="center"
+                    android:textSize="22dp"
+                    android:id="@+id/tvName"
+                    app:layout_constraintTop_toBottomOf="@id/imguser"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+                <TextView
+                    android:id="@+id/tvAccPhoneNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/tvName"
+                    android:textAlignment="center"
+                    android:textSize="18sp"
+                    android:layout_marginTop="@dimen/medium_side"
+                    android:text="@string/edit_profile" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/drawertop"
+                android:elevation="@dimen/medium_side"
+                app:cardCornerRadius="@dimen/medium_side"
+                android:layout_margin="@dimen/medium_side"
+                android:id="@+id/cardName">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/medium_side">
+                    <TextView
+                        android:id="@+id/tv_initial"
+                        style="@style/white_text"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/textview_bg"
+                        android:gravity="center"
+                        android:layout_margin="@dimen/medium_side"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                       app:layout_constraintStart_toEndOf="@id/tv_initial"
+                        app:layout_constraintTop_toTopOf="parent"
+                         android:text="@string/farmer_id"
+                        android:id="@+id/tvfarmNoTitle"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="@dimen/medium_side"
+                        android:layout_marginStart="@dimen/main_side"
+                        android:textSize="@dimen/text_size_small"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/tvfarmNoTitle"
+                        app:layout_constraintTop_toTopOf="parent"
+                       android:layout_marginTop="@dimen/medium_side"
+                        android:text=""
+                        android:id="@+id/tvCompanyId"
+                        android:layout_marginStart="@dimen/medium_side"
+                        android:textSize="@dimen/text_size_small"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        app:layout_constraintStart_toEndOf="@id/tv_initial"
+                        app:layout_constraintTop_toBottomOf="@id/tvfarmNoTitle"
+                        android:text="@string/station"
+                        android:id="@+id/tvSectionTitle"
+                        android:layout_marginTop="@dimen/medium_side"
+                        android:textColor="@color/black"
+                         android:layout_marginStart="@dimen/main_side"
+                        android:textSize="@dimen/text_size_small"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/tvSectionTitle"
+                        app:layout_constraintTop_toBottomOf="@id/tvCompanyId"
+                        android:layout_marginTop="@dimen/medium_side"
+                        android:text=""
+                        android:id="@+id/tvSectionName"
+                        android:layout_marginStart="@dimen/medium_side"
+                        android:textSize="@dimen/text_size_small"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/cardName"
+                android:elevation="@dimen/medium_side"
+                app:cardCornerRadius="@dimen/medium_side"
+                android:layout_margin="@dimen/medium_side"
+                android:id="@+id/cardPrivacynSecurityCard">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/medium_side">
+                    <ImageView
+                        android:layout_width="@dimen/medium_icon_menu"
+                        android:layout_height="@dimen/medium_icon_menu"
+                        android:src="@drawable/ic_next_chevron"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:tint="@color/primary_green" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tvPrivacynsecurity"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:text="@string/privacy_n_security"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toBottomOf="@id/cardPrivacynSecurityCard"
+    android:text="Scan Qr code"
+    android:textAllCaps="true"
+    android:textSize="14sp"
+    android:id="@+id/tvScanTitle"
+    android:background="@color/white_gray"
+    android:layout_margin="@dimen/medium_side"
+    android:textColor="@color/primary_green"
+   android:layout_marginTop="@dimen/medium_side"
+    android:textAlignment="center"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_logout"
+                style="@style/MaterialConfirmationButtonDefaultStyle"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="@string/logout"
+                android:visibility="visible" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tvScanTitle"
+                app:layout_constraintBottom_toTopOf="@id/btn_logout"
+                android:src="@mipmap/maureenqr"
+                android:id="@+id/profileQRCode"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_margin="@dimen/medium_side"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

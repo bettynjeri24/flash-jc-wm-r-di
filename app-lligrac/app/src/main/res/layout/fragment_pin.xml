@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/container"
+    android:background="@mipmap/bg"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:id="@+id/toplayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="48dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:fitsSystemWindows="true"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+    <EditText
+        android:id="@+id/textWatcher"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toplayout"
+        android:layout_marginTop="32dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:text="@string/welcome_enter_pin"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/pin_input_linearLayout"
+            android:layout_width="216dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/rectangle_shape"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+
+            <ImageView
+                android:id="@+id/input_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:src="@mipmap/ic_underscore"
+                app:tint="@color/primary_green" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/input_two"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:src="@mipmap/ic_underscore"
+                app:tint="@color/primary_green" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/input_three"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="15dp"
+                android:src="@mipmap/ic_underscore"
+                app:tint="@color/primary_green" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/input_four"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberPassword"
+                android:padding="15dp"
+                android:src="@mipmap/ic_underscore"
+                app:tint="@color/primary_green" />
+
+
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pin_input_linearLayout">
+
+            <TableRow style="@style/keyboard_row">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_number_one"
+                    style="@style/LOGIN_PIN_Pad_MaterialButtonDefaultStyle"
+                    android:text="@string/number_one" />
+
+                <!-- Other numbers -->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_number_two"
+                    style="@style/LOGIN_PIN_Pad_MaterialButtonDefaultStyle"
+                    android:text="@string/number_two" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_number_three"
+                    style="@style/LOGIN_PIN_Pad_MaterialButtonDefaultStyle"
+                    android:text="@string/number_three" />
+            </TableRow>
+
+            <TableRow style="@style/keyboard_row">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_number_four"
+                    style="@style/LOGIN_PIN_Pad_MaterialButtonDefaultStyle"
+                    android:text="@string/number_four" />
+                <!-- Other numbers -->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_number_five"
+                    style="@style/LOGIN_PIN_Pad_MaterialButtonDefaultStyle"
+                    android:text="@string/number_five" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_number_six"
+                    style="@style/LOGIN_PIN_Pad_MaterialButtonDefaultStyle"
+                    android:text="@string/number_six" />
+            </TableRow>
+
+            <TableRow style="@style/keyboard_row">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_number_seven"
+                    style="@style/LOGIN_PIN_Pad_MaterialButtonDefaultStyle"
+                    android:text="@string/number_seven" />
+                <!-- Other numbers -->
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_number_eight"
+                    style="@style/LOGIN_PIN_Pad_MaterialButtonDefaultStyle"
+                    android:text="@string/number_eight" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_number_nine"
+                    style="@style/LOGIN_PIN_Pad_MaterialButtonDefaultStyle"
+                    android:text="@string/number_nine" />
+            </TableRow>
+
+            <TableRow style="@style/keyboard_row">
+
+                <ImageView
+                    android:id="@+id/delete_pin_pad"
+                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    android:layout_width="0dp"
+                    android:layout_height="58dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:padding="20dp"
+                    android:src="@mipmap/ic_delete_black"
+                    app:tint="@color/primary_green" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_number_zero"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/number_zero"
+                    android:textAllCaps="true"
+                    android:textColor="@color/primary_green"
+                    android:textSize="26sp"
+                    app:rippleColor="@android:color/transparent" />
+
+                <ImageView
+                    android:id="@+id/pin_pad_ok"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:padding="12dp"
+                    android:src="@mipmap/ic_pin_pad_ok" />
+            </TableRow>
+        </TableLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

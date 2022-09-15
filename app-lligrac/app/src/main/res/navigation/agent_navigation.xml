@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/agent_navigation"
+    app:startDestination="@id/nav_buyerDashboard">
+
+    <fragment
+        android:id="@+id/nav_fundsRequest"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.fundrequest.FundRequest"
+        tools:layout="@layout/fragment_fund_request"/>
+    <fragment
+        android:id="@+id/nav_fundsRequestSummary"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.fundrequest.FundsRequestHistory"
+        tools:layout="@layout/fragment_funds_request_history"/>
+    <fragment
+        android:id="@+id/nav_dashboardFundsRequest"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.dashboard.DashboardFundsRequestList"
+        tools:layout="@layout/fragment_dashboard_funds_request_list"/>
+
+    <fragment
+        android:id="@+id/nav_payFarmer"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.payfarmer.BuyerPayFarmer"
+        tools:layout="@layout/fragment_buyer_pay_farmer"/>
+    <fragment
+        android:id="@+id/nav_ffQRpayfarmer"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.payfarmer.FFQrFarmerPayment"
+        tools:layout="@layout/fragment_ffqr_farmer_payment"/>
+    <fragment
+        android:id="@+id/nav_pending_paydetails"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.payfarmer.PendingPaymentDetails"
+        tools:layout="@layout/fragment_pending_payment_details"/>
+    <fragment
+        android:id="@+id/nav_peding_paymentList"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.payfarmer.PendingPaymentList"
+        tools:layout="@layout/fragment_pending_payment_list"/>
+    <fragment
+        android:id="@+id/nav_scan_ffpayment_qrcode"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.payfarmer.ScanFFPaymentQRCode"
+        tools:layout="@layout/fragment_scanff_payment_qrcode"/>
+    <!-- samle ff qr -->
+    <fragment
+        android:id="@+id/nav_ffsampleqr"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.payfarmer.SampleFarmforceQRCODE"
+        tools:layout="@layout/fragment_sample_farmforce_qrcode"/>
+    <fragment
+        android:id="@+id/nav_scanQrCode"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.payfarmer.QRCode"
+        tools:layout="@layout/fragment_qr_code"/>
+    <fragment
+        android:id="@+id/nav_qrCodeDetails"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.payfarmer.ScannedFarmerData"
+        tools:layout="@layout/fragment_scanned_farmer_data"/>
+    <fragment
+        android:id="@+id/nav_buyerDashboard"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.dashboard.BuyerDashboard"
+        tools:layout="@layout/fragment_buyer_dashboard">
+    <action
+        android:id="@+id/action_logout"
+        app:destination="@id/nav_loginAccountFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_loginAccountFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.login.LoginAccountFragment"
+        tools:layout="@layout/fragment_login_account"/>
+    <fragment
+        android:id="@+id/nav_farmerList"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.dashboard.CheckFarmersFragment"
+        android:label="fragment_check_farmers"
+        tools:layout="@layout/fragment_check_farmers" />
+    <fragment
+        android:id="@+id/checkFloatFragment2"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.dashboard.CheckFloatFragment"
+        android:label="fragment_check_float"
+        tools:layout="@layout/fragment_check_float" >
+
+    </fragment>
+
+    <!--  common shared fagmenst AT THE MOMMENT INCLUDE IMEKATAA KU MAN UP -->
+    <fragment
+        android:id="@+id/nav_transactionConfirmation"
+        android:name="io.eclectics.cargilldigital.ui.confirmation.ConfirmationFragment"
+        tools:layout="@layout/fragment_confirmation"/>
+    <fragment
+        android:id="@+id/nav_pinFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.pinmgmt.PinFragment"
+        tools:layout="@layout/fragment_pin">
+    <action
+        android:id="@+id/action_agentProfile"
+        app:destination="@id/nav_agentProfile"
+        app:popUpTo="@id/agent_navigation"
+        app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_agentProfile"
+        android:name="io.eclectics.cargilldigital.ui.buyerprofile.dashboard.AgentFragment"
+        tools:layout="@layout/fragment_agent"/>
+    <fragment
+        android:id="@+id/nav_verifyOtp"
+        android:name="io.eclectics.cargilldigital.ui.otpverification.OTPFragment"
+        tools:layout="@layout/fragment_otp"/>
+    <fragment
+        android:id="@+id/nav_selectAccount"
+        android:name="io.eclectics.cargilldigital.ui.account.AccountsFragment"
+        tools:layout="@layout/accounts_fragment"/>
+
+</navigation>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_printer"
+    app:startDestination="@id/blueToothDeviceListFragment">
+
+    <fragment
+        android:id="@+id/bixolonPrinterFragment"
+        android:name="com.ekenya.rnd.baseapp.ui.bixolon.BixolonPrinterFragment"
+        android:label="fragment_bixolon_printer"
+        tools:layout="@layout/fragment_bixolon_printer" >
+        <argument
+            android:name="blueToothData"
+            app:argType="com.ekenya.rnd.baseapp.ui.bixolon.BlueToothData" />
+    </fragment>
+    <dialog
+        tools:layout="@layout/fragment_bixolon_bluetooth"
+        android:id="@+id/blueToothDeviceListBottomFragment"
+        android:name="com.ekenya.rnd.baseapp.ui.bixolon.BlueToothDeviceListFragment"
+        android:label="BlueToothDeviceListFragment" />
+
+    <fragment
+        tools:layout="@layout/fragment_bixolon_bluetooth"
+        android:id="@+id/blueToothDeviceListFragment"
+        android:name="com.ekenya.rnd.baseapp.ui.bixolon.BlueToothDeviceListFragment"
+        android:label="BlueToothDeviceListFragment" >
+        <action
+            android:id="@+id/action_blueToothDeviceListFragment_to_bixolonPrinterFragment"
+            app:destination="@id/bixolonPrinterFragment" />
+    </fragment>
+</navigation>

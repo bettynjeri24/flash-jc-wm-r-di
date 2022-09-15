@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/card_style"
+    android:layout_marginBottom="@dimen/small_margin"
+    android:layout_marginTop="@dimen/small_margin"
+    android:layout_marginStart="@dimen/main_side"
+    android:layout_marginEnd="@dimen/main_side"
+    android:id="@+id/cv_float" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/collection_holder"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="@dimen/small_margin">
+
+        <TextView
+            android:id="@+id/tv_initial"
+            style="@style/white_text"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/textview_bg"
+            android:gravity="center"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="L" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_side"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textColor="#222222"
+            android:textSize="12sp"
+            app:layout_constraintStart_toEndOf="@id/tv_initial"
+            app:layout_constraintTop_toTopOf="@id/tv_initial"
+            tools:text="Lennox Brown" />
+
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/medium_side"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textColor="#898585"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/tv_initial"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            tools:text="Collected 30kg" />
+
+        <TextView
+            style="@style/white_text"
+            android:textColor="#222222"
+            android:textSize="10sp"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:fontFamily="@font/nunito_sans_light"
+            app:layout_constraintEnd_toStartOf="@id/tv_amount"
+            app:layout_constraintBaseline_toBaselineOf="@id/tv_amount"
+            />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            style="@style/white_text"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="#222222"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_initial"
+            tools:text="10,000" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            style="@style/white_text"
+            android:textColor="@color/accent2"
+            android:textSize="10sp"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_amount"
+            android:text="@string/disbursed" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

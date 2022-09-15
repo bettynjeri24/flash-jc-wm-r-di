@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- cargill colors -->
+    <color name="accent">#377e41</color>
+    <color name="primary">#221F20</color>
+    <color name="primary_dark">#221F20</color>
+    <color name="accent2">#04A653</color>
+    <color name="accent3">#02562A</color>
+    <color name="primary_green">#005525</color>
+    <color name="card_bg2">#fff8f8f8</color>
+    <color name="colorKcbBlueDark">#123B4B</color>
+    <color name="color_white">#FFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="lightGray">#d8d8d8</color>
+    <color name="txtGray">#696969</color>
+    <color name="colorDivider">#ececec</color><!-- #ececec -->
+    <color name="color_awaits_approval">#D18700</color>
+
+    <color name="white_gray">#F2F6EE</color>
+    <color name="reddish">#E74455</color>
+    <color name="orangish">#F09651</color>
+    <color name="bluish">#5C9FF0</color>
+    <color name="greenish">#4CC3B2</color>
+
+
+</resources>

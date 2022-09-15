@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- &lt;!&ndash;003D4C&ndash;&gt;
+    <color name="colorPrimary">#04A653</color>
+    <color name="colorPrimaryDark">#04A653</color>
+    <color name="colorPrimaryLight">#04A653</color>
+    <color name="colorAccent">#04A653</color>
+
+    <color name="lightest_grey_cargill">#F7F7F7</color>
+
+    <color name="error_cargill">#d41a0c</color>
+
+    <color name="grey_tint_cargill">#F7F7F7</color>
+
+    <color name="grey_custom">#ECF1FF</color>
+    <color name="actionbar_opacity">#33000000</color>
+
+    <color name="dark_blue_cargill">#04A653</color>
+
+    <color name="light_blue_cargill">#1AA7E1</color>
+    <color name="orange_cargill">#F69414</color>
+
+    <color name="dark_blue_cargill2">#04A653</color>
+    <color name="light_blue_cargill2">#1AA7E1</color>
+    <color name="green_cargill">#40E11A</color>
+    <color name="red_text_color_cargill">#B51F1F</color>
+    <color name="gray_color_cargill">#6F7070</color>
+    <color name="gray1_cargill">#707070</color>
+
+
+    <color name="black_cargill">#FF000000</color>
+    <color name="white_cargill">#FFFFFFFF</color>
+    <color name="green_cargill2">#40E11A</color>
+    <color name="text_input_layout_border_color_cargill">#666666</color>
+    <color name="text_grey_color_cargill">#6F7070</color>
+    <color name="light_gray_cargill2">#F7F7F7</color>
+    <color name="accent_blue_cargill">#1AA7E1</color>
+
+
+    &lt;!&ndash; cargill colors &ndash;&gt;
+    <color name="accent">#377e41</color>
+    <color name="primary">#221F20</color>
+    <color name="primary_dark">#221F20</color>
+    <color name="accent2">#04A653</color>
+    <color name="accent3">#02562A</color>
+    <color name="primary_green">#005525</color>
+    <color name="card_bg2">#fff8f8f8</color>
+    <color name="colorKcbBlueDark">#123B4B</color>
+    <color name="cardProfile">#E3F4F5</color>
+    <color name="color_white">#FFFF</color>
+
+    <color name="black">#000000</color>
+    <color name="textColor">#ff181818</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorAccount">#c1c1e1</color>
+    <color name="lightGray">#d8d8d8</color>
+    <color name="txtGray">#696969</color>
+    <color name="colorHint">#657eab</color>
+    <color name="colorGreen">#64C59B</color>
+    <color name="colorDivider">#ececec</color>&lt;!&ndash; #ececec &ndash;&gt;
+    <color name="color_awaits_approval">#D18700</color>
+
+    <color name="white_gray">#F2F6EE</color>
+    <color name="reddish">#E74455</color>
+    <color name="orangish">#F09651</color>
+    <color name="bluish">#5C9FF0</color>
+    <color name="greenish">#4CC3B2</color>
+    <color name="yellowish">#FADA88</color>-->
+
+</resources>

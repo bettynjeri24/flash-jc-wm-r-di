@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootTransaction"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginBottom="@dimen/main_side"
+    android:clickable="true">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#DDDDDD"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvBlueToothName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_side"
+        android:layout_marginTop="@dimen/main_side"
+        android:layout_marginEnd="@dimen/small_margin"
+        android:ellipsize="end"
+        android:fontFamily="@font/nunitosans_regular_common"
+        android:lines="1"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@id/imageViewBlueToothIndicate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        tools:text="Station: Kimwa" />
+
+
+    <ImageView
+        android:id="@+id/imageViewBlueToothIndicate"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_notselected_cargill" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

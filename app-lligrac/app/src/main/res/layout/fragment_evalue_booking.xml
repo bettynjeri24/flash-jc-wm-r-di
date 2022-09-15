@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white_gray"
+   >
+    <include
+        layout="@layout/transfer_layout_top"
+        android:id="@+id/mainLayoutToolbar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvEbooking"
+        android:layout_width="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_marginTop="@dimen/medium_side"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginLeft="@dimen/main_side"
+        android:layout_marginRight="@dimen/main_side"
+        tools:listitem="@layout/beneficiary_account_layout"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar"
+        android:layout_height="0dp" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabBooking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        android:backgroundTint="@color/primary_green"
+        app:srcCompat="@drawable/ic_add_cart"
+        app:tint="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="@dimen/main_top"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

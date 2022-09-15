@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2dp"
+    android:background="@android:color/transparent"
+    android:elevation="5dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_4dp">
+
+        <TextView
+            android:id="@+id/tvBuyerName"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_4dp"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:fontFamily="@font/nunitosans_semibold_common"
+            android:textAlignment="textStart"
+            android:textColor="@color/primary_green"
+            app:layout_constraintEnd_toStartOf="@+id/tvAmount"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Name: Kambula Ngao" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_semibold_common"
+            android:textColor="@color/primary_green"
+            app:layout_constraintBottom_toBottomOf="@+id/tvBuyerName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tvBuyerName"
+            tools:text="Bal: 59 0000 CFA" />
+
+        <View
+            android:id="@+id/vProvider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_padding_small"
+            android:background="@color/white_gray"
+            app:layout_constraintTop_toBottomOf="@id/tvBuyerName" />
+
+        <TextView
+            android:id="@+id/tvAccountNo"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_4dp"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:fontFamily="@font/nunitosans_regular_common"
+            android:paddingBottom="@dimen/margin_padding_small"
+            android:text="@string/msg_description"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvRequestdate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vProvider" />
+
+        <TextView
+            android:id="@+id/tvRequestdate"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:fontFamily="@font/nunitosans_regular_common"
+            android:paddingBottom="@dimen/margin_padding_small"
+            android:textAlignment="textEnd"
+            android:textColor="@color/txtGray"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvAccountNo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tvDescription"
+            app:layout_constraintTop_toTopOf="@+id/tvAccountNo"
+            tools:text="mardi, 18 avril" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnApprove"
+            style="@style/MaterialButtonWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/primary_green"
+            android:padding="6dp"
+            android:text="@string/approve"
+            android:textAllCaps="false"
+            android:textColor="@color/white_cargill"
+            app:layout_constraintBottom_toBottomOf="@+id/tvDescription"
+            app:layout_constraintEnd_toEndOf="@id/tvRequestdate"
+            app:layout_constraintTop_toTopOf="@+id/tvDescription"
+            app:strokeColor="@color/primary_green"
+            app:strokeWidth="2dp" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4dp"
+            android:layout_marginTop="@dimen/_4dp"
+            android:layout_marginEnd="@dimen/_4dp"
+            android:lines="3"
+            android:maxLines="3"
+            android:textColor="@color/accent3"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/btnApprove"
+            app:layout_constraintStart_toEndOf="@id/btnApprove"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvAccountNo"
+            tools:text="cocoa beans purchase" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

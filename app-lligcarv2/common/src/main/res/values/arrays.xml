@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_array_titles">
+        <item>🇬🇧 English</item>
+        <item>🇫🇷 French</item>
+    </string-array>
+    <string-array name="language_array_values">
+        <item>en</item>
+        <item>fr</item>
+    </string-array>
+
+    <string-array name="salutations">
+        <item>@string/mister</item>
+        <item>@string/miss</item>
+        <item>@string/sir</item>
+        <item>@string/madam</item>
+        <item>@string/doctor</item>
+        <item>@string/prof</item>
+    </string-array>
+
+    <!-- add region -->
+    <string-array name="farmregion">
+        <item>"Indénié-Djuablin"</item>
+        <item>"Central"</item>
+        <item>"Bafing "</item>
+        <item>"Bafing "</item>
+        <item>Bagoué</item>
+    </string-array>
+    <!-- mno money -->
+    <string-array name="moneySource">
+        <item>"Cocoa Wallet"</item>
+        <item>"MTN Money"</item>
+        <item>"Orange Money"</item>
+        <item>"Bank Account"</item>
+    </string-array>
+    <!-- Default wallet account -->
+    <string-array name="walletAcc">
+    <item>"A/C 4512 XXXX XXXX XXXX 256"</item>
+    </string-array>
+    <string-array name="withdrwafrom">
+        <item>"Mobile Money "</item>
+    <item>"Agent "</item>
+    <item>"Bank"</item>
+    </string-array>
+    <!-- add region -->
+    <string-array name="serviceProvider">
+        <item>"MTN CI "</item>
+        <item>"Arobase Telecom "</item>
+        <item>"Orange CI  "</item>
+        <item>" Comium CI  "</item>
+        <item>" Etisalat (Moov) "</item>
+    </string-array>
+    <string-array name="bankwithdraw">
+        <item>"ECOBANK"</item>
+        <item>"BOA-CI "</item>
+        <item>"CITIBANK  "</item>
+    </string-array>
+    <!-- Farmer place holder -->
+    <string-array name="farmerlist">
+        <item>"Jane Mwende "</item>
+        <item>"Ayub Musa"</item>
+        <item>"Jabet Kimwa"</item>
+    </string-array>
+
+
+    <!-- Agrovet place holder -->
+    <string-array name="agroProduct">
+        <item>"BT Worm Killer"</item>
+        <item>"Grow More"</item>
+        <item>"JSeaweed Extract"</item>
+        <item>"Triple Action Plus Neem Oil"</item>
+    </string-array>
+    <!-- farm type -->
+    <string-array name="farmtype">
+        <item>"Small"</item>
+        <item>"Medium"</item>
+        <item>"Large "</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>@string/male</item>
+        <item>@string/female</item>
+    </string-array>
+</resources>

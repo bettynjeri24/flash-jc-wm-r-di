@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Style for "white_bg" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+    <item android:width="360dp" android:height="544dp">
+        <shape android:shape="rectangle">
+            <corners android:topLeftRadius="30dp" android:topRightRadius="30dp" android:bottomLeftRadius="0dp" android:bottomRightRadius="0dp" />
+            <solid android:color="#04A653"
+                android:shadowColor="#33212668"
+                android:shadowDx="0"
+                android:shadowDy="-40"/>
+        </shape>
+    </item>
+</selector>

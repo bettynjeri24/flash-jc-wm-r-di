@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:backgroundTint="@color/colorDivider"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mainLayoutToolbar"
+        layout="@layout/transfer_layout_top" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <ImageView
+            android:id="@+id/imgOtp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/main_top"
+            android:maxHeight="@dimen/_80dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/otp_icon"
+            app:layout_constraintBottom_toTopOf="@id/guideline"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvVerificatioTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunitosans_bold_common"
+            android:text="@string/verification_code"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+        <TextView
+            android:id="@+id/tvEnterotp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/medium_side"
+            android:text="@string/please_enter_digit_otp"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/tvVerificatioTitle" />
+
+        <TextView
+            android:id="@+id/tvPhoneNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_side"
+            android:textAlignment="center"
+            android:textColor="@color/primary_green"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@id/edtOtp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvEnterotp"
+            tools:text="225708396044" />
+
+        <com.poovam.pinedittextfield.SquarePinField
+            android:id="@+id/edtOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32dp"
+            android:layout_marginEnd="@dimen/_32dp"
+            android:focusable="true"
+            android:inputType="number"
+            android:textSelectHandle="@drawable/text_handle"
+            android:textSize="@dimen/_16sp_text_size"
+            android:visibility="visible"
+            app:cornerRadius="@dimen/_10dp"
+            app:fieldBgColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/tvOtpexpireTitle"
+            app:layout_constraintEnd_toEndOf="@id/tvPhoneNo"
+            app:layout_constraintStart_toStartOf="@id/tvPhoneNo"
+            app:layout_constraintTop_toBottomOf="@+id/tvPhoneNo"
+            app:noOfFields="4" />
+
+
+        <TextView
+            android:id="@+id/tvOtpexpireTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/main_top"
+            android:layout_marginTop="@dimen/medium_side"
+            android:text="@string/otp_expire"
+            android:textAlignment="center"
+            android:textColor="@color/txtGray"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnVerifyOtp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtOtp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVerifyOtp"
+            style="@style/MaterialConfirmationButtonDefaultStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_60dp"
+            android:padding="10dp"
+            android:paddingBottom="@dimen/main_top"
+            android:text="@string/verify"
+            app:cornerRadius="@dimen/_40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/primary_green"
+            android:textColorHighlight="@color/primary_green"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@id/tvPhoneNo"
+            app:layout_constraintStart_toStartOf="@id/tvPhoneNo"
+            app:layout_constraintTop_toBottomOf="@id/tvPhoneNo" />
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

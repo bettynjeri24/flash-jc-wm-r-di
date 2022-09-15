@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ekenya.rnd.cargillfarmer">
+
+<!--     <dist:install-time />-->
+    <dist:module dist:instant="false"
+        dist:title="@string/farmer_module">
+        <dist:delivery>
+            <dist:on-demand/>
+        </dist:delivery>
+
+        <dist:fusing dist:include="true" />
+    </dist:module>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+
+
+
+    <application>
+
+        <activity
+            android:name="com.ekenya.rnd.cargillfarmer.CargillMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Cargill" />
+    </application>
+
+</manifest>

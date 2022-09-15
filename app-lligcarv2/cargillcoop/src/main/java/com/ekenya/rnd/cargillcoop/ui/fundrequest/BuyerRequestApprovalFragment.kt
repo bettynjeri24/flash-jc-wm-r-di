@@ -1,0 +1,23 @@
+package com.ekenya.rnd.cargillcoop.ui.fundrequest
+
+import android.os.Bundle
+import android.view.View
+import com.ekenya.rnd.cargillcoop.R
+import com.ekenya.rnd.cargillcoop.databinding.FragmentBuyerRequestApprovalBinding
+import com.ekenya.rnd.common.utils.base.BaseCommonCargillCoopFragment
+import com.ekenya.rnd.common.utils.custom.setToolbarTitle
+
+class BuyerRequestApprovalFragment :
+    BaseCommonCargillCoopFragment<FragmentBuyerRequestApprovalBinding>(
+        FragmentBuyerRequestApprovalBinding::inflate
+    ) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setToolbarTitle(
+            resources.getString(com.ekenya.rnd.common.R.string.fund_request),
+            resources.getString(com.ekenya.rnd.common.R.string.request_sttle),
+            binding.mainLayoutToolbar,
+            requireActivity()
+        )
+    }
+}

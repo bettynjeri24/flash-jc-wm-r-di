@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CiFilterState">
+    <option name="selectedSeverities">
+      <map>
+        <entry key="Critical" value="true" />
+        <entry key="High" value="true" />
+        <entry key="Medium" value="true" />
+        <entry key="Low" value="true" />
+        <entry key="Information" value="true" />
+        <entry key="Unknown" value="true" />
+        <entry key="Pending" value="true" />
+        <entry key="Normal" value="true" />
+      </map>
+    </option>
+    <option name="selectedLicences">
+      <map />
+    </option>
+    <option name="selectedScopes">
+      <map />
+    </option>
+  </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable-anydpi/decline_btn_main.xml" value="0.14" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable-v24/rectangular_dotted.xml" value="0.12" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable-xxhdpi/circle_bg.xml" value="0.1275" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable-xxhdpi/green_top_curved_bg.xml" value="0.1275" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable-xxxhdpi/rectangular_dotted.xml" value="0.1275" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable/balance_cardview.xml" value="0.1165" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable/btn_main.xml" value="0.14" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable/circle_click.xml" value="0.1795" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable/circle_clicked.xml" value="0.1795" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable/circle_green_bg.xml" value="0.171" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable/curved_bg.xml" value="0.1795" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable/dashed_border.xml" value="0.1275" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable/ic_arrow_up.xml" value="0.141" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable/ic_close.xml" value="0.1275" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/drawable/rectangle_shape.xml" value="0.1275" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/font/nunito_sans.xml" value="0.228125" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/accounts_fragment.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/activity_main_content.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/activity_printer.xml" value="0.22" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_buyer_fundsrequest.xml" value="0.5" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_buyer_list.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_collections.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_coop_disbursment.xml" value="0.13229166666666667" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_coopbuyer_fundrequest.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_evalue_bookings.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_farmer_accountlist.xml" value="0.22" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_farmers.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_ministatement.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_morerecent_transction.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_notification_layout.xml" value="0.5" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_payments.xml" value="0.1359375" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_pending_payments.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_printer_layout.xml" value="0.15885416666666666" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/adapter_transactions.xml" value="0.75" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/beneficiary_account_layout.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/content_main.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/content_printer.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/dialog_decline_ftopup.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/farmer_home_fragment.xml" value="0.22" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/farmer_myaccount_layout.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_add_beneficiary_account.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_addgen_benf_account.xml" value="0.1328125" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_agent.xml" value="0.2" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_approve_buyer_fundrequest.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_approve_evalue.xml" value="0.18" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_buyer_dashboard.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_buyer_farmer_list.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_buyer_funds_request.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_buyer_last_transactions.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_buyer_pay_farmer.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_buyer_recent_tranaction.xml" value="0.5" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_buyer_topup.xml" value="0.159375" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_cashout_confirmation.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_change_pin.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_check_farmers.xml" value="0.17" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_check_float.xml" value="0.13229166666666667" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_company_id_lookup.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_confirm_addchanel_account.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_confirmation.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_coop_buyer_list.xml" value="0.159375" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_cooperative.xml" value="0.11875" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_cooperative_dashboard.xml" value="0.2" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_dashboard_funds_request_list.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_dashboard_tabs.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_ebooking.xml" value="0.2" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_evalue_booking.xml" value="0.22" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_farmer_acc_profile.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_farmer_account_list.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_farmer_linkedaccount.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_farmers_list.xml" value="0.13229166666666667" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_ffqr_farmer_payment.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_first.xml" value="0.1381340579710145" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_full_statement.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_fund_request.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_funds_request_history.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_general_wallet.xml" value="0.11875" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_graph_analysis.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_gwallet_account_list.xml" value="0.12916666666666668" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_gwallet_linked_accounts.xml" value="0.13645833333333332" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_login_account.xml" value="0.18" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_mini.xml" value="0.16770833333333332" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_morerecent_transaction.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_onboarding_otp.xml" value="0.12760416666666666" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_other_users_dashboard.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_otp.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_pending_payment_details.xml" value="0.18" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_pending_payment_list.xml" value="0.2766726943942134" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_pin.xml" value="0.14010416666666667" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_privacyn_security.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_profile_contact_us.xml" value="0.10677083333333333" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_qr_code.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_sample_farmforce_qrcode.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_scanff_payment_qrcode.xml" value="0.18645833333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_scanned_farmer_data.xml" value="0.21" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_send_money_account_list.xml" value="0.18645833333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_send_moneymenu.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_set_account_pin.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_transfer_to_cargill_wallet.xml" value="0.2" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_transfer_tobank.xml" value="0.14010416666666667" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_transfer_tocard.xml" value="0.2" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_transfer_totelco.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_transfer_towallet.xml" value="0.14010416666666667" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_user_phone_lookup.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_ussd.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/fragment_wallet_statement.xml" value="0.12916666666666668" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/language_fragment.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/layout_top.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/login_fragment.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/nav_header_main.xml" value="0.10572916666666667" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/navigation_drawer_layout.xml" value="0.25" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/payfarmer_tool_bar.xml" value="0.17083333333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/printer_confirm_printdetail.xml" value="0.17" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/spinner_layout.xml" value="0.33" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/splash_fragment.xml" value="0.18645833333333334" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/toolbar_main.xml" value="0.1359375" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/toolbar_main_b.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/transfer_layout_top.xml" value="0.49292452830188677" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/layout/ussd_empty_layout.xml" value="0.1203125" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/menu/activity_main_drawer.xml" value="0.10572916666666667" />
+        <entry key="..\:/Android App/CargilDigitalPayment/app/src/main/res/menu/menu_main.xml" value="0.1" />
+        <entry key="..\:/Android App/CargilDigitalPayment/common/src/main/res/layout/activity_main.xml" value="0.1546875" />
+        <entry key="..\:/PROJECTS/AndroidStudioProjects/cargildigitalpayment/app/src/main/res/layout/fragment_login_account.xml" value="0.20205128205128206" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/drawable-hdpi/btn_rounded_corners_filled.xml" value="0.1405" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.111" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/drawable-xxhdpi/btn_rounded_corners_filled_cargill.xml" value="0.1115" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/drawable-xxhdpi/btn_rounded_stroke_cargill.xml" value="0.1115" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/drawable-xxhdpi/card_view_rounded_corners_bg.xml" value="0.1115" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/activity_farm_force_buyer_main.xml" value="0.15" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/activity_main.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/activity_printer.xml" value="0.1872103799814643" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/adapter_buyer_fundsrequest.xml" value="0.1" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/adapter_coop_disbursment.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/adapter_coopbuyer_fundrequest.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/adapter_farmers.xml" value="0.12" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/adapter_pending_payments.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/adapter_printer_layout.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/adapter_transactions.xml" value="0.1" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/content_printer.xml" value="0.20615384615384616" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/dialog_custom_warning_layout.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/farmer_home_fragment.xml" value="0.22" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_approve_buyer_fundrequest.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_approve_evalue.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_buyer_dashboard.xml" value="0.25" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_buyer_funds_request.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_buyer_pay_farmer.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_buyer_recent_tranaction.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_buyer_topup.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_check_farmers.xml" value="0.11944444444444445" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_coop_buyer_list.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_cooperative.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_cooperative_dashboard.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_dashboard_funds_request_list.xml" value="0.18" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_dashboard_tabs.xml" value="0.15462962962962962" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_ebooking.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_evalue_booking.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_farm_force_buyer.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_ffqr_farmer_payment.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_fund_request.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_graph_analysis.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_login_account.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_lookup_phone_account_id.xml" value="0.23240115718418514" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_offline_ussd.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_pending_payment_details.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_pending_payment_list.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/fragment_saved_data_for_sync.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/item_adapter_saved_for_sync.xml" value="0.16111111111111112" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/layout_top.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/login_fragment.xml" value="0.1675925925925926" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/printer_confirm_printdetail.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/spinner_layout.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/splash_fragment.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/toolbar_main.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/toolbar_main_b.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/app/src/main/res/layout/transfer_layout_top.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/common/src/main/res/drawable/ic_flash_off.xml" value="0.1415" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/common/src/main/res/layout/activity_custom_scanner.xml" value="0.209375" />
+        <entry key="..\:/Users/dkimani/AndroidStudioProjects/cargildigitalpayment-dantest/common/src/main/res/layout/activity_main.xml" value="0.209375" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="LocalFilterState">
+    <option name="selectedSeverities">
+      <map>
+        <entry key="Critical" value="true" />
+        <entry key="High" value="true" />
+        <entry key="Medium" value="true" />
+        <entry key="Low" value="true" />
+        <entry key="Information" value="true" />
+        <entry key="Unknown" value="true" />
+        <entry key="Pending" value="true" />
+        <entry key="Normal" value="true" />
+      </map>
+    </option>
+    <option name="selectedLicences">
+      <map />
+    </option>
+    <option name="selectedScopes">
+      <map />
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

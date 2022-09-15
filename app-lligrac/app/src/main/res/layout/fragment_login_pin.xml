@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:backgroundTint="@color/colorDivider"
+    android:orientation="vertical"
+    tools:context=".ui.auth.login.LoginPinFragment">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_32dp"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/_32dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+        android:textColor="@android:color/black"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWelcomeToCargill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/msg_welcome_cargill"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+    <TextView
+        android:id="@+id/welcome_greetings_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:fontFamily="@font/nunitosans_semibold_common"
+        android:text="@string/greetings_afternoon"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sp_text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+
+    <TextView
+        android:id="@+id/customer_name_TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_4dp"
+        android:fontFamily="@font/nunitosans_semibold_common"
+        android:gravity="center_vertical|start"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sp_text_size"
+        app:layout_constraintBottom_toTopOf="@id/tvMobileNo"
+        app:layout_constraintEnd_toEndOf="@+id/welcome_greetings_textView"
+        app:layout_constraintStart_toStartOf="@+id/welcome_greetings_textView"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_greetings_textView"
+        tools:text="Oscar Muigai!" />
+
+
+    <TextView
+        android:id="@+id/tvMobileNo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_4dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/_16sp_text_size"
+        app:layout_constraintBottom_toTopOf="@+id/clPinEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/customer_name_TextView"
+        tools:text="2257574967849" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clPinEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_16dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_16dp"
+        android:layout_marginBottom="@dimen/_16dp"
+        app:layout_constraintBottom_toTopOf="@id/keyboard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvMobileNo">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/otp_1"
+            style="@style/otpInputCustomWhite"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp"
+            app:layout_constraintEnd_toStartOf="@+id/otp_2"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/codeOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:inputType="textPassword"
+                android:maxLength="1"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal|bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/otp_2"
+            style="@style/otpInputCustomWhite"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:weightSum="400"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/otp_1"
+            app:layout_constraintEnd_toStartOf="@+id/otp_3"
+            app:layout_constraintStart_toEndOf="@+id/otp_1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/codeTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:inputType="textPassword"
+                android:maxLength="1"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/otp_3"
+            style="@style/otpInputCustomWhite"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:weightSum="400"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/otp_1"
+            app:layout_constraintEnd_toStartOf="@+id/otp_4"
+            app:layout_constraintStart_toEndOf="@+id/otp_2">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/codeThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:inputType="textPassword"
+                android:maxLength="1"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/otp_4"
+            style="@style/otpInputCustomWhite"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:weightSum="400"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeWidthFocused="3dp"
+            app:layout_constraintBottom_toBottomOf="@+id/otp_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/otp_3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/codeFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:inputType="textPassword"
+                android:maxLength="1"
+                android:paddingTop="15dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <io.eclectics.cargilldigital.utils.dk.MyCustomKeyboard
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/_8dp"
+        app:layout_constraintBottom_toTopOf="@id/forgotPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clPinEditText" />
+
+    <TextView
+        android:id="@+id/forgotPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_24dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_24dp"
+        android:layout_marginBottom="@dimen/_8dp"
+        android:fontFamily="@font/nunitosans_semibold_common"
+        android:text="@string/forgot_pass"
+        android:textAlignment="center"
+        android:textColor="@color/primary_green"
+        android:textSize="@dimen/_16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/keyboard" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:backgroundTint="@color/colorDivider"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTransfertoWallet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_side"
+            android:layout_marginStart="@dimen/main_side"
+            android:layout_marginEnd="@dimen/main_side"
+            app:cardCornerRadius="@dimen/landing_card_radius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/submenu_view"
+                    android:background="@color/primary_green"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivTransferWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/submenu_icon"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/circle_bg"
+                    android:padding="@dimen/image_padding"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/transfer_money" />
+
+                <TextView
+                   style="@style/submenu_text"
+                    android:text="@string/transfer_towallet"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/ivTransferWallet"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/ivTransferWallet"
+                    app:layout_constraintTop_toTopOf="@+id/ivTransferWallet" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTransfertoTelco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_side"
+            android:layout_marginStart="@dimen/main_side"
+            android:layout_marginEnd="@dimen/main_side"
+            app:cardCornerRadius="@dimen/landing_card_radius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardTransfertoWallet">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/submenu_view"
+                    android:background="@color/primary_green"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivCashWithdrawal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/submenu_icon"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/circle_bg"
+                    android:padding="@dimen/image_padding"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/transfer_money" />
+
+                <TextView
+                    android:id="@+id/tvCashWithdrawal"
+                    style="@style/submenu_text"
+                    android:text="@string/transfer_totelco"
+
+                    app:layout_constraintBottom_toBottomOf="@+id/ivCashWithdrawal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/ivCashWithdrawal"
+                    app:layout_constraintTop_toTopOf="@+id/ivCashWithdrawal" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTobank"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_side"
+            android:layout_marginStart="@dimen/main_side"
+            android:layout_marginEnd="@dimen/main_side"
+            app:cardCornerRadius="@dimen/landing_card_radius"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cardTransfertoTelco">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="@dimen/submenu_view"
+                    android:background="@color/primary_green"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <ImageView
+                    android:id="@+id/ivTransferTobank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/submenu_icon"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/circle_bg"
+                    android:padding="@dimen/image_padding"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/transfer_money" />
+
+                <TextView
+                    style="@style/submenu_text"
+                    android:text="@string/transfer_tobank"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivTransferTobank"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/ivTransferTobank"
+                    app:layout_constraintTop_toTopOf="@+id/ivTransferTobank" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

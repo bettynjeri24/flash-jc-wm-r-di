@@ -1,0 +1,1238 @@
+{
+  "fund_source": {
+    "1": {
+      "Key": "REQUEST",
+      "Value": "wallet to wallet transfer, where I need debit account and credit account)"
+    },
+    "2": {
+      "key": "MPESACHECKOUT",
+      "Value": "load from mpesa"
+    },
+    "3": {
+      "key": "CARDCHECKOUT",
+      "Value": "load from card"
+    }
+  },
+  "login": {
+    "service_name": "Authenticate",
+    "phone_number": "254706215505",
+    "pin": "7127",
+    "geolocation": "Home",
+    "user_agent": "android",
+    "user_agent_version": "5.1"
+  },
+  "tests": [
+    {
+      "service_name": "BankWithdrawalSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "MobileWithdraw",
+        "phone_number": "254706215505",
+        "biller_ref": "254706215505",
+        "debit_account": "5000016455000",
+        "fund_source": 1,
+        "is_bank": true,
+        "amount": 5,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletWithdrawalSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "MobileWithdraw",
+        "phone_number": "254706215505",
+        "biller_ref": "254706215505",
+        "debit_account": "TA2458516000206",
+        "fund_source": 1,
+        "is_bank": false,
+        "amount": 10,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankSafAirtimeTopUpSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "AirtimeTopup",
+        "service_code": "SAFARICOM",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "biller_ref": "254706215505",
+        "fund_source": 1,
+        "is_bank": true,
+        "amount": 10,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankSafAirtimeTopUpCountryCodeMissing",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "AirtimeTopup",
+        "service_code": "SAFARICOM",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "biller_ref": "0706215505",
+        "fund_source": 1,
+        "is_bank": true,
+        "amount": 10,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankNHIFSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "amount": 60,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "2011088",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "service_code": "NHIF",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "NhifPayment",
+        "transaction_id": "2160234",
+        "amount": 60,
+        "fund_source": 1,
+        "is_bank": true,
+        "biller_ref": "2011088",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "service_code": "NHIF",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletNHIFSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "amount": 60,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "2011088",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "service_code": "NHIF",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "NhifPayment",
+        "transaction_id": "2160234",
+        "amount": 60,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "2011088",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "service_code": "NHIF",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankKPLCPostPaidSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "11111",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "service_code": "KPLCPOSTPAID",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "KplcPostpaidPayment",
+        "amount": 210.35,
+        "biller_ref": "11111",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "service_code": "KPLCPOSTPAID",
+        "fund_source": 1,
+        "is_bank": true,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletKPLCPostPaidSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "11111",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "service_code": "KPLCPOSTPAID",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "KplcPostpaidPayment",
+        "amount": 210.35,
+        "biller_ref": "11111",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "service_code": "KPLCPOSTPAID",
+        "fund_source": 1,
+        "is_bank": true,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankBalanceSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "AccountBalance",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "fund_source": 1,
+        "is_bank": true,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletBalanceSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "account_type": "WALLET",
+        "service_name": "AccountBalance",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletAccountLookupSuccess",
+      "payload_1": {
+        "service_name": "AccountLookup",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "account_phone_number": "254723686428",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletAccountLookupFailed",
+      "payload_1": {
+        "user_agent_version": "12.1",
+        "user_agent": "Simulator",
+        "is_bank": false,
+        "service_name": "AccountLookup",
+        "debit_account": "TA2458516000206",
+        "phone_number": "254706215505",
+        "fund_source": 1,
+        "geolocation": "12.1",
+        "account_phone_number": "254729347882"
+      }
+    },
+    {
+      "service_name": "WalletAccountLookupNoExistent",
+      "expect_status": "01",
+      "payload_1": {
+        "service_name": "AccountLookup",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "account_phone_number": "25470621550",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankAccountLookupSuccess",
+      "payload_1": {
+        "service_name": "AccountLookup",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455001",
+        "account_phone_number": "254706215505",
+        "fund_source": 1,
+        "is_bank": true,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletBalance",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "WalletBalance",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "account_type": "TA",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankMiniStatementSuccessTest",
+      "payload_1": {
+        "service_name": "MiniStatement",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "fund_source": 1,
+        "is_bank": true,
+        "account_type": "TA",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletMiniStatementSuccessTest",
+      "payload_1": {
+        "service_name": "MiniStatement",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "fund_source": 1,
+        "is_bank": false,
+        "account_type": "TA",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankFullStatementSuccessTest",
+      "payload_1": {
+        "service_name": "FullStatement",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "statement_period": 2,
+        "fund_source": 1,
+        "is_bank": false,
+        "account_type": "TA",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletFullStatementSuccessTest",
+      "payload_1": {
+        "service_name": "FullStatement",
+        "phone_number": "254706215505",
+        "recipient_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "statement_period": 2,
+        "fund_source": 1,
+        "is_bank": false,
+        "account_type": "TA",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletCheckoutDepositSuccessTest",
+      "payload_1": {
+        "service_name": "DepositMoneyMpesa",
+        "phone_number": "254706215505",
+        "amount": 10,
+        "credit_account": "TA2458516000206",
+        "account_type": "TA",
+        "fund_source": 2,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "DepositMoneyMpesaConfirm",
+        "phone_number": "254706215505",
+        "amount": 10,
+        "esb_ref": "${esb_ref}",
+        "credit_account": "TA2458516000206",
+        "charge_amount": "${charge_amount}",
+        "extra_charge": "${extra_charge_amount}",
+        "excise_duty": "${excise_duty_amount}",
+        "account_type": "TA",
+        "fund_source": 2,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletCardCheckoutDepositSuccessTest",
+      "status_code": "00",
+      "payload_1": {
+        "service_name": "CardDeposit",
+        "card_security_code": 706,
+        "card_expiry_date": "042019",
+        "customer_number": "C206",
+        "card_id": 78,
+        "phone_number": "254706215505",
+        "amount": 10,
+        "credit_account": "TA2458516000206",
+        "fund_source": 3,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "CardDepositConfirm",
+        "card_security_code": "${card_security_code}",
+        "esb_ref": "${esb_ref}",
+        "credit_account": "${credit_account}",
+        "card_expiry_date": "${card_expiry_date}",
+        "customer_number": "${customer_number}",
+        "card_id": "${card_id}",
+        "phone_number": "${phone_number}",
+        "amount": "${amount}",
+        "charge_amount": "${charge_amount}",
+        "extra_charge_amount": "${extra_charge_amount}",
+        "excise_duty_amount": "${excise_duty_amount}",
+        "fund_source": 3,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletMerchantPaymentSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "MerchantDetails",
+        "merchant_code": "000094",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "MerchantPayment",
+        "amount": 50,
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "fund_source": 1,
+        "is_bank": false,
+        "merchant_deal_id": "",
+        "merchant_code": "${merchant_code}",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletMerchantQRCodeSuccess",
+      "payload_1": {
+        "service_name": "MerchantQrCode",
+        "qr_code": "0002010102110015MA2458556000095530340454030.05802KE5903KFC6007NAIROBI01060000950211254897906760315Nairobi Stor 2e0811MerchantPay6304e3a4"
+      }
+    },
+    {
+      "service_name": "ListAvailableDeals",
+      "payload_1": {
+        "service_name": "MerchantDeals",
+        "deal_category": "FOOD_DRINKS"
+      }
+    },
+    {
+      "service_name": "DealPurchaseSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "DealPurchase",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "amount": 400,
+        "item_count": 2,
+        "branch_code": "000095",
+        "complete_payment": 1,
+        "merchant_deal_id": 31,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletSendMoneyToWalletSuccess",
+      "payload_1": {
+        "service_name": "AccountLookup",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "account_phone_number": "254729347882",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "amount": 10,
+        "service_name": "SendMoney",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "credit_account": "${account_no}",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletSendMoneyToSelfFails",
+      "payload_1": {
+        "service_name": "AccountLookup",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "account_phone_number": "254706215505",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "expect_status": "57",
+        "amount": 10,
+        "service_name": "SendMoney",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "credit_account": "${account_no}",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletSendMoneyWithAnotherUserAccountFails",
+      "payload_1": {
+        "service_name": "AccountLookup",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458508000188",
+        "account_phone_number": "254706215505",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "expect_status": "57",
+        "amount": 10,
+        "service_name": "SendMoney",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458508000188",
+        "credit_account": "${account_no}",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletSendMoneyWithAnotherUserPhoneFails",
+      "payload_1": {
+        "service_name": "AccountLookup",
+        "phone_number": "254729347882",
+        "debit_account": "TA2458516000206",
+        "account_phone_number": "254729347882",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "expect_status": "57",
+        "amount": 10,
+        "service_name": "SendMoney",
+        "phone_number": "254729347882",
+        "debit_account": "TA2458516000206",
+        "credit_account": "${account_no}",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletSafAirtimeTopUpSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "AirtimeTopup",
+        "service_code": "SAFARICOM",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "biller_ref": "254706215505",
+        "fund_source": 1,
+        "is_bank": false,
+        "amount": 10,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletAirtelAirtimeTopUpSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "AirtimeTopup",
+        "service_code": "AIRTEL",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "biller_ref": "254706215505",
+        "fund_source": 1,
+        "is_bank": false,
+        "amount": 10,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletTelkomAirtimeTopUpSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "AirtimeTopup",
+        "service_code": "TELKOM",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "biller_ref": "254706215505",
+        "fund_source": 1,
+        "is_bank": false,
+        "amount": 10,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankKPLCPrePaidSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "1111111",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "service_code": "KPLCPREPAID",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "KplcPrepaidPayment",
+        "amount": 210.35,
+        "biller_ref": "1111111",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "service_code": "KPLCPREPAID",
+        "fund_source": 1,
+        "is_bank": true,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletKPLCPrePaidSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "1111111",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "service_code": "KPLCPREPAID",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "KplcPrepaidPayment",
+        "amount": 210.35,
+        "biller_ref": "1111111",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "service_code": "KPLCPREPAID",
+        "fund_source": 1,
+        "is_bank": false,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletStartimesSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "StartTimesPayment",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "1111111",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletZukuTvSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "ZukuTvPayment",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "0724441891",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletZukuInternetSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "ZukuInternet",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "0724441891",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletJamiiTelcomSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "JamiiTelkom",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "0724441891",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankDSTVPaymentSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "service_code": "DSTV",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "11111",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "DstvPayment",
+        "amount": "${DueAmount}",
+        "fund_source": 1,
+        "is_bank": true,
+        "biller_ref": "0724441891",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletAccessKenyaPaymentSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "AccessKenyaPayment",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "0724441891",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "BankGoTvPaymentPaymentSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "service_code": "GOTV",
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "11111",
+        "phone_number": "254706215505",
+        "debit_account": "5000016455000",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "GoTvPayment",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": true,
+        "biller_ref": "${biller_ref}",
+        "phone_number": "${phone_number}",
+        "debit_account": "${debit_account}",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletGoTvPaymentPaymentSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "service_code": "GOTV",
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "0724441891",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "GoTvPayment",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "0724441891",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletAccessKenyaPaymentSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "AccessKenyaPayment",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "0724441891",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletNairobiCountyMiscellaneous",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "service_code": "NAIROBICOUNTYMISCELLANEOUS",
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "MS1404-05539",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "NairobiCountyMiscellaneous",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "${transactionID}",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "GetBillNairobiCountyDailyParking",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "service_code": "NAIROBICOUNTYDAILYPARKING_GETBILL",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "GetBillNairobiCountySeasonalParking",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "service_code": "NAIROBICOUNTYSEASONALPARKING_GETBILL",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletNairobiCountyDailyParking",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "BillPresentment",
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "KCF998W",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458516000206",
+        "service_code": "NAIROBICOUNTYDAILYPARKING",
+        "params": {
+          "ZoneCodeID": "10",
+          "ChargeID": "10"
+        },
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      },
+      "payload_2": {
+        "service_name": "NairobiCountyDailyParking",
+        "amount": 40,
+        "fund_source": 1,
+        "is_bank": false,
+        "biller_ref": "${TransactionID}",
+        "phone_number": "${phone_number}",
+        "debit_account": "${debit_account}",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletLikCardSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "LinkCreditCard",
+        "phone_number": "254706215505",
+        "customer_number": "C206",
+        "card_expiry_date": "042019",
+        "card_names": "John Mungai",
+        "card_pan": "4242424242424242",
+        "card_type": "visa"
+      }
+    },
+    {
+      "service_name": "WalletRemoveLikCardSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "RemoveCreditCard",
+        "phone_number": "254706215505",
+        "customer_number": "C206",
+        "card_id": 76
+      }
+    },
+    {
+      "service_name": "WalletSuspendLikedCardSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "SuspendCreditCard",
+        "phone_number": "254706215505",
+        "customer_number": "C206",
+        "card_id": 76
+      }
+    },
+    {
+      "service_name": "WalletListLikedCardsSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "MyLinkedCards",
+        "phone_number": "254706215505"
+      }
+    },
+    {
+      "service_name": "WalletLoanBalance",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "LoanBalance",
+        "phone_number": "254706215505",
+        "account_type": "LOAN",
+        "debit_account": "TA2458516000206"
+      }
+    },
+    {
+      "service_name": "WalletLoanLimit",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "LoanLimit",
+        "phone_number": "254706215505",
+        "account_type": "LOAN",
+        "debit_account": "TA2458516000206"
+      }
+    },
+    {
+      "service_name": "WalletLoanProducts",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "LoanProducts",
+        "phone_number": "254706215505",
+        "account_type": "LOAN",
+        "debit_account": "TA2458516000206"
+      }
+    },
+    {
+      "service_name": "WalletLoanRequest",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "LoanRequest",
+        "amount": 103,
+        "loan_code": "LOAN_7",
+        "phone_number": "254706215505",
+        "account_type": "LOAN",
+        "debit_account": "TA2458516000206"
+      }
+    },
+    {
+      "service_name": "WalletLoanRequestInterestReduced",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "LoanRequest",
+        "amount": 103,
+        "loan_code": "LOAN_8",
+        "phone_number": "254706215505",
+        "account_type": "LOAN",
+        "debit_account": "TA2458516000206"
+      }
+    },
+    {
+      "service_name": "WalletLoanRepayment",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "LoanPayment",
+        "amount": 50,
+        "phone_number": "254706215505",
+        "account_type": "LOAN",
+        "debit_account": "TA2458516000206"
+      }
+    },
+    {
+      "service_name": "WalletLoanRepaymentMpesa",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "LoanPayment",
+        "amount": 50,
+        "fund_source": 2,
+        "is_bank": false,
+        "phone_number": "254706215505",
+        "account_type": "LOAN",
+        "debit_account": "TA2458516000206"
+      }
+    },
+    {
+      "service_name": "WalletLoanStatement",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "LoanStatement",
+        "amount": 0,
+        "phone_number": "254706215505",
+        "account_type": "LOAN",
+        "debit_account": "TA2458516000206"
+      }
+    },
+    {
+      "service_name": "WalletRegistration",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "Register",
+        "first_name": "John",
+        "middle_name": "Mungai",
+        "surname": "Njoroge",
+        "email_address": "m@ekenya.co.ke",
+        "id_number": "29875765",
+        "dob": "10201991",
+        "phone_number": "254706735076",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "WalletAgentWithdrawal",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "AgentWithdrawal",
+        "amount": 300,
+        "debit_account": "TA2458516000206",
+        "agent_code": "89780",
+        "phone_number": "254706215505",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "SavingsAccountBalance",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "SavingsBalance",
+        "debit_account": "temp_0000008754",
+        "phone_number": "254706215505",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "SavingsAccountStatement",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "SavingsStatement",
+        "debit_account": "temp_0000008754",
+        "phone_number": "254706215505",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "SavingsProductListing",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "SavingsProducts",
+        "phone_number": "254706215505",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "SavingsAccountListing",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "SavingsAccounts",
+        "phone_number": "254706215505",
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "SavingsAccountOpening",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "OpenSavingsAccount",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458578016397",
+        "duration": 1,
+        "amount": 500,
+        "saving_purpose": "Buy stuff",
+        "target_amount": 1500,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "SavingsDepositSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "SavingsDeposit",
+        "phone_number": "254706215505",
+        "debit_account": "TA2458578016397",
+        "credit_account": "temp_0000008754",
+        "amount": 500,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    },
+    {
+      "service_name": "SavingsWithdrawSuccess",
+      "expect_status": "00",
+      "payload_1": {
+        "service_name": "SavingsWithdrawal",
+        "phone_number": "254706215505",
+        "debit_account": "temp_0000008754",
+        "credit_account": "TA2458578016397",
+        "amount": 50,
+        "geolocation": "Home",
+        "user_agent": "android",
+        "user_agent_version": "5.1"
+      }
+    }
+  ]
+}

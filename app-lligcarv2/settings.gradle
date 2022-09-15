@@ -1,0 +1,16 @@
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+rootProject.name = "FF Cargill-App"
+
+
+include ':app'
+include ':common'
+include ':cargillbuyer'
+include ':authcargill'
+include ':cargillfarmer'
+include ':cargillcoop'

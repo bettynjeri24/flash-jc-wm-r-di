@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cooperative_navigation"
+    app:startDestination="@id/nav_cooperative_dashboard">
+
+    <fragment
+        android:id="@+id/nav_cooperative_dashboard"
+        android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.dashboard.CooperativeDashboard"
+        tools:layout="@layout/fragment_cooperative_dashboard">
+    <action
+        android:id="@+id/action_logout"
+        app:destination="@id/nav_loginAccountFragment"
+        app:popUpTo="@id/nav_graph"
+        app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_loginAccountFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.login.LoginAccountFragment"
+        tools:layout="@layout/fragment_login_account"/>
+    <fragment
+        android:id="@+id/nav_evalueBookingList"
+        android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.evalue.EvalueBooking"
+        tools:layout="@layout/fragment_evalue_booking"/>
+    <fragment
+        android:id="@+id/nav_bookEvalueFragment"
+        android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.evalue.EbookingFragment"
+        tools:layout="@layout/fragment_ebooking"/>
+    <fragment
+        android:id="@+id/nav_coopBuyerList"
+        android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.coopbuyers.CoopBuyerList"
+        tools:layout="@layout/fragment_coop_buyer_list"/>
+    <fragment
+        android:id="@+id/nav_cooperativeProfile"
+        android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.dashboard.CooperativeFragment"
+        tools:layout="@layout/fragment_cooperative">
+
+    </fragment>
+    <fragment
+        android:id="@+id/nav_buyerTopUp"
+        android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.coopbuyers.BuyerTopup"
+        tools:layout="@layout/fragment_buyer_topup"/>
+    <fragment
+        android:id="@+id/nav_coopBuyerFundRequest"
+        android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.fundsrequest.BuyerFundsRequest"
+        tools:layout="@layout/fragment_buyer_funds_request"/>
+<fragment
+    android:id="@+id/nav_coopApproveFundsRequest"
+    android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.fundsrequest.ApproveBuyerFundRequest"
+    tools:layout="@layout/fragment_approve_buyer_fundrequest"/>
+    <fragment
+        android:id="@+id/nav_approveEvalue"
+        android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.evalue.ApproveEvalue"
+        tools:layout="@layout/fragment_approve_evalue"/>
+
+    <fragment
+        android:id="@+id/nav_eValueAnalysis"
+        android:name="io.eclectics.cargilldigital.ui.cooperativeprofile.analysis.GraphAnalysis"
+        tools:layout="@layout/fragment_graph_analysis"/>
+    <!-- Common layouts needs restracture  -->
+    <fragment
+        android:id="@+id/nav_transactionConfirmation"
+        android:name="io.eclectics.cargilldigital.ui.confirmation.ConfirmationFragment"
+        tools:layout="@layout/fragment_confirmation"/>
+    <fragment
+        android:id="@+id/nav_pinFragment"
+        android:name="io.eclectics.cargilldigital.ui.auth.pinmgmt.PinFragment"
+        tools:layout="@layout/fragment_pin">
+    <action
+        android:id="@+id/action_coopProfile"
+        app:destination="@id/nav_cooperativeProfile"
+        app:popUpTo="@id/cooperative_navigation"
+        app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_verifyOtp"
+        android:name="io.eclectics.cargilldigital.ui.otpverification.OTPFragment"
+        tools:layout="@layout/fragment_otp"/>
+    <fragment
+        android:id="@+id/nav_selectAccount"
+        android:name="io.eclectics.cargilldigital.ui.account.AccountsFragment"
+        tools:layout="@layout/accounts_fragment"/>
+
+</navigation>

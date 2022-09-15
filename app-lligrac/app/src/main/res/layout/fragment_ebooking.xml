@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@mipmap/bg"
+    android:backgroundTint="@color/colorDivider"
+    >
+    <include
+        layout="@layout/transfer_layout_top"
+        android:id="@+id/mainLayoutToolbar"/>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:elevation="@dimen/medium_side"
+        app:cardCornerRadius="@dimen/medium_side"
+        android:layout_margin="@dimen/main_top"
+        android:translationY="-45dp"
+        app:cardBackgroundColor="@color/color_white"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_margin="@dimen/medium_side"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_amount"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:textColor="@color/txtGray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="@dimen/medium_side"
+                app:layout_constraintTop_toTopOf="parent"
+                android:id="@+id/tv"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/medium_side"
+                app:layout_constraintTop_toBottomOf="@id/tv"
+                style="@style/MyTextInputLayout"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enter_amount"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlReceiveAmount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tlAmount"
+                style="@style/MyTextInputLayout"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etReceiveAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/enetr_receive_amount"
+                    android:imeOptions="actionNext"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/cardCharges"
+
+               app:layout_constraintTop_toBottomOf="@id/tlReceiveAmount">
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="@dimen/medium_side">
+                   <View
+                       android:layout_width="2dp"
+                       android:layout_height="0dp"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       android:id="@+id/vCharges"
+                       android:layout_marginTop="@dimen/medium_side"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       android:background="@drawable/rectangular_dotted"/>
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintEnd_toStartOf="@id/vCharges"
+                       android:text="Transaction %"
+                       android:layout_marginTop="@dimen/medium_side"
+                       android:fontFamily="@font/nunito_sans_semibold"
+                       android:id="@+id/transChargesTitle"
+                       android:textColor="@color/black"
+                       android:textAlignment="center"/>
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       app:layout_constraintTop_toBottomOf="@id/transChargesTitle"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintEnd_toStartOf="@id/vCharges"
+                       android:text="1 %"
+                       android:layout_marginBottom="@dimen/margin_padding_small"
+                       android:layout_marginTop="@dimen/margin_padding_small"
+                       android:fontFamily="@font/nunito_sans_semibold"
+                       android:id="@+id/transCharges"
+
+                       android:textAlignment="center"/>
+
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       app:layout_constraintTop_toTopOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toEndOf="@id/vCharges"
+                       android:text="@string/booking_fee"
+                       android:layout_marginTop="@dimen/medium_side"
+                       android:fontFamily="@font/nunito_sans_semibold"
+                       android:id="@+id/transChargesAmtTitle"
+                       android:textColor="@color/black"
+                       android:textAlignment="center"/>
+                   <TextView
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       app:layout_constraintTop_toBottomOf="@id/transChargesAmtTitle"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toEndOf="@id/vCharges"
+                       android:text="0 "
+                       android:layout_marginTop="@dimen/margin_padding_small"
+                       android:fontFamily="@font/nunito_sans_semibold"
+                       android:id="@+id/transChargeAmount"
+
+                       android:textAlignment="center"/>
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.cardview.widget.CardView>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tlComments"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="@dimen/medium_side"
+                app:layout_constraintTop_toBottomOf="@id/cardCharges"
+                style="@style/MyTextInputLayout"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etComments"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/tv_comments_height"
+                    android:hint="@string/enter_comments"
+                    android:imeOptions="actionNext"
+                    android:inputType="textMultiLine" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBookEvalue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_top"
+                android:layout_marginBottom="50dp"
+                android:paddingBottom="@dimen/main_top"
+                android:padding="10dp"
+                android:text="@string/request"
+                app:cornerRadius="50dp"
+                app:layout_constraintTop_toBottomOf="@id/tlComments"
+                app:layout_constraintEnd_toEndOf="parent"
+                style="@style/primary_button"
+                app:layout_constraintStart_toStartOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_navigation"
+    app:startDestination="@id/splashFragment">
+
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.ekenya.rnd.authcargill.ui.splash.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/splash_fragment">
+        <action
+            android:id="@+id/action_splashFragment_to_languageFragment"
+            app:destination="@id/languageFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/languageFragment"
+        android:name="com.ekenya.rnd.authcargill.ui.language.LanguageFragment"
+        android:label="LanguageFragment"
+        tools:layout="@layout/fragment_language">
+        <action
+            android:id="@+id/action_languageFragment_to_lookUpPhoneNumberCoopIdFragment"
+            app:destination="@id/lookUpPhoneNumberCoopIdFragment" />
+        <action
+            android:id="@+id/action_languageFragment_to_loginPinFragment"
+            app:destination="@id/loginPinFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/otpVerificationFragment"
+        android:name="com.ekenya.rnd.authcargill.ui.otpverification.OtpVerificationFragment"
+        android:label="OnboardingOtp"
+        tools:layout="@layout/fragment_verification_otp">
+        <action
+            android:id="@+id/action_otpVerificationFragment_to_setAccountPinFragment"
+            app:destination="@id/setAccountPinFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/setAccountPinFragment"
+        android:name="com.ekenya.rnd.authcargill.ui.pinmgmt.SetAccountPinFragment"
+        android:label="SetAccountPinFragment"
+        tools:layout="@layout/fragment_set_account_pin">
+        <action
+            android:id="@+id/action_setAccountPinFragment_to_loginPinFragment"
+            app:destination="@id/loginPinFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginPinFragment"
+        android:name="com.ekenya.rnd.authcargill.ui.login.LoginPinFragment"
+        android:label="LoginPinFragment"
+        tools:layout="@layout/fragment_login_pin" />
+    <fragment
+        android:id="@+id/lookUpPhoneNumberCoopIdFragment"
+        android:name="com.ekenya.rnd.authcargill.ui.login.LookUpPhoneNumberCoopIdFragment"
+        android:label="LookUpPhoneNumberCoopIdFragment"
+        tools:layout="@layout/fragment_lookup_phone_account_id" >
+        <action
+            android:id="@+id/action_lookUpPhoneNumberCoopIdFragment_to_otpVerificationFragment"
+            app:destination="@id/otpVerificationFragment" />
+        <action
+            android:id="@+id/action_lookUpPhoneNumberCoopIdFragment_to_loginPinFragment"
+            app:destination="@id/loginPinFragment" />
+    </fragment>
+</navigation>

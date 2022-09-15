@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="io.eclectics.cargilldigital">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.CALL_PRIVILEGED"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name="io.eclectics.cargilldigital.AppCargillDigital"
+        android:allowBackup="false"
+        android:allowClearUserData="false"
+        android:hasFragileUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cargill"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".AuthCargillActivity"
+            android:exported="false" />
+        <activity
+            android:name="io.eclectics.cargilldigital.ui.farmforcedeeplink.FarmForceBuyerMainActivity"
+            android:exported="true">
+
+            <!-- intent-filter -->
+            <!-- SHARE -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="cargill-api.eclectics.io"
+                    android:scheme="cargill" />
+            </intent-filter>
+            <!-- START -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="io.eclectics.cargilldigital.MainActivity"
+            android:exported="true">
+
+            <!--
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
+
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name="io.eclectics.cargilldigital.printer.PrinterActivity"
+            android:exported="false"
+            android:label="@string/title_activity_printer"
+            android:theme="@style/Theme.Cargill.NoActionBar" />
+        <activity
+            android:name="io.eclectics.cargilldigital.printer.PrinterActivityTest"
+            android:exported="false"
+            android:label="@string/title_activity_printer"
+            android:theme="@style/Theme.Cargill.NoActionBar" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="io.eclectics.cargilldigital.ussd.USSDActivity"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove"></provider>
+    </application>
+
+</manifest>

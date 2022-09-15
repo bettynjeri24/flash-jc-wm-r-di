@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ekenya.rnd.cargillbuyer.ui.buyerprofile.ffpendingpayments.FFPendingPaymentListFragment">
+
+    <include
+        android:id="@+id/mainLayoutToolbar"
+        layout="@layout/transfer_layout_top" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_side"
+        android:layout_marginTop="@dimen/_16dp"
+        android:fontFamily="@font/nunitosans_bold_common"
+        android:text="@string/farmers"
+        android:textAllCaps="true"
+        android:textColor="#013E4E"
+        app:layout_constraintEnd_toStartOf="@+id/tv_farmer_no"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar" />
+
+    <TextView
+        android:id="@+id/tv_farmer_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/main_side"
+        android:layout_marginTop="@dimen/_16dp"
+        android:layout_marginEnd="@dimen/main_side"
+        android:fontFamily="@font/nunitosans_regular_common"
+        android:text="@string/total_no"
+        android:textAlignment="textEnd"
+        android:textColor="#04A653"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainLayoutToolbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tl_search"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/main_side"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/main_side"
+        android:background="#F3F7F8"
+        android:hint="@string/search_farmer"
+        app:boxBackgroundColor="#F3F7F8"
+        app:boxStrokeWidth="0dp"
+        app:boxStrokeWidthFocused="0dp"
+        app:layout_constraintEnd_toStartOf="@id/iv_filter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        app:startIconDrawable="@drawable/ic_search">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/iv_filter"
+        android:layout_width="45dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="@dimen/main_side"
+        android:background="@android:color/black"
+        android:padding="15dp"
+        android:src="@drawable/filter"
+        app:layout_constraintBottom_toBottomOf="@id/tl_search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tl_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPendingPayments"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_8dp"
+        android:layout_marginTop="@dimen/_8dp"
+        android:layout_marginEnd="@dimen/_8dp"
+        android:layout_marginBottom="@dimen/_2dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/v_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tl_search"
+        tools:listitem="@layout/item_adapter_pending_payments" />
+
+    <TextView
+        android:id="@+id/tvErrorResponse"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/main_side"
+        android:fontFamily="@font/nunitosans_semibold_common"
+        android:gravity="center_vertical"
+        android:text="@string/no_pending_payments"
+        android:textAlignment="center"
+        android:textColor="@color/red_text_color_cargill"
+        android:textSize="@dimen/textsize_vlarge"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/v_bottom"
+        app:layout_constraintTop_toBottomOf="@id/tl_search" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@android:color/black"
+        android:visibility="gone"
+        app:borderWidth="0dp"
+        app:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/harvester"
+        app:tint="@android:color/white" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/shadow_down"
+        android:elevation="8dp"
+        android:layerType="software"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/v_bottom" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/v_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@android:color/white"
+        android:elevation="8dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/medium_side"
+            android:fontFamily="@font/nunitosans_regular_common"
+            android:text="@string/add_farmer"
+            android:textAllCaps="true"
+            android:textColor="#302A2A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

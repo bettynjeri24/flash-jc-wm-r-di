@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mcVRoout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_2dp"
+    android:backgroundTint="@color/grey_tint_cargill"
+    android:padding="@dimen/_2dp"
+    app:cardCornerRadius="@dimen/_10dp"
+    app:cardElevation="@dimen/_0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/_8dp"
+        android:paddingBottom="@dimen/_8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cVMiniStatement"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/nunitosans_regular_common"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            app:cardCornerRadius="50dp"
+            app:cardElevation="@dimen/_0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/iVMiniStatement"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_succesful_deposit_wallet" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/tVTitleMiniStatement"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:fontFamily="@font/nunitosans_bold_common"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp_text_size"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/tVMiniStatementAmount"
+            app:layout_constraintStart_toEndOf="@+id/cVMiniStatement"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="32dp"
+            tools:text="Fund Transfer" />
+
+        <TextView
+            android:id="@+id/tVMiniStatementAmount"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:fontFamily="@font/nunitosans_regular_common"
+            android:singleLine="true"
+            android:textAlignment="textEnd"
+            android:textColor="@color/red_text_color_cargill"
+            android:textSize="@dimen/_14sp_text_size"
+            app:layout_constraintBottom_toBottomOf="@id/tVTitleMiniStatement"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tVTitleMiniStatement"
+            app:layout_constraintTop_toTopOf="@id/tVTitleMiniStatement"
+            tools:text="10000" />
+
+        <TextView
+            android:id="@+id/tVMiniStatementDateTime"
+            android:layout_width="@dimen/_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:fontFamily="@font/nunitosans_regular_common"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_14sp_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cVMiniStatement"
+            app:layout_constraintTop_toBottomOf="@+id/tVTitleMiniStatement"
+            tools:layout_editor_absoluteY="73dp"
+            tools:text="2022-06-25 18:48:03" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
+

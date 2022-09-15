@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/buyerRequestApprovalFragment">
+
+
+    <fragment
+        android:id="@+id/coopBuyerDetailsListFragment"
+        android:name="com.ekenya.rnd.cargillcoop.ui.coopbuyerlist.CoopBuyerDetailsListFragment"
+        android:label="fragment_coop_buyer_details_list"
+        tools:layout="@layout/fragment_coop_buyer_details_list" />
+    <fragment
+        android:id="@+id/coopMainFragment"
+        android:name="com.ekenya.rnd.cargillcoop.ui.CoopMainFragment"
+        android:label="fragment_coop_home"
+        tools:layout="@layout/fragment_coop_home">
+        <action
+            android:id="@+id/action_coopMainFragment_to_fundRequestsByBuyerFragment"
+            app:destination="@id/fundRequestsByBuyerFragment" />
+        <action
+            android:id="@+id/action_coopMainFragment_to_coopBuyerDetailsListFragment"
+            app:destination="@id/coopBuyerDetailsListFragment" />
+        <action
+            android:id="@+id/action_coopMainFragment_to_recentTransactionFragment"
+            app:destination="@id/recentTransactionFragment" />
+        <action
+            android:id="@+id/action_coopMainFragment_to_graphAnalysisFragment"
+            app:destination="@id/graphAnalysisFragment" />
+        <action
+            android:id="@+id/action_coopMainFragment_to_evalueRequestListFragment"
+            app:destination="@id/evalueRequestListFragment" />
+        <action
+            android:id="@+id/action_coopMainFragment_to_evalueBookingFragment"
+            app:destination="@id/evalueBookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fundRequestsByBuyerFragment"
+        android:name="com.ekenya.rnd.cargillcoop.ui.fundrequest.FundRequestsByBuyerFragment"
+        android:label="FundRequestsByBuyerFragment" >
+        <action
+            android:id="@+id/action_fundRequestsByBuyerFragment_to_buyerRequestApprovalFragment"
+            app:destination="@id/buyerRequestApprovalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/recentTransactionFragment"
+        android:name="com.ekenya.rnd.cargillcoop.ui.recenttransaction.CoopRecentTransactionFragment"
+        android:label="fragment_coop_recent_transaction"
+        tools:layout="@layout/fragment_coop_recent_transaction" />
+    <fragment
+        android:id="@+id/graphAnalysisFragment"
+        android:name="com.ekenya.rnd.cargillcoop.ui.recenttransaction.GraphAnalysisFragment"
+        android:label="fragment_graph_analysis"
+        tools:layout="@layout/fragment_graph_analysis" />
+    <fragment
+        android:id="@+id/approveEvalueRequestFragment"
+        android:name="com.ekenya.rnd.cargillcoop.ui.evalue.ApproveEvalueRequestFragment"
+        android:label="fragment_approve_evalue_request"
+        tools:layout="@layout/fragment_approve_evalue_request" />
+    <fragment
+        android:id="@+id/evalueBookingFragment"
+        android:name="com.ekenya.rnd.cargillcoop.ui.evalue.EvalueBookingFragment"
+        android:label="fragment_evalue_booking"
+        tools:layout="@layout/fragment_evalue_booking" />
+    <fragment
+        android:id="@+id/evalueRequestListFragment"
+        android:name="com.ekenya.rnd.cargillcoop.ui.evalue.EvalueRequestListFragment"
+        android:label="fragment_evalue_request_list"
+        tools:layout="@layout/fragment_evalue_request_list">
+        <action
+            android:id="@+id/action_evalueRequestListFragment_to_approveEvalueRequestFragment"
+            app:destination="@id/approveEvalueRequestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyerRequestApprovalFragment"
+        android:name="com.ekenya.rnd.cargillcoop.ui.fundrequest.BuyerRequestApprovalFragment"
+        android:label="fragment_buyer_request_approval"
+        tools:layout="@layout/fragment_buyer_request_approval" />
+
+</navigation>

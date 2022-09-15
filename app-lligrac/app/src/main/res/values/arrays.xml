@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="language_array_values">
+        <item>en</item>
+        <item>fr</item>
+    </string-array>
+
+    <!-- add region -->
+    <!-- mno money -->
+    <string-array name="moneySource">
+        <item>"Cocoa Wallet"</item>
+        <item>"MTN Money"</item>
+        <item>"Orange Money"</item>
+        <item>"Bank Account"</item>
+    </string-array>
+    <!-- Default wallet account -->
+    <!-- add region -->
+    <!-- Farmer place holder -->
+
+
+    <!-- Agrovet place holder -->
+    <!-- farm type -->
+
+</resources>

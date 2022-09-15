@@ -1,0 +1,204 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'kotlin-parcelize'
+    id 'androidx.navigation.safeargs.kotlin'
+   // id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion rootProject.compileSdkVersion
+    buildToolsVersion rootProject.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.compileSdkVersion
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    //
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api files('libs/bixolon_printer_v127.jar')
+    //
+    api "androidx.multidex:multidex:2.0.1"
+    //test
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test:rules:1.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    //kotlin version
+    api 'androidx.core:core-ktx:' + rootProject.kotlinCoreVersion
+    //design support
+    api 'androidx.appcompat:appcompat:' + rootProject.supportLibVersion
+    api 'androidx.recyclerview:recyclerview:' + rootProject.recyclerViewVersion
+    api 'com.google.android.material:material:' + rootProject.materialVersion
+    api 'androidx.constraintlayout:constraintlayout:' + rootProject.constraintLayoutVersion
+    //navigation framework
+    api 'androidx.navigation:navigation-fragment-ktx:' + rootProject.navigationUIVersion
+    api 'androidx.navigation:navigation-ui-ktx:' + rootProject.navigationUIVersion
+    //livedata and viewmodel
+    api 'androidx.lifecycle:lifecycle-livedata-ktx:' + rootProject.kotlinLifecycleExtVersion
+    api 'androidx.lifecycle:lifecycle-viewmodel-ktx:' + rootProject.kotlinLifecycleExtVersion
+    api 'androidx.lifecycle:lifecycle-extensions:'+ rootProject.lifecycleextensions
+    //
+    api 'androidx.lifecycle:lifecycle-common:2.5.1'
+    api 'androidx.lifecycle:lifecycle-runtime-ktx:2.5.1'
+    // optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
+    api "androidx.lifecycle:lifecycle-process:2.5.1"
+    //
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api "androidx.fragment:fragment-ktx:1.5.2"
+    api "androidx.activity:activity-ktx:1.5.1"
+
+    //dagger
+    api "com.google.dagger:dagger:" + rootProject.googleDaggerVersion
+    kapt "com.google.dagger:dagger-compiler:" + rootProject.googleDaggerVersion
+    api "com.google.dagger:dagger:" + rootProject.googleDaggerVersion
+    api "com.google.dagger:dagger-android:" + rootProject.googleDaggerVersion
+    api "com.google.dagger:dagger-android-support:" + rootProject.googleDaggerVersion
+    //
+    api 'com.synnapps:carouselview:0.1.5'
+    api 'com.github.GrenderG:Toasty:1.5.0'
+    api "androidx.multidex:multidex:2.0.1"
+
+    //RETROFIT => FOR NETWORK CONNECTION INTERCEPTIONS
+    api 'com.squareup.retrofit2:retrofit:2.9.0'
+    api 'com.squareup.retrofit2:converter-gson:2.9.0'
+    api 'com.squareup.retrofit2:converter-scalars:2.9.0'
+    //
+    api 'com.budiyev.android:code-scanner:2.1.0'
+    api 'com.loopj.android:android-async-http:1.4.9'
+    api 'com.github.clans:fab:1.6.4'
+    //
+    api("com.squareup.okhttp3:logging-interceptor:5.0.0-alpha.6")
+    //
+    api 'com.jakewharton.timber:timber:5.0.1'
+    // Glide
+    api 'com.github.bumptech.glide:glide:4.13.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.13.0'
+
+    //Biometric
+    api "androidx.biometric:biometric:1.1.0"
+
+
+    //Lottie files
+    api 'com.airbnb.android:lottie:5.0.3'
+
+    api 'com.journeyapps:zxing-android-embedded:4.3.0'
+//-----------------------------------------------------------------------------------------------
+
+    //RETROFIT => FOR NETWORK CONNECTION INTERCEPTIONS
+    //Retrofit libs
+    api 'com.squareup.retrofit2:retrofit:' + rootProject.retrofit2
+    api 'com.squareup.retrofit2:converter-gson:' + rootProject.retrofit2
+    api 'com.squareup.retrofit2:converter-scalars:' + rootProject.retrofit2
+    api "com.squareup.okhttp3:logging-interceptor:" + rootProject.loggingInterceptor
+
+    //co-routines
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-android:' + rootProject.coroutines_android
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-core:" + rootProject.coroutines_core
+    api "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:" + rootProject.retrofit2_kotlin_coroutines
+    //Kotlin coruotines
+    api "org.jetbrains.kotlinx:kotlinx-coroutines-android:" + rootProject.coroutines_android
+
+    //ROOM DATABASE FOR STORING CONTENT SUCH AS USER MANAGED BILLS ON PHONE STORAGE, LOCALLY
+/*    api "androidx.room:room-runtime:2.4.2"
+    api "androidx.room:room-ktx:2.4.2"
+    kapt "androidx.room:room-compiler:2.4.2"
+    annotationProcessor("androidx.room:room-compiler:2.4.2")*/
+
+    /**
+     * GOOGLE
+     */
+    //sms services
+    api 'com.google.android.gms:play-services-auth-api-phone:18.0.1'
+    api 'com.google.android.gms:play-services-gcm:17.0.0'
+    api 'com.google.android.gms:play-services-auth:20.2.0'
+
+    // This dependency is downloaded from the Google’s Maven repository.
+    // So, make sure you also include that repository in your project's build.gradle file.
+    api 'com.google.android.play:core:1.10.3'
+
+    /*
+    December 21, 2021
+    The latest updates to play-services-base and play-services-tasks resolve the issue that can lead to runtime NPEs
+    (NullPointerException) when handling Task<Void> results in Kotlin code
+     */
+    api 'com.google.android.gms:play-services-base:18.0.1'
+    api 'com.google.android.gms:play-services-tasks:18.0.1'
+
+    // For Kotlin users also import the Kotlin extensions library for Play Core:
+    api("com.google.android.play:core-ktx:1.8.1")
+
+    //-----------------Google General Libs--------------//
+    api 'com.google.maps.android:android-maps-utils:2.3.0'
+    api 'com.google.android.gms:play-services-maps:18.0.2'
+
+
+    /**
+     * HUAWEI
+     */
+    api "com.huawei.hms:hwid:$hmsagconnect"
+    api "com.huawei.agconnect:agconnect-core:$hmsagconnect"
+
+    api 'com.huawei.hms:hwid:'+ rootProject.hmshwid
+    // Add dependencies.
+    api 'com.huawei.agconnect:agconnect-core:'+ rootProject.hmsagconnect
+
+    //
+    api "androidx.startup:startup-runtime:1.1.1"
+//
+    //ROOM DATABASE FOR STORING CONTENT SUCH AS USER MANAGED BILLS ON PHONE STORAGE, LOCALLY
+    api "androidx.room:room-runtime:2.4.3"
+    api "androidx.room:room-ktx:2.4.3"
+    kapt "androidx.room:room-compiler:2.4.3"
+    //PinEditTextField
+    api 'com.github.poovamraj:PinEditTextField:1.2.6'
+
+    //sweet dialog
+    api 'com.github.f0ris.sweetalert:library:1.5.1'
+
+    //
+    api  ('com.lamudi.phonefield:phone-field:0.1.3@aar') {
+        transitive = true
+    }
+//
+    api 'ru.egslava:MaskedEditText:1.0.5'
+    api 'com.hbb20:ccp:2.6.0'
+//
+    api "androidx.emoji2:emoji2-views-helper:1.2.0"
+
+    //charts
+    api 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+
+    //Workmanager
+    api "androidx.work:work-runtime-ktx:2.7.1"
+    //
+    api 'net.danlew:android.joda:2.10.14'
+
+
+
+}

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_green"
+    tools:context=".ui.account.AccountsFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="@dimen/main_side"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/white_logo"
+        android:textSize="50sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/nunito_sans_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_account_instr"
+        style="@style/white_text"
+        android:layout_marginTop="@dimen/main_side"
+        android:text="@string/account_instr"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_side"
+        android:divider="@drawable/horizontal_ll_divider"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/main_side"
+        android:paddingEnd="@dimen/main_side"
+        android:showDividers="middle"
+        android:weightSum="2"
+        android:id="@+id/layoutLinearTop"
+        app:layout_constraintTop_toBottomOf="@id/tv_account_instr">
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cv_agent"-->
+<!--            style="@style/card_style"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:background="@android:drawable/dialog_holo_light_frame"-->
+<!--            android:layout_weight="1">-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cv_agent"
+                android:layout_height="160dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:backgroundTint="@android:color/white"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:padding="@dimen/main_side">
+
+                <ImageView
+                    android:id="@+id/iv_agent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/radio_selected"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/main_side"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/field_agent"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:drawableTopCompat="@mipmap/agent_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cv_farmer"-->
+<!--            style="@style/card_style"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_weight="1">-->
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cv_farmer"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="160dp"
+                android:backgroundTint="@android:color/white"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:padding="@dimen/main_side">
+
+                <ImageView
+                    android:id="@+id/iv_farmer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/radio_normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/main_side"
+                    android:fontFamily="@font/nunito_sans_semibold"
+                    android:text="@string/farmer"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:drawableTopCompat="@mipmap/farmer_icon"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        </androidx.cardview.widget.CardView>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_side"
+        android:divider="@drawable/horizontal_ll_divider"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/main_side"
+        android:paddingEnd="@dimen/main_side"
+        android:showDividers="middle"
+        android:weightSum="2"
+        android:id="@+id/layoutLinearBtm"
+        app:layout_constraintTop_toBottomOf="@id/layoutLinearTop">
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:id="@+id/cv_agent"-->
+        <!--            style="@style/card_style"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:background="@android:drawable/dialog_holo_light_frame"-->
+        <!--            android:layout_weight="1">-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cv_cooperative"
+            android:layout_height="160dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/white"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:padding="@dimen/main_side">
+
+            <ImageView
+                android:id="@+id/iv_agrovet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/radio_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/main_side"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="@string/cooperative_label"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:drawableTopCompat="@drawable/agent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:id="@+id/cv_farmer"-->
+        <!--            style="@style/card_style"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_weight="1">-->
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cv_generalWallet"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="160dp"
+
+            android:backgroundTint="@android:color/white"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:padding="@dimen/main_side">
+
+            <ImageView
+                android:id="@+id/iv_farmer2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/radio_normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="@dimen/main_side"
+                android:fontFamily="@font/nunito_sans_semibold"
+                android:text="@string/other_user"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:drawableTopCompat="@mipmap/supervisor"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!--        </androidx.cardview.widget.CardView>-->
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_proceed_account"
+        style="@style/secondary_button"
+        android:layout_width="wrap_content"
+        android:text="@string/proceed"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
